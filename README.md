@@ -14,6 +14,7 @@
 - [Pyetro Joaquim Taborda Nunes](https://www.linkedin.com/in/pyetro-joaquim-nunes/)
 - [Vitor Geraldo Cecato](https://www.linkedin.com/in/vitorgcecato)
 
+
 # Sobre o Site
 **Sistemas:**
 - React
@@ -29,6 +30,7 @@
 - Revolução Russa
 - Crise de 1929
 - Revolução de 1930
+
 
 # React + Vite
 
