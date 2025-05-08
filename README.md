@@ -4,7 +4,7 @@
 **Professores:**
 - Antonio Tupinamba (SENAI)
 - Leandro Grosso (SENAI)
-- Julia (História - SESI)
+- Julia Milani (História - SESI)
 
 **Grupo 3 - Integrantes:**
 - [Laura Betti Migliaccio](https://www.linkedin.com/in/laurabettimigliaccio/)
