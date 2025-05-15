@@ -4,8 +4,6 @@ import RevolucaoDe1930 from './pages/RevolucaoDe1930'
 import Home from "./pages/Home"
 import './App.css'
 
-import Home from './pages/Home'
-
 function App() {
 
   return (
