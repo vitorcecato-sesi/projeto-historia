@@ -132,13 +132,13 @@ O governo dos EUA, liderado pelo Partido Republicano, adotava uma política de l
       <br></br>
 
       <center>
-        <div className="Bloco-OqInflu">
+        <div className="Bloco-Bolsa">
           <div>
-            {/* <img className="Img-OqInflu" ></img> */}
+            <img className="Img-OqInflu" src={} ></img>
           </div>
 
-          <div className="Texto-OqInflu">
-            <div className="Titulo-Con">
+          <div className="Texto-Bolsa">
+            <div className="Titulo-Bolsa">
               <h2>Bolsa de Valores</h2>
             </div>
             <p>
