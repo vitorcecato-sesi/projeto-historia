@@ -65,15 +65,9 @@ export default function GuerraCanudos() {
 
           <center>
             <div className="Texto-Api">
-              <p>
-                Texto , Texto , Texto , Texto , Texto , Texto ,Texto , Texto ,
-                Texto , Texto , Texto , Texto , Texto , Texto , Texto , Texto
-                ,Texto , Texto , Texto , Texto , Texto , Texto , Texto , Texto ,
-                Texto , Texto , Texto ,Texto , Texto , Texto , Texto , Texto ,
-                Texto , Texto , Texto , Texto , Texto , Texto ,Texto , Texto ,
-                Texto , Texto , Texto , Texto , Texto , Texto , Texto , Texto ,
-                Texto ,Texto , Texto , Texto , Texto , Texto , Texto ,
-              </p>
+              <section id="wikiGCa">
+                
+              </section>
             </div>
           </center>
         </div>
