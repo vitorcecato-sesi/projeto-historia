@@ -214,6 +214,35 @@ body{
     box-shadow: 0px 0px 10px #B66E3F;
 }
 
+.infoAPI{
+    align-items: center;
+    width: 70vw;
+    background-color: #B66E3F;
+    border-radius: 3em;
+    padding: 2em;
+    justify-content: space-around;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.infoAPI:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+#hrREV1930 {
+    width: 90vw;
+}
+
+.titulo-API{
+    background-color: #DBAB8C;
+    width: 20vw;
+    padding: 0.4em;
+    border-radius: 3em;
+    box-shadow: 0px 0px 20px #DBAB8C;
+}
+
 .bloco-Video{
     padding-top: -2em;
 }

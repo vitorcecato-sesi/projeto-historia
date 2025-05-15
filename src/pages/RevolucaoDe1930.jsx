@@ -1,8 +1,14 @@
+//Imagens
 import foto1 from "../assets/Imgs - Revolução de 1930/foto1_revolução1930.png";
 import foto2 from "../assets/Imgs - Revolução de 1930/foto2_revolução1930.png";
 import foto3 from "../assets/Imgs - Revolução de 1930/foto3_revolução1930.png";
 import foto4 from "../assets/Imgs - Revolução de 1930/foto4_revolução1930.png";
 import foto5 from "../assets/Imgs - Revolução de 1930/foto5_revolução1930.png";
+
+//Componente da API
+import APIWikipedia from '../components/APIWikipedia'
+
+//CSS
 import "./style/RevolucaoDe1930.css";
 
 function RevolucaoDe1930() {
@@ -34,8 +40,7 @@ function RevolucaoDe1930() {
           <section>
             <p className="texto-ContextoECausas">
               <h3 className="titulo-ContextoECausas">
-                {" "}
-                Contexto Histórico e Causas da Guerra{" "}
+                Contexto Histórico e Causas da Guerra
               </h3>
               O modelo de governo no Brasil naquela época era constituído por
               uma República Oligárquica onde a política federativa era formada
@@ -77,7 +82,7 @@ function RevolucaoDe1930() {
               outros grupos também armados se formavam em Minas Gerais e na
               Paraíba. Esses conflitos armados teriam fim entre o final de
               outubro e o início de novembro, quando Vargas se autoproclamou
-              líder do Governo Provisório no Rio de Janeiro.{" "}
+              líder do Governo Provisório no Rio de Janeiro.
             </p>
             <img className="foto4" src={foto4} alt="Foto4" />
           </section>
@@ -100,11 +105,18 @@ function RevolucaoDe1930() {
             </p>
           </section>
 
-          <section>{/* API */}</section>
+          <hr id="hrREV1930"/>
+
+          <section className="infoAPI">
+            <APIWikipedia titulo="Revolução de 1930" campoWiki= "APIWIKI-Revolução1930"/>
+            <h2 className="titulo-API"> Informações da API </h2>
+            <section id='APIWIKI-Revolução1930'> </section>
+          </section>
+
+          <hr id="hrREV1930"/>
 
           <section className="bloco-Video">
             <h2 className="titulo-Video">
-              {" "}
               Vídeo Aula - Revolução de 1930 Conheça os Principais Fatos{" "}
             </h2>
             <iframe
@@ -119,6 +131,8 @@ function RevolucaoDe1930() {
               allowfullscreen
             ></iframe>
           </section>
+
+          <hr id="hrREV1930"/>  
 
           <section className="bloco-Filme">
             <p className="sinopseFilme">
