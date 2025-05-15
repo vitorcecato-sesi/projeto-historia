@@ -1,0 +1,40 @@
+.Bloco-Carrossel {
+    position: relative;
+    width: 65vw; /* Largura total da viewport */
+    height: 100vh; /* Altura total da viewport */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+
+  .Numeros {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 4px 8px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  
+  .Bola {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #ffc379;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .Bolinhas{
+  padding-left: 45%;
+  }
+  
+  .Bola.active {
+    background-color: #ed9417;
+  }
+  
