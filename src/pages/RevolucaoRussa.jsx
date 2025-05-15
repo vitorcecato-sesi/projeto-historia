@@ -1,5 +1,6 @@
 // Estilização
-    import './style/RevolucaoRussa.css'
+    import APIWikipedia from '../components/APIWikipedia'
+import './style/RevolucaoRussa.css'
 //.
 
 // Componentes
@@ -21,7 +22,8 @@ function RevolucaoRussa() {
                 </section>
                 <section className='wikiRR'>
                     <h1>Informações Wikipédia</h1>
-                    <p></p>
+                    <APIWikipedia titulo="Revolução Russa de 1917" campoWiki= "APIWIKI"/>
+                    <section id='APIWIKI'></section>
                 </section>
             </section>
         </>
