@@ -1,0 +1,272 @@
+body{
+    background-color: rgb(242, 242, 242);
+}
+
+.foto1{
+    width: 206vh;
+}
+
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: fadeIn 3s;
+    padding-bottom: 3em;
+}
+
+.textoSlide{
+    color: #f2f2f2;
+    font-size: 4vw;
+    position: absolute;
+    padding-right: 14em;
+    padding-top: 7em;
+}
+
+.corTexto{
+    color: black;
+    background-color: #B66E3F;
+}
+
+.corTexto2{
+    color: #B66E3F;
+    background-color: black;
+}
+
+.blocos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+.bloco-OQueFoi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 85vw;
+    border-style: dashed;
+    border-color: #B66E3F;
+    border-radius: 3em;
+    padding: 2.5em;
+}
+
+.foto2{
+    width: 70vh;
+    border-radius: 1em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 30px rgb(168, 168, 168);
+}
+
+.foto2:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.texto-OQueFoi{
+    width: 70vh;
+    background-color: #B66E3F;
+    padding: 2em;
+    border-radius: 3em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.texto-OQueFoi:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.titulo-OQueFoi{
+    background-color: #DBAB8C;
+    width: 10vw;
+    border-radius: 2em;
+    padding: 0.2em;
+    box-shadow: 0px 0px 10px #DBAB8C;
+
+}
+
+.texto-ContextoECausas{
+    width: 70vw;
+    background-color: #DBAB8C;
+    padding: 1.5em;
+    border-radius: 3em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.texto-ContextoECausas:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.titulo-ContextoECausas{
+    background-color: #B66E3F;
+    width: 28vw;
+    border-radius: 2em;
+    padding: 0.2em;
+    box-shadow: 0px 0px 10px #B66E3F;
+}
+
+.foto3{
+    padding-top: 2em;
+    width: 75vw;
+    border-radius: 1em;
+}
+
+.bloco-Conflito{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 85vw;
+    border-style: dashed;
+    border-color: #B66E3F;
+    border-radius: 3em;
+    padding: 2em;
+}
+
+.foto4{
+    width: 70vh;
+    border-radius: 1em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 30px rgb(168, 168, 168);
+}
+
+.foto4:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.texto-Conflito{
+    width: 70vh;
+    background-color: #B66E3F;
+    padding: 2em;
+    border-radius: 3em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.texto-Conflito:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.titulo-Conflito{
+    background-color: #DBAB8C;
+    width: 10vw;
+    border-radius: 2em;
+    padding: 0.2em;
+    box-shadow: 0px 0px 10px #DBAB8C;
+}
+
+.bloco-Final{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 85vw;
+    border-style: dashed;
+    border-color: #B66E3F;
+    border-radius: 3em;
+    padding: 2em;
+}
+
+.foto5{
+    width: 53vh;
+    border-radius: 1em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 30px rgb(168, 168, 168);
+}
+
+.foto5:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.texto-Final{
+    width: 70vh;
+    background-color: #DBAB8C;
+    padding: 2.4em;
+    border-radius: 3em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.texto-Final:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.titulo-Final{
+    background-color: #B66E3F;
+    width: 16vw;
+    border-radius: 2em;
+    padding: 0.2em; 
+    box-shadow: 0px 0px 10px #B66E3F;
+}
+
+.bloco-Video{
+    padding-top: -2em;
+}
+
+.titulo-Video{
+    background-color: #DBAB8C;
+    padding: 1em;
+    border-radius: 3em;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.video{
+    border-radius: 1em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.video:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.bloco-Filme{
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    background-color: #DBAB8C;
+    border-radius: 3em;
+    padding: 2em;
+    justify-content: space-around;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.bloco-Filme:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.sinopseFilme{
+    width: 27vw;
+}
+
+.titulo-Filme{
+    background-color: #B66E3F;
+    padding: 0.2em;
+    border-radius: 3em;
+    box-shadow: 0px 0px 10px #B66E3F;
+}
+
+.filme{
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px #cd7f4c;
+}
