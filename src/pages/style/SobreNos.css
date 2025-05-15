@@ -1,3 +1,69 @@
+.blocoPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.blocoFoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 55vw;
+    border-radius: 3em;
+    padding: 2em;
+    background-color: #CCD59A;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.blocoFoto:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.tituloGrupo{
+    background-color: #979F67;
+    width: 15vw;
+    border-radius: 3em;
+}
+
 .fotoDoGrupo{
+    width: 36vw;
+    border-radius: 3em;
+}
+
+.Logo-Integrantes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5em;
+}
+
+.logoGrupo{
+    width: 25vw;
+}
+
+.projeto{
     width: 50vw;
+    background-color: #CCD59A;
+    padding: 1.5em;
+    border-radius: 3em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+    transition: all 1s ease;
+}
+
+.projeto:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.tituloProjeto{
+    background-color: #979F67;
+    width: 15vw;
+    border-radius: 3em;
 }
