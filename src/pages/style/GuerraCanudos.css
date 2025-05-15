@@ -107,3 +107,40 @@ body{
     border-radius: 0.5em;
     padding: 1.5em;
   }
+
+  .Bloco-OqInflu {
+    display: flex;           
+    align-items: center;     
+    gap: 10%;  
+    padding: 1.2em;  
+    background-color: #FCFAF1 ;    
+    border: #AF7E04 solid 0.1em;  
+    width: 93%;    
+    border-radius: 0.5em;
+  }
+
+  .Img-OqInflu {
+    max-width: 300px;        
+    height: auto;
+    border-radius: 0.8em;
+  }
+
+  .Titulo-OqIn{
+    background-color:#fcf2c2 ;
+    color:#AF7E04 ;
+    text-align: center;
+    width: 80%;
+    border: #AF7E04 solid 0.1em;     
+    border-radius: 0.5em;
+  
+  }
+
+  .Conflito{
+    background-color:#fcf2c3 ;
+    color:#AF7E04 ;
+    text-align: center;
+    width: 80%;
+    border-radius: 0.5em;
+    border: #AF7E04 solid 0.1em; 
+  }
+  

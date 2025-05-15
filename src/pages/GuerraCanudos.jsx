@@ -6,6 +6,8 @@ import img4 from '../assets/Imgs-GuerraCanudos/Canu4.png';
 import './style/GuerraCanudos.css';
 
 import IMGIntro from "../assets/Imgs-GuerraCanudos/Intro.png";
+import IMGOqInflu from "../assets/Imgs-GuerraCanudos/IMGOqInflu.png";
+import ImgConflito from "../assets/Imgs-GuerraCanudos/Conflito.png";
 
 const imagens = [Img1, img2, img3, img4];
 
@@ -80,8 +82,46 @@ export default function GuerraCanudos() {
       </div>
       </div>
 
+<center>
+      <div className="Bloco-OqInflu">
+        <div>
+          <img className="Img-OqInflu" src={IMGOqInflu}></img>
+        </div>
 
-      
+        <div className="Texto-OqInflu">
+          <div className='Titulo-OqIn'>
+          <h2>O que influenciou a Guerra de Canudos?</h2>
+          </div>
+          <p>
+          Naquela época o Brasil tinha a acabado de entrar em uma república porém os impostos e a condição de vida dos sertanejos não estava boa,
+o governo tinha medo do crescimento de poder do Antônio Conselheiro
+
+          </p>
+      </div>
+      </div>
+      </center>
+      <br></br>
+
+      {/*  */}
+
+      <center>
+      <div className="Bloco-OqInflu">
+        <div>
+          <img className="Img-OqInflu" src={ImgConflito}></img>
+        </div>
+
+        <div className="Texto-OqInflu">
+          <div className='Titulo-OqIn'>
+          <h2>Conflito</h2>
+          </div>
+          <p>
+          O governo republicano viu Canudos como uma ameaça à ordem estabelecida e enviou várias expedições militares para destruí-lo. Após três tentativas fracassadas, uma quarta expedição, com cerca de 10 mil soldados, conseguiu dizimar a comunidade.
+
+          </p>
+      </div>
+      </div>
+      </center>
+
 
     </>
   );
