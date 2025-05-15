@@ -1,22 +1,17 @@
-// Hooks
-  import { BrowserRouter, Routes, Route } from 'react-router-dom'
-//.
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-// Estilização
-  import './App.css'
-//.
-
-// Páginas
-  import RevolucaoRussa from './pages/RevolucaoRussa'
-//.
+import RevolucaoDe1930 from './pages/RevolucaoDe1930'
+import Home from "./pages/Home"
+import './App.css'
 
 function App() {
 
   return (
     <>
-      <BrowserRouter>
+    <BrowserRouter>
         <Routes>
-          <Route path='/' element={<RevolucaoRussa />} />
+          <Route path='/' element={<Home/>} />
+          <Route path='/Revolução-de-1930' element={<RevolucaoDe1930/>}/>         
         </Routes>
       </BrowserRouter>
     </>
