@@ -1,9 +1,11 @@
+body{
+  background-color: #FCFAF1;
+}
+
 .Bloco-Carrossel {
     position: relative;
-    width: 65vw; /* Largura total da viewport */
     height: 100vh; /* Altura total da viewport */
-    margin: 0 auto;
-    overflow: hidden;
+
   }
 
 
@@ -38,3 +40,70 @@
     background-color: #ed9417;
   }
   
+  .Api-Wikipedia{
+    background-color: #882805;
+    padding: 0.9em;
+    border-radius: 0.4em ;
+    width: 45%;
+    height: 30em;
+  }
+
+  .Titulo-Api{
+    background-color:#FFFAE0 ;
+    color:#AF7E04 ;
+    text-align: center;
+    width: 80%;
+    border-radius: 0.5em;
+  }
+
+  .Texto-Api{
+    background-color: #FBB623;
+    color: #000000;
+    text-align: center;
+    width: 80%;
+    height: 20em;
+    border-radius: 0.5em;
+    padding: 1.5em;
+  }
+
+  .Bloco-Intro{
+    background-color:#FBB623 ;
+    text-align: center;
+    padding: 0.9em;
+    border-radius: 0.4em ;
+    width: 45%;
+    height: 30em;
+  }
+
+  .Blocao-WikieApi {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;       
+    gap: 20px;                    
+    padding: 20px;
+    flex-wrap: wrap;             
+  }
+
+  .Titulo-Intro{
+    background-color:#882805;
+    color:#FBB623 ;
+    text-align: center;
+    width: 80%;
+    border-radius: 0.5em;
+  }
+
+  .img-In{
+    width: 45%;
+    height: 43%;
+    border-radius: 0.5em;
+  }
+ 
+
+  .Texto-Intro{
+    background-color: #882805;
+    color: #FBB623 ;
+    text-align: center;
+    width: 80%;
+    border-radius: 0.5em;
+    padding: 1.5em;
+  }
