@@ -1,24 +1,45 @@
 body {
   background-color: #FCFAF1;
 }
-
-.Bloco-Carrossel {
+.Carrossel-Container {
   position: relative;
-  height: 100vh;
-  /* Altura total da viewport */
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+  width: 100%;
 }
 
+.Imagem-Carrossel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-.Numeros {
+.Botao-Carrossel {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 4px 8px;
-  border-radius: 4px;
-  z-index: 1;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.2s ease;
+}
+
+.Botao-Carrossel:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.Botao-Carrossel.Esquerda {
+  left: 10px;
+}
+
+.Botao-Carrossel.Direita {
+  right: 10px;
 }
 
 
@@ -277,4 +298,15 @@ iframe {
 
 .Api-Wikipedia:hover , .Bloco-Intro:hover , .Bloco-OqInflu:hover , .Conflito:hover , .Bloco-Anto:hover , .Bloco-Fim:hover , .Titulo-Video:hover , .Texto-Video:hover {
   box-shadow: 1px 1px 5px 1px #000000;
+}
+
+.Titulo-Con{
+  background-color: #882805;
+  color: #FBB623;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+  border: #AF7E04 solid 0.1em;
+  border-radius: 0.5em;
+
 }

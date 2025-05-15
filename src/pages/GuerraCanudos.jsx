@@ -18,26 +18,40 @@ export default function GuerraCanudos() {
 
   return (
     <>
-      <div className="Bloco-Carrossel">
-        <div className="Numeros">
-          {index + 1} / {imagens.length}
-        </div>
-        <img
-          src={imagens[index]}
-          alt={`Slide ${index + 1}`}
-          style={{ width: "100%", height: "85%", objectFit: "cover" }}
-        />
+     <div className="Bloco-Carrossel">
+ 
+  <div className="Carrossel-Container">
+    <button
+      className="Botao-Carrossel Esquerda"
+      onClick={() => setIndex((prev) => (prev === 0 ? imagens.length - 1 : prev - 1))}
+    >
+      ‹
+    </button>
 
-        <div className="Bolinhas">
-          {imagens.map((_, i) => (
-            <span
-              key={i}
-              className={`Bola ${i === index ? "active" : ""}`}
-              onClick={() => setIndex(i)}
-            />
-          ))}
-        </div>
-      </div>
+    <img
+      src={imagens[index]}
+      alt={`Slide ${index + 1}`}
+      className="Imagem-Carrossel"
+    />
+
+    <button
+      className="Botao-Carrossel Direita"
+      onClick={() => setIndex((prev) => (prev === imagens.length - 1 ? 0 : prev + 1))}
+    >
+      ›
+    </button>
+  </div>
+
+  <div className="Bolinhas">
+    {imagens.map((_, i) => (
+      <span
+        key={i}
+        className={`Bola ${i === index ? "active" : ""}`}
+        onClick={() => setIndex(i)}
+      />
+    ))}
+  </div>
+</div>
 
       <div className="Blocao-WikieApi">
         <div className="Api-Wikipedia">
@@ -116,7 +130,7 @@ export default function GuerraCanudos() {
           </div>
 
           <div className="Texto-OqInflu">
-            <div className="Titulo-OqIn">
+            <div className="Titulo-Con">
               <h2>Conflito</h2>
             </div>
             <p>
@@ -181,9 +195,11 @@ export default function GuerraCanudos() {
       <div className="cor">
         <div className="Juntos">
           <div className="Bloco-Video">
+            <center>
             <h2 className="Titulo-Video">
               Vídeo explicativo sobre a Guerra de Canudos
             </h2>
+            </center>
             <center>
               <iframe
                 width="540"
@@ -208,10 +224,11 @@ export default function GuerraCanudos() {
           </div>
 
           <div className="Bloco-Filme">
+            <center>
             <h2 className="Titulo-Video">
-              {" "}
               Filme explicativo sobre a Guerra de Canudos
             </h2>
+            </center>
             <center>
               <iframe
                 width="540"
