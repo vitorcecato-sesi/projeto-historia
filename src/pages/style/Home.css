@@ -126,12 +126,13 @@ display: flex;
 flex-direction: column;
 height: 21vh;
 width: 30vw;
+margin-right: 1em;
 align-items: center;
 justify-content: space-around
 }
 
 .links:hover {
-transform: scale(1.1);
+transform: scale(1.07);
 transition: 0.5s;
 cursor: pointer;
 }
