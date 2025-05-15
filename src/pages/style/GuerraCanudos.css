@@ -1,6 +1,7 @@
 body {
   background-color: #FCFAF1;
 }
+
 .Carrossel-Container {
   position: relative;
   display: flex;
@@ -24,8 +25,6 @@ body {
   font-size: 2rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  z-index: 2;
-  top: 50%;
   transform: translateY(-50%);
   transition: background-color 0.2s ease;
 }
@@ -35,18 +34,18 @@ body {
 }
 
 .Botao-Carrossel.Esquerda {
-  left: 10px;
+  left: 0.7rem;
 }
 
 .Botao-Carrossel.Direita {
-  right: 10px;
+  right: 0.7rem;
 }
 
 
 .Bola {
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
+  height: 0.9rem;
+  width:  0.9rem;
+  margin: 0 0.3rem;
   display: inline-block;
   border-radius: 50%;
   background-color: #ffc379;
@@ -54,9 +53,7 @@ body {
   transition: background-color 0.3s;
 }
 
-.Bolinhas {
-  padding-left: 45%;
-}
+
 
 .Bola.active {
   background-color: #ed9417;
@@ -104,8 +101,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
+  gap: 0.12rem;
+  padding: 0.12rem;
   flex-wrap: wrap;
 }
 
@@ -146,7 +143,7 @@ body {
 }
 
 .Img-OqInflu {
-  max-width: 300px;
+width: 65%;
   height: auto;
   border-radius: 0.8em;
 }
@@ -216,8 +213,6 @@ body {
 
 }
 
-
-
 .ImgFim {
   width: 55%;
   height: 20%;
@@ -253,13 +248,13 @@ body {
   display: flex;
   justify-content: center;
   gap: 2em;
-padding: 15px;
+  padding: 0.13rem;
   margin-top: 1.5em;
 }
 
 .Bloco-Video {
   border: solid 2px #882805;
-  padding: 10px;
+  padding: 0.9rem;
   border-radius: 0.5em;
   width: 60%;
   box-shadow: 0px 0px 2px 0px #000000;
@@ -268,7 +263,7 @@ padding: 15px;
 
 .Bloco-Filme {
   border: solid 2px #882805;
-  padding: 10px;
+  padding: 0.9rem;
   border-radius: 0.5em;
   width: 70%;
   box-shadow: 0px 0px 2px 0px #000000;
@@ -296,11 +291,18 @@ iframe {
   border-radius: 0.5em;
 }
 
-.Api-Wikipedia:hover , .Bloco-Intro:hover , .Bloco-OqInflu:hover , .Conflito:hover , .Bloco-Anto:hover , .Bloco-Fim:hover , .Titulo-Video:hover , .Texto-Video:hover {
+.Api-Wikipedia:hover,
+.Bloco-Intro:hover,
+.Bloco-OqInflu:hover,
+.Conflito:hover,
+.Bloco-Anto:hover,
+.Bloco-Fim:hover,
+.Bloco-Video:hover,
+.Bloco-Filme:hover {
   box-shadow: 1px 1px 5px 1px #000000;
 }
 
-.Titulo-Con{
+.Titulo-Con {
   background-color: #882805;
   color: #FBB623;
   text-align: center;
@@ -309,4 +311,8 @@ iframe {
   border: #AF7E04 solid 0.1em;
   border-radius: 0.5em;
 
+}
+
+.textwiki {
+  font-size: 0.7rem;
 }

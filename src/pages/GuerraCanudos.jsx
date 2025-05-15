@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Img1 from "../assets/Imgs-GuerraCanudos/Canu1.png";
-import img2 from "../assets/Imgs-GuerraCanudos/Canu2.png";
-import img3 from "../assets/Imgs-GuerraCanudos/Canu3.png";
+import img2 from "../assets/Imgs-GuerraCanudos/Carrossel3.png";
+import img3 from "../assets/Imgs-GuerraCanudos/Carrosel.png";
 import img4 from "../assets/Imgs-GuerraCanudos/Canu4.png";
 import "./style/GuerraCanudos.css";
 
@@ -11,9 +11,11 @@ import ImgConflito from "../assets/Imgs-GuerraCanudos/Conflito.png";
 import ImgANtonio from "../assets/Imgs-GuerraCanudos/Antonio.png";
 import ImgFim from "../assets/Imgs-GuerraCanudos/Fim.png";
 
+import APIWikipedia from "../components/APIWikipedia";
+
 const imagens = [Img1, img2, img3, img4];
 
-export default function GuerraCanudos() {
+function GuerraCanudos() {
   const [index, setIndex] = useState(0);
 
   return (
@@ -41,7 +43,7 @@ export default function GuerraCanudos() {
       ›
     </button>
   </div>
-
+<center>
   <div className="Bolinhas">
     {imagens.map((_, i) => (
       <span
@@ -51,7 +53,11 @@ export default function GuerraCanudos() {
       />
     ))}
   </div>
+  </center>
 </div>
+
+<br></br>
+<br></br>
 
       <div className="Blocao-WikieApi">
         <div className="Api-Wikipedia">
@@ -65,8 +71,8 @@ export default function GuerraCanudos() {
 
           <center>
             <div className="Texto-Api">
-              <section id="wikiGCa">
-                
+              <section className="textwiki" id="wikiGCa">
+              <APIWikipedia titulo="Guerra de Canudos" campoWiki="wikiGCa"/>
               </section>
             </div>
           </center>
@@ -95,6 +101,7 @@ export default function GuerraCanudos() {
           </center>
         </div>
       </div>
+      <br></br>
 
       <center>
         <div className="Bloco-OqInflu">
@@ -224,16 +231,8 @@ export default function GuerraCanudos() {
             </h2>
             </center>
             <center>
-              <iframe
-                width="540"
-                height="295"
-                src="https://www.youtube.com/embed/P4OYhj7Io0E?si=dDnbiWNOmiRMBzSv"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+              
+               <iframe width="540" height="295" src="https://www.youtube.com/embed/P4OYhj7Io0E?si=w1xlO6YbD3xketr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </center>
             <br></br>
             <center>
@@ -255,3 +254,5 @@ export default function GuerraCanudos() {
     </>
   );
 }
+
+export default GuerraCanudos;
