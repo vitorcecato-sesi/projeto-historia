@@ -1,0 +1,105 @@
+.blocoWiki {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: #CB4D50;
+    padding: 2em;
+   
+}
+.centro{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 5em;
+}
+
+
+
+
+
+
+.bannerGC {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-image: url('https://media.gazetadopovo.com.br/2016/10/9a43ec7da1daae2c8b5f7178aebe75e9-gpLarge.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-size: 2em;
+}
+
+.bannerGC::before {
+    content: "";
+    position: absolute;
+    height: 60vh;
+    inset: 0;
+    z-index: 0;
+    background-color: #dd666688;
+}
+.bannerGC h1 {
+    z-index: 1;
+}
+#vermelho{
+    color: #CB4D50
+}
+#branco{
+    color: #FFFFFF
+}
+.blocoInfo2{
+    display: flex;
+    flex-direction: row;
+width: 50vw;
+gap: 4em;
+}
+#imgGC{
+    width: 30vw;
+    height: 30vh;
+    border-radius: 2vw;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.blocoInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: #BD0A0A;
+    border-radius: 2vw;
+    text-align: justify;
+    padding: 2em;
+    
+}
+
+.blocoVideo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: #BD0A0A;
+    
+}
+ .vertical-hr {
+    border: none;
+    background-color: black;
+    width: 4px;
+    height: 6em;
+    border-radius: 2px;
+    
+    transition: background-color 0.3s ease;
+  }
+
+  .blocoLado{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+
+  }
+
