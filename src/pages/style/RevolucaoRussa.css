@@ -1,0 +1,40 @@
+.bodyRR {
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyRR h1 {
+    font-size: 2rem;
+}
+
+.bannerRR {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-image: url('https://assets.brasildefato.com.br/2024/09/image_processing20200201-29235-1nfnxod.jpg');
+    background-size: cover; /* Faz a imagem cobrir todo o elemento */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-position: center; /* Centraliza a imagem */
+    position: relative; /* Permite que possamos usar o ::before */
+}
+
+.bannerRR::before { /*Cria um elemento antes do .bannerRR*/
+    content: ""; /* Necessário para criar um elemento vazio */
+    position: absolute; /* Permite que possamos escolher onde ela estará */
+    height: 60vh;
+    inset: 0; /* Faz ele ocupar toda a área */
+    z-index: 0; /* Ordem de camada */
+    background-color: rgba(0, 70, 140, 0.5);
+}
+
+.bannerTextRR {
+    position: relative;
+    color: white;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+#blueRR {
+    color: #A1B6FF;
+}
