@@ -2,6 +2,9 @@
 import FotoGrupo3 from "../assets/FotoGrupo3.png";
 import LogoG3 from "../assets/logoG3.png";
 
+//Componentes
+import Footer from "../components/Footer";
+
 //CSS
 import "../pages/style/SobreNos.css";
 
@@ -46,6 +49,8 @@ function SobreNos() {
 
       </section>
       </center>
+
+      <Footer/>
     </>
   );
 }
