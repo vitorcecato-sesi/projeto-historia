@@ -1,146 +1,280 @@
-body{
+body {
   background-color: #FCFAF1;
 }
 
 .Bloco-Carrossel {
-    position: relative;
-    height: 100vh; /* Altura total da viewport */
+  position: relative;
+  height: 100vh;
+  /* Altura total da viewport */
 
-  }
+}
 
 
-  .Numeros {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: white;
-    background-color: rgba(0,0,0,0.5);
-    padding: 4px 8px;
-    border-radius: 4px;
-    z-index: 1;
-  }
+.Numeros {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 1;
+}
 
-  
-  .Bola {
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: #ffc379;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
 
-  .Bolinhas{
+.Bola {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ffc379;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Bolinhas {
   padding-left: 45%;
-  }
-  
-  .Bola.active {
-    background-color: #ed9417;
-  }
-  
-  .Api-Wikipedia{
-    background-color: #882805;
-    padding: 0.9em;
-    border-radius: 0.4em ;
-    width: 45%;
-    height: 30em;
-  }
+}
 
-  .Titulo-Api{
-    background-color:#FFFAE0 ;
-    color:#AF7E04 ;
-    text-align: center;
-    width: 80%;
-    border-radius: 0.5em;
-  }
+.Bola.active {
+  background-color: #ed9417;
+}
 
-  .Texto-Api{
-    background-color: #FBB623;
-    color: #000000;
-    text-align: center;
-    width: 80%;
-    height: 20em;
-    border-radius: 0.5em;
-    padding: 1.5em;
-  }
+.Api-Wikipedia {
+  background-color: #882805;
+  padding: 0.9em;
+  border-radius: 0.4em;
+  width: 45%;
+  height: 30em;
+  box-shadow: 0px 0px 2px 0px #000000;
 
-  .Bloco-Intro{
-    background-color:#FBB623 ;
-    text-align: center;
-    padding: 0.9em;
-    border-radius: 0.4em ;
-    width: 45%;
-    height: 30em;
-  }
+}
 
-  .Blocao-WikieApi {
-    display: flex;
-    justify-content: space-around; 
-    align-items: flex-start;       
-    gap: 20px;                    
-    padding: 20px;
-    flex-wrap: wrap;             
-  }
+.Titulo-Api {
+  background-color: #FFFAE0;
+  color: #AF7E04;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+}
 
-  .Titulo-Intro{
-    background-color:#882805;
-    color:#FBB623 ;
-    text-align: center;
-    width: 80%;
-    border-radius: 0.5em;
-  }
+.Texto-Api {
+  background-color: #FBB623;
+  color: #000000;
+  text-align: center;
+  width: 80%;
+  height: 20em;
+  border-radius: 0.5em;
+  padding: 1.5em;
+}
 
-  .img-In{
-    width: 45%;
-    height: 43%;
-    border-radius: 0.5em;
-  }
- 
+.Bloco-Intro {
+  background-color: #FBB623;
+  text-align: center;
+  padding: 0.9em;
+  border-radius: 0.4em;
+  width: 45%;
+  height: 30em;
+  box-shadow: 0px 0px 2px 0px #000000;
+}
 
-  .Texto-Intro{
-    background-color: #882805;
-    color: #FBB623 ;
-    text-align: center;
-    width: 80%;
-    border-radius: 0.5em;
-    padding: 1.5em;
-  }
+.Blocao-WikieApi {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
 
-  .Bloco-OqInflu {
-    display: flex;           
-    align-items: center;     
-    gap: 10%;  
-    padding: 1.2em;  
-    background-color: #FCFAF1 ;    
-    border: #AF7E04 solid 0.1em;  
-    width: 93%;    
-    border-radius: 0.5em;
-  }
+.Titulo-Intro {
+  background-color: #882805;
+  color: #FBB623;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+}
 
-  .Img-OqInflu {
-    max-width: 300px;        
-    height: auto;
-    border-radius: 0.8em;
-  }
+.img-In {
+  width: 45%;
+  height: 43%;
+  border-radius: 0.5em;
+}
 
-  .Titulo-OqIn{
-    background-color:#fcf2c2 ;
-    color:#AF7E04 ;
-    text-align: center;
-    width: 80%;
-    border: #AF7E04 solid 0.1em;     
-    border-radius: 0.5em;
-  
-  }
 
-  .Conflito{
-    background-color:#fcf2c3 ;
-    color:#AF7E04 ;
-    text-align: center;
-    width: 80%;
-    border-radius: 0.5em;
-    border: #AF7E04 solid 0.1em; 
-  }
-  
+.Texto-Intro {
+  background-color: #882805;
+  color: #FBB623;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+  padding: 1.5em;
+}
+
+.Bloco-OqInflu {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  padding: 1.2em;
+  background-color: #FCFAF1;
+  border: #AF7E04 solid 0.1em;
+  width: 93%;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 2px 0px #000000;
+}
+
+.Img-OqInflu {
+  max-width: 300px;
+  height: auto;
+  border-radius: 0.8em;
+}
+
+.Titulo-OqIn {
+  background-color: #fcf2c2;
+  color: #AF7E04;
+  text-align: center;
+  width: 80%;
+  border: #AF7E04 solid 0.1em;
+  border-radius: 0.5em;
+
+}
+
+.Conflito {
+  background-color: #fcf2c3;
+  color: #AF7E04;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+  border: #AF7E04 solid 0.1em;
+  box-shadow: 0px 0px 2px 0px #000000;
+}
+
+.ImgAn {
+  border-radius: 50em;
+  border: #eaaa08 solid 1em;
+}
+
+.Bloco-Anto {
+  background-color: #882805;
+  padding: 0.9em;
+  border-radius: 0.4em;
+  width: 40%;
+  margin-left: 2em;
+  box-shadow: 0px 0px 2px 0px #000000;
+}
+
+.Titulo-Anto {
+  background-color: #FFFAE0;
+  color: #AF7E04;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+}
+
+.Texto-Anto {
+  background-color: #FBB623;
+  color: #000000;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+  padding: 1.5em;
+}
+
+.Bloco-Fim {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  padding: 1.2em;
+  background-color: #FCFAF1;
+  border: #AF7E04 solid 0.1em;
+  width: 40%;
+  height: 33.5em;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 2px 0px #000000;
+
+}
+
+
+
+.ImgFim {
+  width: 55%;
+  height: 20%;
+  border-radius: 0.5em;
+}
+
+.Titulo-Fim {
+  background-color: #fcf2c2;
+  color: #AF7E04;
+  text-align: center;
+  width: 75%;
+  border: #AF7E04 solid 0.1em;
+  border-radius: 0.5em;
+}
+
+.Texto-Fim {
+  background-color: #882805;
+  color: #FBB623;
+  text-align: center;
+  width: 75%;
+  border-radius: 0.5em;
+  padding: 1.5em;
+}
+
+.Blocos-AnteFim {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 1.5em;
+}
+
+.Juntos {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+padding: 15px;
+  margin-top: 1.5em;
+}
+
+.Bloco-Video {
+  border: solid 2px #882805;
+  padding: 10px;
+  border-radius: 0.5em;
+  width: 60%;
+  box-shadow: 0px 0px 2px 0px #000000;
+
+}
+
+.Bloco-Filme {
+  border: solid 2px #882805;
+  padding: 10px;
+  border-radius: 0.5em;
+  width: 70%;
+  box-shadow: 0px 0px 2px 0px #000000;
+
+}
+
+.Titulo-Video {
+  background-color: #882805;
+  color: #FBB623;
+  border-radius: 0.5em;
+  padding: 0.5em;
+
+}
+
+.Texto-Video {
+  background-color: #FBB623;
+  color: #000000;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  margin-top: 1em;
+  width: 85%;
+}
+
+iframe {
+  border-radius: 0.5em;
+}
+
+.Api-Wikipedia:hover , .Bloco-Intro:hover , .Bloco-OqInflu:hover , .Conflito:hover , .Bloco-Anto:hover , .Bloco-Fim:hover , .Titulo-Video:hover , .Texto-Video:hover {
+  box-shadow: 1px 1px 5px 1px #000000;
+}
