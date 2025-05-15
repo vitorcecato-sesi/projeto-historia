@@ -1,10 +1,17 @@
 .bodyRR {
     display: flex;
     flex-direction: column;
+    gap: 2em;    
 }
 
 .bodyRR h1 {
     font-size: 2rem;
+}
+
+.bodyRR hr {
+    width: 60vw;
+    height: 0.2em;
+    background-color: black;
 }
 
 .bannerRR {
@@ -37,4 +44,141 @@
 
 #blueRR {
     color: #A1B6FF;
+}
+
+.wikiRR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.APIWikiRR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+
+    border: 0.1em solid rgba(0, 0, 0, 0.190);
+    padding: 2em 10em;
+
+    width: 50vw;
+}
+
+.infoRR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloco1RR {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 0.1em solid rgba(0, 0, 0, 0.190);
+    padding: 2em;
+    width: 70vw;
+}
+
+.bloco1RR article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: justify;
+    width: 30vw;
+}
+
+.bloco2RR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    border: 0.1em solid rgba(0, 0, 0, 0.190);
+    padding: 2em;
+}
+
+.textoImagemRR {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    gap: 3em;
+}
+
+.textoImagemRR p {
+    width: 30vw;
+}
+
+.textoImagemRR img {
+    height: 50vh;
+    width: 30vw;
+}
+
+.bloco3RR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    border: 0.1em solid rgba(0, 0, 0, 0.190);
+    padding: 2em;
+}
+
+.principaisNomesRR {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.pessoaRR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botaoPNRR {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    border: none;
+    border-radius: 50%;
+    width: 10vw;
+    height: 20vh;
+    transition: transform 0.2s;
+    box-shadow: 0 0.25em 0.6em rgba(0, 0, 0, 0.3);
+}
+
+.botaoPNRR img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir todo o elemento (sem distorce-la)*/
+    border-radius: 50%;
+}
+
+.botaoPNRR:hover {
+    transform: scale(1.1);
+}
+
+#infoPNRR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    width: 30vw;
+}
+
+.botaoOcultarPNRR {
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 0.2em;
+    cursor: pointer;
+    padding: 2em 3em;
 }
