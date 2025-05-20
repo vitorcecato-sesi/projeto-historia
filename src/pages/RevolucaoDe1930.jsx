@@ -28,6 +28,7 @@ function RevolucaoDe1930() {
 
       <center>
         <section className="blocos">
+          
           <section className="bloco-OQueFoi">
             <img className="foto2" src={foto2} alt="Foto2" />
             <p className="texto-OQueFoi">
