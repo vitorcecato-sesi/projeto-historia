@@ -1,7 +1,9 @@
 import './style/GuerraContestado.css'
+import Navbar from '../components/Navbar'
 function GuerraContestado() {
     return (
         <div>
+            <Navbar/>
             <section className='bannerGC'>
                 <h1 id='branco'>CONHEÇA MAIS SOBRE <br/> <span id='vermelho'> A GUERRA DE CONTESTADOS </span></h1>
             </section>
@@ -55,12 +57,14 @@ function GuerraContestado() {
                 <section className='blocoVideo'>
             <h2>Video</h2>
             <iframe width="400" height="300" src="https://www.youtube.com/embed/bTOdnw2alHw?si=W2pUiBJTNOxwP87g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Descrição</h3>
            <br/>
             <hr/>
             </section>
             <section className='blocoVideo'>
             <h2 >Filme</h2>
             <iframe width="400" height="300" src="https://www.youtube.com/embed/kbMUvt4NdtQ?si=Q3P53X9oI1u3rSDb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Descrição</h3>
             </section>
             </section>
 
