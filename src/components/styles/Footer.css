@@ -1,0 +1,65 @@
+.footerHeader{
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoSite{
+    width: 10vw;
+}
+
+/* Estilo da seta - criada com bordas formando uma "seta para direita" rotacionada */
+.seta {
+    width: 20px;
+    height: 20px;
+    border-right: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    transform: rotate(45deg); /* seta apontando para baixo */
+    transition: transform 0.5s ease; /* animação suave da rotação */
+}
+
+.seta.aberto{
+    transform: rotate(-135deg);
+}
+
+.icones img{
+    height: 5vh;
+    padding: 2em;
+    text-decoration: none;
+}
+
+.icones a{
+    text-decoration: none
+}
+
+.footerInfo{
+    height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding-top 0.3s ease; /* transição suave abrir/fechar */ 
+    padding-top: 0;
+}
+
+/* Classe para quando o conteúdo estiver aberto */
+.footerInfo.aberto {
+    height: auto; 
+    padding-top: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logoG3{
+    width: 18vw;
+}
+
+.sobreProjeto{
+    display: flex;
+    width: 17vw;
+}
+
+.conteudos a{
+    text-decoration: none;
+    color: black;
+}

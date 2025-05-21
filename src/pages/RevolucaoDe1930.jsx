@@ -8,6 +8,7 @@ import foto5 from "../assets/Imgs - Revolução de 1930/foto5_revolução1930.pn
 //Componentes
 import APIWikipedia from '../components/APIWikipedia'
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 //CSS
 import "./style/RevolucaoDe1930.css";
@@ -160,6 +161,8 @@ function RevolucaoDe1930() {
           </section>
         </section>
       </center>
+
+      <Footer/>
     </>
   );
 }
