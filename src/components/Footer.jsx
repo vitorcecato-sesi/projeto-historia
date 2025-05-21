@@ -49,13 +49,13 @@ function Footer(props) {
                     <section className="conteudos">
                         <p>
                             <h3> Conteúdos </h3>
-                            <Link to="/GuerraDeCanudos"> Guerra de Canudos </Link> <br />
-                            <Link to="/GuerraDoContestado"> Guerra do Contestado </Link> <br />
-                            <Link to="/PrimeiraGuerraMundial"> Primeira Guerra Mundial </Link> <br />
-                            <Link to="/RevolucaoDe1930"> Revolução Russa </Link> <br />
-                            <Link to="/FascismoItaliano"> Fascismo Italiano </Link> <br />
-                            <Link to="/CriseDe1929"> Crise de 1929 </Link> <br />
-                            <Link to="/RevolucaoDe1930"> Revolução de 1930 </Link> <br />
+                            <a href="http://localhost:5173/GuerraDeCanudos"> Guerra de Canudos </a> <br />
+                            <a href="http://localhost:5173/GuerraDoContestado"> Guerra do Contestado </a> <br />
+                            <a href="http://localhost:5173/PrimeiraGuerraMundial"> Primeira Guerra Mundial </a> <br />
+                            <a href="http://localhost:5173/RevolucaoRussa"> Revolução Russa </a> <br />
+                            <a href="http://localhost:5173/FascismoItaliano"> Fascismo Italiano </a> <br />
+                            <a href="http://localhost:5173/CriseDe1929"> Crise de 1929 </a> <br />
+                            <a href="http://localhost:5173/RevolucaoDe1930"> Revolução de 1930 </a> <br />
                         </p>
                     </section>
 
