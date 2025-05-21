@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import "./styles/BotaoCurtirTema.css"
 
 function BotaoCurtirTema(props) {
     const [curtido, setCurtido] = useState(false)
@@ -56,7 +57,7 @@ function BotaoCurtirTema(props) {
 
     return (
         <>
-            <button className={curtido ? "fa-solid fa-heart" : "fa-regular fa-heart"} id="botaoCurtirTema" onClick={(() => botaoAcionado())}></button>
+            <button className={curtido ? "icone-coracao fa-solid fa-heart" : "icone-coracao fa-regular fa-heart"} id="botaoCurtirTema" onClick={(() => botaoAcionado())}></button>
         </>
     )
 }
