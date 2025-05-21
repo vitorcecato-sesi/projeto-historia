@@ -9,7 +9,6 @@ import LogoSiteMarrom from "../assets/Logos/LogoSiteMarrom.png"
 
 //Componentes
 import APIWikipedia from '../components/APIWikipedia'
-import Navbar1 from "../components/Navbar"
 import Footer from "../components/Footer";
 import BotaoCurtirTema from "../components/BotaoCurtirTema";
 
@@ -17,7 +16,6 @@ import BotaoCurtirTema from "../components/BotaoCurtirTema";
 import "./style/RevolucaoDe1930.css";
 
 import Navbarr from "../components/Navbar"
-import LogoSiteMarrom from "../assets/Logos/LogoSiteMarrom.png"
 
 function RevolucaoDe1930() {
   return (
