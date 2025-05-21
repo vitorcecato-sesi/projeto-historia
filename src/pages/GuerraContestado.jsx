@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import APIWikipedia from "../components/APIWikipedia";
 import BotaoCurtirTema from "../components/BotaoCurtirTema";  
 import BotaoTema from "../components/BotaoTema";
+import Footer from "../components/Footer";
 
 import LogoSiteVermelhoClaro from "../assets/Logos/LogoSiteVermelhoClaro.png"
 
@@ -186,6 +187,7 @@ function GuerraContestado() {
           </p>
         </section>
       </section>
+      <Footer corHeaderFooter="vermelho" corInfoFooter="vermelhoClaro" logo={LogoSiteVermelhoClaro} />
     </div>
   );
 }
