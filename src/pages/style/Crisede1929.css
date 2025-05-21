@@ -1,212 +1,339 @@
 body {
-    background-color: #FFFFFF;
-  }
-  
-  .Carrossel-Container {
-    position: relative;
+  background-color: #FFFFFF;
+}
+
+.Carrossel-ContainerC {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+  width: 100%;
+}
+
+.Botao-CarrosselC {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background-color 0.2s ease;
+}
+
+.Botao-CarrosselC:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.Botao-Carrossel.EsquerdaC {
+  left: 0.7rem;
+}
+
+.Botao-Carrossel.DireitaC {
+  right: 0.7rem;
+}
+
+.BolaC {
+  height: 0.9rem;
+  width: 0.9rem;
+  margin: 0 0.3rem;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #c21408;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.BolaC.activeC {
+  background-color: #880903;
+}
+
+.Api-WikipediaC {
+  background-color: #DFB760;
+  padding: 0.9em;
+  border-radius: 0.4em;
+  width: 45%;
+  height: 40em;
+  box-shadow: 0px 0px 2px 0px #000000;
+
+}
+
+.Titulo-ApiC {
+  background-color: #FFFAE0;
+  color: #8e1b07;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+}
+
+.Texto-ApiC {
+  background-color: #DFB760;
+  color: #ffffff;
+  text-align: center;
+  width: 80%;
+  height: 20em;
+  border-radius: 0.5em;
+  padding: 1.5em;
+}
+
+.Api-WikipediaC {
+  background-color: #DFB760;
+  padding: 0.9em;
+  border-radius: 0.4em;
+  width: 45%;
+  height: 30em;
+  box-shadow: 0px 0px 2px 0px #000000;
+
+}
+
+.Titulo-ApiC {
+  background-color: #FFFAE0;
+  color: #822626;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+}
+
+.Texto-ApiC {
+  background-color: #822626;
+  color: #000000;
+  text-align: center;
+  width: 80%;
+  height: 20em;
+  border-radius: 0.5em;
+  padding: 1.5em;
+}
+
+.Blocao-WikieApiC {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 0.12rem;
+  padding: 0.12rem;
+  flex-wrap: wrap;
+}
+
+.Bloco-OqFoi {
+  background-color: #ebc678;
+  text-align: center;
+  padding: 0.9em;
+  border-radius: 0.4em;
+  width: 45%;
+  height: 30em;
+  box-shadow: 0px 0px 2px 0px #000000;
+
+}
+
+.Titulo-OqFoi {
+  background-color: #8e1b07;
+  color: #ffffff;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+}
+
+.img-Oq {
+  width: 46%;
+  height: 11em;
+  border-radius: 0.5em;
+}
+
+.Texto-OqFoi {
+  background-color: #FFFAE0;
+  color: #8e1b07;
+  text-align: center;
+  width: 85%;
+  border-radius: 0.5em;
+  padding: 0.6rem;
+  text-align: justify;
+  padding: 0.9rem;
+}
+
+.Bloco-Antecedentes {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  padding: 1.2em;
+  background-color: #FCFAF1;
+  border: #AF7E04 solid 0.1em;
+  width: 93%;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 2px 0px #000000;
+}
+
+.Para-Antece {
+  background-color: #fcf2c0;
+  padding: 2rem;
+  border-radius: 0.4em;
+  text-align: justify;
+
+}
+
+.Img-Ante {
+  width: 22vw;
+  height: 24vh;
+  border-radius: 0.2em;
+}
+
+.Imgs-Juntas {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+}
+
+.Titulo-Antecedentes {
+  background-color: #fcf2c0;
+  color: #8e1b07;
+  text-align: center;
+  width: 70%;
+  border-radius: 0.5em;
+}
+
+.Bloco-Bolsa {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  padding: 1.2em;
+  background-color: #FCFAF1;
+  border: #AF7E04 solid 0.1em;
+  width: 93%;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 2px 0px #000000;
+}
+
+.Titulo-Bolsa {
+  background-color: #8e1b07;
+  color: #ffffff;
+  text-align: center;
+  width: 60%;
+  border-radius: 0.5em;
+}
+
+.Para-Bolsa {
+  background-color: #fcf2c0;
+  padding: 2rem;
+  border-radius: 0.4em;
+  text-align: justify;
+}
+
+.Img-Bolsa {
+  width: 22vw;
+  height: 30vh;
+  border-radius: 0.4em;
+}
+
+.Bloco-Img {
+  padding-left: 2%;
+}
+
+.Bloco-New {
+  background-color: #882805;
+  padding: 0.9em;
+  border-radius: 0.4em;
+  width: 30%;
+  margin-left: 2rem;
+  box-shadow: 0px 0px 2px 0px #000000;
+}
+
+.Titulo-New {
+  background-color: #FFFAE0;
+  color: #882805;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+}
+
+.Img-New {
+  width: 22vw;
+  height: 30vh;
+  border-radius: 4em;
+}
+
+.Texto-New {
+  background-color: #FFFAE0;
+  color: #000000;
+  text-align: center;
+  width: 70%;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  text-align: justify;
+}
+
+
+.Bloco-Conse {
+  background-color: #DFB760;
+  padding: 0.9em;
+  border-radius: 0.4em;
+  width: 55%;
+  box-shadow: 0px 0px 2px 0px #000000;
+}
+
+.Titulo-Conse {
+  background-color: #FFFAE0;
+  color: #8e1b07;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+}
+
+.Img-Conse {
+  width: 36vw;
+  height: 37vh;
+}
+
+.Texto-Conse {
+  background-color: #822626;
+  color: #ffffff;
+  text-align: center;
+  width: 80%;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  text-align: justify;
+}
+
+.JuntosC{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 85%;
-    width: 100%;
-  }
-  
-  .Botao-Carrossel {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: none;
-    color: white;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transform: translateY(-50%);
-    transition: background-color 0.2s ease;
-  }
-  
-  .Botao-Carrossel:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  
-  .Botao-Carrossel.Esquerda {
-    left: 0.7rem;
-  }
-  
-  .Botao-Carrossel.Direita {
-    right: 0.7rem;
-  }
-  
-  .Bola {
-    height: 0.9rem;
-    width:  0.9rem;
-    margin: 0 0.3rem;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: #c21408;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .Bola.active {
-    background-color: #880903;
-  }
+  justify-content: center;
+  gap: 2em;
+  padding: 0.13rem;
+  margin-top: 1.5em;
+}
 
-  .Api-WikipediaC{
-    background-color: #DFB760;
-    padding: 0.9em;
-    border-radius: 0.4em;
-    width: 45%;
-    height: 40em;
-    box-shadow: 0px 0px 2px 0px #000000;
-  
-  }
-  
-  .Titulo-ApiC{
-    background-color: #FFFAE0;
-    color: #8e1b07;
-    text-align: center;
-    width: 80%;
-    border-radius: 0.5em;
-  }
-  
-  .Texto-ApiC{
-    background-color: #DFB760;
-    color: #ffffff;
-    text-align: center;
-    width: 80%;
-    height: 20em;
-    border-radius: 0.5em;
-    padding: 1.5em;
-  }
+.Bloco-VideoC{
+    border: solid 2px #882805;
+  padding: 0.9rem;
+  border-radius: 0.5em;
+  width: 60%;
+  box-shadow: 0px 0px 2px 0px #000000;
+}
 
-  .Api-WikipediaC{
-    background-color:#DFB760;
-    padding: 0.9em;
-    border-radius: 0.4em;
-    width: 45%;
-    height: 30em;
-    box-shadow: 0px 0px 2px 0px #000000;
-  
-  }
-  
-  .Titulo-ApiC{
-    background-color: #FFFAE0;
-    color: #AF7E04;
-    text-align: center;
-    width: 80%;
-    border-radius: 0.5em;
-  }
-  
-  .Texto-ApiC{
-    background-color: #822626;
-    color: #000000;
-    text-align: center;
-    width: 80%;
-    height: 20em;
-    border-radius: 0.5em;
-    padding: 1.5em;
-  }
-  
-  .Blocao-WikieApiC{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 0.12rem;
-    padding: 0.12rem;
-    flex-wrap: wrap;
-  }
+.Titulo-VideoC{
+    background-color: #882805;
+  color: #f7eec2;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
 
-  .Bloco-OqFoi{
-    background-color: #ebc678;
-    text-align: center;
-    padding: 0.9em;
-    border-radius: 0.4em;
-    width: 45%;
-    height: 30em;
-    box-shadow: 0px 0px 2px 0px #000000;
-  }
+.Texto-VideoC{
+    background-color: #f7eec2;
+  color: #000000;
+  border-radius: 0.5em;
+  padding: 1.5em;
+  margin-top: 1em;
+  width: 85%;
+  text-align: justify;
+}
 
-  .Titulo-OqFoi{
-    background-color: #8e1b07;
-    color: #ffffff;
-    text-align: center;
-    width: 80%;
-    border-radius: 0.5em;
-  }
+.Bloco-FilmeC{
+      border: solid 2px #882805;
+  padding: 0.9rem;
+  border-radius: 0.5em;
+  width: 70%;
+  box-shadow: 0px 0px 2px 0px #000000;
+}
 
-  .img-Oq{
-    width: 46%;
-    height: 11em;
-    border-radius: 0.5em;
-  }
 
-  .Texto-OqFoi{
-    background-color: #FFFAE0;
-    color: #8e1b07;
-    text-align: center;
-    width: 85%;
-    border-radius: 0.5em;
-    padding: 0.6rem;
-  }
 
-  .Bloco-Antecedentes{
-    display: flex;
-    align-items: center;
-    gap: 10%;
-    padding: 1.2em;
-    background-color: #FCFAF1;
-    border: #AF7E04 solid 0.1em;
-    width: 93%;
-    border-radius: 0.5em;
-    box-shadow: 0px 0px 2px 0px #000000;
-  }
 
-  .Para-Antece{
-    background-color:#fcf2c0 ;
-    padding: 2rem;
-    border-radius: 0.4em;
-  }
-
-  .Img-Ante{
-    width: 22vw;
-    height: 24vh;
-    border-radius: 0.2em;
-  }
-
-  .Imgs-Juntas{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .Titulo-Antecedentes{
-    background-color: #ffe6c9;
-    color: #8e1b07;
-    text-align: center;
-    width: 70%;
-    border-radius: 0.5em;
-  }
-
-  .Bloco-Bolsa{
-    display: flex;
-    align-items: center;
-    gap: 10%;
-    padding: 1.2em;
-    background-color: #FCFAF1;
-    border: #AF7E04 solid 0.1em;
-    width: 93%;
-    border-radius: 0.5em;
-    box-shadow: 0px 0px 2px 0px #000000;
-  }
-
-  .Titulo-Bolsa{
-    background-color: #8e1b07;
-    color: #ffffff;
-    text-align: center;
-    width: 60%;
-    border-radius: 0.5em;
-  }
-
-  .Para-Bolsa{
-    background-color:#fcf2c0 ;
-    padding: 2rem;
-    border-radius: 0.4em;
-  }
