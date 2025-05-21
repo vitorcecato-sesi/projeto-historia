@@ -14,6 +14,7 @@ import ImgFConse from "../assets/Imgs-Crisede1929/Img-Conse.png";
 
 import Navbar from "../components/Navbar";
 import APIWikipedia from "../components/APIWikipedia";
+import BotaoCurtir from "../components/BotaoCurtirTema"
 
 const imagens = [Img1C, Img2C, Img3C, Img4C];
 
@@ -120,6 +121,8 @@ function Crisede29() {
               </p>
             </section>
           </center>
+          <br></br>
+          <BotaoCurtir idSection="Bloco1Crise" tema="Crise de 1929"/>
         </section>
       </section>
 
@@ -153,6 +156,7 @@ function Crisede29() {
               tarde levaria à crise de 1929.
             </p>
           </section>
+          <BotaoCurtir idSection="Bloco2Crise" tema="Crise de 1929"/>
         </section>
 
         <section className="Imgs-Juntas">
@@ -189,6 +193,7 @@ function Crisede29() {
             </p>
           </section>
         </section>
+        <BotaoCurtir idSection="Bloco3Crise" tema="Crise de 1929"/>
       </section>
 
       <br />
@@ -223,6 +228,7 @@ function Crisede29() {
               </center>
             </section>
           </section>
+            <BotaoCurtir idSection="Bloco4Crise" tema="Crise de 1929"/>
         </section>
 
         <section className="Bloco-Conse ">
@@ -256,6 +262,7 @@ function Crisede29() {
               </p>
             </section>
           </center>
+          <BotaoCurtir idSection="Bloco1Crise" tema="Crise de 1929"/>
         </section>
       </section>
 
