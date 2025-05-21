@@ -13,6 +13,7 @@ import ImgFim from "../assets/Imgs-GuerraCanudos/Fim.png";
 
 import APIWikipedia from "../components/APIWikipedia";
 import Navbar from "../components/Navbar";
+import BotaoCurti from "../components/BotaoCurtirTema"
 
 const imagens = [Img1, img2, img3, img4];
  
@@ -92,7 +93,6 @@ function GuerraCanudos() {
 
           </article>
         </section>
-
         <section className="Bloco-Intro">
           <center>
             <section className="Titulo-Intro">
@@ -114,6 +114,8 @@ function GuerraCanudos() {
               </p>
             </section>
           </center>
+          <br></br>
+           <BotaoCurti idSection="Bloco1Canudos" tema="Guerra de Canudos"/>
         </section>
       </section>
       <br></br>
@@ -137,6 +139,7 @@ function GuerraCanudos() {
               </p>
             </section>
           </section>
+          <BotaoCurti idSection="Bloco2Canudos" tema="Guerra de Canudos"/>
         </section>
       </center>
       <br></br>
@@ -161,6 +164,7 @@ function GuerraCanudos() {
               </p>
             </section>
           </section>
+          <BotaoCurti idSection="Bloco3Canudos" tema="Guerra de Canudos"/>
         </section>
       </center>
 
@@ -187,6 +191,7 @@ function GuerraCanudos() {
               </p>
             </section>
           </center>
+          <BotaoCurti idSection="Bloco4Canudos" tema="Guerra de Canudos"/>
         </section>
 
         <section className="Bloco-Fim">
@@ -205,6 +210,7 @@ function GuerraCanudos() {
                 pessoas mortas após a expedição do exército e a vitória do
                 exército com a desculpa de que canudos apoiavam a monarquia.
               </p>
+               <BotaoCurti idSection="Bloco5Canudos" tema="Guerra de Canudos"/>
             </section>
           </center>
         </section>
