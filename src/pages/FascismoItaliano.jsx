@@ -2,6 +2,7 @@ import "./style/FascismoItaliano.css"
 import Navbar from "../components/Navbar"
 import React, { useState } from 'react';
 import { Link } from "react-router-dom"
+import APIWikipedia from "../components/APIWikipedia";
 
 function FascismoItaliano() {
 
@@ -91,9 +92,10 @@ function FascismoItaliano() {
             </section>
             <section className="box-geral">
                 <h1 className="tituloF">CONHEÇA MAIS SOBRE O <span className="verdeTexto">FASCISMO</span> <span className="vermelhoTexto">ITALIANO...</span></h1>
-                <section className="box-infow">
-                    <h2>INFORMAÇÕES WIKIPÉDIA</h2>
-                    <p>INFOS Api aqui</p>
+                <APIWikipedia titulo="Itália Fascista" campoWiki= "wikiFa" imagemID = "imgWiki"/>
+                <h2 className="titulowiki">INFORMAÇÕES DA WIKIPÉDIA</h2>
+                <section className="box-infow" id="wikiFa">
+                    <img src="" id="imgWiki"></img>
                 </section>
 
                 <section id="0" className="box-info">

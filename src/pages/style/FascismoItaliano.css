@@ -30,7 +30,7 @@
     align-items: center;
 }
 
-.box-infow h2 {
+.titulowiki {
     font-size: 1.7em;
     color: #54582f;
     padding: 0.5em;
@@ -38,7 +38,7 @@
 
 .box-infow p {
     font-size: 1.1em;
-    padding: 1em;
+    padding: 2em;
     color: #f8fbca;
 }
 
@@ -275,3 +275,4 @@ transition: 0.2s;
 color: white;
 transition: 0.2s;
 }
+
