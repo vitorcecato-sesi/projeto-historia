@@ -1,4 +1,14 @@
-import './App.css'
+// Hooks
+  import { BrowserRouter, Routes, Route } from 'react-router-dom'
+//.
+
+// Estilização
+  import './App.css'
+//.
+
+// Páginas
+  import RevolucaoRussa from './pages/RevolucaoRussa'
+//.
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Home from './pages/Home'
@@ -12,6 +22,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>} /> 
           <Route path="/1" element={<PrimeiraGuerraMundial />} /> 
+          <Route path='/2' element={<RevolucaoRussa />} />
         </Routes>
       </BrowserRouter>
 
