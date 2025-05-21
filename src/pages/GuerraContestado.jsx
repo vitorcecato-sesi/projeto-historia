@@ -2,6 +2,7 @@ import "./style/GuerraContestado.css";
 import Navbar from "../components/Navbar";
 import APIWikipedia from "../components/APIWikipedia";
 import BotaoCurtirTema from "../components/BotaoCurtirTema";  
+import BotaoTema from "../components/BotaoTema";
 
 import LogoSiteVermelhoClaro from "../assets/Logos/LogoSiteVermelhoClaro.png"
 
@@ -15,6 +16,7 @@ function GuerraContestado() {
           <span id="vermelho"> A GUERRA DE CONTESTADOS </span>
         </h1>
       </section>
+      <BotaoTema/>
       <section className="centro">
         <section className="blocoWiki">
           <h2>Wikipédia</h2>
