@@ -52,11 +52,11 @@ function Home() {
                         </Link>
                     </section>
                     <section className="links">
-                        {/* <Link to="/"> */}
+                        <Link to="/RevolucaoRussa">
                         <img src="https://assets.brasildefato.com.br/2024/09/image_processing20200201-29235-1nfnxod.jpg" />
                         <label>4</label>
                         <p className="textLinks">Revolução Russa</p>
-                        {/* </Link> */}
+                        </Link>
                     </section>
                 </section>
                 <section className="boxLinks3">
