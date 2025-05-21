@@ -8,6 +8,7 @@
 
 // Componentes
     import APIWikipedia from '../components/APIWikipedia'
+    import BotaoCurtirTema from '../components/BotaoCurtirTema'
 //.
 
 // Imagens
@@ -222,7 +223,7 @@ function RevolucaoRussa() {
                     </section>
                     <br />
                     <br />
-                    <section className='bloco7RR'>
+                    <section className='bloco7RR' id='bloco7RR'>
                         <h2>Criação da URSS</h2>
                         <article className='textoImagemRRB7'>
                             <p>
@@ -306,6 +307,7 @@ function RevolucaoRussa() {
                 </section>
                 <br />
                 <br />
+                <BotaoCurtirTema idSection="bloco7RR" />
             </section>
         </>
     )
