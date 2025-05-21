@@ -16,7 +16,6 @@ import Navbar from "../components/Navbar"
 
 const imagens = [Img1, img2, img3, img4];
 
-// ...imports permanecem os mesmos
 
 function GuerraCanudos() {
   const [index, setIndex] = useState(0);

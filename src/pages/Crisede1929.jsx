@@ -240,8 +240,6 @@ function Crisede29() {
         </article>
       </section>
 
-      <br />
-
       <hr />
 
       <section className="JuntosC">

@@ -99,6 +99,7 @@ body {
   height: 36em;
   border-radius: 0.5em;
   padding: 1em;
+
 }
 
 .Blocao-WikieApiC {
@@ -327,15 +328,12 @@ body {
   border: solid 2px #882805;
   padding: 0.9rem;
   border-radius: 0.5em;
-  width: 70%;
+  width: 60%;
   box-shadow: 0px 0px 2px 0px #000000;
 }
 
-.Api-WikipediaC,.Bloco-OqFoi,.Bloco-Antecedentes,.Bloco-Bolsa,.Bloco-New,.Bloco-Conse,.Bloco-VideoC,.Bloco-Filme:hover{
- box-shadow: 0px 0px 5px 0px #000000; 
-}
 
-/* Container geral que agrupa todos os blocos com efeito
+ /* Container geral que agrupa todos os blocos com efeito */
 .container-efeito-blur {
   display: flex;
   flex-direction: column;
@@ -343,22 +341,22 @@ body {
   transition: all 0.3s ease;
 }
 
-Blocos com destaque quando passar o mouse 
+/* Blocos com destaque quando passar o mouse  */
 .bloco-destacavel {
   transition: all 0.3s ease;
 }
- Aplica blur e reduz opacidade em todos quando qualquer um for focado 
+ /* Aplica blur e reduz opacidade em todos quando qualquer um for focado  */
 .container-efeito-blur:hover .bloco-destacavel {
   filter: blur(2px);
-  opacity: 0.8;
+  opacity: 3;
   transform: scale(1);
   z-index: 0;
 }
 
- Remove blur e dá zoom no que estiver com o mouse 
+ /* Remove blur e dá zoom no que estiver com o mouse  */
 .container-efeito-blur .bloco-destacavel:hover {
   filter: none;
   opacity: 1;
   transform: scale(1.03);
   z-index: 1;
-} */
+} 
