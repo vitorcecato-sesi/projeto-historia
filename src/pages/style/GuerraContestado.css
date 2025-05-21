@@ -1,4 +1,5 @@
 .blocoWiki {
+    flex-direction: column;
     margin-top: 4em;
     margin-bottom: 4em;
     display: flex;
@@ -8,6 +9,7 @@
     background-color: #CB4D50;
     padding: 2em;
     border-radius: 1em;
+    
    
 }
 .centro{
@@ -17,6 +19,7 @@ justify-content: center;
 align-items: center;
 gap: 5em;
 }
+
 
 
 
@@ -53,10 +56,16 @@ gap: 5em;
     color: #FFFFFF
 }
 .blocoInfo2{
+    color: white;
     display: flex;
     flex-direction: row;
 width: 50vw;
 gap: 4em;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #imgGC{
     width: 30vw;
@@ -64,8 +73,11 @@ gap: 4em;
     border-radius: 2vw;
     margin-top: 2em;
     margin-bottom: 2em;
+    border: 3px solid black;
 }
 .blocoInfo{
+    color: white;
+    border: 0.5em solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,24 +89,50 @@ gap: 4em;
     padding: 2em;
     
 }
+.wiki{
+    text-align: justify;
+}
+
 
 .blocoVideo{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vw;
+    width: 40vw;
+    padding: 2em;
     background-color: #BD0A0A;
-    
+    text-align: justify;
+    gap: 2em;
+    justify-content: flex-start;
+    margin-right: 2em;
+    margin-left: 2em;
+    border-radius: 2em;
+    margin-top: 2em;
+     
 }
+
+.video{
+    width: 30vw;
+    height: 40vh;
+    border-radius: 2vw;
+ transition: transform 0.3s ease;
+ box-shadow: 1px 1px 5px rgba(0.5, 0.5, 0.5, 0.5);
+     
+   
+}
+
+.video:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;}
  
 
-  .blocoLado{
+  .blocoLado {
     display: flex;
     flex-direction: row;
-    gap: 2em;
-
-  }
+    gap: 2em; /* Mantém o espaçamento entre os itens */
+    justify-content: space-between; /* Alinha os itens com espaço entre eles */
+}
   @media (max-width: 768px) {
     .blocoLado {
         flex-direction: column;
@@ -111,6 +149,7 @@ gap: 4em;
     .video{
         width: 40vw;
         height: 20vh;
+      
     }
 }
 @media (max-width: 480px) {
@@ -127,7 +166,15 @@ gap: 4em;
         height: 0vh;
     }
     .video{
-        width: 20vw;
+        width: 40vw;
         height: 30vh;
     }
+}
+.imagemAPI{
+    width: 30vw;
+    height: 30vh;
+    border-radius: 2vw;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 3px solid black;
 }

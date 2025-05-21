@@ -11,6 +11,9 @@ import ImgConflito from "../assets/Imgs-GuerraCanudos/Conflito.png";
 import ImgANtonio from "../assets/Imgs-GuerraCanudos/Antonio.png";
 import ImgFim from "../assets/Imgs-GuerraCanudos/Fim.png";
 
+import Navbar from "../components/Navbar";
+import LogoSiteLaranja from "../assets/Logos/LogoSiteLaranja.png"
+
 import APIWikipedia from "../components/APIWikipedia";
 import Navbar from "../components/Navbar";
 import BotaoCurti from "../components/BotaoCurtirTema"
@@ -23,7 +26,8 @@ function GuerraCanudos() {
 
   return (
     <>
-      <Navbar />
+      <Navbarr backgroundId="navbarGuerraDeCanudos" logo={LogoSiteLaranja} />
+
       <section className="Bloco-Carrossel">
         <section className="Carrossel-Container">
           <button

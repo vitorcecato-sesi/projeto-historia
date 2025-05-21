@@ -13,6 +13,8 @@ import ImgNew from "../assets/Imgs-Crisede1929/Img-New.png";
 import ImgFConse from "../assets/Imgs-Crisede1929/Img-Conse.png";
 
 import Navbar from "../components/Navbar";
+import LogoSiteVermelhoEscuro from "../assets/Logos/LogoSiteVermelhoEscuro.png"
+
 import APIWikipedia from "../components/APIWikipedia";
 import BotaoCurtir from "../components/BotaoCurtirTema"
 import BotaoTema from "../components/BotaoTema"
@@ -24,7 +26,7 @@ function Crisede29() {
 
   return (
     <>
-      <Navbar />
+      <Navbar backgroundId="navbarCriseDe1929" logo={LogoSiteVermelhoEscuro} />
       <section className="Bloco-CarrosselC">
         <section className="Carrossel-ContainerC">
           <button
