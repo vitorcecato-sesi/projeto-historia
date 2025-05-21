@@ -593,3 +593,115 @@
     outline: none;  /* Remove o contorno padrão que aparece ao focar no botão */
     box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
   }
+
+  @media only screen and (max-width: 850px) {
+    .bodyRR {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .APIWikiRR {
+        width: 60vw;
+        padding: 2em 5em;
+    }
+
+    .bloco1RR, .bloco2RR, .bloco3RR, .bloco4RR, .bloco5RR, .bloco6RR, .bloco7RR, .bloco8RR, .bloco9RR {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloco1RR article p {
+        width: 60vw;
+    }
+
+    .textoImagemRR {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoImagemRR p {
+        width: 60vw;
+    }
+
+    .textoImagemRR img {
+        width: 60vw;
+    }
+
+    .botaoOcultarPNRR {
+        width: 10vw;
+        height: 10vh;
+    }
+
+    .textoImagemRRB6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoImagemRRB6 p {
+        width: 60vw;
+    }
+
+    .textoImagemRRB6 img {
+        width: 60vw;
+    }
+
+    .textoImagemRRB7 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoImagemRRB7 p {
+        width: 60vw;
+    }
+
+    .textoImagemRRB7 img {
+        width: 60vw;
+    }
+
+    .textoImagemRRB8 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoImagemRRB8 p {
+        width: 60vw;
+    }
+
+    .textoImagemRRB8 img {
+        width: 60vw;
+    }
+
+    .videoDescRR {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videoDescRR p {
+        width: 60vw;
+    }
+
+    .videoDescRR iframe {
+        width: 60vw;
+        height: 40vh;
+        border-radius: 1em;
+    }
+
+  }
+
+    @media only screen and (max-width: 750px) {
+        
+        .principaisNomesRR {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 50vw;
+            gap: 1em;
+        }
+
+        .botaoPNRR {
+            width: 15vw;
+            height: 20vh;
+        }
+        
+    }
