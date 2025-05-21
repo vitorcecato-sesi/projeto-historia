@@ -47,6 +47,12 @@
     color: #A1B6FF;
 }
 
+.blocoBotaoTemaRR{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .wikiRR {
     display: flex;
     flex-direction: column;

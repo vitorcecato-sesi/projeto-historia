@@ -8,7 +8,8 @@
 
 // Componentes
     import APIWikipedia from '../components/APIWikipedia'
-    import Navbar from "../components/Navbar"
+    import BotaoCurtirTema from '../components/BotaoCurtirTema'
+    import BotaoTema from '../components/BotaoTema'
 //.
 
 // Imagens
@@ -90,6 +91,9 @@ function RevolucaoRussa() {
                 <section className='bannerRR'>
                     <h1 className='bannerTextRR'>CONHEÇA MAIS SOBRE A <br /><span id='blueRR'>REVOLUÇÃO RUSSA</span></h1>
                 </section>
+                <section className='blocoBotaoTemaRR'>
+                    <BotaoTema />
+                </section>
                 <section className='wikiRR'>
                     <h1>Informações Wikipédia</h1>
                     <section id='APIWIKI' className='APIWikiRR'>
@@ -115,6 +119,7 @@ function RevolucaoRussa() {
                                 A Revolução Russa ocorreu num contexto de crise no Império Russo, com desigualdade social, pobreza entre camponeses e trabalhadores, e um governo czarista autoritário. A Primeira Guerra Mundial piorou a situação, causando perdas econômicas e humanas. Em 1917, o czar Nicolau II abdicou, dando lugar a um governo provisório. O governo não resolveu os problemas centrais, o que levou os bolcheviques a tomar o poder em outubro de 1917, iniciando a Revolução de Outubro e estabelecendo um regime socialista.
                             </p>
                         </article>
+                        <BotaoCurtirTema idSection="bloco1RR" tema="Revolução Russa"/>
                     </section>
                     <br />
                     <br />
@@ -131,6 +136,7 @@ function RevolucaoRussa() {
                             </p>
                             <img src="https://assets.brasildefato.com.br/2024/09/image_processing20220519-2501-ogtso1.jpeg" alt="Imagem Revolução Russa" />
                         </article>
+                        <BotaoCurtirTema idSection="bloco2RR" tema="Revolução Russa"/>
                     </section>
                     <br />
                     <br />
@@ -167,6 +173,7 @@ function RevolucaoRussa() {
                                 </button>
                                 <h3>Stalin</h3>
                             </section>
+                            <BotaoCurtirTema idSection="bloco3RR" tema="Revolução Russa"/>
                         </section>
                         <section className='blocoInfoBotaoPNRR'>
                             <section id='infoPNRR' className=''>
@@ -192,6 +199,7 @@ function RevolucaoRussa() {
                             </p>
                             <img src="https://jornal.usp.br/wp-content/uploads/20171031_03_Rev-russa.jpg" alt="" />
                         </article>
+                        <BotaoCurtirTema idSection="bloco4RR" tema="Revolução Russa"/>
                     </section>
                     <br />
                     <br />
@@ -209,6 +217,7 @@ function RevolucaoRussa() {
                                 Em 25 de outubro (7 de novembro no calendário atual), os revolucionários tomaram o poder em Petrogrado, derrubando o Governo Provisório de Aleksandr Kerenski quase sem resistência. Lenin assumiu a liderança do novo governo e iniciou mudanças radicais, como a saída da guerra, a estatização da economia e a redistribuição de terras. Após vencerem a Guerra Civil contra forças contra revolucionárias, os bolcheviques fundaram a União Soviética em 1922, inaugurando uma nova era política que influenciaria o mundo inteiro.
                             </p>
                         </article>
+                        <BotaoCurtirTema idSection="bloco5RR" tema="Revolução Russa"/>
                     </section>
                     <br />
                     <br />
@@ -222,6 +231,7 @@ function RevolucaoRussa() {
                                 A guerra se finalizou com a derrota do Exército Branco em 1921, onde possibilitou a consolidação dos bolcheviques no poder do território russo. A guerra deixou um saldo de destruição grande e resultou na morte de, aproximadamente, 10 milhões de pessoas.
                             </p>
                         </article>
+                        <BotaoCurtirTema idSection="bloco6RR" tema="Revolução Russa"/>
                     </section>
                     <br />
                     <br />
@@ -237,6 +247,7 @@ function RevolucaoRussa() {
                             </p>
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4YIw8xOvOz6w3FWxtyg9kVyiRLYikFTqyfA&s" alt="Imagem da Revolução Russa" />
                         </article>
+                        <BotaoCurtirTema idSection="bloco7RR" tema="Revolução Russa"/>
                     </section>
                     <br />
                     <br />
@@ -252,6 +263,7 @@ function RevolucaoRussa() {
                                 Após a Segunda Guerra Mundial, a URSS emergiu como superpotência, causando a Guerra Fria e divisões na Europa.
                             </p>
                         </article>
+                        <BotaoCurtirTema idSection="bloco8RR" tema="Revolução Russa"/>
                     </section>
                     <br />
                     <br />
@@ -265,6 +277,7 @@ function RevolucaoRussa() {
                                 Os líderes bolcheviques invadiram o Palácio de Inverno em 7 de novembro de 1917, que era a sede do governo provisório. Apesar da resistência, a invasão não resultou em muita violência.
                             </li>
                         </ol>
+                        <BotaoCurtirTema idSection="bloco9RR" tema="Revolução Russa"/>
                     </section>
                     <br />
                     <br />
@@ -309,7 +322,6 @@ function RevolucaoRussa() {
                 </section>
                 <br />
                 <br />
-                <BotaoCurtirTema idSection="bloco7RR" tema="Revolução Russa"/>
             </section>
         </>
     )
