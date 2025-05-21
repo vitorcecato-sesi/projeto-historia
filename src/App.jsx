@@ -20,18 +20,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home/>} /> 
-          <Route path="/PrimeiraGuerraMundial" element={<PrimeiraGuerraMundial />} /> 
-          <Route path='/RevolucaoRussa' element={<RevolucaoRussa />} />
-          <Route path='/GuerraDeCanudos' element={<GuerraDeCanudos />} />
-          <Route path='/GuerraDoContestado' element={<GuerraDoContestado />} />
-          <Route path='/RevolucaoDe1930' element={<RevolucaoDe1930 />} />
-          <Route path='/FascismoItaliano' element={<FascismoItalino />} />
-          {/* <Route path='/CriseDe1929' element={<CriseDe1929 />} /> */}
-        </Routes>
-      </BrowserRouter>
+   <RevolucaoRussa/>
 
     </>
   )
