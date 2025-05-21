@@ -9,11 +9,8 @@
 // Componentes
     import APIWikipedia from '../components/APIWikipedia'
     import BotaoCurtirTema from '../components/BotaoCurtirTema'
-<<<<<<< HEAD
     import Navbar from "../components/Navbar"
-=======
     import BotaoTema from '../components/BotaoTema'
->>>>>>> origin/BotaoTema
 //.
 
 // Imagens
