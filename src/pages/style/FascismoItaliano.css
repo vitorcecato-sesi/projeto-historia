@@ -28,12 +28,27 @@
     background-color: #bec092;
     width: 70vw;
     align-items: center;
+     box-shadow: #86895d 1px 1px 5px 1px;
+    transition: 0.5s;
+}
+
+.box-infow:hover {
+      transform: scale(1.02);
+    transition: 0.5s;
+    box-shadow: #272b00 1px 1px 10px 1px;
+    cursor: pointer;
 }
 
 .titulowiki {
     font-size: 1.7em;
     color: #54582f;
     padding: 0.5em;
+}
+
+.imgWiki {
+  width: 20vw;
+  height: auto;
+  border-radius: 1em;
 }
 
 .box-infow p {
