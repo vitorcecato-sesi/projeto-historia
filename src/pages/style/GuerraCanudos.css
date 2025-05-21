@@ -10,7 +10,7 @@ body {
   height: 85%;
   width: 100%;
 }
-
+ 
 .Imagem-Carrossel {
   width: 100%;
   height: 100%;
@@ -60,17 +60,16 @@ body {
   background-color: #882805;
   padding: 0.9em;
   border-radius: 0.4em;
-  width: 65%;
-  height: 30em;
+  width: 65vw;
   box-shadow: 0px 0px 2px 0px #000000;
-
 }
 
 .ImgApi {
-  width: 25vw;
+  width: 20vw;
   height: 25vh;
   border-radius: 0.5em;
-  margin-top: 25%;
+  padding-top: 4em;
+  padding-right: 1em;
 }
 
 .Wiki-Api {
@@ -80,12 +79,11 @@ body {
   justify-content: space-between;
 }
 
-
 .Titulo-Api {
   background-color: #FFFAE0;
   color: #AF7E04;
   text-align: center;
-  width: 80%;
+  width: 60vw;
   border-radius: 0.5em;
 }
 
@@ -93,8 +91,8 @@ body {
   background-color: #FBB623;
   color: #000000;
   text-align: center;
-  width: 55%;
-  height: 20em;
+  height: auto;
+  overflow: auto;
   border-radius: 0.5em;
   padding: 1.5em;
   text-align: justify;
@@ -105,7 +103,7 @@ body {
   text-align: center;
   padding: 0.9em;
   border-radius: 0.4em;
-  width: 25%;
+  width: 25vw;
   height: 30em;
   box-shadow: 0px 0px 2px 0px #000000;
 }
@@ -128,13 +126,12 @@ body {
   background-color: #882805;
   color: #FBB623;
   text-align: center;
-  width: 80%;
+  width: 20vw;
   border-radius: 0.5em;
 }
 
 .img-In {
-  width: 45%;
-  height: 43%;
+  width: 14vw;
   border-radius: 0.5em;
 }
 
@@ -143,7 +140,7 @@ body {
   background-color: #882805;
   color: #FBB623;
   text-align: center;
-  width: 80%;
+  width: 20vw;
   border-radius: 0.5em;
   padding: 1.5em;
   text-align: justify;
@@ -152,11 +149,10 @@ body {
 .Bloco-OqInflu {
   display: flex;
   align-items: center;
-  gap: 10%;
+  gap: 5em;
   padding: 1.2em;
   background-color: #FCFAF1;
   border: #AF7E04 solid 0.1em;
-  width: 93%;
   border-radius: 0.5em;
   box-shadow: 0px 0px 2px 0px #000000;
 }
@@ -171,16 +167,14 @@ body {
   background-color: #fcf2c2;
   color: #AF7E04;
   text-align: center;
-  width: 80%;
   border-radius: 0.5em;
-
 }
 
 .Conflito {
   background-color: #fcf2c3;
   color: #AF7E04;
   text-align: center;
-  width: 80%;
+  width: 80vw;
   border-radius: 0.5em;
   border: #AF7E04 solid 0.1em;
   box-shadow: 0px 0px 2px 0px #000000;
@@ -190,7 +184,7 @@ body {
   background-color: #882805;
   color: #FBB623;
   text-align: center;
-  width: 80%;
+  width: 40vw;
   border-radius: 0.5em;
 }
 
@@ -203,7 +197,7 @@ body {
   background-color: #882805;
   padding: 0.9em;
   border-radius: 0.4em;
-  width: 40%;
+  width: 40vw;
   margin-left: 2em;
   box-shadow: 0px 0px 2px 0px #000000;
 }
@@ -212,7 +206,7 @@ body {
   background-color: #FFFAE0;
   color: #AF7E04;
   text-align: center;
-  width: 80%;
+  width: 35vw;
   border-radius: 0.5em;
 }
 
@@ -220,7 +214,7 @@ body {
   background-color: #FBB623;
   color: #000000;
   text-align: center;
-  width: 80%;
+  width: 30vw;
   border-radius: 0.5em;
   padding: 1.5em;
   text-align: justify;
@@ -229,11 +223,11 @@ body {
 .Bloco-Fim {
   display: flex;
   align-items: center;
-  gap: 10%;
+  gap: 10em;
   padding: 1.2em;
   background-color: #FCFAF1;
   border: #AF7E04 solid 0.1em;
-  width: 40%;
+  width: 40vw;
   height: 33.5em;
   border-radius: 0.5em;
   box-shadow: 0px 0px 2px 0px #000000;
@@ -241,8 +235,7 @@ body {
 }
 
 .ImgFim {
-  width: 55%;
-  height: 20%;
+  width: 24vw;
   border-radius: 0.5em;
 }
 
@@ -250,7 +243,7 @@ body {
   background-color: #fcf2c2;
   color: #AF7E04;
   text-align: center;
-  width: 75%;
+  width: 30vw;
   border-radius: 0.5em;
 }
 
@@ -258,7 +251,6 @@ body {
   background-color: #882805;
   color: #FBB623;
   text-align: center;
-  width: 75%;
   border-radius: 0.5em;
   padding: 1.5em;
   text-align: justify;
@@ -283,7 +275,7 @@ body {
   border: solid 2px #882805;
   padding: 0.9rem;
   border-radius: 0.5em;
-  width: 60%;
+  width: 50vw;
   box-shadow: 0px 0px 2px 0px #000000;
 
 }
@@ -292,7 +284,7 @@ body {
   border: solid 2px #882805;
   padding: 0.9rem;
   border-radius: 0.5em;
-  width: 70%;
+  width: 50vw;
   box-shadow: 0px 0px 2px 0px #000000;
 
 }
@@ -311,7 +303,7 @@ body {
   border-radius: 0.5em;
   padding: 1.5em;
   margin-top: 1em;
-  width: 85%;
+  width: 36vw;
   text-align: justify;
 }
 
@@ -334,3 +326,103 @@ iframe {
   font-size: 0.7rem;
 }
 
+@media (max-width: 1200px) {
+  .Api-Wikipedia{
+    height: 85vh;
+  }
+
+  .Texto-Api{
+    height: 60vh;
+  }
+}
+
+@media (max-width: 950px) {
+  .Blocao-WikieApi{
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+  }
+
+  .Api-Wikipedia{
+    width: 85vw;
+  }
+
+  .Bloco-Intro{
+    width: 60vw;
+  }
+
+  .img-In{
+    width: 30vw;
+  }
+
+  .Texto-Intro{
+    width: 40vw;
+  }
+
+  .Texto-Api{
+    width: 70vh;
+  }
+
+  .ImgApi{
+    width: 30vw;
+    height: 30vh;
+  }
+
+  .Juntos{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Bloco-Video{
+    width: 80vw;
+  }
+
+  .Texto-Video{
+    width: 53vw;
+  }
+
+  .Bloco-Filme{
+    width: 80vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .Img-OqInflu{
+    width: 40vw;
+    padding-right: -4em;
+  }
+
+  .Bloco-OqInflu{
+    gap: -5em;
+  }
+
+  .Texto-OqInflu{
+    width: 70vw;
+  }
+
+  .Blocos-AnteFim{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Bloco-Anto{
+    width: 80vw;
+  }
+
+  .Texto-Anto{
+    width: 60vw;
+  }
+
+  .Bloco-Fim{
+    width: 70vw;
+    height: 70vh;
+  }
+
+  .ImgFim{
+    width: 40vw;
+  }
+
+  .Texto-Intro{
+    height: 27vw;
+  }
+}

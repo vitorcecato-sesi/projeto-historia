@@ -15,7 +15,7 @@ import APIWikipedia from "../components/APIWikipedia";
 import Navbar from "../components/Navbar";
 
 const imagens = [Img1, img2, img3, img4];
-
+ 
 function GuerraCanudos() {
   const [index, setIndex] = useState(0);
 
@@ -80,7 +80,7 @@ function GuerraCanudos() {
           </section>
         
           <section className="Texto-Api">
-            <section className="textwiki" id="wikiGCa">
+            <section className="textwiki" id="wikiGCa"> </section>
               <APIWikipedia
                 titulo="Guerra de Canudos"
                 campoWiki="wikiGCa"
@@ -88,7 +88,6 @@ function GuerraCanudos() {
                 imagemAlt="Nome"
                 imagemClass="ImgApi"
               />
-            </section>
           </section>
 
           </article>
@@ -224,7 +223,7 @@ function GuerraCanudos() {
             </center>
             <center>
               <iframe
-                width="540"
+                width="450"
                 height="295"
                 src="https://www.youtube.com/embed/yWWOgDjYuwc?si=QWxDuS0fniiiKhjb"
                 title="YouTube video player"
@@ -252,9 +251,9 @@ function GuerraCanudos() {
               </h2>
             </center>
             <center>
-              <iframe
-                width="560"
-                height="315"
+              <iframe 
+                width="450"
+                height="295"
                 src="https://www.youtube.com/embed/P4OYhj7Io0E?si=ews4oBQZWYqR7BRp"
                 title="YouTube video player"
                 frameborder="0"
