@@ -307,7 +307,7 @@ function RevolucaoRussa() {
                 </section>
                 <br />
                 <br />
-                <BotaoCurtirTema idSection="bloco7RR" />
+                <BotaoCurtirTema idSection="bloco7RR" tema="Revolução Russa"/>
             </section>
         </>
     )
