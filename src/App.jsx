@@ -2,10 +2,6 @@
   import { BrowserRouter, Routes, Route } from 'react-router-dom'
 //.
 
-import RevolucaoDe1930 from './pages/RevolucaoDe1930'
-import SobreNos from './pages/SobreNos'
-import Home from "./pages/Home"
-import './App.css'
 // Estilização
   import './App.css'
 //.
@@ -26,8 +22,14 @@ function App() {
     <>
     <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/Revolução-de-1930' element={<RevolucaoDe1930/>}/>         
+          <Route path='/' element={<Home/>} /> 
+          <Route path="/PrimeiraGuerraMundial" element={<PrimeiraGuerraMundial />} /> 
+          <Route path='/RevolucaoRussa' element={<RevolucaoRussa />} />
+          <Route path='/GuerraDeCanudos' element={<GuerraDeCanudos />} />
+          <Route path='/GuerraDoContestado' element={<GuerraDoContestado />} />
+          <Route path='/RevolucaoDe1930' element={<RevolucaoDe1930 />} />
+          <Route path='/FascismoItaliano' element={<FascismoItalino />} />
+          {/* <Route path='/CriseDe1929' element={<CriseDe1929 />} /> */}
         </Routes>
       </BrowserRouter>
 
