@@ -18,7 +18,7 @@ function App() {
           <Route path='/Crise-1929' element={<Crisede29/>}/>       
         </Routes>
       </BrowserRouter>
-   <RevolucaoRussa/>
+  
 
     </>
   )
