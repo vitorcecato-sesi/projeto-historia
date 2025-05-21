@@ -8,6 +8,7 @@
 
 // Páginas
   import RevolucaoRussa from './pages/RevolucaoRussa'
+  import Rankings from './pages/Rankings'
 //.
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<RevolucaoRussa />} />
+          <Route path='/rank' element={<Rankings />} />
         </Routes>
       </BrowserRouter>
     </>
