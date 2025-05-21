@@ -64,8 +64,10 @@ function Crisede29() {
       <br />
       <br />
 
+      <section className="container-efeito-blur">
+
       <section className="Blocao-WikieApiC">
-        <article className="Api-WikipediaC">
+        <article className="Api-WikipediaC bloco-destacavel">
           <center>
           <header className="Titulo-ApiC" >
             <h2>Informações da Wikipédia</h2>
@@ -79,7 +81,7 @@ function Crisede29() {
           </div>
         </article>
 
-        <article className="Bloco-OqFoi">
+        <article className="Bloco-OqFoi bloco-destacavel">
           <center>
           <header className="Titulo-OqFoi" >
             <h2>O que foi?</h2>
@@ -108,7 +110,7 @@ function Crisede29() {
 
       <br />
 
-      <article className="Bloco-Antecedentes">
+      <article className="Bloco-Antecedentes bloco-destacavel">
         <div className="Imgs-Juntas">
           <img className="Img-Ante" src={ImgAnte} alt="Antecedentes 1" />
           <br />
@@ -147,7 +149,7 @@ function Crisede29() {
 
       <br />
 
-      <article className="Bloco-Bolsa" >
+      <article className="Bloco-Bolsa bloco-destacavel" >
         <div className="Bloco-Img">
           <img className="Img-Bolsa" src={ImgBolsa} alt="Bolsa de Valores" />
         </div>
@@ -177,8 +179,8 @@ function Crisede29() {
       <br />
       <br />
   
-      <section className="Blocos-AnteFim">
-        <article className="Bloco-New" >
+      <section className="Blocos-AnteFim ">
+        <article className="Bloco-New bloco-destacavel" >
           <br />
           <center>
           <img className="Img-New" src={ImgNew} alt="New Deal" />
@@ -204,7 +206,7 @@ function Crisede29() {
         
       
 
-        <article className="Bloco-Conse" >
+        <article className="Bloco-Conse bloco-destacavel" >
           <center>
           <header className="Titulo-Conse">
             <h2>Consequências</h2>
@@ -243,7 +245,7 @@ function Crisede29() {
       <hr />
 
       <section className="JuntosC">
-        <article className="Bloco-VideoC" style={{ textAlign: "center" }}>
+        <article className="Bloco-VideoC bloco-destacavel" style={{ textAlign: 'center' }}>
           <header>
             <h2 className="Titulo-VideoC">
               Vídeo explicativo sobre a Crise de 1929
@@ -275,7 +277,7 @@ function Crisede29() {
           </div>
         </article>
 
-        <article className="Bloco-FilmeC" style={{ textAlign: "center" }}>
+        <article className="Bloco-FilmeC bloco-destacavel" style={{ textAlign: 'center' }}>
           <header>
             <h2 className="Titulo-VideoC">
               Filme explicativo sobre a Crise de 1929
@@ -311,6 +313,7 @@ function Crisede29() {
             </p>
           </div>
         </article>
+      </section>
       </section>
     </>
   );

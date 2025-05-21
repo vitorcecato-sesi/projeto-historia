@@ -259,7 +259,7 @@ body {
 }
 
 
-.Bloco-Conse {
+.Bloco-Conse{
   background-color: #DFB760;
   padding: 0.9em;
   border-radius: 0.4em;
@@ -334,3 +334,31 @@ body {
 .Api-WikipediaC,.Bloco-OqFoi,.Bloco-Antecedentes,.Bloco-Bolsa,.Bloco-New,.Bloco-Conse,.Bloco-VideoC,.Bloco-Filme:hover{
  box-shadow: 0px 0px 5px 0px #000000; 
 }
+
+/* Container geral que agrupa todos os blocos com efeito
+.container-efeito-blur {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  transition: all 0.3s ease;
+}
+
+Blocos com destaque quando passar o mouse 
+.bloco-destacavel {
+  transition: all 0.3s ease;
+}
+ Aplica blur e reduz opacidade em todos quando qualquer um for focado 
+.container-efeito-blur:hover .bloco-destacavel {
+  filter: blur(2px);
+  opacity: 0.8;
+  transform: scale(1);
+  z-index: 0;
+}
+
+ Remove blur e dá zoom no que estiver com o mouse 
+.container-efeito-blur .bloco-destacavel:hover {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.03);
+  z-index: 1;
+} */
