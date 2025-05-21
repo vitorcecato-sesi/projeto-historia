@@ -1,8 +1,15 @@
-import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Crisede29 from './pages/Crisede1929'
-import GuerraCanudos from './pages/GuerraCanudos'
-import Home from './pages/Home'
+// Hooks
+  import { BrowserRouter, Routes, Route } from 'react-router-dom'
+//.
+
+// Estilização
+  import './App.css'
+//.
+
+// Páginas
+  import RevolucaoRussa from './pages/RevolucaoRussa'
+  import Rankings from './pages/Rankings'
+//.
 
 function App() {
 
@@ -11,9 +18,8 @@ function App() {
          
     <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/Guerra-Canudos' element={<GuerraCanudos/>}/>   
-          <Route path='/Crise-1929' element={<Crisede29/>}/>       
+          <Route path='/' element={<RevolucaoRussa />} />
+          <Route path='/rank' element={<Rankings />} />
         </Routes>
       </BrowserRouter>
   
