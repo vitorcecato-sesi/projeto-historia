@@ -21,11 +21,6 @@ function App() {
 
   return (
     <>
-<<<<<<<<< Temporary merge branch 1
-
-    <Home />
-
-=========
     <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} /> 
