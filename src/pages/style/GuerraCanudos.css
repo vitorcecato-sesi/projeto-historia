@@ -151,7 +151,6 @@ body {
   align-items: center;
   gap: 5em;
   padding: 1.2em;
-  background-color: #FCFAF1;
   border: #AF7E04 solid 0.1em;
   border-radius: 0.5em;
   box-shadow: 0px 0px 2px 0px #000000;
@@ -171,7 +170,6 @@ body {
 }
 
 .Conflito {
-  background-color: #fcf2c3;
   color: #AF7E04;
   text-align: center;
   width: 80vw;
@@ -225,10 +223,9 @@ body {
   align-items: center;
   gap: 10em;
   padding: 1.2em;
-  background-color: #FCFAF1;
   border: #AF7E04 solid 0.1em;
   width: 40vw;
-  height: 33.5em;
+  height: 36em;
   border-radius: 0.5em;
   box-shadow: 0px 0px 2px 0px #000000;
 

@@ -9,6 +9,8 @@
 // Páginas
   import RevolucaoRussa from './pages/RevolucaoRussa'
   import Rankings from './pages/Rankings'
+  import Crisede29 from './pages/Crisede1929'
+import GuerraCanudos from './pages/GuerraCanudos'
 //.
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Routes>
           <Route path='/' element={<RevolucaoRussa />} />
           <Route path='/rank' element={<Rankings />} />
+          <Route path='/Guerra-de-Canudos' element={<GuerraCanudos />} />
+          <Route path='/Crise-de-1929' element={<Crisede29/>}/>
         </Routes>
       </BrowserRouter>
   

@@ -14,6 +14,7 @@ import ImgFim from "../assets/Imgs-GuerraCanudos/Fim.png";
 import APIWikipedia from "../components/APIWikipedia";
 import Navbar from "../components/Navbar";
 import BotaoCurti from "../components/BotaoCurtirTema"
+import BotaoTema from "../components/BotaoTema"
 
 const imagens = [Img1, img2, img3, img4];
  
@@ -64,6 +65,9 @@ function GuerraCanudos() {
 
       <br></br>
       <br></br>
+
+      <BotaoTema/>
+      <br/>
 
       <section className="Blocao-WikieApi">
         <section className="Api-Wikipedia">
@@ -217,7 +221,6 @@ function GuerraCanudos() {
       </section>
       <br></br>
 
-      <hr></hr>
       <br></br>
       <section className="cor">
         <section className="Juntos">

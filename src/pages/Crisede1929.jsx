@@ -15,6 +15,7 @@ import ImgFConse from "../assets/Imgs-Crisede1929/Img-Conse.png";
 import Navbar from "../components/Navbar";
 import APIWikipedia from "../components/APIWikipedia";
 import BotaoCurtir from "../components/BotaoCurtirTema"
+import BotaoTema from "../components/BotaoTema"
 
 const imagens = [Img1C, Img2C, Img3C, Img4C];
 
@@ -64,6 +65,9 @@ function Crisede29() {
 
       <br />
       <br />
+
+      <BotaoTema/>
+      <br></br>
 
       <section className="Blocao-WikieApiC">
         <section className="Api-WikipediaC ">
@@ -192,9 +196,12 @@ function Crisede29() {
               mercado financeiro.
             </p>
           </section>
+          
         </section>
-        <BotaoCurtir idSection="Bloco3Crise" tema="Crise de 1929"/>
+       <BotaoCurtir idSection="Bloco3Crise" tema="Crise de 1929"/>
+
       </section>
+  
 
       <br />
       <br />
@@ -266,7 +273,6 @@ function Crisede29() {
         </section>
       </section>
 
-      <hr />
 
       <section className="JuntosC">
         <section className="Bloco-VideoC" style={{ textAlign: "center" }}>
@@ -308,7 +314,7 @@ function Crisede29() {
               Filme explicativo sobre a Crise de 1929
             </h2>
           </section>
-          <iframe
+          <iframe className="Video"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/msxfuH56wXE?si=7BpkHWdbGqqHv_bm"
