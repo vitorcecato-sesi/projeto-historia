@@ -11,6 +11,9 @@ import ImgConflito from "../assets/Imgs-GuerraCanudos/Conflito.png";
 import ImgANtonio from "../assets/Imgs-GuerraCanudos/Antonio.png";
 import ImgFim from "../assets/Imgs-GuerraCanudos/Fim.png";
 
+import Navbar from "../components/Navbar";
+import LogoSiteLaranja from "../assets/Logos/LogoSiteLaranja.png"
+
 const imagens = [Img1, img2, img3, img4];
 
 export default function GuerraCanudos() {
@@ -18,6 +21,9 @@ export default function GuerraCanudos() {
 
   return (
     <>
+      <Navbar backgroundId="navbarGuerraDeCanudos" logo={LogoSiteLaranja} />
+
+
      <div className="Bloco-Carrossel">
  
   <div className="Carrossel-Container">

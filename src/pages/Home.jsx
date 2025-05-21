@@ -27,7 +27,7 @@ function Home() {
                     a Crise de 1929 e a Revolução de 1930.
                     Mais do que apresentar datas e fatos, queremos ajudar a compreender o impacto desses eventos na sociedade da época e seus reflexos no mundo atual.</p>
             </section>
-            <h1 className="titulo">CONTEÚDOS:</h1>
+            <h1 className="titulo" id="puxarLink" >CONTEÚDOS:</h1>
             <section className="boxLinks">
                 <section className="boxLinks2">
                     <section className="links">
@@ -61,11 +61,11 @@ function Home() {
                 </section>
                 <section className="boxLinks3">
                     <section className="links">
-                        {/* <Link to="/"> */}
+                        <Link to="/FascismoItaliano">
                         <img src="https://www.politize.com.br/wp-content/uploads/2024/07/fascismo-entenda-o-conceito.jpg" />
                         <label>5</label>
                         <p className="textLinks">Fascismo Italiano</p>
-                        {/* </Link> */}
+                        </Link>
                     </section>
                     <section className="links">
                         {/* <Link to="/"> */}
@@ -75,11 +75,11 @@ function Home() {
                         {/* </Link> */}
                     </section>
                     <section className="links">
-                        {/* <Link to="/"> */}
+                        <Link to="/RevolucaoDe1930">
                         <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/getulio-vargas-no-centro-imagem-com-uniforme-militar-em-1930-5821dee50a0c0.jpg" />
                         <label>7</label>
                         <p className="textLinks">Revolução de 1930</p>
-                        {/* </Link> */}
+                        </Link>
                     </section>
                 </section>
             </section>

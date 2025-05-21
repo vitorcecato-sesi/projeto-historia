@@ -5,9 +5,13 @@ import foto4 from "../assets/Imgs - Revolução de 1930/foto4_revolução1930.pn
 import foto5 from "../assets/Imgs - Revolução de 1930/foto5_revolução1930.png";
 import "./style/RevolucaoDe1930.css";
 
+import Navbar from "../components/Navbar"
+import LogoSiteMarrom from "../assets/Logos/LogoSiteMarrom.png"
+
 function RevolucaoDe1930() {
   return (
     <>
+    <Navbar backgroundId="navbarRevolucaoDe1930" logo={LogoSiteMarrom} />
       {/* Foto Inicial  */}
       <section className="slide">
         <img className="foto1" src={foto1} alt="Foto1" />
