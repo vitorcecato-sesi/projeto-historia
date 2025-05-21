@@ -163,7 +163,7 @@ function RevolucaoDe1930() {
         </section>
       </center>
 
-      <Footer/>
+      <Footer corHeaderFooter="marrom" corInfoFooter="marromClaro"/>
     </>
   );
 }
