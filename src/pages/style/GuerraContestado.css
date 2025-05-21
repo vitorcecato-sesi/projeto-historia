@@ -86,15 +86,7 @@ gap: 4em;
     background-color: #BD0A0A;
     
 }
- .vertical-hr {
-    border: none;
-    background-color: black;
-    width: 4px;
-    height: 6em;
-    border-radius: 2px;
-    
-    transition: background-color 0.3s ease;
-  }
+ 
 
   .blocoLado{
     display: flex;
@@ -102,4 +94,39 @@ gap: 4em;
     gap: 2em;
 
   }
-
+  @media (max-width: 768px) {
+    .blocoLado {
+        flex-direction: column;
+        align-items: center;
+    }
+    .blocoInfo2{
+        flex-direction: column;
+        align-items: center;
+    }
+    #imgGC{
+        width: 40vw;
+        height: 30vh;
+    }
+    .video{
+        width: 40vw;
+        height: 20vh;
+    }
+}
+@media (max-width: 480px) {
+    .blocoLado {
+        flex-direction: column;
+        align-items: center;
+    }
+    .blocoInfo2{
+        flex-direction: column;
+        align-items: center;
+    }
+    #imgGC{
+        width: 0vw;
+        height: 0vh;
+    }
+    .video{
+        width: 20vw;
+        height: 30vh;
+    }
+}
