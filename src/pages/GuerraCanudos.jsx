@@ -71,10 +71,16 @@ function GuerraCanudos() {
           </center>
 
           <br />
+           <section className="Texto-Api">
+      
+              <img src="" alt="" id="ImgAPi"/>
+    
+            </section>
+
 
             <section className="Texto-Api">
               <section className="textwiki" id="wikiGCa">
-              <APIWikipedia titulo="Guerra de Canudos" campoWiki="wikiGCa"/>
+              <APIWikipedia titulo="Guerra de Canudos" campoWiki="wikiGCa" imagemID="ImgApi" imagemAlt="Nome" imagemClass="classe" />
               </section>
             </section>
         </section>

@@ -360,3 +360,24 @@ body {
   transform: scale(1.03);
   z-index: 1;
 } 
+
+/* /////////////////////////////////////////// */
+
+@media (max-width: 1490px) {
+ .Blocao-WikieApiC{
+  flex-direction: column;
+ }
+
+ .Api-WikipediaC{
+  width: auto;
+  height: auto;
+ }
+
+ .Texto-ApiC{
+   width: 95%;
+  height: auto;
+ 
+ }
+
+
+}
