@@ -92,10 +92,10 @@ function FascismoItaliano() {
             </section>
             <section className="box-geral">
                 <h1 className="tituloF">CONHEÇA MAIS SOBRE O <span className="verdeTexto">FASCISMO</span> <span className="vermelhoTexto">ITALIANO...</span></h1>
-                <APIWikipedia titulo="Itália Fascista" campoWiki= "wikiFa" imagemID = "imgWiki"/>
+                <APIWikipedia titulo="Itália Fascista" campoWiki="wikiFa" imagemID ="imagemToma" imagemAlt="a" imagemClass="a" />
                 <h2 className="titulowiki">INFORMAÇÕES DA WIKIPÉDIA</h2>
                 <section className="box-infow" id="wikiFa">
-                    <img src="" id="imgWiki"></img>
+                    <img id="imagemToma" src="" alt="" />
                 </section>
 
                 <section id="0" className="box-info">
