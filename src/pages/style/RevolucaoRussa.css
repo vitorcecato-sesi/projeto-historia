@@ -38,6 +38,7 @@
 
 .bannerTextRR {
     position: relative;
+    padding-left: 2em;
     color: white;
     font-size: 3rem;
     z-index: 1;
