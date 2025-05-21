@@ -11,7 +11,7 @@ function Navbar({ backgroundId, logo }) {
         <HashLink smooth to="/#producoes"> Produções </HashLink>
         <img src={logo} alt="Logo do site" />
         <Link to="/Ranking"> Ranking </Link>
-        <Link to="/sobre-nos">Sobre Nós</Link>
+        <Link to="/SobreNos">Sobre Nós</Link>
       </nav>
     </>
   );

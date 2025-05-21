@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 import "../components/styles/Footer.css";
-import LogoSiteRoxo from "../assets/LogoSiteRoxo.png";
+import LogoSiteRoxo from "../assets/Logos/LogoSiteRoxo.png";
 import iconeGithub from "../assets/ImgsFooter/iconeGithub.png";
 import iconeEmail from "../assets/ImgsFooter/iconeEmail.png";
 import iconeYT from "../assets/ImgsFooter/iconeYT.png";
-import logoG3 from "../assets/logoG3.png";
+import logoG3 from "../assets/Logos/logoG3.png";
 
 function Footer(props) {
     const [aberto, setAberto] = useState(false);

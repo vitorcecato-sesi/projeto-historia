@@ -13,13 +13,13 @@ import Footer from "../components/Footer";
 //CSS
 import "./style/RevolucaoDe1930.css";
 
-import Navbar from "../components/Navbar"
+import Navbarr from "../components/Navbar"
 import LogoSiteMarrom from "../assets/Logos/LogoSiteMarrom.png"
 
 function RevolucaoDe1930() {
   return (
     <>
-    <Navbar backgroundId="navbarRevolucaoDe1930" logo={LogoSiteMarrom} />
+    <Navbarr backgroundId="navbarRevolucaoDe1930" logo={LogoSiteMarrom} />
 
     
       <section className="slide">

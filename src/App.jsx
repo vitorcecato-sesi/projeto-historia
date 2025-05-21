@@ -9,13 +9,14 @@
 // Páginas
 import RevolucaoRussa from './pages/RevolucaoRussa'
 import Rankings from './pages/Rankings'
-import Home from './pages/Home'
+import Home from "./pages/Home"
 import PrimeiraGuerraMundial from './pages/Primeira-Guerra-Mundial'
 import GuerraDeCanudos from "./pages/GuerraCanudos"
 import GuerraDoContestado from "./pages/GuerraContestado"
 import RevolucaoDe1930 from "./pages/RevolucaoDe1930"
 import FascismoItalino from "./pages/FascismoItaliano"
 import CriseDe1929 from "./pages/Crisede1929" 
+import SobreNos from "./pages/SobreNos"
 
 function App() {
 
