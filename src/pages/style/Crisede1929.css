@@ -50,15 +50,15 @@ body {
   background-color: #880903;
 }
 
-.Wiki-APiC{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+.Wiki-APiC {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.ImgApiC{
+.ImgApiC {
   width: 25vw;
-  height: 28vh;
+  height: 45vh;
   border-radius: 0.4em;
 
 }
@@ -85,8 +85,6 @@ justify-content: space-between;
   width: 80%;
   border-radius: 0.5em;
 }
-
-
 
 .Api-WikipediaC {
   background-color: #DFB760;
@@ -211,7 +209,7 @@ justify-content: space-between;
   width: 93%;
   border-radius: 0.5em;
   box-shadow: 0px 0px 2px 0px #000000;
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .Titulo-Bolsa {
@@ -273,7 +271,7 @@ justify-content: space-between;
 }
 
 
-.Bloco-Conse{
+.Bloco-Conse {
   background-color: #DFB760;
   padding: 0.9em;
   border-radius: 0.4em;
@@ -346,50 +344,278 @@ justify-content: space-between;
 }
 
 
- /* Container geral que agrupa todos os blocos com efeito */
-.container-efeito-blur {
-  display: flex;
-  flex-direction: column;
-  transition: all 0.3s ease;
-}
-
-/* Blocos com destaque quando passar o mouse  */
-.bloco-destacavel {
-  transition: all 0.3s ease;
-}
- /* Aplica blur e reduz opacidade em todos quando qualquer um for focado  */
-.container-efeito-blur:hover .bloco-destacavel {
-  filter: blur(2px);
-  opacity: 95%;
-  transform: scale(1);
-  z-index: 0;
-}
-
- /* Remove blur e dá zoom no que estiver com o mouse  */
-.container-efeito-blur .bloco-destacavel:hover {
-  filter: none;
-  opacity: 1;
-  transform: scale(1.03);
-  z-index: 1;
-} 
-
 /* /////////////////////////////////////////// */
 
-@media (max-width: 1490px) {
- .Blocao-WikieApiC{
-  flex-direction: column;
- }
+@media (max-width: 1300px) {
 
- .Api-WikipediaC{
-  width: auto;
-  height: auto;
- }
 
- .Texto-ApiC{
-   width: 95%;
-  height: auto;
- 
- }
+  .Blocao-WikieApiC {
+    flex-direction: column;
 
+  }
+
+  .Api-WikipediaC {
+    width: auto;
+    height: auto;
+
+  }
+
+  .Titulo-ApiC {
+    font-size: 2em;
+  }
+
+  .Texto-ApiC {
+    width: auto;
+    height: auto;
+    overflow: auto;
+
+  }
+
+  .textwikiC {
+    font-size: 1.4rem;
+  }
+
+  .ImgApiC {
+    width: 20vw;
+    height: auto;
+  }
+
+  /* //////////// */
+
+  .Bloco-OqFoi {
+    margin-top: 3%;
+    width: auto;
+    height: auto;
+    padding-bottom: 3rem;
+    width: auto;
+    justify-content: center;
+  }
+
+  .Titulo-OqFoi {
+    font-size: 2em;
+    width: 55%;
+  }
+
+  .img-Oq {
+    width: auto;
+    height: 40vh;
+  }
+
+  .Texto-OqFoi {
+    font-size: 1.4em;
+    width: 90%;
+    height: auto;
+    padding: 1.3rem;
+
+  }
+
+  /* //////////////////// */
+
+  .Bloco-Antecedentes {
+    flex-direction: column;
+    padding-bottom: 3rem;
+    width: auto;
+  }
+
+  .Titulo-Antecedentes {
+    font-size: 2em;
+    width: 30em;
+  }
+
+  .Para-Antece {
+    font-size: 1.4em;
+    padding: 1.5rem;
+  }
+
+  .Imgs-Juntas {
+    flex-direction: row;
+    gap: 4em;
+    padding-top: 3em;
+  }
+
+  .Img-Ante {
+    width: 25em;
+    height: auto;
+  }
+
+  /* //////////////////////// */
+
+  .Bloco-Bolsa {
+    flex-direction: column-reverse;
+    width: auto;
+  }
+
+
+  .Titulo-Bolsa {
+    font-size: 1.4em;
+    width: 90%;
+  }
+
+  .Img-Bolsa {
+    width: auto;
+    height: auto;
+    padding-top: 3rem;
+  }
+
+  .Para-Bolsa {
+    font-size: 1.4em;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  /* /////////////////////// */
+
+  .Blocos-AnteFim {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  /* ///////////////////// */
+
+  .Bloco-New {
+    width: auto;
+  }
+
+  .Img-New {
+    width: 35%;
+    height: 25%;
+  }
+
+  .Texto-New {
+    font-size: 1.4em;
+    width: 90%;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .Titulo-New {
+    font-size: 1.4em;
+    width: 30em;
+  }
+
+
+  /* ////////////////// */
+
+  .Bloco-Conse {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .Titulo-Conse {
+    font-size: 2em;
+  }
+
+  .Img-Conse {
+    width: 40vw;
+    height: auto;
+  }
+
+  .Texto-Conse {
+    font-size: 1.4em;
+    width: 45m;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .JuntosC {
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 3em;
+  }
+
+  .Bloco-VideoC {
+    width: auto;
+  }
+
+  .Titulo-VideoC {
+    font-size: 2em;
+    width: auto;
+  }
+
+  .Bloco.FilmeC {
+    width: auto;
+  }
+
+  .Texto-VideoC {
+    font-size: 1.4em;
+    width: 90%;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .Bloco-FilmeC {
+    width: auto;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .ImgApiC {
+    width: auto;
+    height: 25em;
+  }
+
+  .Bloco-OqFoi {
+    width: auto;
+  }
+
+
+  .Bloco-Antecedentes {
+    width: auto;
+  }
+
+  .Titulo-Antecedentes {
+    width: 15em;
+  }
+
+  .Img-Ante {
+    width: 15em;
+    height: auto;
+  }
+
+  .Bloco-Bolsa {
+    width: auto;
+  }
+
+  .Bloco-New {
+    width: auto;
+  }
+
+  .Bloco-Conse {
+    width: auto;
+  }
+
+  .Bloco-VideoC {
+    width: auto;
+  }
+
+  .Titulo-VideoC {
+    font-size: 1.3em;
+    width: 20em;
+    text-align: center;
+  }
+
+  .Video {
+    width: 25em;
+    height: 20em;
+  }
+
+  .Texto-VideoC {
+    font-size: 1.4em;
+    width: 90%;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .JuntosC {
+    flex-direction: column;
+  }
+
+  .Img-New {
+    width: 55vw;
+    height: 20vh;
+  }
 
 }
