@@ -8,7 +8,7 @@
 
 // Páginas
 import RevolucaoRussa from './pages/RevolucaoRussa'
-  import Rankings from './pages/Rankings'
+import Rankings from './pages/Rankings'
 import Home from './pages/Home'
 import PrimeiraGuerraMundial from './pages/Primeira-Guerra-Mundial'
 import GuerraDeCanudos from "./pages/GuerraCanudos"
@@ -31,7 +31,7 @@ function App() {
           <Route path='/RevolucaoDe1930' element={<RevolucaoDe1930 />} />
           <Route path='/FascismoItaliano' element={<FascismoItalino />} />
           <Route path='/CriseDe1929' element={<CriseDe1929 />} />
-          <Route path='/rank' element={<Rankings />} />
+          <Route path='/Ranking' element={<Rankings />} />
         </Routes>
       </BrowserRouter>
     </>

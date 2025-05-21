@@ -1,17 +1,20 @@
-import "./styles/Navbar.css"
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
-function Navbar({backgroundId, logo }) {
-    return (
-        <>
-            <nav id={backgroundId} className="blocoPrincipalNavbar">
-                <span>Conteúdos</span>
-                <span>Produções</span>
-                <img src={logo} alt="Logo do site" />
-                <span>Ranking</span>
-                <span>Sobre Nós</span>
-            </nav>
-        </>
-    );
+import "./styles/Navbar.css";
+
+function Navbar({ backgroundId, logo }) {
+  return (
+    <>
+      <nav id={backgroundId} className="blocoPrincipalNavbar">
+        <HashLink smooth to="/#conteudos"> Conteúdos </HashLink>
+        <HashLink smooth to="/#producoes"> Produções </HashLink>
+        <img src={logo} alt="Logo do site" />
+        <Link to="/Ranking"> Ranking </Link>
+        <Link to="/sobre-nos">Sobre Nós</Link>
+      </nav>
+    </>
+  );
 }
 
 export default Navbar;
