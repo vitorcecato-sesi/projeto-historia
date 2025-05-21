@@ -8,6 +8,7 @@
 
 // Componentes
     import APIWikipedia from '../components/APIWikipedia'
+    import Navbar from "../components/Navbar"
     import BotaoCurtirTema from '../components/BotaoCurtirTema'
     import BotaoTema from '../components/BotaoTema'
 //.
@@ -96,9 +97,14 @@ function RevolucaoRussa() {
                 </section>
                 <section className='wikiRR'>
                     <h1>Informações Wikipédia</h1>
+
                     <section id='APIWIKI' className='APIWikiRR'>
                         <APIWikipedia titulo="Revolução Russa de 1917" campoWiki= "APIWIKI"/>
                     </section>
+
+                    <APIWikipedia titulo="Revolução Russa de 1917" campoWiki= "APIWIKI" imagemID="imgWIKIRR" imagemAlt="Imagem da Wiki" imagemClass="classeimg" />
+                    <section id='APIWIKI'></section>
+                    <img id='imgWIKIRR' src="" alt="" />
                 </section>
                 <br />
                 <hr />
@@ -235,7 +241,7 @@ function RevolucaoRussa() {
                     </section>
                     <br />
                     <br />
-                    <section className='bloco7RR' id='bloco7RR'>
+                    <section className='bloco7RR'>
                         <h2>Criação da URSS</h2>
                         <article className='textoImagemRRB7'>
                             <p>

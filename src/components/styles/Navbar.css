@@ -68,7 +68,7 @@
     filter: drop-shadow(0 0 30px #56007B);
 }
 
-.blocoPrincipalNavbar span {
+.blocoPrincipalNavbar a {
     position: relative;
     color: #fff;
     cursor: pointer;
@@ -78,7 +78,7 @@
     font-style: none;
 }
 
-.blocoPrincipalNavbar span:hover::after {
+.blocoPrincipalNavbar a:hover::after {
     content: '';
     position: absolute;
     bottom: -4px;

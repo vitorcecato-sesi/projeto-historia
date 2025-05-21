@@ -1,0 +1,162 @@
+.footerHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Cores do footer de cada página */
+#roxo{
+    background-color: #DB88FF;
+}
+#roxoClaro{
+    background-color: #FFEDFF;
+}
+
+#amarelo{
+    background-color: #FBB623;
+}
+#amareloClaro{
+    background-color: #ffc852;
+}
+
+#vermelho{
+    background-color: #BA343A;
+}
+#vermelhoClaro{
+    background-color: #c55b61;
+}
+
+#cinza{
+    background-color: #595959;
+}
+#cinzaClaro{
+    background-color: #717171;
+}
+
+#azul{
+    background-color: #5461C3;
+}
+#azulClaro{
+    background-color: #D4DFFF;
+}
+
+#verde{
+    background-color: #86895D;
+}
+#verdeClaro{
+    background-color: #BEC092;
+}
+
+#bordo{
+    background-color: #882805;
+}
+#bordoClaro{
+    background-color: #aa3910;
+}
+
+#marrom{
+    background-color: #B66E3F;
+}
+#marromClaro{
+    background-color: #dc9c72;
+}
+
+#rosa{
+    background-color: #FFC6C6;
+}
+#rosaClaro{
+    background-color: #ffd9d9;
+}
+
+
+.logoSite{
+    width: 10vw;
+    padding: 1em;
+}
+
+/* Estilo da seta - criada com bordas formando uma "seta para direita" rotacionada */
+.seta {
+    width: 20px;
+    height: 20px;
+    border-right: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    transform: rotate(45deg); /* seta apontando para baixo */
+    transition: transform 0.5s ease; /* animação suave da rotação */
+}
+
+.seta.aberto{
+    transform: rotate(-135deg);
+}
+
+.icones img{
+    height: 5vh;
+    padding: 2em;
+    text-decoration: none;
+}
+
+.icones a{
+    text-decoration: none
+}
+
+.footerInfo{
+    height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding-top 0.3s ease; /* transição suave abrir/fechar */ 
+    padding-top: 0;
+}
+
+/* Classe para quando o conteúdo estiver aberto */
+.footerInfo.aberto {
+    height: auto; 
+    padding-top: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logoG3{
+    width: 18vw;
+}
+
+.sobreProjeto{
+    display: flex;
+    width: 17vw;
+    padding-left: 2em;
+}
+
+.blocoFinal{
+    display: flex;
+    gap: 7em;
+}
+
+.conteudos a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    .logoG3{
+        height: 30vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .footerInfo.aberto{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoG3{
+        width: 28vw;
+    }
+
+    .sobreProjeto{
+        width: 70vw;
+    }
+
+    .blocoFinal{
+        display: flex;
+        gap: 6em;        
+    }
+}
