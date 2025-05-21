@@ -9,6 +9,7 @@
 // Componentes
     import APIWikipedia from '../components/APIWikipedia'
     import BotaoCurtirTema from '../components/BotaoCurtirTema'
+    import BotaoTema from '../components/BotaoTema'
 //.
 
 // Imagens
@@ -87,6 +88,9 @@ function RevolucaoRussa() {
             <section className='bodyRR'>
                 <section className='bannerRR'>
                     <h1 className='bannerTextRR'>CONHEÇA MAIS SOBRE A <br /><span id='blueRR'>REVOLUÇÃO RUSSA</span></h1>
+                </section>
+                <section className='blocoBotaoTemaRR'>
+                    <BotaoTema />
                 </section>
                 <section className='wikiRR'>
                     <h1>Informações Wikipédia</h1>
