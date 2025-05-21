@@ -27,31 +27,30 @@ function BotaoCurtirTema(props) {
     function botaoAcionado() {
         console.log("Botão acionado")
         
-        if (section) {
-            if (!curtido) {
-                console.log("Curtido")
-                setCurtido(!curtido)
+        if (!curtido) {
+            console.log("Curtido")
+            setCurtido(!curtido)
 
-                const novoItem = {
-                    id: props.idSection ? props.idSection : "",
-                    html: section.innerHTML
-                }
-                
-                const novaArray = [...sectionsFavoritas, novoItem]
-
-                setSectionsFavoritas(novaArray)
-                localStorage.setItem("sectionsFavoritas", JSON.stringify(novaArray))
-
-            } else {
-                console.log("Descurtido")
-                setCurtido(!curtido)
-
-                setSectionsFavoritas((prev) => {
-                    const novoArray = prev.filter(item => item.id !== props.idSection)
-                    return novoArray
-                })
+            const novoItem = {
+                id: props.idSection ? props.idSection : "",
+                html: section.innerHTML
             }
+                
+            const novaArray = [...sectionsFavoritas, novoItem]
+
+            setSectionsFavoritas(novaArray)
+            localStorage.setItem("sectionsFavoritas", JSON.stringify(novaArray))
+
+        } else {
+            console.log("Descurtido")
+            setCurtido(!curtido)
+
+            setSectionsFavoritas((prev) => {
+                const novoArray = prev.filter(item => item.id !== props.idSection)
+                return novoArray
+            })
         }
+        
     }
 
 
