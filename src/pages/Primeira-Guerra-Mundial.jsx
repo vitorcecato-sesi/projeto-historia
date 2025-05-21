@@ -9,6 +9,7 @@ import LogoSiteCinza from "../assets/Logos/LogoSiteCinza.png";
 import Navbar from "../components/Navbar";
 import APIWikipedia from "../components/APIWikipedia";
 import BotaoCurtirTema from "../components/BotaoCurtirTema"
+import BotaoTema from "../components/BotaoTema"
 
 // Definindo a função que será executada quando o componente for renderizado
 function PrimeiraGuerraMundial() {
@@ -35,6 +36,7 @@ function PrimeiraGuerraMundial() {
             <span id="textoConhecimento"> PRIMEIRA GUERRA MUNDIAL</span>...
           </h1>
         </center>
+
 
         <section className="carousel" style={{ "--position": posicaoCard }}>
           <section className="card" style={{ "--offset": 1 }}>
@@ -82,6 +84,8 @@ function PrimeiraGuerraMundial() {
         <center>
           <h1 id="infoWiki"> Informações Wikipédia </h1>
         </center>
+
+        <BotaoTema />
 
         <center>
           <section className="informacoesWikipedia">
