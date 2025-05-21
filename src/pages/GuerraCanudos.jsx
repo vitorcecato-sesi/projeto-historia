@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Img1 from "../assets/Imgs-GuerraCanudos/Canu1.png";
-import img2 from "../assets/Imgs-GuerraCanudos/Canu2.png";
-import img3 from "../assets/Imgs-GuerraCanudos/Canu3.png";
+import img2 from "../assets/Imgs-GuerraCanudos/Carrossel3.png";
+import img3 from "../assets/Imgs-GuerraCanudos/Carrosel.png";
 import img4 from "../assets/Imgs-GuerraCanudos/Canu4.png";
 import "./style/GuerraCanudos.css";
 
@@ -14,147 +14,172 @@ import ImgFim from "../assets/Imgs-GuerraCanudos/Fim.png";
 import Navbar from "../components/Navbar";
 import LogoSiteLaranja from "../assets/Logos/LogoSiteLaranja.png"
 
-const imagens = [Img1, img2, img3, img4];
+import APIWikipedia from "../components/APIWikipedia";
+import Navbarr from "../components/Navbar";
 
-export default function GuerraCanudos() {
+const imagens = [Img1, img2, img3, img4];
+ 
+function GuerraCanudos() {
   const [index, setIndex] = useState(0);
 
   return (
     <>
-      <Navbar backgroundId="navbarGuerraDeCanudos" logo={LogoSiteLaranja} />
+      <Navbarr backgroundId="navbarGuerraDeCanudos" logo={LogoSiteLaranja} />
 
+      <section className="Bloco-Carrossel">
+        <section className="Carrossel-Container">
+          <button
+            className="Botao-Carrossel Esquerda"
+            onClick={() =>
+              setIndex((prev) => (prev === 0 ? imagens.length - 1 : prev - 1))
+            }
+          >
+            ‹
+          </button>
 
-     <div className="Bloco-Carrossel">
- 
-  <div className="Carrossel-Container">
-    <button
-      className="Botao-Carrossel Esquerda"
-      onClick={() => setIndex((prev) => (prev === 0 ? imagens.length - 1 : prev - 1))}
-    >
-      ‹
-    </button>
+          <img
+            src={imagens[index]}
+            alt={`Slide ${index + 1}`}
+            className="Imagem-Carrossel"
+          />
 
-    <img
-      src={imagens[index]}
-      alt={`Slide ${index + 1}`}
-      className="Imagem-Carrossel"
-    />
+          <button
+            className="Botao-Carrossel Direita"
+            onClick={() =>
+              setIndex((prev) => (prev === imagens.length - 1 ? 0 : prev + 1))
+            }
+          >
+            ›
+          </button>
+        </section>
+        <center>
+          <section className="Bolinhas">
+            {imagens.map((_, i) => (
+              <span
+                key={i}
+                className={`Bola ${i === index ? "active" : ""}`}
+                onClick={() => setIndex(i)}
+              />
+            ))}
+          </section>
+        </center>
+      </section>
 
-    <button
-      className="Botao-Carrossel Direita"
-      onClick={() => setIndex((prev) => (prev === imagens.length - 1 ? 0 : prev + 1))}
-    >
-      ›
-    </button>
-  </div>
+      <br></br>
+      <br></br>
 
-  <div className="Bolinhas">
-    {imagens.map((_, i) => (
-      <span
-        key={i}
-        className={`Bola ${i === index ? "active" : ""}`}
-        onClick={() => setIndex(i)}
-      />
-    ))}
-  </div>
-</div>
-
-      <div className="Blocao-WikieApi">
-        <div className="Api-Wikipedia">
+      <section className="Blocao-WikieApi">
+        <section className="Api-Wikipedia">
           <center>
-            <div className="Titulo-Api">
+            <section className="Titulo-Api">
               <h2>Informações da Wikipédia</h2>
-            </div>
+            </section>
           </center>
 
           <br />
+          <article className="Wiki-Api">
 
-          <center>
-            <div className="Texto-Api">
-              <section id="wikiGCa">
-                
-              </section>
-            </div>
-          </center>
-        </div>
+               <section className="Img-Api">
+            <img src="" alt="" id="ImgApi" />
+          </section>
+        
+          <section className="Texto-Api">
+            <section className="textwiki" id="wikiGCa"> </section>
+              <APIWikipedia
+                titulo="Guerra de Canudos"
+                campoWiki="wikiGCa"
+                imagemID="ImgApi"
+                imagemAlt="Nome"
+                imagemClass="ImgApi"
+              />
+          </section>
 
-        <div className="Bloco-Intro">
+          </article>
+        </section>
+
+        <section className="Bloco-Intro">
           <center>
-            <div className="Titulo-Intro">
+            <section className="Titulo-Intro">
               <h2>Introdução</h2>
-            </div>
+            </section>
           </center>
           <br />
-          <div>
+          <section>
             <img className="img-In" src={IMGIntro}></img>
-          </div>
+          </section>
           <br />
           <center>
-            <div className="Texto-Intro">
+            <section className="Texto-Intro">
               <p>
                 A guerra de Canudos foi um conflito histórico que ocorreu no
                 arraial de Canudos (sertão da Bahia) em 1896 - 1897, o Exército
                 Brasileiro e os seguidores de Antônio Conselheiro, um líder
                 religioso de Canudos.
               </p>
-            </div>
+            </section>
           </center>
-        </div>
-      </div>
+        </section>
+      </section>
+      <br></br>
 
       <center>
-        <div className="Bloco-OqInflu">
-          <div>
+        <section className="Bloco-OqInflu">
+          <section>
             <img className="Img-OqInflu" src={IMGOqInflu}></img>
-          </div>
+          </section>
 
-          <div className="Texto-OqInflu">
-            <div className="Titulo-OqIn">
+          <section className="Texto-OqInflu">
+            <section className="Titulo-OqIn">
               <h2>O que influenciou a Guerra de Canudos?</h2>
-            </div>
-            <p>
-              Naquela época o Brasil tinha a acabado de entrar em uma república
-              porém os impostos e a condição de vida dos sertanejos não estava
-              boa, o governo tinha medo do crescimento de poder do Antônio
-              Conselheiro
-            </p>
-          </div>
-        </div>
+            </section>
+            <section className="Texto-OqIn">
+              <p>
+                Naquela época o Brasil tinha a acabado de entrar em uma
+                república porém os impostos e a condição de vida dos sertanejos
+                não estava boa, o governo tinha medo do crescimento de poder do
+                Antônio Conselheiro
+              </p>
+            </section>
+          </section>
+        </section>
       </center>
       <br></br>
 
       <center>
-        <div className="Bloco-OqInflu">
-          <div>
+        <section className="Bloco-OqInflu">
+          <section>
             <img className="Img-OqInflu" src={ImgConflito}></img>
-          </div>
+          </section>
 
-          <div className="Texto-OqInflu">
-            <div className="Titulo-Con">
+          <section className="Texto-OqInflu">
+            <section className="Titulo-Con">
               <h2>Conflito</h2>
-            </div>
-            <p>
-              O governo republicano viu Canudos como uma ameaça à ordem
-              estabelecida e enviou várias expedições militares para destruí-lo.
-              Após três tentativas fracassadas, uma quarta expedição, com cerca
-              de 10 mil soldados, conseguiu dizimar a comunidade.
-            </p>
-          </div>
-        </div>
+            </section>
+            <section className="Texto-OqIn">
+              <p>
+                O governo republicano viu Canudos como uma ameaça à ordem
+                estabelecida e enviou várias expedições militares para
+                destruí-lo. Após três tentativas fracassadas, uma quarta
+                expedição, com cerca de 10 mil soldados, conseguiu dizimar a
+                comunidade.
+              </p>
+            </section>
+          </section>
+        </section>
       </center>
 
       <br></br>
       <br></br>
 
-      <div className="Blocos-AnteFim">
-        <div className="Bloco-Anto">
+      <section className="Blocos-AnteFim">
+        <section className="Bloco-Anto">
           <center>
             <br></br>
             <img className="ImgAn" src={ImgANtonio}></img>
-            <div className="Titulo-Anto">
+            <section className="Titulo-Anto">
               <h2>Antônio Conselheiro e Sua Pregação</h2>
-            </div>
-            <div className="Texto-Anto">
+            </section>
+            <section className="Texto-Anto">
               <p>
                 Antônio Conselheiro era o líder religioso da época, que
                 utilizava da Bíblia e das pregações de Deus para as pessoas
@@ -164,45 +189,45 @@ export default function GuerraCanudos() {
                 Então, o Exército levou sua cabeça como comprovação de sua
                 morte.
               </p>
-            </div>
+            </section>
           </center>
-        </div>
+        </section>
 
-        <div className="Bloco-Fim">
+        <section className="Bloco-Fim">
           <center>
-            <div className="Titulo-Fim">
+            <section className="Titulo-Fim">
               <h2>Fim da Guerra</h2>
-            </div>
+            </section>
             <br></br>
             <img className="ImgFim" src={ImgFim}></img>
             <br></br>
             <br></br>
 
-            <div className="Texto-Fim">
+            <section className="Texto-Fim">
               <p>
                 O fim da guerra de Canudos foi bem trágico com mais de 25000
                 pessoas mortas após a expedição do exército e a vitória do
                 exército com a desculpa de que canudos apoiavam a monarquia.
               </p>
-            </div>
+            </section>
           </center>
-        </div>
-      </div>
+        </section>
+      </section>
       <br></br>
 
       <hr></hr>
       <br></br>
-      <div className="cor">
-        <div className="Juntos">
-          <div className="Bloco-Video">
+      <section className="cor">
+        <section className="Juntos">
+          <section className="Bloco-Video">
             <center>
-            <h2 className="Titulo-Video">
-              Vídeo explicativo sobre a Guerra de Canudos
-            </h2>
+              <h2 className="Titulo-Video">
+                Vídeo explicativo sobre a Guerra de Canudos
+              </h2>
             </center>
             <center>
               <iframe
-                width="540"
+                width="450"
                 height="295"
                 src="https://www.youtube.com/embed/yWWOgDjYuwc?si=QWxDuS0fniiiKhjb"
                 title="YouTube video player"
@@ -214,26 +239,26 @@ export default function GuerraCanudos() {
             </center>
             <br></br>
             <center>
-              <div className="Texto-Video">
+              <section className="Texto-Video">
                 <p>
                   Esse vídeo trata-se de uma aula explicativa sobre a Guerra de
                   Canudos
                 </p>
-              </div>
+              </section>
             </center>
-          </div>
+          </section>
 
-          <div className="Bloco-Filme">
+          <section className="Bloco-Filme">
             <center>
-            <h2 className="Titulo-Video">
-              Filme explicativo sobre a Guerra de Canudos
-            </h2>
+              <h2 className="Titulo-Video">
+                Filme explicativo sobre a Guerra de Canudos
+              </h2>
             </center>
             <center>
-              <iframe
-                width="540"
+              <iframe 
+                width="450"
                 height="295"
-                src="https://www.youtube.com/embed/P4OYhj7Io0E?si=dDnbiWNOmiRMBzSv"
+                src="https://www.youtube.com/embed/P4OYhj7Io0E?si=ews4oBQZWYqR7BRp"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -243,7 +268,7 @@ export default function GuerraCanudos() {
             </center>
             <br></br>
             <center>
-              <div className="Texto-Video">
+              <section className="Texto-Video">
                 <p>
                   Guerra de Canudos é um filme brasileiro de 1997, do gênero
                   drama, dirigido por Sérgio Rezende. É baseado no célebre
@@ -253,11 +278,13 @@ export default function GuerraCanudos() {
                   durou de 1896 a 1897 e terminou com o massacre dos insurgentes
                   pelas tropas federais.
                 </p>
-              </div>
+              </section>
             </center>
-          </div>
-        </div>
-      </div>
+          </section>
+        </section>
+      </section>
     </>
   );
 }
+
+export default GuerraCanudos;
