@@ -1,0 +1,158 @@
+
+
+.tituloParallax {
+color: white;
+font-size: 3em;
+width: 50vw;
+padding: 0.6em;
+font-family: "Montserrat", sans-serif;
+z-index: 3;
+position: relative;
+}
+
+.textoParallax {
+    color: white;
+    width: 65vw;
+    padding: 1em;
+    padding-left: 1.8em;
+    font-size: 1.2em;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    z-index: 3;
+    position: relative;
+}
+
+.tituloParallax2 {
+color: white;
+font-size: 3em;
+padding: 0.6em;
+padding-top: 1em;
+margin-left: 12em;
+ font-family: "Montserrat", sans-serif;
+ z-index: 3;
+    position: relative;
+}
+
+.textoParallax2 {
+    color: white;
+    padding: 1em;
+    padding-right: 1.8em;
+    font-size: 1.2em;
+    text-align: justify;
+    margin-left: 31em;
+    font-family: "Montserrat", sans-serif;
+    z-index: 3;
+    position: relative;
+
+}
+
+.corTexto {
+    color: #db88ff;
+}
+
+.parallax1{
+  background-image: url(https://aventurasnahistoria.com.br/media/_versions/primeira_guerra/trincehe_1_widelg.jpg);
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  background-color: #db88ff30; /* ajuste a cor e opacidade aqui */
+  z-index: 2;
+}
+
+.parallax2{
+  background-image: url(https://assets.brasildefato.com.br/2024/09/image_processing20200201-29235-1nfnxod.jpg);
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  background-color: #ffedff30;
+  z-index: 2;
+}
+
+.titulo{
+color: #db88ff;
+font-size: 3em;
+width: 50vw;
+padding-top: 0.6em;
+padding-left: 0.6em;
+font-family: "Montserrat", sans-serif;
+}
+
+.boxLinks{
+display: flex;
+flex-direction: column;
+}
+
+.boxLinks2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2em;
+    }
+
+.boxLinks3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 6em;
+    }
+
+.links {
+display: flex;
+flex-direction: column;
+height: 21vh;
+width: 30vw;
+margin-right: 1em;
+align-items: center;
+justify-content: space-around
+}
+
+.links:hover {
+transform: scale(1.07);
+transition: 0.5s;
+cursor: pointer;
+}
+
+.links img {
+    display: flex;
+    border-radius: 100%;
+    width: 8vw;
+    height: 17vh;
+    position: absolute;
+}
+
+.links label {
+    display: flex;
+    font-size: 3.5em;
+    color: white;
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.textLinks {
+    display: flex;
+    position: absolute;
+    margin-top: 8em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #db88ff;
+}

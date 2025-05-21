@@ -8,10 +8,11 @@
 
 // Componentes
     import APIWikipedia from '../components/APIWikipedia'
-    import BotaoCurtirTema from '../components/BotaoCurtirTema'
+    import Navbar from "../components/Navbar"
 //.
 
 // Imagens
+import LogoSiteAzul from "../assets/Logos/LogoSiteAzul.png"
 
 //.
 
@@ -84,6 +85,7 @@ function RevolucaoRussa() {
 
     return(
         <>
+        <Navbar backgroundId="navbarRevolucaoRussa" logo={LogoSiteAzul} />
             <section className='bodyRR'>
                 <section className='bannerRR'>
                     <h1 className='bannerTextRR'>CONHEÇA MAIS SOBRE A <br /><span id='blueRR'>REVOLUÇÃO RUSSA</span></h1>
