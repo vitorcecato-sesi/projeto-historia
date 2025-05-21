@@ -1,11 +1,12 @@
 import "./style/Home.css"
 import Navbar from "../components/Navbar"
+import LogoSiteRoxo from "../assets/LogoSiteRoxo.png"
 import { Link } from "react-router-dom"
 
 function Home() {
     return (
         <>
-            <Navbar />
+            <Navbar logo={LogoSiteRoxo} />
             <section className="parallax1">
                 <h1 className="tituloParallax">CONHEÇA MAIS SOBRE OS <span className="corTexto">PRINCIPAIS EVENTOS HISTÓRICOS</span> ENTRE 1896-1930</h1>
                 <p className="textoParallax">
