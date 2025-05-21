@@ -1,4 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './App.css'
+import GuerraContestado from './pages/GuerraContestado.jsx'
+import RevolucaoRussa from './pages/RevolucaoRussa'
 
 import Crisede29 from './pages/Crisede1929'
 import GuerraCanudos from './pages/GuerraCanudos'
@@ -16,6 +18,8 @@ function App() {
           <Route path='/Crise-1929' element={<Crisede29/>}/>       
         </Routes>
       </BrowserRouter>
+   <RevolucaoRussa/>
+
     </>
   )
 }
