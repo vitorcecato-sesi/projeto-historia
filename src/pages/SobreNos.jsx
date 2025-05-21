@@ -2,12 +2,21 @@
 import FotoGrupo3 from "../assets/FotoGrupo3.png";
 import LogoG3 from "../assets/logoG3.png";
 
+//Componentes
+import Navbar from "../components/Navbar"
+
 //CSS
 import "../pages/style/SobreNos.css";
 
 function SobreNos() {
   return (
     <>
+
+    <Navbar/>
+
+    <br/> 
+    <br/>
+    
     <center>
       <section className="blocoPrincipal">
         <section className="blocoFoto">
