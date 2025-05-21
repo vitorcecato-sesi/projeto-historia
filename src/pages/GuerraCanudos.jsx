@@ -11,13 +11,14 @@ import ImgConflito from "../assets/Imgs-GuerraCanudos/Conflito.png";
 import ImgANtonio from "../assets/Imgs-GuerraCanudos/Antonio.png";
 import ImgFim from "../assets/Imgs-GuerraCanudos/Fim.png";
 
-import Navbar from "../components/Navbar";
+
 import LogoSiteLaranja from "../assets/Logos/LogoSiteLaranja.png"
 
 import APIWikipedia from "../components/APIWikipedia";
-import Navbar from "../components/Navbar";
+import Navbarr from "../components/Navbar";
 import BotaoCurti from "../components/BotaoCurtirTema"
 import BotaoTema from "../components/BotaoTema"
+import Footer from "../components/Footer"
 
 const imagens = [Img1, img2, img3, img4];
  
@@ -292,6 +293,8 @@ function GuerraCanudos() {
           </section>
         </section>
       </section>
+
+      <Footer corHeaderFooter="amarelo" corInfoFooter="amareloClaro" logo={LogoSiteLaranja}/>
     </>
   );
 }
