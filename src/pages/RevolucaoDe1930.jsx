@@ -1,18 +1,27 @@
+//Imagens
 import foto1 from "../assets/Imgs - Revolução de 1930/foto1_revolução1930.png";
 import foto2 from "../assets/Imgs - Revolução de 1930/foto2_revolução1930.png";
 import foto3 from "../assets/Imgs - Revolução de 1930/foto3_revolução1930.png";
 import foto4 from "../assets/Imgs - Revolução de 1930/foto4_revolução1930.png";
 import foto5 from "../assets/Imgs - Revolução de 1930/foto5_revolução1930.png";
+
+//Componentes
+import APIWikipedia from '../components/APIWikipedia'
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
+//CSS
 import "./style/RevolucaoDe1930.css";
 
-import Navbar from "../components/Navbar"
+import Navbarr from "../components/Navbar"
 import LogoSiteMarrom from "../assets/Logos/LogoSiteMarrom.png"
 
 function RevolucaoDe1930() {
   return (
     <>
-    <Navbar backgroundId="navbarRevolucaoDe1930" logo={LogoSiteMarrom} />
-      {/* Foto Inicial  */}
+    <Navbarr backgroundId="navbarRevolucaoDe1930" logo={LogoSiteMarrom} />
+
+    
       <section className="slide">
         <img className="foto1" src={foto1} alt="Foto1" />
         <h2 className="textoSlide">
@@ -23,6 +32,7 @@ function RevolucaoDe1930() {
 
       <center>
         <section className="blocos">
+          
           <section className="bloco-OQueFoi">
             <img className="foto2" src={foto2} alt="Foto2" />
             <p className="texto-OQueFoi">
@@ -38,8 +48,7 @@ function RevolucaoDe1930() {
           <section>
             <p className="texto-ContextoECausas">
               <h3 className="titulo-ContextoECausas">
-                {" "}
-                Contexto Histórico e Causas da Guerra{" "}
+                Contexto Histórico e Causas da Guerra
               </h3>
               O modelo de governo no Brasil naquela época era constituído por
               uma República Oligárquica onde a política federativa era formada
@@ -81,7 +90,7 @@ function RevolucaoDe1930() {
               outros grupos também armados se formavam em Minas Gerais e na
               Paraíba. Esses conflitos armados teriam fim entre o final de
               outubro e o início de novembro, quando Vargas se autoproclamou
-              líder do Governo Provisório no Rio de Janeiro.{" "}
+              líder do Governo Provisório no Rio de Janeiro.
             </p>
             <img className="foto4" src={foto4} alt="Foto4" />
           </section>
@@ -104,16 +113,23 @@ function RevolucaoDe1930() {
             </p>
           </section>
 
-          <section>{/* API */}</section>
+          <hr id="hrREV1930"/>
+
+          <section className="infoAPI">
+            <APIWikipedia titulo="Revolução de 1930" campoWiki= "APIWIKI-Revolução1930"/>
+            <h2 className="titulo-API"> Informações da API </h2>
+            <section id='APIWIKI-Revolução1930'> </section>
+          </section>
+
+          <hr id="hrREV1930"/>
 
           <section className="bloco-Video">
             <h2 className="titulo-Video">
-              {" "}
               Vídeo Aula - Revolução de 1930 Conheça os Principais Fatos{" "}
             </h2>
             <iframe
               className="video"
-              width="820"
+              width="700"
               height="415"
               src="https://www.youtube.com/embed/LXdMu4z_RvU?si=1w0ozr6Jzn_OyECO&amp;start=5"
               title="YouTube video player"
@@ -123,6 +139,8 @@ function RevolucaoDe1930() {
               allowfullscreen
             ></iframe>
           </section>
+
+          <hr id="hrREV1930"/>  
 
           <section className="bloco-Filme">
             <p className="sinopseFilme">
@@ -147,6 +165,8 @@ function RevolucaoDe1930() {
           </section>
         </section>
       </center>
+
+      <Footer corHeaderFooter="marrom" corInfoFooter="marromClaro"/>
     </>
   );
 }
