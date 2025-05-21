@@ -75,13 +75,13 @@ function Crisede29() {
 
           <br />
 
-          <center>
+         
             <div className="Texto-ApiC">
-              <section className="textwiki" id="wikiGCa">
-                <APIWikipedia titulo="Crise de 1929" campoWiki="wikiGCa" />
+              <section className="textwikiC" id="wikiGCa">
+                <APIWikipedia titulo="Grande Depressão" campoWiki="wikiGCa" />
               </section>
             </div>
-          </center>
+       
         </div>
 
         <div className="Bloco-OqFoi">
