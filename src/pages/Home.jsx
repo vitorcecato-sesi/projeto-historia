@@ -1,5 +1,3 @@
-
-
 import Navbar from "../components/Navbar"
 import LogoSiteRoxo from "../assets/Logos/LogoSiteRoxo.png"
 import { Link } from "react-router-dom"
