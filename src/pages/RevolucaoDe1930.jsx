@@ -8,6 +8,7 @@ import foto5 from "../assets/Imgs - Revolução de 1930/foto5_revolução1930.pn
 //Componentes
 import APIWikipedia from '../components/APIWikipedia'
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 //CSS
 import "./style/RevolucaoDe1930.css";
@@ -28,6 +29,7 @@ function RevolucaoDe1930() {
 
       <center>
         <section className="blocos">
+          
           <section className="bloco-OQueFoi">
             <img className="foto2" src={foto2} alt="Foto2" />
             <p className="texto-OQueFoi">
@@ -124,7 +126,7 @@ function RevolucaoDe1930() {
             </h2>
             <iframe
               className="video"
-              width="820"
+              width="700"
               height="415"
               src="https://www.youtube.com/embed/LXdMu4z_RvU?si=1w0ozr6Jzn_OyECO&amp;start=5"
               title="YouTube video player"
@@ -160,6 +162,8 @@ function RevolucaoDe1930() {
           </section>
         </section>
       </center>
+
+      <Footer corHeaderFooter="marrom" corInfoFooter="marromClaro"/>
     </>
   );
 }

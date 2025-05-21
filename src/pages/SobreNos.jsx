@@ -55,6 +55,8 @@ function SobreNos() {
 
       </section>
       </center>
+
+      <Footer/>
     </>
   );
 }
