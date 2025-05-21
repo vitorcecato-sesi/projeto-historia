@@ -21,10 +21,7 @@
   width: 30vw;
   height: 30vh;
   background-color: #DEDAFF;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5em;
-  border-radius: 2em;
+   border-radius: 2em;
   
 }
 
@@ -35,3 +32,17 @@ align-items: center;
   flex-direction: row;
   gap: 2em;}
 
+.SobreCartaz{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 30vh;
+  background-color: #DEDAFF;
+  padding: 2em;
+  border: black solid 1px;
+
+  border-radius: 2em;
+
+}
