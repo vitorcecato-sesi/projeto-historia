@@ -59,7 +59,7 @@ body {
   box-shadow: 0px 0px 2px 0px #000000;
 }
 
-.textwikiC{
+.textwikiC {
   color: #ffffff;
   font-size: 0.8rem;
   text-align: justify;
@@ -156,6 +156,7 @@ body {
   width: 93%;
   border-radius: 0.5em;
   box-shadow: 0px 0px 2px 0px #000000;
+  margin-left: 2rem;
 }
 
 .Para-Antece {
@@ -196,6 +197,7 @@ body {
   width: 93%;
   border-radius: 0.5em;
   box-shadow: 0px 0px 2px 0px #000000;
+    margin-left: 2rem;
 }
 
 .Titulo-Bolsa {
@@ -288,31 +290,31 @@ body {
   text-align: justify;
 }
 
-.JuntosC{
-    display: flex;
+.JuntosC {
+  display: flex;
   justify-content: center;
   gap: 2em;
   padding: 0.13rem;
   margin-top: 1.5em;
 }
 
-.Bloco-VideoC{
-    border: solid 2px #882805;
+.Bloco-VideoC {
+  border: solid 2px #882805;
   padding: 0.9rem;
   border-radius: 0.5em;
   width: 60%;
   box-shadow: 0px 0px 2px 0px #000000;
 }
 
-.Titulo-VideoC{
-    background-color: #882805;
+.Titulo-VideoC {
+  background-color: #882805;
   color: #f7eec2;
   border-radius: 0.5em;
   padding: 0.5em;
 }
 
-.Texto-VideoC{
-    background-color: #f7eec2;
+.Texto-VideoC {
+  background-color: #f7eec2;
   color: #000000;
   border-radius: 0.5em;
   padding: 1.5em;
@@ -321,14 +323,14 @@ body {
   text-align: justify;
 }
 
-.Bloco-FilmeC{
-      border: solid 2px #882805;
+.Bloco-FilmeC {
+  border: solid 2px #882805;
   padding: 0.9rem;
   border-radius: 0.5em;
   width: 70%;
   box-shadow: 0px 0px 2px 0px #000000;
 }
 
-
-
-
+.Api-WikipediaC,.Bloco-OqFoi,.Bloco-Antecedentes,.Bloco-Bolsa,.Bloco-New,.Bloco-Conse,.Bloco-VideoC,.Bloco-Filme:hover{
+ box-shadow: 0px 0px 5px 0px #000000; 
+}
