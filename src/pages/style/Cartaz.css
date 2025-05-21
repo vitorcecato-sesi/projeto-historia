@@ -18,13 +18,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50vw;
+  width: 30vw;
+  height: 30vh;
   background-color: #DEDAFF;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  border-radius: 2em;
   
 }
 
 
 .blocoLado{
+align-items: center;
   display: flex;
   flex-direction: row;
   gap: 2em;}
