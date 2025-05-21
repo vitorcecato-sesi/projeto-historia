@@ -26,6 +26,7 @@ function PrimeiraGuerraMundial() {
   return (
     <>
       <Navbar backgroundId="navbarPrimeiraGuerra" logo={LogoSiteCinza} />
+      <br />
       <section className="blocoPrincipal">
         <center>
           <h1>
@@ -33,6 +34,7 @@ function PrimeiraGuerraMundial() {
             <span id="textoConhecimento"> PRIMEIRA GUERRA MUNDIAL</span>...
           </h1>
         </center>
+        <br />
 
         <section className="carousel" style={{ "--position": posicaoCard }}>
           <section className="card" style={{ "--offset": 1 }}>
