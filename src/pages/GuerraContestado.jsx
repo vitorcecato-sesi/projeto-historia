@@ -1,6 +1,8 @@
 
 import './style/GuerraContestado.css'
 import Navbar from "../components/Navbar";
+import APIWikipedia from "../components/APIWikipedia";
+
 function GuerraContestado() {
     return (
         <div>
@@ -9,11 +11,13 @@ function GuerraContestado() {
                 <h1 id='branco'>CONHEÇA MAIS SOBRE <br/> <span id='vermelho'> A GUERRA DE CONTESTADOS </span></h1>
             </section>
             <section className='centro'>
-            <section className="blocoWiki">
+            <section className="blocoWiki" >
             
 
             <h2>Wikipédia</h2>
-           
+            <section className='wiki' id='wiki'>
+            <APIWikipedia titulo="Guerra do Contestado" campoWiki="wiki"/>
+            </section>
             </section>
             </section>
             <hr/>
@@ -72,7 +76,7 @@ A população local do período, influenciada por líderes religiosos, como Jos�
             <section className='blocoLado'>
                 <section className='blocoVideo'>
             <h2>Video</h2>
-            <iframe className='video' width="400" height="300" src="https://www.youtube.com/embed/bTOdnw2alHw?si=W2pUiBJTNOxwP87g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe  className='video' width="400" height="300" src="https://www.youtube.com/embed/bTOdnw2alHw?si=W2pUiBJTNOxwP87g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <h3>Descrição</h3>
            <p>é uma produção educativa do canal Débora Aladim, que apresenta de forma clara e objetiva os principais eventos e contextos históricos das duas mais emblemáticas revoltas populares do Brasil no período republicano: a Guerra de Canudos (1896–1897) e a Guerra do Contestado (1912–1916). 
              O vídeo aborda: As causas sociais, políticas e econômicas que motivaram cada conflito; O papel das lideranças religiosas e messiânicas, como Antônio Conselheiro e José Maria; A repressão violenta do Estado brasileiro e o impacto dessas guerras na formação da identidade nacional.</p>
