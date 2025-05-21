@@ -4,6 +4,7 @@ import LogoG3 from "../assets/logoG3.png";
 
 //Componentes
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 
 //CSS
 import "../pages/style/SobreNos.css";
@@ -56,7 +57,7 @@ function SobreNos() {
       </section>
       </center>
 
-      <Footer/>
+      <Footer corHeaderFooter="verde" corInfoFooter="verdeClaro"/>
     </>
   );
 }
