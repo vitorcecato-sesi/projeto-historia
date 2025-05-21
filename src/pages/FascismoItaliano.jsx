@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom"
 import APIWikipedia from "../components/APIWikipedia";
 import BotaoCurtirTema from "../components/BotaoCurtirTema";
+import BotaoTema from "../components/BotaoTema"
 
 function FascismoItaliano() {
 
@@ -68,6 +69,7 @@ function FascismoItaliano() {
         <>
             <Navbar />
             <br></br>
+            <BotaoTema/>
             <section className="carousel">
                 <button onClick={prevSlide} className="carousel-button">‹</button>
                 <section className="carousel-slide">
