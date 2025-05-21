@@ -1,7 +1,3 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
-import RevolucaoDe1930 from './pages/RevolucaoDe1930'
-import Home from "./pages/Home"
 import './App.css'
 
 function App() {

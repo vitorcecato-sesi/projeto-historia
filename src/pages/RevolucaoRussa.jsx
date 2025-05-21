@@ -22,8 +22,9 @@ function RevolucaoRussa() {
                 </section>
                 <section className='wikiRR'>
                     <h1>Informações Wikipédia</h1>
-                    <APIWikipedia titulo="Revolução Russa de 1917" campoWiki= "APIWIKI"/>
+                    <APIWikipedia titulo="Revolução Russa de 1917" campoWiki= "APIWIKI" imagemID="imgWIKIRR" imagemAlt="Imagem da Wiki" imagemClass="classeimg" />
                     <section id='APIWIKI'></section>
+                    <img id='imgWIKIRR' src="" alt="" />
                 </section>
             </section>
         </>
