@@ -15,7 +15,6 @@ import BotaoTema from "../components/BotaoTema"
 //CSS
 import "./style/RevolucaoDe1930.css";
 
-import Navbar from "../components/Navbar"
 import LogoSiteMarrom from "../assets/Logos/LogoSiteMarrom.png"
 
 function RevolucaoDe1930() {
