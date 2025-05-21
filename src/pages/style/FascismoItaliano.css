@@ -1,6 +1,10 @@
 .tituloF {
-    font-size: 2em;
-    padding: 1em;
+    font-size: 2.5em;
+    text-align: left;
+    width: 70vw;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    font-family: "Montserrat", sans-serif;
 }
 
 .verdeTexto {
@@ -15,6 +19,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Montserrat", sans-serif;
 }
 
 .box-infow {
@@ -45,6 +50,7 @@
     justify-content: space-between;
     margin-top: 5em;
     box-shadow: #86895d 1px 1px 5px 1px;
+    transition: 0.5s;
 }
 
 .box-info:hover {
@@ -117,6 +123,7 @@ font-size: 1.7em;
     flex-direction: column;
     align-items: center;
     box-shadow: #86895d 1px 1px 5px 1px;
+    transition: 0.5s;
 }
 
 .imgout:hover {
@@ -132,7 +139,7 @@ font-size: 1.7em;
 
 .imgout p {
     font-style: italic;
-    color: #54582f;
+    color: red;
     padding: 1em;
 }
 
@@ -160,14 +167,14 @@ font-size: 1.7em;
 }
 
 .carousel-button {
-  background: none;
+  background: #54582f;
   border: none;
-  font-size: 2rem;
-  color: #333;
+  border-radius: 50%;
+  font-size: 1em;
+  color: white;
   cursor: pointer;
-  padding-left: 1em;
-  padding-right: 1em;
-  transition: color 0.3s ease;
+  width: 3vw;
+  padding: 1em;
 }
 
 .carousel-button:hover {
@@ -179,60 +186,92 @@ font-size: 1.7em;
 }
 
 .slide {
-  width: 20vw;
-  height: 85vh;
-  margin: 1em;
-  padding: 1em;
-  border: 2px solid #ccc;
-  border-radius: 1em;
   position: relative;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  
+  font-family: "Montserrat", sans-serif;
+  width: 22vw;
+  height: 70vh;
 }
 
 .slide img {
-  max-width: 100%;
-  border-radius: 10px;
+  object-fit: cover;
+  position: relative;
+  width: 22vw;
+  height: 70vh;
+  z-index: 0;
 }
 
 .slide h2 {
-  font-size: 1.5rem;
-  margin: 10px 0 5px;
+  font-size: 1.7em;
+  padding-top: 0.5em;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  bottom: 6.5em;
+  left: 0.5em;
+  color: red;
 }
 
-.slide p {
-  font-size: 1rem;
-  color: #666;
+.slide a {
+  font-size: 1em;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  bottom: 10.5em;
+  left: 1em;
+  color: red;
+  width: 21vw;
+  font-weight: 500;
+  display: flex;
 }
 
 .slideAP {
-  width: 20vw;
-  height: 85vh;
-  margin-top: 3em;
-  padding: 15px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
   position: relative;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  width: 22vw;
+  height: 70vh;
+  padding: 1em;
+  margin-top: 2em;
 }
 
 .slideAP img {
-  max-width: 100%;
-  border-radius: 10px;
+  object-fit: cover;
+  position: relative;
+  width: 22vw;
+  height: 70vh;
+  z-index: 0;
 }
 
 .slideAP h2 {
-  font-size: 1.5rem;
-  padding: 0.5em;
-  width: 9vw;
+  font-size: 1.7em;
+  padding-top: 0.5em;
   text-align: left;
+  position: relative;
+  z-index: 1;
+  bottom: 6.5em;
+  left: 0.5em;
+  color: white;
 }
 
-.slideAP p {
-  font-size: 1rem;
-  color: #666;
+.slideAP a {
+  font-size: 1em;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  bottom: 10.5em;
+  left: 1em;
+  color: white;
+  width: 21vw;
+  font-weight: 500;
+  display: flex;
+  transition: 0.2s;
+}
+
+.slideAP a:hover {
+color: red;
+transition: 0.2s;
+}
+
+.slide a:hover {
+color: white;
+transition: 0.2s;
 }
