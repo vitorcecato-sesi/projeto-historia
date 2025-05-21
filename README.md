@@ -4,7 +4,7 @@
 **Professores:**
 - Antonio Tupinamba (SENAI)
 - Leandro Grosso (SENAI)
-- Julia (História - SESI)
+- Julia Milani (História - SESI)
 
 **Grupo 3 - Integrantes:**
 - [Laura Betti Migliaccio](https://www.linkedin.com/in/laurabettimigliaccio/)
@@ -13,6 +13,7 @@
 - [Pietro Melle Michelin](https://www.linkedin.com/in/pietro-michelin/)
 - [Pyetro Joaquim Taborda Nunes](https://www.linkedin.com/in/pyetro-joaquim-nunes/)
 - [Vitor Geraldo Cecato](https://www.linkedin.com/in/vitorgcecato)
+
 
 # Sobre o Site
 **Sistemas:**
@@ -29,6 +30,7 @@
 - Revolução Russa
 - Crise de 1929
 - Revolução de 1930
+
 
 # React + Vite
 
