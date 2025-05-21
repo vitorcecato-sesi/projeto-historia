@@ -59,10 +59,10 @@ function Crisede29() {
 <br></br>
 <br></br>
 
-      <div className="Blocao-WikieApi">
-        <div className="Api-Wikipedia">
+      <div className="Blocao-WikieApiC">
+        <div className="Api-WikipediaC">
           <center>
-            <div className="Titulo-Api">
+            <div className="Titulo-ApiC">
               <h2>Informações da Wikipédia</h2>
             </div>
           </center>
@@ -70,7 +70,7 @@ function Crisede29() {
           <br />
 
           <center>
-            <div className="Texto-Api">
+            <div className="Texto-ApiC">
               <section className="textwiki" id="wikiGCa">
               <APIWikipedia titulo="Crise de 1929" campoWiki="wikiGCa"/>
               </section>
@@ -112,6 +112,7 @@ function Crisede29() {
           <div>
             <img className="Img-Ante" src={ImgAnte} ></img>
           </div>
+          <br/>
           <div>
             <img className="Img-Ante" src={ImgAnte2} ></img>
           </div>
@@ -121,11 +122,13 @@ function Crisede29() {
             <div className="Titulo-Antecedentes">
               <h2>Antecedentes </h2>
             </div>
+            <div className="Para-Antece">
             <p>
             Antes de iniciar a Crise de 1929, houve-se acontecimentos que influenciaram para que ele acontecesse. Após a Primeira Guerra Mundial em 1918, a Europa estava devastada, enquanto os EUA se destacavam como a principal potência capitalista. Nos anos 1920, os americanos experimentaram prosperidade impulsionada pela superprodução e consumo excessivo, criando o American Way of Life, focado no consumo e na classe média.A Europa dependia de ajuda financeira dos EUA para se reconstruir, e os americanos emprestaram muito dinheiro sem exigir pagamento imediato, contribuindo para seu crescimento econômico. 
 O governo dos EUA, liderado pelo Partido Republicano, adotava uma política de liberalismo econômico, e o princípio da não intervenção do Estado na economia. Com isso, não havia fiscalização sobre o mercado financeiro nem controle sobre os créditos concedidos, tanto aos consumidores internos quanto aos países estrangeiros. Essa ausência de regulação contribuiu para o desequilíbrio que mais tarde levaria à crise de 1929.
 
             </p>
+            </div>
           </div>
         </div>
       </center>
@@ -134,17 +137,19 @@ O governo dos EUA, liderado pelo Partido Republicano, adotava uma política de l
       <center>
         <div className="Bloco-Bolsa">
           <div>
-            <img className="Img-OqInflu" src={} ></img>
+            <img className="Img-OqInflu"  ></img>
           </div>
 
           <div className="Texto-Bolsa">
             <div className="Titulo-Bolsa">
               <h2>Bolsa de Valores</h2>
             </div>
+            <div className="Para-Bolsa">
             <p>
             Em 1929, a Bolsa de Valores de Nova York entrou em colapso, dando início à Grande Depressão. Nos anos anteriores, os EUA viviam um forte crescimento econômico, e muitas pessoas investiam na bolsa, muitas vezes com dinheiro emprestado, o que gerou uma bolha especulativa. Em 24 de outubro, a "quinta-feira negra", os preços das ações começaram a cair rapidamente, e o pânico se intensificou em 29 de outubro, a "terça-feira negra". Milhares de pessoas perderam tudo, empresas faliram, o desemprego disparou e a crise se espalhou pelo mundo. Como resposta, os EUA mudaram as regras do mercado financeiro.
 
             </p>
+            </div>
           </div>
         </div>
       </center>
