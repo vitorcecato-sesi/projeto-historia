@@ -14,7 +14,7 @@ function APIWikipedia(props) {
     useEffect(() => {
         async function buscarWiki() {
             try {
-                const resposta = await fetch(`https://pt.wikipedia.org/w/api.php?action=query&prop=pageimages|extracts&exintro&titles=${titulo}&format=json&origin=*`)
+                const resposta = await fetch(`https://pt.wikipedia.org/w/api.php?action=query&prop=pageimages|extracts&exintro&piprop=original&titles=${titulo}&format=json&origin=*`)
                 const dados = await resposta.json()
                 if (dados && dados.query && dados.query.pages) {
                     // Verifica se a resposta contém a propriedade "pages"
@@ -22,7 +22,7 @@ function APIWikipedia(props) {
                     const pagina = dados.query.pages // Pega a página da resposta
                     const paginaID = Object.keys(pagina)[0] // Pega o primeiro ID de página
                     const conteudo = pagina[paginaID].extract // Pega o conteúdo da página
-                    const imagem = pagina[paginaID].thumbnail.source // Pega a imagem da página
+                    const imagem = pagina[paginaID].original.source // Pega a imagem da página
 
                     setInfo(conteudo) // Atualiza o estado com o conteúdo
                     setImagemURL(imagem) // Atualiza o estado com a imagem
