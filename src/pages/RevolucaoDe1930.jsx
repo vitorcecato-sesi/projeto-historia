@@ -8,6 +8,7 @@ import foto5 from "../assets/Imgs - Revolução de 1930/foto5_revolução1930.pn
 //Componentes
 import APIWikipedia from '../components/APIWikipedia'
 import Navbar from "../components/Navbar";
+import Footer from "../components/"
 
 //CSS
 import "./style/RevolucaoDe1930.css";
@@ -112,16 +113,17 @@ function RevolucaoDe1930() {
           <hr id="hrREV1930"/>
 
           <section className="infoAPI">
-            <APIWikipedia titulo="Revolução de 1930" campoWiki= "APIWIKI-Revolução1930"/>
+            <APIWikipedia titulo="Revolução de 1930" campoWiki= "APIWIKI-Revolução1930" imagemID="imgWIKI-Revolução1930" imagemAlt="Revolução de 1930" imagemClass="imgWIKI"/>
             <h2 className="titulo-API"> Informações da API </h2>
             <section id='APIWIKI-Revolução1930'> </section>
+            <img src="" alt="" id="imgWIKI-Revolução1930"/>
           </section>
 
           <hr id="hrREV1930"/>
 
           <section className="bloco-Video">
             <h2 className="titulo-Video">
-              Vídeo Aula - Revolução de 1930 Conheça os Principais Fatos{" "}
+              Vídeo Aula - Revolução de 1930 Conheça os Principais Fatos
             </h2>
             <iframe
               className="video"
@@ -161,6 +163,8 @@ function RevolucaoDe1930() {
           </section>
         </section>
       </center>
+
+      <Footer corHeaderFooter="marrom" corInfoFooter="marromClaro"/>
     </>
   );
 }

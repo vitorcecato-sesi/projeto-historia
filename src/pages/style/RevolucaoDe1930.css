@@ -255,6 +255,11 @@
     cursor: pointer;
 }
 
+.imgWIKI{
+    width: 25vw;
+    border-radius: 2em;
+}
+
 /* HR - linha */
 #hrREV1930 {
     width: 90vw;
