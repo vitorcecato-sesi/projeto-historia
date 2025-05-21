@@ -11,6 +11,7 @@ import LogoSiteMarrom from "../assets/Logos/LogoSiteMarrom.png"
 import APIWikipedia from '../components/APIWikipedia'
 import Navbar1 from "../components/Navbar"
 import Footer from "../components/Footer";
+import BotaoCurtirTema from "../components/BotaoCurtirTema";
 
 //CSS
 import "./style/RevolucaoDe1930.css";
@@ -25,14 +26,14 @@ function RevolucaoDe1930() {
       <section className="slide">
         <img className="foto1" src={foto1} alt="Foto1" />
         <h2 className="textoSlide">
-          <span className="corTexto"> CONHEÇA SOBRE A </span> <br />
-          <span className="corTexto2"> REVOLUÇÃO DE 1930 </span>
+          <span className="corTextoRevolução1930"> CONHEÇA SOBRE A </span> <br />
+          <span className="corTexto2Revolução1930"> REVOLUÇÃO DE 1930 </span>
         </h2>
       </section>
 
       <center>
         <section className="blocos">
-          
+
           <section className="bloco-OQueFoi">
             <img className="foto2" src={foto2} alt="Foto2" />
             <p className="texto-OQueFoi">
@@ -43,6 +44,7 @@ function RevolucaoDe1930() {
               também conhecida como República Velha, na época comandada por
               Washington Luis, e instituiu o Governo provisório.
             </p>
+            <BotaoCurtirTema idSection="bloco1RV30" tema="Revolução de 1930"/>
           </section>
 
           <section>
@@ -76,11 +78,15 @@ function RevolucaoDe1930() {
               vice, o presidente da Paraíba, João Pessoa. Júlio Prestes ganhou
               nas eleições de 1930 para o cargo de presidente, o que deixou a
               Aliança Liberal desconfiada de uma suposta fraude eleitoral.
+              <br/>
+              <br/>
+              <BotaoCurtirTema idSection="bloco2RV30" tema="Revolução de 1930"/>
             </p>
             <img className="foto3" src={foto3} alt="Foto3" />
           </section>
 
           <section className="bloco-Conflito">
+            <BotaoCurtirTema idSection="bloco3RV30" tema="Revolução de 1930"/>
             <p className="texto-Conflito">
               <h3 className="titulo-Conflito"> Conflito </h3>
               Vice-presidente de Getúlio Vargas, o governador João Pessoa sofreu
@@ -110,22 +116,26 @@ function RevolucaoDe1930() {
               do Trabalho, da Indústria e Comércio e o da Educação e Saúde. Por
               fim, a Constituição de 1889 foi revogada e o período das
               oligarquias latifundiárias do Brasil terminou.
+              <br/>
+              <br/>
+              <BotaoCurtirTema idSection="bloco4RV30" tema="Revolução de 1930"/>
             </p>
           </section>
 
           <hr id="hrREV1930"/>
 
           <section className="infoAPI">
-            <APIWikipedia titulo="Revolução de 1930" campoWiki= "APIWIKI-Revolução1930"/>
+            <APIWikipedia titulo="Revolução de 1930" campoWiki= "APIWIKI-Revolução1930" imagemID="imgWIKI-Revolução1930" imagemAlt="Revolução de 1930" imagemClass="imgWIKI"/>
             <h2 className="titulo-API"> Informações da API </h2>
             <section id='APIWIKI-Revolução1930'> </section>
+            <img src="" alt="" id="imgWIKI-Revolução1930"/>
           </section>
 
           <hr id="hrREV1930"/>
 
           <section className="bloco-Video">
             <h2 className="titulo-Video">
-              Vídeo Aula - Revolução de 1930 Conheça os Principais Fatos{" "}
+              Vídeo Aula - Revolução de 1930 Conheça os Principais Fatos
             </h2>
             <iframe
               className="video"

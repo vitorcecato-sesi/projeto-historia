@@ -1,4 +1,4 @@
-import "./style/Home.css"
+
 
 import Navbar from "../components/Navbar"
 import LogoSiteRoxo from "../assets/Logos/LogoSiteRoxo.png"
@@ -109,3 +109,4 @@ function Home() {
 }
 
 export default Home;
+

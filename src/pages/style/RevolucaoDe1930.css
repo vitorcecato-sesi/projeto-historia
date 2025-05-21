@@ -34,12 +34,12 @@
     }
 }
 
-.corTexto{
+.corTextoRevolução1930{
     color: black;
     background-color: #B66E3F;
 }
 
-.corTexto2{
+.corTexto2Revolução1930{
     color: #B66E3F;
     background-color: black;
 }
@@ -255,6 +255,11 @@
     transform: scale(1.1);
     transition: 0.9s;
     cursor: pointer;
+}
+
+.imgWIKI{
+    width: 35vw;
+    border-radius: 2em;
 }
 
 /* HR - linha */
