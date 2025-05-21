@@ -3,7 +3,7 @@ import { useState } from "react";
 import "../components/styles/Footer.css";
 import LogoSiteRoxo from "../assets/LogoSiteRoxo.png";
 import iconeGithub from "../assets/ImgsFooter/iconeGithub.png";
-import iconeEmail from "../assets/ImgsFooter/iconeEmail.png";
+import iconeGrupo from "../assets/ImgsFooter/iconeGrupo.png";
 import iconeYT from "../assets/ImgsFooter/iconeYT.png";
 import logoG3 from "../assets/logoG3.png";
 
@@ -28,8 +28,8 @@ function Footer(props) {
 
                 <section className="icones">
                     <a href="https://github.com/vitorcecato-sesi/projeto-historia"> <img src={iconeGithub} alt="Github" /> </a>
-                    <a href="linkEmail"> <img src={iconeEmail} alt="Email" /> </a>
                     <a href="linkVideoYt"><img src={iconeYT} alt="Vídeo Youtube" /> </a>
+                    <a href="http://localhost:5173/SobreNos"> <img src={iconeGrupo} alt="Grupo" /> </a>
                 </section>
             </section>
 
@@ -71,8 +71,8 @@ function Footer(props) {
                         </p>
                     </section>
                 </section>
-        </section>
-      </footer>
+            </section>
+        </footer>
     </>
   );
 }
