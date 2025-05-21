@@ -1,11 +1,9 @@
-
-
 .foto1{
     width: 100vw;
     height: auto;
 }
 
-.slide{
+.slideRev1930{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -265,6 +263,8 @@
 /* HR - linha */
 #hrREV1930 {
     width: 90vw;
+    height: 0.1vw;
+    background-color: gray;
 }
 
 .titulo-API{

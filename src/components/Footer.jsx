@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "../components/styles/Footer.css";
 import iconeGithub from "../assets/ImgsFooter/iconeGithub.png";
@@ -48,13 +49,13 @@ function Footer(props) {
                     <section className="conteudos">
                         <p>
                             <h3> Conteúdos </h3>
-                            <a href=""> Guerra de Canudos </a> <br />
-                            <a href=""> Guerra do Contestado </a> <br />
-                            <a href=""> Primeira Guerra Mundial </a> <br />
-                            <a href=""> Revolução Russa </a> <br />
-                            <a href=""> Fascismo Italiano </a> <br />
-                            <a href=""> Crise de 1929 </a> <br />
-                            <a href=""> Revolução de 1930 </a> <br />
+                            <Link to="/GuerraDeCanudos"> Guerra de Canudos </Link> <br />
+                            <Link to="/GuerraDoContestado"> Guerra do Contestado </Link> <br />
+                            <Link to="/PrimeiraGuerraMundial"> Primeira Guerra Mundial </Link> <br />
+                            <Link to="/RevolucaoDe1930"> Revolução Russa </Link> <br />
+                            <Link to="/FascismoItaliano"> Fascismo Italiano </Link> <br />
+                            <Link to="/CriseDe1929"> Crise de 1929 </Link> <br />
+                            <Link to="/RevolucaoDe1930"> Revolução de 1930 </Link> <br />
                         </p>
                     </section>
 
