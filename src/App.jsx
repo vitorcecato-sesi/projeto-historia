@@ -30,7 +30,7 @@ function App() {
           <Route path='/Revolução-de-1930' element={<RevolucaoDe1930/>}/>         
         </Routes>
       </BrowserRouter>
->>>>>>>>> Temporary merge branch 2
+
     </>
   )
 }
