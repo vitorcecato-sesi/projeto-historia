@@ -19,11 +19,17 @@
     animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
 }
 
+#navbarRevolucaoRussa {
+    background: linear-gradient(90deg, #8896FF, rgba(136, 150, 255, 0.6), #8896FF); /* Adicione mais cores para suavizar */
+    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
+    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+}
+
 .blocoPrincipalNavbar img {
     width: 8vw;
     height: auto;
     transition: all 0.7s ease;
-    filter: drop-shadow(0 0 15px white);
+    filter: drop-shadow(0 0 25px white);
 }
 
 .blocoPrincipalNavbar img:hover {

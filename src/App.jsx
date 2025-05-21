@@ -7,10 +7,7 @@
 //.
 
 // Páginas
-  import RevolucaoRussa from './pages/RevolucaoRussa'
-//.
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
+import RevolucaoRussa from './pages/RevolucaoRussa'
 import Home from './pages/Home'
 import PrimeiraGuerraMundial from './pages/Primeira-Guerra-Mundial'
 
