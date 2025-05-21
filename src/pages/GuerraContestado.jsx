@@ -1,6 +1,7 @@
 import "./style/GuerraContestado.css";
 import Navbar from "../components/Navbar";
 import APIWikipedia from "../components/APIWikipedia";
+import BotaoCurtirTema from "../components/BotaoCurtirTema";
 
 function GuerraContestado() {
   return (
