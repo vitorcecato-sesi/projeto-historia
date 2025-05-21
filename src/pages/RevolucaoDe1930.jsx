@@ -125,7 +125,7 @@ function RevolucaoDe1930() {
             </h2>
             <iframe
               className="video"
-              width="820"
+              width="700"
               height="415"
               src="https://www.youtube.com/embed/LXdMu4z_RvU?si=1w0ozr6Jzn_OyECO&amp;start=5"
               title="YouTube video player"
