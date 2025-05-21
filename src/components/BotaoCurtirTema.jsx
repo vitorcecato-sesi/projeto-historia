@@ -3,18 +3,17 @@ import "./styles/BotaoCurtirTema.css"
 
 function BotaoCurtirTema(props) {
     const [curtido, setCurtido] = useState(false)
-    const [sectionsFavoritas, setSectionsFavoritas] = useState(JSON.parse(localStorage.getItem("sectionsFavoritas")) || [])
-    const section = document.getElementById(`${props.idSection}`) || ""
+    const [quantCurtidas, setQuantCurtidas] = useState(JSON.parse(localStorage.getItem("curtidas")) || [])
 
     useEffect(() => {
-        localStorage.setItem("sectionsFavoritas", JSON.stringify(sectionsFavoritas))
-    }, [sectionsFavoritas])
+        localStorage.setItem("curtidas", JSON.stringify(quantCurtidas))
+    }, [quantCurtidas])
 
     useEffect(() => {
         
             console.log("Verificando se o botão foi acionado")
             
-            const existe = sectionsFavoritas.find(item => item.id === props.idSection)
+            const existe = quantCurtidas.find(item => item.id === props.idSection)
             if (existe) {
                 setCurtido(true)
                 console.log("Curtido effect")
@@ -23,7 +22,7 @@ function BotaoCurtirTema(props) {
                 console.log("Descurtido effect")
             }
         
-    }, [props.idSection, sectionsFavoritas])
+    }, [props.idSection, quantCurtidas])
 
     function botaoAcionado() {
         console.log("Botão acionado")
@@ -34,19 +33,19 @@ function BotaoCurtirTema(props) {
 
             const novoItem = {
                 id: props.idSection ? props.idSection : "",
-                html: section.innerHTML
+                tema: props.tema
             }
                 
-            const novaArray = [...sectionsFavoritas, novoItem]
+            const novaArray = [...quantCurtidas, novoItem]
 
-            setSectionsFavoritas(novaArray)
-            localStorage.setItem("sectionsFavoritas", JSON.stringify(novaArray))
+            setQuantCurtidas(novaArray)
+            localStorage.setItem("curtidas", JSON.stringify(novaArray))
 
         } else {
             console.log("Descurtido")
             setCurtido(!curtido)
 
-            setSectionsFavoritas((prev) => {
+            setQuantCurtidas((prev) => {
                 const novoArray = prev.filter(item => item.id !== props.idSection)
                 return novoArray
             })
