@@ -1,66 +1,68 @@
-import { useState } from "react"
-import Img1 from "../assets/Imgs-GuerraCanudos/Canu1.png"
-import img2 from "../assets/Imgs-GuerraCanudos/Carrossel3.png"
-import img3 from "../assets/Imgs-GuerraCanudos/Carrosel.png"
-import img4 from "../assets/Imgs-GuerraCanudos/Canu4.png"
-import "./style/GuerraCanudos.css"
+import { useState } from "react";
+import Img1 from "../assets/Imgs-GuerraCanudos/Canu1.png";
+import img2 from "../assets/Imgs-GuerraCanudos/Carrossel3.png";
+import img3 from "../assets/Imgs-GuerraCanudos/Carrosel.png";
+import img4 from "../assets/Imgs-GuerraCanudos/Canu4.png";
+import "./style/GuerraCanudos.css";
 
-import IMGIntro from "../assets/Imgs-GuerraCanudos/Intro.png"
-import IMGOqInflu from "../assets/Imgs-GuerraCanudos/IMGOqInflu.png"
-import ImgConflito from "../assets/Imgs-GuerraCanudos/Conflito.png"
-import ImgANtonio from "../assets/Imgs-GuerraCanudos/Antonio.png"
-import ImgFim from "../assets/Imgs-GuerraCanudos/Fim.png"
+import IMGIntro from "../assets/Imgs-GuerraCanudos/Intro.png";
+import IMGOqInflu from "../assets/Imgs-GuerraCanudos/IMGOqInflu.png";
+import ImgConflito from "../assets/Imgs-GuerraCanudos/Conflito.png";
+import ImgANtonio from "../assets/Imgs-GuerraCanudos/Antonio.png";
+import ImgFim from "../assets/Imgs-GuerraCanudos/Fim.png";
 
-import APIWikipedia from "../components/APIWikipedia"
-import Navbar from "../components/Navbar"
+import APIWikipedia from "../components/APIWikipedia";
+import Navbar from "../components/Navbar";
 
 const imagens = [Img1, img2, img3, img4];
-
 
 function GuerraCanudos() {
   const [index, setIndex] = useState(0);
 
   return (
     <>
-    <Navbar />
-     <section className="Bloco-Carrossel">
- 
-  <section className="Carrossel-Container">
-    <button
-      className="Botao-Carrossel Esquerda"
-      onClick={() => setIndex((prev) => (prev === 0 ? imagens.length - 1 : prev - 1))}
-    >
-      ‹
-    </button>
+      <Navbar />
+      <section className="Bloco-Carrossel">
+        <section className="Carrossel-Container">
+          <button
+            className="Botao-Carrossel Esquerda"
+            onClick={() =>
+              setIndex((prev) => (prev === 0 ? imagens.length - 1 : prev - 1))
+            }
+          >
+            ‹
+          </button>
 
-    <img
-      src={imagens[index]}
-      alt={`Slide ${index + 1}`}
-      className="Imagem-Carrossel"
-    />
+          <img
+            src={imagens[index]}
+            alt={`Slide ${index + 1}`}
+            className="Imagem-Carrossel"
+          />
 
-    <button
-      className="Botao-Carrossel Direita"
-      onClick={() => setIndex((prev) => (prev === imagens.length - 1 ? 0 : prev + 1))}
-    >
-      ›
-    </button>
-  </section>
-<center>
-  <section className="Bolinhas">
-    {imagens.map((_, i) => (
-      <span
-        key={i}
-        className={`Bola ${i === index ? "active" : ""}`}
-        onClick={() => setIndex(i)}
-      />
-    ))}
-  </section>
-</center>
-</section>
+          <button
+            className="Botao-Carrossel Direita"
+            onClick={() =>
+              setIndex((prev) => (prev === imagens.length - 1 ? 0 : prev + 1))
+            }
+          >
+            ›
+          </button>
+        </section>
+        <center>
+          <section className="Bolinhas">
+            {imagens.map((_, i) => (
+              <span
+                key={i}
+                className={`Bola ${i === index ? "active" : ""}`}
+                onClick={() => setIndex(i)}
+              />
+            ))}
+          </section>
+        </center>
+      </section>
 
-<br></br>
-<br></br>
+      <br></br>
+      <br></br>
 
       <section className="Blocao-WikieApi">
         <section className="Api-Wikipedia">
@@ -71,18 +73,25 @@ function GuerraCanudos() {
           </center>
 
           <br />
-           <section className="Texto-Api">
-      
-              <img src="" alt="" id="ImgAPi"/>
-    
-            </section>
+          <article className="Wiki-Api">
 
-
-            <section className="Texto-Api">
-              <section className="textwiki" id="wikiGCa">
-              <APIWikipedia titulo="Guerra de Canudos" campoWiki="wikiGCa" imagemID="ImgApi" imagemAlt="Nome" imagemClass="classe" />
-              </section>
+               <section className="Img-Api">
+            <img src="" alt="" id="ImgApi" />
+          </section>
+        
+          <section className="Texto-Api">
+            <section className="textwiki" id="wikiGCa">
+              <APIWikipedia
+                titulo="Guerra de Canudos"
+                campoWiki="wikiGCa"
+                imagemID="ImgApi"
+                imagemAlt="Nome"
+                imagemClass="ImgApi"
+              />
             </section>
+          </section>
+
+          </article>
         </section>
 
         <section className="Bloco-Intro">
@@ -121,12 +130,12 @@ function GuerraCanudos() {
               <h2>O que influenciou a Guerra de Canudos?</h2>
             </section>
             <section className="Texto-OqIn">
-            <p>
-              Naquela época o Brasil tinha a acabado de entrar em uma república
-              porém os impostos e a condição de vida dos sertanejos não estava
-              boa, o governo tinha medo do crescimento de poder do Antônio
-              Conselheiro
-            </p>
+              <p>
+                Naquela época o Brasil tinha a acabado de entrar em uma
+                república porém os impostos e a condição de vida dos sertanejos
+                não estava boa, o governo tinha medo do crescimento de poder do
+                Antônio Conselheiro
+              </p>
             </section>
           </section>
         </section>
@@ -143,16 +152,16 @@ function GuerraCanudos() {
             <section className="Titulo-Con">
               <h2>Conflito</h2>
             </section>
-             <section className="Texto-OqIn">
-            <p>
-              O governo republicano viu Canudos como uma ameaça à ordem
-              estabelecida e enviou várias expedições militares para destruí-lo.
-              Após três tentativas fracassadas, uma quarta expedição, com cerca
-              de 10 mil soldados, conseguiu dizimar a comunidade.
-            </p>
+            <section className="Texto-OqIn">
+              <p>
+                O governo republicano viu Canudos como uma ameaça à ordem
+                estabelecida e enviou várias expedições militares para
+                destruí-lo. Após três tentativas fracassadas, uma quarta
+                expedição, com cerca de 10 mil soldados, conseguiu dizimar a
+                comunidade.
+              </p>
             </section>
           </section>
-          
         </section>
       </center>
 
@@ -209,9 +218,9 @@ function GuerraCanudos() {
         <section className="Juntos">
           <section className="Bloco-Video">
             <center>
-            <h2 className="Titulo-Video">
-              Vídeo explicativo sobre a Guerra de Canudos
-            </h2>
+              <h2 className="Titulo-Video">
+                Vídeo explicativo sobre a Guerra de Canudos
+              </h2>
             </center>
             <center>
               <iframe
@@ -238,12 +247,21 @@ function GuerraCanudos() {
 
           <section className="Bloco-Filme">
             <center>
-            <h2 className="Titulo-Video">
-              Filme explicativo sobre a Guerra de Canudos
-            </h2>
+              <h2 className="Titulo-Video">
+                Filme explicativo sobre a Guerra de Canudos
+              </h2>
             </center>
             <center>
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/P4OYhj7Io0E?si=ews4oBQZWYqR7BRp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/P4OYhj7Io0E?si=ews4oBQZWYqR7BRp"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </center>
             <br></br>
             <center>
@@ -266,4 +284,4 @@ function GuerraCanudos() {
   );
 }
 
-export default GuerraCanudos
+export default GuerraCanudos;

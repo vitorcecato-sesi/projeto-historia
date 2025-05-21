@@ -1,7 +1,5 @@
 import './App.css'
-import GuerraContestado from './pages/GuerraContestado.jsx'
-import RevolucaoRussa from './pages/RevolucaoRussa'
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Crisede29 from './pages/Crisede1929'
 import GuerraCanudos from './pages/GuerraCanudos'
 import Home from './pages/Home'
