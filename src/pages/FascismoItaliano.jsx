@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar"
 import React, { useState } from 'react';
 import { Link } from "react-router-dom"
 import APIWikipedia from "../components/APIWikipedia";
+import BotaoCurtirTema from "../components/BotaoCurtirTema";
 
 function FascismoItaliano() {
 
@@ -108,9 +109,11 @@ function FascismoItaliano() {
                         <p> O fascismo foi um regimento político totalitário liderado por Benito Mussolini, o movimento surgiu na itália em 1910 e foi oficializado como partido político em 1922, governando a itália
                             até 1943. O fascismo dominou o país inteiro (educação, economia, religião e política).
                         </p>
+                         <BotaoCurtirTema idSection="0" tema="Fascismo Italiano"/>
                     </section>
                     <img src="https://cartasabertas.com.br/wp-content/uploads/2022/09/capa-nazismo-bandeira.jpg" />
                 </section>
+                
 
                 <section id="1" className="box-info">
                     <section className="box-coluna">
@@ -122,6 +125,7 @@ function FascismoItaliano() {
                             Em meio a tudo isso, os partidos de esquerda ganharam força, fato esse que incomodou os latifundiários e burgueses.
                             Todos esses fatores "justificam" a força e popularidade do fascismo italiano na época.
                         </p>
+                         <BotaoCurtirTema idSection="1" tema="Fascismo Italiano"/>
                     </section>
                 </section>
                 <br></br>
@@ -141,6 +145,7 @@ function FascismoItaliano() {
                             Em 1930, o fascismo incorpora o discurso de expansão territorial, ao declarar guerra à Etiópia. O conflito tinha como objetivo exaltar a "raça italiana", seus princípios e virtudes. Igualmente é época quando Mussolini se aproxima de Adolf Hitler, tendo como resultado
                             a promulgação das leis antissemitas onde os judeus italianos perderam seus direitos civis.
                         </p>
+                        <BotaoCurtirTema idSection="2" tema="Fascismo Italiano"/>
                     </section>
                 </section>
                 <br></br>
@@ -155,6 +160,7 @@ function FascismoItaliano() {
                         <h2>FIM DO GOVERNO</h2>
                         <p>O governo de Mussolini chega ao seu final em 1943, em um momento de sérias derrotas da Itália durante a Segunda Guerra Mundial. Assustado, Mussolini é levado pelos alemães para o norte e quando tenta escapar para a Alemanha é capturado e morto pelos partisans.
                         </p>
+                        <BotaoCurtirTema idSection="3" tema="Fascismo Italiano"/>
                     </section>
                 </section>
 
@@ -177,6 +183,7 @@ function FascismoItaliano() {
                                 <li>10. Controle total do Estado fascista sobre assuntos relacionados à economia, política e cultura.</li>
                             </ul>
                         </section>
+                          <BotaoCurtirTema idSection="4" tema="Fascismo Italiano"/>
                     </section>
                 </section>
                 <br></br>
@@ -193,6 +200,7 @@ function FascismoItaliano() {
                             Nascido em 29 de julho de 1883, em uma cidade pequena localizada no sul da Itália, filho de pai ferreiro e mãe professora, cresceu com as histórias de nacionalismo e heroísmo político de seu pai socialista. Ainda jovem mudou-se para a Suíça e tornou-se um socialista
                             declarado, quando voltou para Itália, se estabeleceu como um jornalista socialista, porém futuramente Mussolini mudou sua ideologia política e criou um partido de extrema direita, em 1919.
                         </p>
+                        <BotaoCurtirTema idSection="5" tema="Fascismo Italiano"/>
                     </section>
                 </section>
 
