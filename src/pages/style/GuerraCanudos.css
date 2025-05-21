@@ -308,7 +308,8 @@ iframe {
   border-radius: 0.5em;
 }
 
-.Api-Wikipedia:hover,
+
+.Api-WikipediaC:hover,
 .Bloco-Intro:hover,
 .Bloco-OqInflu:hover,
 .Conflito:hover,
@@ -316,7 +317,8 @@ iframe {
 .Bloco-Fim:hover,
 .Bloco-Video:hover,
 .Bloco-Filme:hover {
-  box-shadow: 1px 1px 5px 1px #000000;
+   box-shadow: 0px 0px 10px 2px #000000;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .textwiki {

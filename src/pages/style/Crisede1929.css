@@ -339,6 +339,17 @@ body {
   box-shadow: 0px 0px 2px 0px #000000;
 }
 
+.Bloco-WikieApiC:hover,
+.Bloco-OqFoi:hover,
+.Bloco-Antecedentes:hover,
+.Bloco-Bolsa:hover,
+.Bloco-New:hover,
+.Bloco-Conse:hover,
+.Bloco-VideoC:hover,
+.Bloco-FilmeC:hover {
+  box-shadow: 0px 0px 10px 2px #000000;
+  transition: box-shadow 0.3s ease-in-out;
+}
 
 /* /////////////////////////////////////////// */
 
