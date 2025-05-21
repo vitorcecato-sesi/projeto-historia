@@ -1,7 +1,7 @@
 
 import Navbar from "../components/Navbar";
 import './style/GuerraContestado.css'
-import Navbar from '../components/Navbar'
+// import Navbar from '../components/Navbar'
 function GuerraContestado() {
     return (
         <div>
