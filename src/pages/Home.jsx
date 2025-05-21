@@ -109,5 +109,3 @@ function Home() {
 }
 
 export default Home;
-
->>>>>>>>> Temporary merge branch 2

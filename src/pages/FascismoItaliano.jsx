@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom"
 import APIWikipedia from "../components/APIWikipedia";
 
+import LogoSiteVerde from "../assets/Logos/LogoSiteVerde.png"
+
 function FascismoItaliano() {
 
     const slides = [
@@ -65,7 +67,7 @@ function FascismoItaliano() {
 
     return (
         <>
-            <Navbar />
+      <Navbar backgroundId="navbarFascismoItaliano" logo={LogoSiteVerde} />
             <br></br>
             <section className="carousel">
                 <button onClick={prevSlide} className="carousel-button">‹</button>
