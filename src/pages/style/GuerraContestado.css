@@ -171,5 +171,10 @@ gap: 4em;
     }
 }
 .imagemAPI{
-    
+    width: 30vw;
+    height: 30vh;
+    border-radius: 2vw;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 3px solid black;
 }
