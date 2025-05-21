@@ -85,6 +85,7 @@ body {
   height: 20em;
   border-radius: 0.5em;
   padding: 1.5em;
+  text-align: justify;
 }
 
 .Bloco-Intro {
@@ -104,6 +105,11 @@ body {
   gap: 0.12rem;
   padding: 0.12rem;
   flex-wrap: wrap;
+}
+
+.Texto-OqIn{
+  text-align: justify;
+  padding-right: 3rem;
 }
 
 .Titulo-Intro {
@@ -128,6 +134,7 @@ body {
   width: 80%;
   border-radius: 0.5em;
   padding: 1.5em;
+  text-align: justify;
 }
 
 .Bloco-OqInflu {
@@ -143,8 +150,8 @@ body {
 }
 
 .Img-OqInflu {
-width: 65%;
-  height: auto;
+width: 25vw;
+  height: 30vh;
   border-radius: 0.8em;
 }
 
@@ -197,6 +204,7 @@ width: 65%;
   width: 80%;
   border-radius: 0.5em;
   padding: 1.5em;
+  text-align: justify;
 }
 
 .Bloco-Fim {
@@ -235,6 +243,7 @@ width: 65%;
   width: 75%;
   border-radius: 0.5em;
   padding: 1.5em;
+  text-align: justify;
 }
 
 .Blocos-AnteFim {
@@ -285,6 +294,7 @@ width: 65%;
   padding: 1.5em;
   margin-top: 1em;
   width: 85%;
+  text-align: justify;
 }
 
 iframe {

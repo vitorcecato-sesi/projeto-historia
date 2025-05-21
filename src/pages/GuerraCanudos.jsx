@@ -12,6 +12,7 @@ import ImgANtonio from "../assets/Imgs-GuerraCanudos/Antonio.png";
 import ImgFim from "../assets/Imgs-GuerraCanudos/Fim.png";
 
 import APIWikipedia from "../components/APIWikipedia";
+import Navbar from "../components/Navbar";
 
 const imagens = [Img1, img2, img3, img4];
 
@@ -20,6 +21,7 @@ function GuerraCanudos() {
 
   return (
     <>
+    <Navbar />
      <div className="Bloco-Carrossel">
  
   <div className="Carrossel-Container">
@@ -113,12 +115,14 @@ function GuerraCanudos() {
             <div className="Titulo-OqIn">
               <h2>O que influenciou a Guerra de Canudos?</h2>
             </div>
+            <div className="Texto-OqIn">
             <p>
               Naquela época o Brasil tinha a acabado de entrar em uma república
               porém os impostos e a condição de vida dos sertanejos não estava
               boa, o governo tinha medo do crescimento de poder do Antônio
               Conselheiro
             </p>
+            </div>
           </div>
         </div>
       </center>
@@ -134,12 +138,14 @@ function GuerraCanudos() {
             <div className="Titulo-Con">
               <h2>Conflito</h2>
             </div>
+             <div className="Texto-OqIn">
             <p>
               O governo republicano viu Canudos como uma ameaça à ordem
               estabelecida e enviou várias expedições militares para destruí-lo.
               Após três tentativas fracassadas, uma quarta expedição, com cerca
               de 10 mil soldados, conseguiu dizimar a comunidade.
             </p>
+            </div>
           </div>
         </div>
       </center>
@@ -231,8 +237,7 @@ function GuerraCanudos() {
             </h2>
             </center>
             <center>
-              
-               <iframe width="540" height="295" src="https://www.youtube.com/embed/P4OYhj7Io0E?si=w1xlO6YbD3xketr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/P4OYhj7Io0E?si=ews4oBQZWYqR7BRp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </center>
             <br></br>
             <center>
