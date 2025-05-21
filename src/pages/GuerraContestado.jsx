@@ -15,9 +15,10 @@ function GuerraContestado() {
             
 
             <h2>Wikipédia</h2>
+            <APIWikipedia titulo="Guerra do Contestado" campoWiki="wiki" imagemID="imgContestado" imagemAlt="Guerra Contestado" imagemClass="imagemAPI"/>
             <section className='wiki' id='wiki'>
-            <APIWikipedia titulo="Guerra do Contestado" campoWiki="wiki"/>
             </section>
+            <img  src="" alt="" id='imgContestado' />
             </section>
             </section>
             <hr/>
