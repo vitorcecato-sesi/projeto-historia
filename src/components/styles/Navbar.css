@@ -25,6 +25,12 @@
     animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
 }
 
+#navbarGuerraDoContestado {
+    background: linear-gradient(90deg, rgba(203, 77, 80, 0.7), #CB4D50, rgba(203, 77, 80, 0.7)); /* Adicione mais cores para suavizar */
+    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
+    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+}
+
 .blocoPrincipalNavbar img {
     width: 8vw;
     height: auto;

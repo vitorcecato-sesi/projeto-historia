@@ -2,10 +2,12 @@ import "./style/GuerraContestado.css";
 import Navbar from "../components/Navbar";
 import APIWikipedia from "../components/APIWikipedia";
 
+import LogoSiteVermelhoClaro from "../assets/Logos/LogoSiteVermelhoClaro.png"
+
 function GuerraContestado() {
   return (
     <div>
-      <Navbar />
+      <Navbar backgroundId="navbarGuerraDoContestado" logo={LogoSiteVermelhoClaro} />
       <section className="bannerGC">
         <h1 id="branco">
           CONHEÇA MAIS SOBRE <br />{" "}

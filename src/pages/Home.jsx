@@ -1,6 +1,6 @@
 import "./style/Home.css"
 import Navbar from "../components/Navbar"
-import LogoSiteRoxo from "../assets/LogoSiteRoxo.png"
+import LogoSiteRoxo from "../assets/Logos/LogoSiteRoxo.png"
 import { Link } from "react-router-dom"
 
 function Home() {
@@ -31,18 +31,18 @@ function Home() {
             <section className="boxLinks">
                 <section className="boxLinks2">
                     <section className="links">
-                        {/* <Link to="/"> */}
+                        <Link to="/GuerraDeCanudos">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Pris%C3%A3o_de_jagun%C3%A7os_pela_cavalaria.jpg" />
                         <label>1</label>
                         <p className="textLinks">Guerra de Canudos</p>
-                        {/* </Link> */}
+                        </Link>
                     </section>
                     <section className="links">
-                        {/* <Link to="/"> */}
+                        <Link to="/GuerraDoContestado">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyBVlWEP-XnVV_NfwNHLt7OaI4TtjSBH7ZmA&s" />
                         <label>2</label>
                         <p className="textLinks">Guerra do Contestado</p>
-                        {/* </Link> */}
+                        </Link>
                     </section>
                     <section className="links">
                         <Link to="/PrimeiraGuerraMundial">

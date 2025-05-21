@@ -12,7 +12,7 @@
 //.
 
 // Imagens
-import LogoSiteAzul from "../assets/LogoSiteAzul.png"
+import LogoSiteAzul from "../assets/Logos/LogoSiteAzul.png"
 
 //.
 

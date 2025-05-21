@@ -3,7 +3,7 @@ import { useState } from "react";
 
 // Importando o CSS, estilo
 import "./style/Primeira-Guerra-Mundial.css";
-import LogoSiteCinza from "../assets/LogoSiteCinza.png";
+import LogoSiteCinza from "../assets/Logos/LogoSiteCinza.png";
 
 // Importando Componentes
 import Navbar from "../components/Navbar";

@@ -10,6 +10,8 @@
 import RevolucaoRussa from './pages/RevolucaoRussa'
 import Home from './pages/Home'
 import PrimeiraGuerraMundial from './pages/Primeira-Guerra-Mundial'
+import GuerraDeCanudos from "./pages/GuerraCanudos"
+import GuerraDoContestado from "./pages/GuerraContestado"
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
           <Route path='/' element={<Home/>} /> 
           <Route path="/PrimeiraGuerraMundial" element={<PrimeiraGuerraMundial />} /> 
           <Route path='/RevolucaoRussa' element={<RevolucaoRussa />} />
+          <Route path='/GuerraDeCanudos' element={<GuerraDeCanudos />} />
+          <Route path='/GuerraDoContestado' element={<GuerraDoContestado />} />
         </Routes>
       </BrowserRouter>
 
