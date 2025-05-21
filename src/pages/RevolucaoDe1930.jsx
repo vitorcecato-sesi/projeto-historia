@@ -16,13 +16,16 @@ import BotaoCurtirTema from "../components/BotaoCurtirTema";
 //CSS
 import "./style/RevolucaoDe1930.css";
 
+import Navbarr from "../components/Navbar"
+import LogoSiteMarrom from "../assets/Logos/LogoSiteMarrom.png"
+
 function RevolucaoDe1930() {
   return (
     <>
-    <Navbar1 backgroundId="navbarRevolucaoDe1930" logo={LogoSiteMarrom} />
+    <Navbarr backgroundId="navbarRevolucaoDe1930" logo={LogoSiteMarrom} />
 
-      {/* Foto Inicial  */}
-      <section className="slideRev1930">
+    
+      <section className="slide">
         <img className="foto1" src={foto1} alt="Foto1" />
         <h2 className="textoSlide">
           <span className="corTextoRevolução1930"> CONHEÇA SOBRE A </span> <br />

@@ -1,3 +1,5 @@
+import "./style/Home.css"
+
 import Navbar from "../components/Navbar"
 import LogoSiteRoxo from "../assets/Logos/LogoSiteRoxo.png"
 import { Link } from "react-router-dom"
@@ -26,7 +28,7 @@ function Home() {
                     a Crise de 1929 e a Revolução de 1930.
                     Mais do que apresentar datas e fatos, queremos ajudar a compreender o impacto desses eventos na sociedade da época e seus reflexos no mundo atual.</p>
             </section>
-            <h1 className="titulo" id="puxarLink" >CONTEÚDOS:</h1>
+            <h1 className="titulo" id="conteudos" >CONTEÚDOS:</h1>
             <section className="boxLinks">
                 <section className="boxLinks2">
                     <section className="links">
@@ -86,7 +88,7 @@ function Home() {
             <br />
             <br />
             <h1 className="titulo">PRODUÇÕES:</h1>
-            <section className="boxLinks2">
+            <section className="boxLinks2" id="producoes">
                 <section className="links">
                     {/* <Link to="/"> */}
                     <img></img>
@@ -106,5 +108,4 @@ function Home() {
     )
 }
 
-export default Home;
-
+export default Home

@@ -1,6 +1,6 @@
 //Imagens
-import FotoGrupo3 from "../assets/FotoGrupo3.png";
-import LogoG3 from "../assets/Logos/logoG3.png"
+import FotoGrupo3 from "../assets/ImgsFooter/FotoGrupo3.png";
+import LogoG3 from "../assets/Logos/logoG3.png";
 
 //Componentes
 import Navbar from "../components/Navbar"
