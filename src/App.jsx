@@ -5,12 +5,13 @@ import Cartaz from './pages/Cartaz.jsx'
 
 import GuerraCanudos from './pages/GuerraCanudos'
 import Home from './pages/Home'
+import PaginaVideo from './pages/PaginaVideo.jsx'
 
 function App() {
 
   return (
     <>
-   <Cartaz/>
+   <PaginaVideo/>
 
     </>
   )
