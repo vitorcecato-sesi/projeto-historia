@@ -1,7 +1,7 @@
 import "./style/GuerraContestado.css";
 import Navbar from "../components/Navbar";
 import APIWikipedia from "../components/APIWikipedia";
-import BotaoCurtirTema from "../components/BotaoCurtirTema";
+import BotaoCurtirTema from "../components/BotaoCurtirTema";  
 
 import LogoSiteVermelhoClaro from "../assets/Logos/LogoSiteVermelhoClaro.png"
 
@@ -55,6 +55,7 @@ function GuerraContestado() {
             matando os milhares de sertanejos e fazendo um acordo que
             estabelecesse os limites de cada região.
           </p>
+          <BotaoCurtirTema  idSection="bloco1Contstados" tema="Guerra do Contestado" />
         </section>
         <section className="blocoInfo">
           <h2>Motivo</h2>
@@ -69,6 +70,7 @@ function GuerraContestado() {
               src="https://media.gazetadopovo.com.br/2016/10/9a43ec7da1daae2c8b5f7178aebe75e9-gpLarge.jpg"
               alt="Guerra do Contestado"
             />
+            <BotaoCurtirTema  idSection="bloco1Contstados" tema="Guerra do Contestado" />
           </section>
         </section>
         <section className="blocoInfo">
@@ -80,6 +82,7 @@ function GuerraContestado() {
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyBVlWEP-XnVV_NfwNHLt7OaI4TtjSBH7ZmA&s"
                 alt="Guerra do Contestado"
               />
+              
               <p>
                 O conflito se desenvolveu com milhares de pessoas se deslocando
                 para o local, com o objetivo de trabalharem na construção. Os
@@ -91,6 +94,7 @@ function GuerraContestado() {
                 Santo Agostinho, juntamente de monges messiânicos, formaram
                 comunidades com os sertanejos empobrecidos.
               </p>
+              <BotaoCurtirTema  idSection="bloco1Contstados" tema="Guerra do Contestado" />
             </section>
           </section>
         </section>
@@ -112,6 +116,7 @@ function GuerraContestado() {
               de artilharia foram utilizados), matando os milhares de sertanejos
               e fazendo um acordo que estabelecesse os limites de cada região.
             </p>
+            <BotaoCurtirTema  idSection="bloco1Contstados" tema="Guerra do Contestado" />
           </section>
         </section>
       </section>
