@@ -18,8 +18,8 @@ function App() {
     <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} /> 
-          <Route path="/1" element={<PrimeiraGuerraMundial />} /> 
-          <Route path='/2' element={<RevolucaoRussa />} />
+          <Route path="/PrimeiraGuerraMundial" element={<PrimeiraGuerraMundial />} /> 
+          <Route path='/RevolucaoRussa' element={<RevolucaoRussa />} />
         </Routes>
       </BrowserRouter>
 

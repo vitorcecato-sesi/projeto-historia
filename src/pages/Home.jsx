@@ -45,11 +45,11 @@ function Home() {
                         {/* </Link> */}
                     </section>
                     <section className="links">
-                        {/* <Link to="/"> */}
+                        <Link to="/PrimeiraGuerraMundial">
                         <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/wwi-trench-archaeology-01.webp?w=1600&h=900" />
                         <label>3</label>
                         <p className="textLinks">Primeira Guerra Mundial</p>
-                        {/* </Link> */}
+                        </Link>
                     </section>
                     <section className="links">
                         {/* <Link to="/"> */}
