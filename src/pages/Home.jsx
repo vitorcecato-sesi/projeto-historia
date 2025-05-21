@@ -1,5 +1,3 @@
-import "./style/Home.css"
-
 import Navbar from "../components/Navbar"
 import LogoSiteRoxo from "../assets/Logos/LogoSiteRoxo.png"
 import { Link } from "react-router-dom"
@@ -109,3 +107,4 @@ function Home() {
 }
 
 export default Home;
+

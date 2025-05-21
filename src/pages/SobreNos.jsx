@@ -1,9 +1,10 @@
 //Imagens
 import FotoGrupo3 from "../assets/FotoGrupo3.png";
-import LogoG3 from "../assets/logoG3.png";
+import LogoG3 from "../assets/Logos/logoG3.png"
 
 //Componentes
-import Footer from "../components/Footer";
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 
 //CSS
 import "../pages/style/SobreNos.css";
@@ -11,6 +12,12 @@ import "../pages/style/SobreNos.css";
 function SobreNos() {
   return (
     <>
+
+    <Navbar/>
+
+    <br/> 
+    <br/>
+    
     <center>
       <section className="blocoPrincipal">
         <section className="blocoFoto">
@@ -50,7 +57,7 @@ function SobreNos() {
       </section>
       </center>
 
-      <Footer/>
+      <Footer corHeaderFooter="verde" corInfoFooter="verdeClaro"/>
     </>
   );
 }

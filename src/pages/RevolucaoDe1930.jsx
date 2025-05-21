@@ -5,9 +5,11 @@ import foto3 from "../assets/Imgs - Revolução de 1930/foto3_revolução1930.pn
 import foto4 from "../assets/Imgs - Revolução de 1930/foto4_revolução1930.png";
 import foto5 from "../assets/Imgs - Revolução de 1930/foto5_revolução1930.png";
 
+import LogoSiteMarrom from "../assets/Logos/LogoSiteMarrom.png"
+
 //Componentes
 import APIWikipedia from '../components/APIWikipedia'
-import Navbar from "../components/Navbar";
+import Navbar1 from "../components/Navbar"
 import Footer from "../components/Footer";
 import BotaoCurtirTema from "../components/BotaoCurtirTema";
 import BotaoTema from "../components/BotaoTema"
@@ -15,14 +17,13 @@ import BotaoTema from "../components/BotaoTema"
 //CSS
 import "./style/RevolucaoDe1930.css";
 
-import LogoSiteMarrom from "../assets/Logos/LogoSiteMarrom.png"
-
 function RevolucaoDe1930() {
   return (
     <>
-    <Navbar backgroundId="navbarRevolucaoDe1930" logo={LogoSiteMarrom} />
+    <Navbar1 backgroundId="navbarRevolucaoDe1930" logo={LogoSiteMarrom} />
+
       {/* Foto Inicial  */}
-      <section className="slide">
+      <section className="slideRev1930">
         <img className="foto1" src={foto1} alt="Foto1" />
         <h2 className="textoSlide">
           <span className="corTextoRevolução1930"> CONHEÇA SOBRE A </span> <br />
@@ -177,7 +178,7 @@ function RevolucaoDe1930() {
         </section>
       </center>
 
-      <Footer corHeaderFooter="marrom" corInfoFooter="marromClaro"/>
+      <Footer corHeaderFooter="marrom" corInfoFooter="marromClaro" logo={LogoSiteMarrom}/>
     </>
   );
 }
