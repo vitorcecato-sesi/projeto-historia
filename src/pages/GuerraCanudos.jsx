@@ -15,7 +15,7 @@ import Navbar from "../components/Navbar";
 import LogoSiteLaranja from "../assets/Logos/LogoSiteLaranja.png"
 
 import APIWikipedia from "../components/APIWikipedia";
-import Navbar from "../components/Navbar";
+import Navbarr from "../components/Navbar";
 
 const imagens = [Img1, img2, img3, img4];
  
@@ -24,10 +24,8 @@ function GuerraCanudos() {
 
   return (
     <>
-      <Navbar backgroundId="navbarGuerraDeCanudos" logo={LogoSiteLaranja} />
+      <Navbarr backgroundId="navbarGuerraDeCanudos" logo={LogoSiteLaranja} />
 
-
-      <Navbar />
       <section className="Bloco-Carrossel">
         <section className="Carrossel-Container">
           <button

@@ -69,11 +69,11 @@ function Home() {
                         </Link>
                     </section>
                     <section className="links">
-                        {/* <Link to="/"> */}
+                        <Link to="/CriseDe1929">
                         <img src="https://economianostra.wordpress.com/wp-content/uploads/2013/11/crise-anos-20.jpg" />
                         <label>6</label>
                         <p className="textLinks">Crise de 1929</p>
-                        {/* </Link> */}
+                        </Link>
                     </section>
                     <section className="links">
                         <Link to="/RevolucaoDe1930">

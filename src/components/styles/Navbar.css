@@ -38,6 +38,12 @@
     animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
 }
 
+#navbarCriseDe1929 {
+    background: linear-gradient(90deg, #822626, rgba(130, 38, 38, 0.8), #822626); /* Adicione mais cores para suavizar */
+    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
+    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+}
+
 #navbarGuerraDeCanudos {
     background: linear-gradient(90deg, #FBB623, rgba(251, 182, 35, 0.8), #FBB623); /* Adicione mais cores para suavizar */
     background-size: 400% 400%; /* Aumente o tamanho do gradiente */
