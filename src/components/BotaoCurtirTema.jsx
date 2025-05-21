@@ -6,43 +6,45 @@ function BotaoCurtirTema(props) {
     const section = document.getElementById(`${props.idSection}`) || ""
 
     useEffect(() => {
-        const timer = setInterval(() => {
-            setSectionsFavoritas(JSON.parse(localStorage.getItem("sectionsFavoritas")) || [])
-        }, 100)
+        localStorage.setItem("sectionsFavoritas", JSON.stringify(sectionsFavoritas))
+    }, [sectionsFavoritas])
 
-        return() => {
-            clearInterval(timer) // Remove o timer ao desmontar
-        }
-    }, [])
+    useEffect(() => {
+        
+            console.log("Verificando se o botão foi acionado")
+            
+            const existe = sectionsFavoritas.find(item => item.id === props.idSection)
+            if (existe) {
+                setCurtido(true)
+                console.log("Curtido effect")
+            } else {
+                setCurtido(false)
+                console.log("Descurtido effect")
+            }
+        
+    }, [props.idSection, sectionsFavoritas])
 
     function botaoAcionado() {
-        setCurtido(!curtido)
         console.log("Botão acionado")
         
         if (section) {
-            if (curtido) {
+            if (!curtido) {
                 console.log("Curtido")
-                
+                setCurtido(!curtido)
+
                 const novoItem = {
                     id: props.idSection ? props.idSection : "",
-                    section: section,
                     html: section.innerHTML
                 }
+                
+                const novaArray = [...sectionsFavoritas, novoItem]
 
-                setSectionsFavoritas((prev) => {
-                    const existe = prev.find(item => item.id === props.idSection)
-                    if (!existe) {
-                        return [...prev, novoItem]
-                    } else {
-                        return prev
-                    }
-                })
-                
-                localStorage.setItem("sectionsFavoritas", JSON.stringify(sectionsFavoritas))
-                
-            }
-            else {
+                setSectionsFavoritas(novaArray)
+                localStorage.setItem("sectionsFavoritas", JSON.stringify(novaArray))
+
+            } else {
                 console.log("Descurtido")
+                setCurtido(!curtido)
 
                 setSectionsFavoritas((prev) => {
                     const novoArray = prev.filter(item => item.id !== props.idSection)
