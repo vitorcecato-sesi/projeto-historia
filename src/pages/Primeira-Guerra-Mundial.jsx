@@ -44,13 +44,13 @@ function PrimeiraGuerraMundial() {
           </h1>
         </center>
 
-        {/* Carrossel de cards */}
+        {/* Carrossel de cards - Section principal */}
         <section className="carouselFMW" style={{ "--position": posicaoCard }}>
         {/* "--position": posicaoCard  => Isso permite que o CSS use essa variável para controlar qual Card estará destacado */}
 
           {/* ! Cada card apresenta um tema diferente ! */}
           {/* Card 1 */}
-          <section className="card" style={{ "--offset": 1 }}>
+          <section className="card" style={{ "--offset": 1 }}> {/* Mexe onde o Card vai ficar, esse por exemplo vai ficar em primeiro */}
             <section className="textoNoCard">
               <h3>Brasil</h3>
               <p>Com pequenas ajudas à aliados.</p>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "../components/styles/Footer.css";
 import iconeGithub from "../assets/ImgsFooter/iconeGithub.png";
@@ -28,7 +29,7 @@ function Footer(props) {
                 <section className="icones">
                     <a href="https://github.com/vitorcecato-sesi/projeto-historia"> <img src={iconeGithub} alt="Github" /> </a>
                     <a href="https://www.youtube.com/embed/eERVu09GCWE?si=X1SRhNr9cMOyKIqT&quot"><img src={iconeYT} alt="Vídeo Youtube" /> </a>
-                    <a href="http://localhost:5173/SobreNos"> <img src={iconeGrupo} alt="Grupo" /> </a>
+                    <Link to="/SobreNos"> <img src={iconeGrupo} alt="Grupo" /> </Link>
                 </section>
             </section>
 
@@ -48,13 +49,13 @@ function Footer(props) {
                     <section className="conteudos">
                         <p>
                             <h3> Conteúdos </h3>
-                            <a href="http://localhost:5173/GuerraDeCanudos"> Guerra de Canudos </a> <br />
-                            <a href="http://localhost:5173/GuerraDoContestado"> Guerra do Contestado </a> <br />
-                            <a href="http://localhost:5173/PrimeiraGuerraMundial"> Primeira Guerra Mundial </a> <br />
-                            <a href="http://localhost:5173/RevolucaoRussa"> Revolução Russa </a> <br />
-                            <a href="http://localhost:5173/FascismoItaliano"> Fascismo Italiano </a> <br />
-                            <a href="http://localhost:5173/CriseDe1929"> Crise de 1929 </a> <br />
-                            <a href="http://localhost:5173/RevolucaoDe1930"> Revolução de 1930 </a> <br />
+                            <Link to="/GuerraDeCanudos"> Guerra de Canudos </Link> <br />
+                            <Link to="/GuerraDoContestado"> Guerra do Contestado </Link> <br />
+                            <Link to="/PrimeiraGuerraMundial"> Primeira Guerra Mundial </Link> <br />
+                            <Link to="/RevolucaoRussa"> Revolução Russa </Link> <br />
+                            <Link to="/FascismoItaliano"> Fascismo Italiano </Link> <br />
+                            <Link to="/CriseDe1929"> Crise de 1929 </Link> <br />
+                            <Link to="/RevolucaoDe1930"> Revolução de 1930 </Link> <br />
                         </p>
                     </section>
 

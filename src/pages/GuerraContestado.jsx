@@ -129,7 +129,7 @@ function GuerraContestado() {
         <section className="blocoVideo">
           <h2>Video</h2>
           <iframe
-            className="video"
+            className="video1"
             width="400"
             height="300"
             src="https://www.youtube.com/embed/bTOdnw2alHw?si=W2pUiBJTNOxwP87g"
@@ -155,7 +155,7 @@ function GuerraContestado() {
         <section className="blocoVideo">
           <h2>Filme</h2>
           <iframe
-            className="video"
+            className="video1"
             width="400"
             height="300"
             src="https://www.youtube.com/embed/kbMUvt4NdtQ?si=Q3P53X9oI1u3rSDb"
