@@ -19,25 +19,26 @@
 //.
 
 function RevolucaoRussa() {
-    const [principal, setPrincipal] = useState("")
-    const [ocultar, setOcultar] = useState(false)
+    const [principal, setPrincipal] = useState("")  // Principal nome
+    const [ocultar, setOcultar] = useState(false)   // Ocultar informação sobre Principal Nome
+
+    useEffect(() => {   // Remover a informação adicional sobre o principal nome
+        const infoPNRR = document.getElementById('infoPNRR')    // Pega o id da section onde aparece as informações
+        const ocultarPNRR = document.getElementById('ocultarPNRR')  // Botão que utilizamos para ocultar
+        infoPNRR.innerHTML = `` // Remove o texto da section
+        ocultarPNRR.className = 'ocultarPNRR'   // Atualiza a classe para ocultar o botão
+        setPrincipal("")    // Remove o principal nome
+        setOcultar(false)   // Ocultar será falso (pois já foi ocultado - estava no true)
+    }, [ocultar])   // Acontece quando o ocultar mudar de estado
 
     useEffect(() => {
-        const infoPNRR = document.getElementById('infoPNRR')
-        const ocultarPNRR = document.getElementById('ocultarPNRR')
-        infoPNRR.innerHTML = ``
-        ocultarPNRR.className = 'ocultarPNRR'
-        setPrincipal("")
-        setOcultar(false)
-    }, [ocultar])
-
-    useEffect(() => {
-        const infoPNRR = document.getElementById('infoPNRR')
-        const ocultarPNRR = document.getElementById('ocultarPNRR')
-        if (principal !== '') {
-            ocultarPNRR.className = 'botaoOcultarPNRR'
+        const infoPNRR = document.getElementById('infoPNRR')    // Pega a section para por as informações
+        const ocultarPNRR = document.getElementById('ocultarPNRR')  // Pega o botão de ocultar
+        if (principal !== '') { // Caso tenha um nome principal
+            ocultarPNRR.className = 'botaoOcultarPNRR'  // Atualiza a classe do botao para exibi-lo
         }
-        if (principal === "Vladimir Lenin") {
+        if (principal === "Vladimir Lenin") {   // Se o nome for Vladimir Lenin
+            // Adiciona as informações
             infoPNRR.innerHTML = `
                 <h2>Vladimir Lenin</h2>
                 <p>
@@ -45,7 +46,8 @@ function RevolucaoRussa() {
                     Foi o responsável por implantar o regime socialista e criar a União Soviética.
                 </p>
             `
-        } else if (principal === "Leon Trotsky") {
+        } else if (principal === "Leon Trotsky") {  // Se o nome for Leon Trotsky
+            // Adiciona as informações
             infoPNRR.innerHTML = `
                 <h2>Leon Trotsky</h2>
                 <p>
@@ -54,7 +56,8 @@ function RevolucaoRussa() {
                     Teve papel fundamental na vitória dos bolcheviques.
                 </p>
             `
-        } else if (principal === "Nicolau II") {
+        } else if (principal === "Nicolau II") {    // Se o nome for Nicolau II
+            // Adiciona as informações
             infoPNRR.innerHTML = `
                 <h2>Nicolau II</h2>
                 <p>
@@ -63,7 +66,8 @@ function RevolucaoRussa() {
                     Foi executado junto com sua família em 1918.
                 </p>
             `        
-        } else if (principal === "Alexandre Kérenski") {
+        } else if (principal === "Alexandre Kérenski") {    // Se o nome for Alexandre Kérenski
+            // Adiciona as informações
             infoPNRR.innerHTML = `
                 <h2>Alexandre Kérenski</h2>
                 <p>
@@ -71,7 +75,8 @@ function RevolucaoRussa() {
                     Tentou manter a Rússia na guerra e perdeu apoio popular, facilitando a ascensão dos bolcheviques.
                 </p>
             `
-        } else if (principal === "Josef Stalin") {
+        } else if (principal === "Josef Stalin") {  // Se o nome for Josef Stalin
+            // Adiciona as informações
             infoPNRR.innerHTML = `
                 <h2>Josef Stalin</h2>
                 <p>
@@ -80,7 +85,7 @@ function RevolucaoRussa() {
                 </p>
             `
         } else {
-            infoPNRR.innerHTML = ``
+            infoPNRR.innerHTML = `` // Caso não seja nenhum dos nomes, deixa a section vazia
         }
 
     }, [principal])
