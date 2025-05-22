@@ -18,6 +18,7 @@ import FascismoItalino from "./pages/FascismoItaliano"
 import CriseDe1929 from "./pages/Crisede1929" 
 import SobreNos from "./pages/SobreNos"
 import Cartaz from "./pages/Cartaz"
+import Video from "./pages/PaginaVideo"
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
           <Route path='/Ranking' element={<Rankings />} />
           <Route path='/SobreNos' element={<SobreNos/>} />
           <Route path='/Cartaz' element={<Cartaz />} />
+          <Route path='/Video' element={<Video />} />
         </Routes>
       </BrowserRouter>
     </>
