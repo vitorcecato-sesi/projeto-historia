@@ -37,10 +37,11 @@
 }
 
 .bannerTextRR {
-    position: relative;
+    position: relative; /* Permite a movimentação */
+    padding-left: 2em;
     color: white;
     font-size: 3rem;
-    z-index: 1;
+    z-index: 1; /* Ordem de camada */
 }
 
 #blueRR {
@@ -68,7 +69,15 @@
     border: 0.1em solid rgba(0, 0, 0, 0.190);
     padding: 2em 10em;
 
+    gap: 2em;
+
     width: 50vw;
+}
+
+.imgWIKIRR {
+    width: 30vw;
+    height: auto;
+    border-radius: 2em;
 }
 
 .infoRR {
@@ -87,18 +96,18 @@
     padding: 2em;
     width: 70vw;
     transition: all 1s ease;
-    box-shadow:
-      0 4px 8px rgba(0, 123, 255, 0.3),
-      0 12px 24px rgba(0, 123, 255, 0.2);
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 4px 8px rgba(0, 123, 255, 0.3), /* Primira sombra */
+      0 12px 24px rgba(0, 123, 255, 0.2); /* Segunda sombra */
 
 }
 
 .bloco1RR:hover {
     transform: scale(1.02);
-    transition: all 1s ease;
-    box-shadow:
-      0 8px 16px rgba(0, 123, 255, 0.4),
-      0 24px 48px rgba(0, 123, 255, 0.3);
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 8px 16px rgba(0, 123, 255, 0.4), /* Primeira sombra */
+      0 24px 48px rgba(0, 123, 255, 0.3); /* Segunda sombra */
 }
 
 .bloco1RR article {
@@ -117,18 +126,18 @@
     width: 70vw;
     border: 0.1em solid rgba(0, 0, 0, 0.190);
     padding: 2em;
-    transition: all 1s ease;
-    box-shadow:
-      0 4px 8px rgba(0, 123, 255, 0.3),
-      0 12px 24px rgba(0, 123, 255, 0.2);
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 4px 8px rgba(0, 123, 255, 0.3), /* Primeira sombra */
+      0 12px 24px rgba(0, 123, 255, 0.2); /* Segunda sombra */
 }
 
 .bloco2RR:hover {
     transform: scale(1.02);
-    transition: all 1s ease;
-    box-shadow:
-      0 8px 16px rgba(0, 123, 255, 0.4),
-      0 24px 48px rgba(0, 123, 255, 0.3);
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 8px 16px rgba(0, 123, 255, 0.4), /* Primeira sombra */
+      0 24px 48px rgba(0, 123, 255, 0.3); /* Segunda sombra */
 }
 
 .textoImagemRR {
@@ -156,25 +165,25 @@
     width: 70vw;
     border: 0.1em solid rgba(0, 0, 0, 0.190);
     padding: 2em;
-    box-shadow:
-      0 4px 8px rgba(0, 123, 255, 0.3),
-      0 12px 24px rgba(0, 123, 255, 0.2);
-    transition: all 1s ease;
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 4px 8px rgba(0, 123, 255, 0.3), /* Primeira sombra */
+      0 12px 24px rgba(0, 123, 255, 0.2); /* Segunda sombra */
+    transition: all 1s ease; /* Aplica a transição em todos os atributos css */
 }
 
 .bloco3RR:hover {
     transform: scale(1.02);
-    transition: all 1s ease;
-    box-shadow:
-      0 8px 16px rgba(0, 123, 255, 0.4),
-      0 24px 48px rgba(0, 123, 255, 0.3);
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 8px 16px rgba(0, 123, 255, 0.4), /* Primeira sombra */
+      0 24px 48px rgba(0, 123, 255, 0.3); /* Segunda sombra */
 }
 
 .principaisNomesRR {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite a quebra de linha quando não tiver espaço */
     width: 100%;
 }
 
@@ -195,7 +204,7 @@
     border-radius: 50%;
     width: 10vw;
     height: 20vh;
-    transition: transform 0.2s;
+    transition: transform 0.2s; /* Adiciona transition para o transform */
     box-shadow: 0 0.25em 0.6em rgba(0, 0, 0, 0.3);
 }
 
@@ -246,18 +255,18 @@
     width: 70vw;
     border: 0.1em solid rgba(0, 0, 0, 0.190);
     padding: 2em;
-    box-shadow:
-      0 8px 16px rgba(0, 123, 255, 0.4),
-      0 24px 48px rgba(0, 123, 255, 0.3);
-    transition: all 1s ease;
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 8px 16px rgba(0, 123, 255, 0.4),    /* Primeira sombra */
+      0 24px 48px rgba(0, 123, 255, 0.3);   /* Segunda sombra */
+    transition: all 1s ease;    /* Aplica a transição em todos os atributos do css*/
 }
 
 .bloco4RR:hover {
     transform: scale(1.02);
-    transition: all 1s ease;
-    box-shadow:
-      0 8px 16px rgba(0, 123, 255, 0.4),
-      0 24px 48px rgba(0, 123, 255, 0.3);
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 8px 16px rgba(0, 123, 255, 0.4),    /* Primeira sombra */
+      0 24px 48px rgba(0, 123, 255, 0.3);   /* Segunda sombra */
 }
 
 .bloco4RR p {
@@ -287,18 +296,18 @@
     width: 70vw;
     border: 0.1em solid rgba(0, 0, 0, 0.190);
     padding: 2em;
-    box-shadow:
-      0 4px 8px rgba(0, 123, 255, 0.3),
-      0 12px 24px rgba(0, 123, 255, 0.2);
-    transition: all 1s ease;
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 4px 8px rgba(0, 123, 255, 0.3), /* Primeira sombra */
+      0 12px 24px rgba(0, 123, 255, 0.2); /* Segunda sombra */
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
 }
 
 .bloco5RR:hover {
     transform: scale(1.02);
-    transition: all 1s ease;
-    box-shadow:
-      0 8px 16px rgba(0, 123, 255, 0.4),
-      0 24px 48px rgba(0, 123, 255, 0.3);
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 8px 16px rgba(0, 123, 255, 0.4), /* Primeira sombra */
+      0 24px 48px rgba(0, 123, 255, 0.3); /* Segunda sombra */
 }
 
 .bloco5RR h2 {
@@ -317,18 +326,18 @@
     width: 70vw;
     border: 0.1em solid rgba(0, 0, 0, 0.190);
     padding: 2em;
-    box-shadow:
-      0 4px 8px rgba(0, 123, 255, 0.3),
-      0 12px 24px rgba(0, 123, 255, 0.2);
-    transition: all 1s ease;
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 4px 8px rgba(0, 123, 255, 0.3), /* Primeira sombra */
+      0 12px 24px rgba(0, 123, 255, 0.2);   /* Segunda sombra */
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
 }
 
 .bloco6RR:hover {
     transform: scale(1.02);
-    transition: all 1s ease;
-    box-shadow:
-      0 8px 16px rgba(0, 123, 255, 0.4),
-      0 24px 48px rgba(0, 123, 255, 0.3);
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 8px 16px rgba(0, 123, 255, 0.4),    /* Primeira sombra */
+      0 24px 48px rgba(0, 123, 255, 0.3);   /* Segunda sombra */
 }
 
 .textoImagemRRB6 {
@@ -357,18 +366,18 @@
     width: 70vw;
     border: 0.1em solid rgba(0, 0, 0, 0.190);
     padding: 2em;
-    box-shadow:
-      0 4px 8px rgba(0, 123, 255, 0.3),
-      0 12px 24px rgba(0, 123, 255, 0.2);
-    transition: all 1s ease;
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 4px 8px rgba(0, 123, 255, 0.3), /* Primeira sombra*/
+      0 12px 24px rgba(0, 123, 255, 0.2); /* Segunda sombra*/
+    transition: all 1s ease;    /* Aplica a transição em todos os atributos do css*/
 }
 
 .bloco7RR:hover {
     transform: scale(1.02);
-    transition: all 1s ease;
-    box-shadow:
-      0 8px 16px rgba(0, 123, 255, 0.4),
-      0 24px 48px rgba(0, 123, 255, 0.3);
+    transition: all 1s ease;    /* Transição para todos os elementos*/
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 8px 16px rgba(0, 123, 255, 0.4), /* Primeira sombra */
+      0 24px 48px rgba(0, 123, 255, 0.3); /* Segunda sombra */
 }
 
 .bloco7RR h2 {
@@ -401,18 +410,18 @@
     width: 70vw;
     border: 0.1em solid rgba(0, 0, 0, 0.190);
     padding: 2em;
-    box-shadow:
-      0 4px 8px rgba(0, 123, 255, 0.3),
-      0 12px 24px rgba(0, 123, 255, 0.2);
-    transition: all 1s ease;
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 4px 8px rgba(0, 123, 255, 0.3), /* Primeira sombra */
+      0 12px 24px rgba(0, 123, 255, 0.2); /* Segunda sombra */
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
 }
 
 .bloco8RR:hover {
     transform: scale(1.02);
-    transition: all 1s ease;
-    box-shadow:
-      0 8px 16px rgba(0, 123, 255, 0.4),
-      0 24px 48px rgba(0, 123, 255, 0.3);
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 8px 16px rgba(0, 123, 255, 0.4), /* Primeira sombra */
+      0 24px 48px rgba(0, 123, 255, 0.3); /* Segunda sombra */
 }
 
 .bloco8RR h2 {
@@ -446,18 +455,18 @@
     width: 70vw;
     border: 0.1em solid rgba(0, 0, 0, 0.190);
     padding: 2em;
-    box-shadow:
-      0 4px 8px rgba(0, 123, 255, 0.3),
-      0 12px 24px rgba(0, 123, 255, 0.2);
-    transition: all 1s ease;
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 4px 8px rgba(0, 123, 255, 0.3), /* Primeira sombra */
+      0 12px 24px rgba(0, 123, 255, 0.2); /* Segunda sombra */
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
 }
 
 .bloco9RR:hover {
     transform: scale(1.02);
-    transition: all 1s ease;
-    box-shadow:
-      0 8px 16px rgba(0, 123, 255, 0.4),
-      0 24px 48px rgba(0, 123, 255, 0.3);
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 8px 16px rgba(0, 123, 255, 0.4), /* Primeira sombra */
+      0 24px 48px rgba(0, 123, 255, 0.3); /* Segunda sombra */
 }
 
 .bloco9RR h2 {
@@ -492,10 +501,10 @@
     border: 0.1em solid rgba(0, 0, 0, 0.190);
     padding: 2em;
     gap: 2em;
-    box-shadow:
-      0 4px 8px rgba(0, 123, 255, 0.3),
-      0 12px 24px rgba(0, 123, 255, 0.2);
-    transition: all 1s ease;
+    box-shadow: /* Deslocamento Horizontal, Deslocamento vertical, Desfoque, Cor */
+      0 4px 8px rgba(0, 123, 255, 0.3), /* Primeira sombra */
+      0 12px 24px rgba(0, 123, 255, 0.2); /* Segunda sombra */
+    transition: all 1s ease; /* Aplica a transição em todos os atributos do css*/
 }
 
 .video1RR:hover {
@@ -578,7 +587,7 @@
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Coloca transição em cada um dos atributos descritos*/
     user-select: none; /* Impede a seleção de texto dentro do botão */
   }
 
@@ -598,3 +607,121 @@
     outline: none;  /* Remove o contorno padrão que aparece ao focar no botão */
     box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
   }
+
+  @media only screen and (max-width: 850px) {
+    .bodyRR {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .imgWIKIRR {
+        width: 50vw;
+        height: auto;
+        border-radius: 2em;
+    }
+
+    .APIWikiRR {
+        width: 60vw;
+        padding: 2em 5em;
+    }
+
+    .bloco1RR, .bloco2RR, .bloco3RR, .bloco4RR, .bloco5RR, .bloco6RR, .bloco7RR, .bloco8RR, .bloco9RR {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloco1RR article p {
+        width: 60vw;
+    }
+
+    .textoImagemRR {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoImagemRR p {
+        width: 60vw;
+    }
+
+    .textoImagemRR img {
+        width: 60vw;
+    }
+
+    .botaoOcultarPNRR {
+        width: 10vw;
+        height: 10vh;
+    }
+
+    .textoImagemRRB6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoImagemRRB6 p {
+        width: 60vw;
+    }
+
+    .textoImagemRRB6 img {
+        width: 60vw;
+    }
+
+    .textoImagemRRB7 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoImagemRRB7 p {
+        width: 60vw;
+    }
+
+    .textoImagemRRB7 img {
+        width: 60vw;
+    }
+
+    .textoImagemRRB8 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoImagemRRB8 p {
+        width: 60vw;
+    }
+
+    .textoImagemRRB8 img {
+        width: 60vw;
+    }
+
+    .videoDescRR {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .videoDescRR p {
+        width: 60vw;
+    }
+
+    .videoDescRR iframe {
+        width: 60vw;
+        height: 40vh;
+        border-radius: 1em;
+    }
+
+  }
+
+    @media only screen and (max-width: 750px) {
+        
+        .principaisNomesRR {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 50vw;
+            gap: 1em;
+        }
+
+        .botaoPNRR {
+            width: 15vw;
+            height: 20vh;
+        }
+        
+    }

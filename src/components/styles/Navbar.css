@@ -56,6 +56,12 @@
     animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
 }
 
+#navbarRanking {
+    background: linear-gradient(90deg, #FFD7D7, rgba(254, 198, 198, 0.8), #FFD7D7); /* Adicione mais cores para suavizar */
+    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
+    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+}
+
 .blocoPrincipalNavbar img {
     width: 8vw;
     height: auto;
