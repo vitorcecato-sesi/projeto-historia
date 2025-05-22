@@ -417,3 +417,10 @@
         width: 70vw;
     }
 }
+
+@media (max-width: 400px) {
+    .titulo-Filme{
+        width: 70vw;
+        padding: 0.2em;
+    }
+}
