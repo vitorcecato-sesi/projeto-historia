@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import "./style/Rankings.css"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 
 function Rankings() {
     const [curtidas, setCurtidas] = useState(JSON.parse(localStorage.getItem("curtidas")) || [])
@@ -43,6 +45,7 @@ function Rankings() {
 
     return(
         <>
+            <Navbar />
             <section className="bodyRank">
                 <h1>RANKING DAS <span id="rosa">CURTIDAS</span> ENTRE <br /> OS CONTEÚDOS</h1>
                 <section className="blocoRanks">
