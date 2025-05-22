@@ -42,7 +42,7 @@
     overflow: hidden; /* Esconde cards que saem do limite */
     transform-style: preserve-3d; /* Mantém efeito 3D nos filhos */
     perspective: 70em; /* Define a perspectiva 3D */
-    width: 80vw;
+    width: 90vw;
 }
 
 /* Estilo dos cards individuais do carrossel */
@@ -185,7 +185,7 @@ hr {
     background-color: rgba(104, 108, 94, 0.7);
     text-align: center;
     color: yellow;
-    width: 11vw;
+    width: 30vw;
     padding: 0.2em;
     border-radius: 50px;
 }
@@ -221,7 +221,7 @@ hr {
     background-color: rgba(104, 108, 94, 0.7);
     text-align: center;
     color: yellow;
-    width: 11vw;
+    width: 30vw;
     padding: 0.2em;
     border-radius: 50px;
 }
@@ -283,7 +283,7 @@ hr {
     background-color: rgba(195, 195, 195, 0.3);
     text-align: center;
     color: yellow;
-    width: 11vw;
+    width: 30vw;
     padding: 0.2em;
     border-radius: 50px;
 }
@@ -464,7 +464,7 @@ hr {
     background-color: #49503F;
     text-align: center;
     color: yellow;
-    width: 24vw;
+    width: 30vw;
     padding: 0.2em;
     border-radius: 50px;
 }
@@ -508,7 +508,7 @@ hr {
     background-color: #49503F;
     text-align: center;
     color: yellow;
-    width: 25vw;
+    width: 30vw;
     padding: 0.2em;
     border-radius: 50px;
 }
@@ -558,7 +558,7 @@ hr {
     background-color: #49503F;
     text-align: center;
     color: yellow;
-    width: 19vw;
+    width: 30vw;
     padding: 0.2em;
     border-radius: 50px;
 }
