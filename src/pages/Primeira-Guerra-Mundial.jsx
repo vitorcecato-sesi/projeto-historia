@@ -168,7 +168,7 @@ function PrimeiraGuerraMundial() {
           </p>
 
           {/* Botão para curtir o tema */}
-          <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+          <BotaoCurtirTema idSection="bloco1PG" tema="Primeira Guerra Mundial" />
 
         </section>
 
@@ -254,7 +254,7 @@ function PrimeiraGuerraMundial() {
           </p>
 
           {/* Botão para curtir o tema */}
-          <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+          <BotaoCurtirTema idSection="bloco2PG" tema="Primeira Guerra Mundial" />
         </section>
 
       </section>
@@ -307,7 +307,7 @@ function PrimeiraGuerraMundial() {
           </p>
 
           {/* Botão para curtir o tema */}
-          <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+          <BotaoCurtirTema idSection="bloco3PG" tema="Primeira Guerra Mundial" />
 
         </section>
 
@@ -350,7 +350,7 @@ function PrimeiraGuerraMundial() {
             </p>
 
             {/* Botão para curtir o tema */}
-            <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+            <BotaoCurtirTema idSection="bloco4PG" tema="Primeira Guerra Mundial" />
 
           </section>
 
@@ -408,7 +408,7 @@ function PrimeiraGuerraMundial() {
             </p>
 
             {/* Botão para curtir o tema */}
-            <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+            <BotaoCurtirTema idSection="bloco5PG" tema="Primeira Guerra Mundial" />
 
           </section>
 
@@ -476,7 +476,7 @@ function PrimeiraGuerraMundial() {
           </p>
 
           {/* Botão para curtir o tema */}
-          <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+          <BotaoCurtirTema idSection="bloco6PG" tema="Primeira Guerra Mundial" />
         </section>
 
         {/* Imagem da fase */}
@@ -526,7 +526,7 @@ function PrimeiraGuerraMundial() {
           </p>
 
           {/* Botão para curtir o tema */}
-          <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+          <BotaoCurtirTema idSection="bloco7PG" tema="Primeira Guerra Mundial" />
         </section>
 
       </section>
@@ -567,7 +567,7 @@ function PrimeiraGuerraMundial() {
           </p>
 
           {/* Botão para curtir o tema */}
-          <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+          <BotaoCurtirTema idSection="bloco8PG" tema="Primeira Guerra Mundial" />
         </section>
 
         {/* Imagem da fase */}
@@ -600,7 +600,7 @@ function PrimeiraGuerraMundial() {
           </p>
 
           {/* Botão para curtir o tema */}
-          <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+          <BotaoCurtirTema idSection="bloco9PG" tema="Primeira Guerra Mundial" />
         </section>
 
         {/* Imagens as tecnologias */}
@@ -644,7 +644,7 @@ function PrimeiraGuerraMundial() {
           </p>
 
           {/* Botão para curtir o tema */}
-          <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+          <BotaoCurtirTema idSection="bloco10PG" tema="Primeira Guerra Mundial" />
         </section>
 
         {/* Imagens da participação do Brasil */}
@@ -689,7 +689,7 @@ function PrimeiraGuerraMundial() {
           </p>
 
           {/* Botão para curtir o tema */}
-          <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+          <BotaoCurtirTema idSection="bloco11PG" tema="Primeira Guerra Mundial" />
         </section>
 
         {/* Imagem do tratado */}

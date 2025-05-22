@@ -73,7 +73,7 @@ function GuerraContestado() {
               src="https://media.gazetadopovo.com.br/2016/10/9a43ec7da1daae2c8b5f7178aebe75e9-gpLarge.jpg"
               alt="Guerra do Contestado"
             />
-            <BotaoCurtirTema  idSection="bloco1Contstados" tema="Guerra do Contestado" />
+            <BotaoCurtirTema  idSection="bloco2Contstados" tema="Guerra do Contestado" />
           </section>
         </section>
         <section className="blocoInfo">
@@ -97,7 +97,7 @@ function GuerraContestado() {
                 Santo Agostinho, juntamente de monges messiânicos, formaram
                 comunidades com os sertanejos empobrecidos.
               </p>
-              <BotaoCurtirTema  idSection="bloco1Contstados" tema="Guerra do Contestado" />
+              <BotaoCurtirTema  idSection="bloco3Contstados" tema="Guerra do Contestado" />
             </section>
           </section>
         </section>
@@ -119,7 +119,7 @@ function GuerraContestado() {
               de artilharia foram utilizados), matando os milhares de sertanejos
               e fazendo um acordo que estabelecesse os limites de cada região.
             </p>
-            <BotaoCurtirTema  idSection="bloco1Contstados" tema="Guerra do Contestado" />
+            <BotaoCurtirTema  idSection="bloco4Contstados" tema="Guerra do Contestado" />
           </section>
         </section>
       </section>
