@@ -75,62 +75,59 @@
 }
 
 .blocoPrincipalNavbar a {
-    position: relative;
-    color: #fff;
-    cursor: pointer;
-    background: black;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-style: none;
+    position: relative; /* Permitindo o posicionamento absoluto dos elementos */
+    cursor: pointer; 
+    color: black;
+    text-decoration: none; 
 }
 
 .blocoPrincipalNavbar a:hover::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: #db88ff;
-    animation: underlineMove 1.5s; /* Animação da linha ao passar o mouse */
+    content: ''; /* Cria um elemento vazio após o link, o que faz aparecer a linha em baixo */
+    position: absolute; /* Deixa a linha como posição absoluta */
+    bottom: -4px; /* Coloca a linha abaixo do link */
+    left: 0; /* Alinha a linha à esquerda do link (palavra) */
+    width: 100%; /* Largura total da linha (vai ficar o tamanho inteiro da palavra) */
+    height: 3px; /* É a altura da linha */
+    background: #c94bff; /* Cor da linha */
+    animation: underlineMove 1.5s; /* Aplica a animação 'underlineMove' ao passar o mouse sobre o link */
     transition: all 1s ease;
 }
 
 @keyframes backgroundMove {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 50%; /* Define a posição inicial do fundo */
     }
     100% {
-        background-position: 100% 50%;
+        background-position: 100% 50%; /* Define a posição final do fundo */
     }
 }
 
 @keyframes underlineMove {
     0% {
-        width: 0%;
+        width: 0%; /* A largura da linha começa em 0% */
     }
     100% {
-        width: 100%;
+        width: 100%; /* A largura da linha se expande para 100% ao longo da animação */
     }
 }
 
-/* Media Query para telas menores que 850px */
+
 @media (max-width: 850px) {
     
     .blocoPrincipalNavbar {
-        flex-direction: column; /* Altera a direção do flex para coluna */
-        align-items: center; /* Centraliza os itens */
-        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
-        font-size: 1.2em; /* Reduz o tamanho da fonte */
+        flex-direction: column; 
+        align-items: center; 
+        height: auto; 
+        font-size: 1.2em; 
         width: auto;
     }
     .blocoPrincipalNavbar img {
-        width: 20vw; /* Ajusta a largura da imagem para 50% da largura do contêiner */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 20vw; 
+        height: auto;
     }
 
     .blocoPrincipalNavbar a {
-        font-size: 0.9em; /* Reduz o tamanho da fonte dos links */
+        font-size: 0.9em; 
         padding: 1em;
     }
 }
