@@ -42,7 +42,7 @@
     overflow: hidden; /* Esconde cards que saem do limite */
     transform-style: preserve-3d; /* Mantém efeito 3D nos filhos */
     perspective: 70em; /* Define a perspectiva 3D */
-    width: 70vw;
+    width: 80vw;
 }
 
 /* Estilo dos cards individuais do carrossel */
@@ -56,8 +56,8 @@
     background-size: cover; /* Imagem cobre todo o card */
     background-position: center; /* Centraliza a imagem */
     --r: calc(var(--position) - var(--offset)); /* Diferença entre card destacado e outros cards */
-    --abs: max(calc(var(--r) * -1), var(--r));  
-    /* Garante que a variável --abs sempre tenha o valor absoluto da diferença entre o card e o card central, resumindo, serve para ajudar no efeito 3D */
+    --abs: max(calc(var(--r) * -1), var(--r)); /* Vamos usar o "--r" calulado acima */
+    /* ⬆ Garante que a variável --abs sempre tenha o valor absoluto da diferença entre o card e o card central, resumindo, serve para ajudar no efeito 3D */
     transition: all 1s ease; 
     transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r))); /* Efeito 3D e deslocamento */
     z-index: calc((var(--position) - var(--abs))); /* Faz que o Card central fica acima dos outros */
