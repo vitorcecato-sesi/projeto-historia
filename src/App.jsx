@@ -16,12 +16,13 @@ import GuerraDoContestado from "./pages/GuerraContestado"
 import RevolucaoDe1930 from "./pages/RevolucaoDe1930"
 import FascismoItalino from "./pages/FascismoItaliano"
 import CriseDe1929 from "./pages/Crisede1929" 
+import SobreNos from "./pages/SobreNos"
 
 function App() {
 
   return (
     <>
-   <BrowserRouter>
+    <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} /> 
           <Route path="/PrimeiraGuerraMundial" element={<PrimeiraGuerraMundial />} /> 
@@ -32,6 +33,8 @@ function App() {
           <Route path='/FascismoItaliano' element={<FascismoItalino />} />
           <Route path='/CriseDe1929' element={<CriseDe1929 />} />
           <Route path='/Rank' element={<Rankings />} />
+          <Route path='/CriseDe1929' element={<CriseDe1929 />} /> 
+          <Route path='/SobreNos' element={<SobreNos/>} />
         </Routes>
       </BrowserRouter>
     </>
