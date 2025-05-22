@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import "./style/Rankings.css"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import LogoSiteRosa from "../assets/Logos/LogoSiteRosa.png"
 
 function Rankings() {
     const [curtidas, setCurtidas] = useState(JSON.parse(localStorage.getItem("curtidas")) || [])
@@ -45,9 +46,9 @@ function Rankings() {
 
     return(
         <>
-            <Navbar />
+            <Navbar backgroundId="navbarRanking" logo={LogoSiteRosa} />
             <section className="bodyRank">
-                <h1>RANKING DAS <span id="rosa">CURTIDAS</span> ENTRE <br /> OS CONTEÚDOS</h1>
+                <h1>RANKING DAS <span id="rosaRank">CURTIDAS</span> ENTRE <br /> OS CONTEÚDOS</h1>
                 <section className="blocoRanks">
                     <p>
                         <span>Guerra de Canudos</span> - {guerraCanudos} curtidas <br />
@@ -60,6 +61,7 @@ function Rankings() {
                     </p>
                 </section>
             </section>
+            <Footer corHeaderFooter="rosa" corInfoFooter="rosaClaro" logo={LogoSiteRosa} />
         </>
     )
 }
