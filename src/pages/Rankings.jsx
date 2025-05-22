@@ -3,6 +3,7 @@ import "./style/Rankings.css"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import LogoSiteRosa from "../assets/Logos/LogoSiteRosa.png"
+import BotaoTema from "../components/BotaoTema"
 
 function Rankings() {
     const [curtidas, setCurtidas] = useState(JSON.parse(localStorage.getItem("curtidas")) || [])
@@ -50,7 +51,11 @@ function Rankings() {
     return(
         <>
             <Navbar backgroundId="navbarRanking" logo={LogoSiteRosa} />
+            <br />
             <section className="bodyRank">
+                <section>
+                    <BotaoTema />
+                </section>
                 <h1>RANKING DAS <span id="rosaRank">CURTIDAS</span> ENTRE <br /> OS CONTEÚDOS</h1>
                 <section className="blocoRanks">
                     <p>
