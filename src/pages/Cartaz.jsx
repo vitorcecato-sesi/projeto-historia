@@ -13,7 +13,7 @@ function Cartaz() {
 
       <section className="Centro">
 
-        <h1 id="branco1">
+        <h1>
           VENHA ENTENDER MAIS SOBRE O <br />
           <span id="roxo1"> CARTAZ FEITO </span>
         </h1>
