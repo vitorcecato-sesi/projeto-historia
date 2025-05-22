@@ -42,7 +42,7 @@ function Home() {
             <h1 id="conteudos" className="titulosHome">CONTEÚDOS:</h1>
 
                     <nav className="navHome">
-                        <Link to="/PrimeiraGuerraMundial">
+                        <Link to="/GuerraDeCanudos">
                         <section className="navInfos">
                         <img className="navImg" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Pris%C3%A3o_de_jagun%C3%A7os_pela_cavalaria.jpg" />
                         <p>Guerra de Canudos</p>
