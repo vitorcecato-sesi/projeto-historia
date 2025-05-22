@@ -1,6 +1,7 @@
 body {
   background-color: #FCFAF1;
 }
+
 .Carrossel-Container {
   position: relative;
   display: flex;
@@ -9,7 +10,7 @@ body {
   height: 85%;
   width: 100%;
 }
-
+ 
 .Imagem-Carrossel {
   width: 100%;
   height: 100%;
@@ -24,8 +25,6 @@ body {
   font-size: 2rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  z-index: 2;
-  top: 50%;
   transform: translateY(-50%);
   transition: background-color 0.2s ease;
 }
@@ -35,27 +34,22 @@ body {
 }
 
 .Botao-Carrossel.Esquerda {
-  left: 10px;
+  left: 0.7rem;
 }
 
 .Botao-Carrossel.Direita {
-  right: 10px;
+  right: 0.7rem;
 }
 
-
 .Bola {
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
+  height: 0.9rem;
+  width: 0.9rem;
+  margin: 0 0.3rem;
   display: inline-block;
   border-radius: 50%;
   background-color: #ffc379;
   cursor: pointer;
   transition: background-color 0.3s;
-}
-
-.Bolinhas {
-  padding-left: 45%;
 }
 
 .Bola.active {
@@ -66,17 +60,30 @@ body {
   background-color: #882805;
   padding: 0.9em;
   border-radius: 0.4em;
-  width: 45%;
-  height: 30em;
+  width: 65vw;
   box-shadow: 0px 0px 2px 0px #000000;
+}
 
+.ImgApi {
+  width: 20vw;
+  height: 25vh;
+  border-radius: 0.5em;
+  padding-top: 4em;
+  padding-right: 1em;
+}
+
+.Wiki-Api {
+  display: flex;
+  flex-direction: row;
+  /* Isso faz imagem vir primeiro e texto embaixo */
+  justify-content: space-between;
 }
 
 .Titulo-Api {
   background-color: #FFFAE0;
   color: #AF7E04;
   text-align: center;
-  width: 80%;
+  width: 60vw;
   border-radius: 0.5em;
 }
 
@@ -84,10 +91,11 @@ body {
   background-color: #FBB623;
   color: #000000;
   text-align: center;
-  width: 80%;
-  height: 20em;
+  height: auto;
+  overflow: auto;
   border-radius: 0.5em;
   padding: 1.5em;
+  text-align: justify;
 }
 
 .Bloco-Intro {
@@ -95,7 +103,7 @@ body {
   text-align: center;
   padding: 0.9em;
   border-radius: 0.4em;
-  width: 45%;
+  width: 25vw;
   height: 30em;
   box-shadow: 0px 0px 2px 0px #000000;
 }
@@ -104,22 +112,26 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
+  gap: 0.12rem;
+  padding: 0.12rem;
   flex-wrap: wrap;
+}
+
+.Texto-OqIn {
+  text-align: justify;
+  padding-right: 3rem;
 }
 
 .Titulo-Intro {
   background-color: #882805;
   color: #FBB623;
   text-align: center;
-  width: 80%;
+  width: 20vw;
   border-radius: 0.5em;
 }
 
 .img-In {
-  width: 45%;
-  height: 43%;
+  width: 14vw;
   border-radius: 0.5em;
 }
 
@@ -128,26 +140,26 @@ body {
   background-color: #882805;
   color: #FBB623;
   text-align: center;
-  width: 80%;
+  width: 20vw;
   border-radius: 0.5em;
   padding: 1.5em;
+  text-align: justify;
 }
 
 .Bloco-OqInflu {
   display: flex;
   align-items: center;
-  gap: 10%;
+  gap: 5em;
   padding: 1.2em;
   background-color: #FCFAF1;
   border: #AF7E04 solid 0.1em;
-  width: 93%;
   border-radius: 0.5em;
   box-shadow: 0px 0px 2px 0px #000000;
 }
 
 .Img-OqInflu {
-  max-width: 300px;
-  height: auto;
+  width: 25vw;
+  height: 30vh;
   border-radius: 0.8em;
 }
 
@@ -155,20 +167,25 @@ body {
   background-color: #fcf2c2;
   color: #AF7E04;
   text-align: center;
-  width: 80%;
-  border: #AF7E04 solid 0.1em;
   border-radius: 0.5em;
-
 }
 
 .Conflito {
   background-color: #fcf2c3;
   color: #AF7E04;
   text-align: center;
-  width: 80%;
+  width: 80vw;
   border-radius: 0.5em;
   border: #AF7E04 solid 0.1em;
   box-shadow: 0px 0px 2px 0px #000000;
+}
+
+.Titulo-Con {
+  background-color: #882805;
+  color: #FBB623;
+  text-align: center;
+  width: 40vw;
+  border-radius: 0.5em;
 }
 
 .ImgAn {
@@ -180,7 +197,7 @@ body {
   background-color: #882805;
   padding: 0.9em;
   border-radius: 0.4em;
-  width: 40%;
+  width: 40vw;
   margin-left: 2em;
   box-shadow: 0px 0px 2px 0px #000000;
 }
@@ -189,7 +206,7 @@ body {
   background-color: #FFFAE0;
   color: #AF7E04;
   text-align: center;
-  width: 80%;
+  width: 35vw;
   border-radius: 0.5em;
 }
 
@@ -197,30 +214,28 @@ body {
   background-color: #FBB623;
   color: #000000;
   text-align: center;
-  width: 80%;
+  width: 30vw;
   border-radius: 0.5em;
   padding: 1.5em;
+  text-align: justify;
 }
 
 .Bloco-Fim {
   display: flex;
   align-items: center;
-  gap: 10%;
+  gap: 10em;
   padding: 1.2em;
   background-color: #FCFAF1;
   border: #AF7E04 solid 0.1em;
-  width: 40%;
+  width: 40vw;
   height: 33.5em;
   border-radius: 0.5em;
   box-shadow: 0px 0px 2px 0px #000000;
 
 }
 
-
-
 .ImgFim {
-  width: 55%;
-  height: 20%;
+  width: 24vw;
   border-radius: 0.5em;
 }
 
@@ -228,8 +243,7 @@ body {
   background-color: #fcf2c2;
   color: #AF7E04;
   text-align: center;
-  width: 75%;
-  border: #AF7E04 solid 0.1em;
+  width: 30vw;
   border-radius: 0.5em;
 }
 
@@ -237,9 +251,9 @@ body {
   background-color: #882805;
   color: #FBB623;
   text-align: center;
-  width: 75%;
   border-radius: 0.5em;
   padding: 1.5em;
+  text-align: justify;
 }
 
 .Blocos-AnteFim {
@@ -253,24 +267,24 @@ body {
   display: flex;
   justify-content: center;
   gap: 2em;
-padding: 15px;
+  padding: 0.13rem;
   margin-top: 1.5em;
 }
 
 .Bloco-Video {
   border: solid 2px #882805;
-  padding: 10px;
+  padding: 0.9rem;
   border-radius: 0.5em;
-  width: 60%;
+  width: 50vw;
   box-shadow: 0px 0px 2px 0px #000000;
 
 }
 
 .Bloco-Filme {
   border: solid 2px #882805;
-  padding: 10px;
+  padding: 0.9rem;
   border-radius: 0.5em;
-  width: 70%;
+  width: 50vw;
   box-shadow: 0px 0px 2px 0px #000000;
 
 }
@@ -289,24 +303,126 @@ padding: 15px;
   border-radius: 0.5em;
   padding: 1.5em;
   margin-top: 1em;
-  width: 85%;
+  width: 36vw;
+  text-align: justify;
 }
 
 iframe {
   border-radius: 0.5em;
 }
 
-.Api-Wikipedia:hover , .Bloco-Intro:hover , .Bloco-OqInflu:hover , .Conflito:hover , .Bloco-Anto:hover , .Bloco-Fim:hover , .Titulo-Video:hover , .Texto-Video:hover {
+.Api-Wikipedia:hover,
+.Bloco-Intro:hover,
+.Bloco-OqInflu:hover,
+.Conflito:hover,
+.Bloco-Anto:hover,
+.Bloco-Fim:hover,
+.Bloco-Video:hover,
+.Bloco-Filme:hover {
   box-shadow: 1px 1px 5px 1px #000000;
 }
 
-.Titulo-Con{
-  background-color: #882805;
-  color: #FBB623;
-  text-align: center;
-  width: 80%;
-  border-radius: 0.5em;
-  border: #AF7E04 solid 0.1em;
-  border-radius: 0.5em;
+.textwiki {
+  font-size: 0.7rem;
+}
 
+@media (max-width: 1200px) {
+  .Api-Wikipedia{
+    height: 85vh;
+  }
+
+  .Texto-Api{
+    height: 60vh;
+  }
+}
+
+@media (max-width: 950px) {
+  .Blocao-WikieApi{
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+  }
+
+  .Api-Wikipedia{
+    width: 85vw;
+  }
+
+  .Bloco-Intro{
+    width: 60vw;
+  }
+
+  .img-In{
+    width: 30vw;
+  }
+
+  .Texto-Intro{
+    width: 40vw;
+  }
+
+  .Texto-Api{
+    width: 70vh;
+  }
+
+  .ImgApi{
+    width: 30vw;
+    height: 30vh;
+  }
+
+  .Juntos{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Bloco-Video{
+    width: 80vw;
+  }
+
+  .Texto-Video{
+    width: 53vw;
+  }
+
+  .Bloco-Filme{
+    width: 80vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .Img-OqInflu{
+    width: 40vw;
+    padding-right: -4em;
+  }
+
+  .Bloco-OqInflu{
+    gap: -5em;
+  }
+
+  .Texto-OqInflu{
+    width: 70vw;
+  }
+
+  .Blocos-AnteFim{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Bloco-Anto{
+    width: 80vw;
+  }
+
+  .Texto-Anto{
+    width: 60vw;
+  }
+
+  .Bloco-Fim{
+    width: 70vw;
+    height: 70vh;
+  }
+
+  .ImgFim{
+    width: 40vw;
+  }
+
+  .Texto-Intro{
+    height: 27vw;
+  }
 }

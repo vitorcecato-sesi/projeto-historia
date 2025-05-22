@@ -6,6 +6,8 @@ import BotaoCurtirTema from "../components/BotaoCurtirTema";
 import BotaoTema from "../components/BotaoTema"
 
 
+import LogoSiteVerde from "../assets/Logos/LogoSiteVerde.png"
+
 function FascismoItaliano() {
 
     const slides = [
@@ -67,8 +69,7 @@ function FascismoItaliano() {
 
     return (
         <>
-            <Navbar />
-
+      <Navbar backgroundId="navbarFascismoItaliano" logo={LogoSiteVerde} />
             <br></br>
 
             <BotaoTema />

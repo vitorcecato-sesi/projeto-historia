@@ -1,17 +1,13 @@
-body{
-    background-color: rgb(242, 242, 242);
-}
-
 .foto1{
-    width: 206vh;
+    width: 100vw;
+    height: auto;
 }
 
-.slide{
+.slideRev1930{
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    animation: fadeIn 3s;
     padding-bottom: 3em;
 }
 
@@ -21,14 +17,27 @@ body{
     position: absolute;
     padding-right: 14em;
     padding-top: 7em;
+
+    animation: slideIn 2s forwards; /* Animação de entrada - forwards mantém o estado final da animação*/
 }
 
-.corTexto{
+@keyframes slideIn {
+    0% {
+        opacity: 0; /* Começa invisível */
+        transform: translateX(-5em); /* Move para a esquerda */
+    }
+    100% {
+        opacity: 1; /* Torna visível */
+        transform: translateX(0); /* Retorna à posição original */
+    }
+}
+
+.corTextoRevolução1930{
     color: black;
     background-color: #B66E3F;
 }
 
-.corTexto2{
+.corTexto2Revolução1930{
     color: #B66E3F;
     background-color: black;
 }
@@ -38,6 +47,21 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 3em;
+}
+
+/* Animação que faz com que os blocos vão aparecendo aos poucos */
+.blocos section{
+    animation: fadeIn;
+    animation-timeline: view(auto auto); /* (quando termina, quando começa) */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.2; /* Começa quase invisível */
+    }
+    100% {
+        opacity: 1; /* Torna visível */
+    }
 }
 
 .bloco-OQueFoi{
@@ -53,7 +77,7 @@ body{
 }
 
 .foto2{
-    width: 70vh;
+    width: 35vw;
     border-radius: 1em;
     transition: all 1s ease;
     box-shadow: 0px 0px 30px rgb(168, 168, 168);
@@ -66,7 +90,7 @@ body{
 }
 
 .texto-OQueFoi{
-    width: 70vh;
+    width: 35vw;
     background-color: #B66E3F;
     padding: 2em;
     border-radius: 3em;
@@ -131,7 +155,7 @@ body{
 }
 
 .foto4{
-    width: 70vh;
+    width: 36vw;
     border-radius: 1em;
     transition: all 1s ease;
     box-shadow: 0px 0px 30px rgb(168, 168, 168);
@@ -144,7 +168,7 @@ body{
 }
 
 .texto-Conflito{
-    width: 70vh;
+    width: 37vw;
     background-color: #B66E3F;
     padding: 2em;
     border-radius: 3em;
@@ -179,7 +203,7 @@ body{
 }
 
 .foto5{
-    width: 53vh;
+    width: 26vw;
     border-radius: 1em;
     transition: all 1s ease;
     box-shadow: 0px 0px 30px rgb(168, 168, 168);
@@ -192,7 +216,7 @@ body{
 }
 
 .texto-Final{
-    width: 70vh;
+    width: 40vw;
     background-color: #DBAB8C;
     padding: 2.4em;
     border-radius: 3em;
@@ -214,8 +238,47 @@ body{
     box-shadow: 0px 0px 10px #B66E3F;
 }
 
+.infoAPI{
+    align-items: center;
+    width: 70vw;
+    background-color: #B66E3F;
+    border-radius: 3em;
+    padding: 2em;
+    justify-content: space-around;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.infoAPI:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.imgWIKI{
+    width: 35vw;
+    border-radius: 2em;
+}
+
+/* HR - linha */
+#hrREV1930 {
+    width: 90vw;
+    height: 0.1vw;
+    background-color: gray;
+}
+
+.titulo-API{
+    background-color: #DBAB8C;
+    width: 20vw;
+    padding: 0.4em;
+    border-radius: 3em;
+    box-shadow: 0px 0px 20px #DBAB8C;
+}
+
 .bloco-Video{
+    width: 50vw;
     padding-top: -2em;
+    justify-items: center;
 }
 
 .titulo-Video{
@@ -269,4 +332,87 @@ body{
 .filme{
     border-radius: 1em;
     box-shadow: 0px 0px 20px #cd7f4c;
+}
+
+
+@media (max-width: 700px) {
+
+    .bloco-OQueFoi{
+        flex-direction: column;
+    }
+
+    .texto-OQueFoi{
+        width: 67vw;
+    }
+
+    .titulo-OQueFoi{
+        width: 30vw;
+    }
+
+    .foto2{
+        width: 60vw;
+    }
+
+    .bloco-Conflito{
+        flex-direction: column;
+    }
+
+    .titulo-Conflito{
+        width: 30vw;
+    }
+
+    .texto-Conflito{
+        width: 70vw;
+    }
+
+    .foto4{
+        width: 60vw;
+    }
+
+    .bloco-Final{
+        flex-direction: column;
+    }
+
+    .foto5{
+        width: 50vw;
+    }
+
+    .titulo-Final{
+        width: 30vw;
+    }
+
+    .texto-Final{
+        width: 60vw;
+    }
+
+    .titulo-API{
+        width: 30vh;
+    }
+
+    .titulo-Video{
+        width: 80vw;
+    }
+
+    .video{
+        width: 80vw;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 1000px) {
+    .bloco-Filme{
+        flex-direction: column;
+    }
+
+    .titulo-Filme{
+        width: 50vh;
+    }
+
+    .sinopseFilme{
+        width: 70vw;
+    }
+
+    .filme{
+        width: 70vw;
+    }
 }
