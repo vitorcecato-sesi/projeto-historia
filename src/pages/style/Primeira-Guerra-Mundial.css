@@ -734,3 +734,56 @@ hr {
     font-size: 1.1em;
     align-self: center;
 }
+
+/* Media Query para telas menores que 768px (dispositivos móveis) */
+@media (max-width: 850px) {
+    
+    .carouselFMW {
+        display: none;
+    }
+
+    .botoes button {
+        display: none;
+    }
+
+    #infoWiki, #infoPesq {
+        font-size: 1.2em; /* Reduz o tamanho da fonte das informações */
+        width: 50vw; /* Ajusta a largura das seções de informações */
+    }
+
+    .blocoResumo, .blocoCausas, .blocoEstopim, .blocoTotalPaises, .blocoFases, .blocoTec, .blocoBrasil, .blocoPaz {
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .blocoImagensEstopim img, .blocoImagensPaises img, .blocoImagensTec img, .blocoImagensBrasil img, .blocoImagemFase img, .blocoImagemPaz img, #imagemResumo {
+        display: none;
+    }
+
+    .nomePaises, .nomePaises2, #nomesEstopim {
+        display: none;
+    }
+
+    .textoResumo, .textoCausas, .textoEstopim, .textoAlianca, .textoEntente, .textoFase, .textoTec, .textoBrasil, .textoPaz {
+        width: 90vw; /* Ajusta a largura dos textos */
+    }
+
+    #tituloVideos, #tituloFasesPrincipal, #tituloFases, #tituloPaz, #tituloBrasil, #tituloTec, #tituloEstopim, #tituloCausas, #tituloResumo, #tituloPaises {
+        font-size: 1.5em; /* Reduz o tamanho da fonte dos títulos */
+        width: 45vw;
+    }
+
+    .blocoTotalVideo, .blocoTotalFilme {
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .blocoVideoIFrame, .blocoFilmeIFrame {
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .textoVideo, .textoFilme {
+        width: 90vw; /* Ajusta a largura dos textos dos vídeos */
+    }
+}
