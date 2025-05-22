@@ -104,21 +104,21 @@ function GuerraContestado() {
         <section className="blocoInfo">
           <h2>Fim da guerra</h2>
           <section className="blocoInfo2">
+            <section className="blocoColuna1">
             <img
               id="imgGC"
               src="https://media.gazetadopovo.com.br/2016/10/9a43ec7da1daae2c8b5f7178aebe75e9-gpLarge.jpg"
               alt="Guerra do Contestado"
             />
-            <p>
-              O Presidente da república, vendo esta movimentação, se preocupou e
+            <p> O Presidente da república, vendo esta movimentação, se preocupou e
               enviou várias tropas para a região que, mais tarde, foram
               derrotadas pela população. No meio tempo, José Maria foi
               assassinado, mas seus pensamentos continuaram em evidência e a
-              guerra permaneceu. Após, o governo comprou a luta de forma
+              guerra permaneceu.  O Após, o governo comprou a luta de forma
               grosseira e a tornou mais sangrenta (armamentos pesados e aviões
               de artilharia foram utilizados), matando os milhares de sertanejos
-              e fazendo um acordo que estabelecesse os limites de cada região.
-            </p>
+              e fazendo um acordo que estabelecesse os limites de cada região.</p>
+            </section>
             <BotaoCurtirTema  idSection="bloco4Contstados" tema="Guerra do Contestado" />
           </section>
         </section>
