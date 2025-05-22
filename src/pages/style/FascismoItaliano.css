@@ -81,6 +81,7 @@
   justify-content: space-between; /* Espaça os itens igualmente */
   margin-top: 5em; /* Espaço superior */
   box-shadow: #86895d 1px 1px 5px 1px; /* Sombra da caixa */
+  transition: 0.5s;
 }
 
 /* Efeito de hover para a caixa de informações */
@@ -88,6 +89,7 @@
   transform: scale(1.02); /* Aumenta o tamanho */
   box-shadow: #272b00 1px 1px 10px 1px; /* Atualiza a sombra */
   cursor: pointer; /* Muda o cursor */
+  transition: 0.5s;
 }
 
 /* Estilo para a coluna de informações */
