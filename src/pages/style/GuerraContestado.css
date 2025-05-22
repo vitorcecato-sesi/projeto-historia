@@ -128,6 +128,12 @@
   gap: 2em; /* Mantém o espaçamento entre os itens */
   justify-content: space-between; /* Alinha os itens com espaço entre eles */
 }
+.blocoColuna1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 1200px) {
   .blocoLado {
     flex-direction: column;
