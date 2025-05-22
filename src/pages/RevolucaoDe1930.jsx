@@ -23,8 +23,7 @@ function RevolucaoDe1930() {
     <>
     <Navbarr backgroundId="navbarRevolucaoDe1930" logo={LogoSiteMarrom} />
 
-    
-      <section className="slide">
+      <section className="slideRev1930">
         <img className="foto1" src={foto1} alt="Foto1" />
         <h2 className="textoSlide">
           <span className="corTextoRevolução1930"> CONHEÇA SOBRE A </span> <br />
@@ -164,7 +163,7 @@ function RevolucaoDe1930() {
               historiadores para contextualizar esse período crucial da história
               brasileira, que levou à ascensão de Getúlio Vargas ao poder.
             </p>
-            <iframe
+            <iframe 
               className="filme"
               width="560"
               height="315"

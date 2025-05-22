@@ -18,13 +18,14 @@
     padding-right: 14em;
     padding-top: 7em;
 
+    /*Animação pro titulo*/
     animation: slideIn 2s forwards; /* Animação de entrada - forwards mantém o estado final da animação*/
 }
 
 @keyframes slideIn {
     0% {
         opacity: 0; /* Começa invisível */
-        transform: translateX(-5em); /* Move para a esquerda */
+        transform: translateX(-5em); /* Move para a esquerda - translateX: eixo X vertical*/
     }
     100% {
         opacity: 1; /* Torna visível */
