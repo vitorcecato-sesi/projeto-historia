@@ -128,6 +128,7 @@ function RevolucaoRussa() {
                                 A Revolução Russa ocorreu num contexto de crise no Império Russo, com desigualdade social, pobreza entre camponeses e trabalhadores, e um governo czarista autoritário. A Primeira Guerra Mundial piorou a situação, causando perdas econômicas e humanas. Em 1917, o czar Nicolau II abdicou, dando lugar a um governo provisório. O governo não resolveu os problemas centrais, o que levou os bolcheviques a tomar o poder em outubro de 1917, iniciando a Revolução de Outubro e estabelecendo um regime socialista.
                             </p>
                         </article>
+                        
                     </section>
                     <br />
                     <br />
@@ -316,9 +317,7 @@ function RevolucaoRussa() {
                             </p>
                         </section>
                     </section>
-                    <br />
-                    <br />
-                    <button className='botaoVideoRR'>VIDEO DO GRUPO</button>
+
                 </section>
                 <Footer corHeaderFooter="azul" corInfoFooter="azulClaro" logo={LogoSiteAzul} />
             </section>

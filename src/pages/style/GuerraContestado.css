@@ -1,199 +1,192 @@
 .blocoWiki {
-    flex-direction: column;
-    margin-top: 4em;
-    margin-bottom: 4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
-    background-color: #CB4D50;
-    padding: 2em;
-    border-radius: 1em;
-    
-   
-}
-.centro{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 5em;
+  flex-direction: column;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  background-color: #cb4d50;
+  padding: 2em;
+  border-radius: 1em;
 }
 
-
-
-
-
-
+.centro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
 
 .bannerGC {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 60vh;
-    background-image: url('https://media.gazetadopovo.com.br/2016/10/9a43ec7da1daae2c8b5f7178aebe75e9-gpLarge.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    font-size: 2em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  background-image: url("https://media.gazetadopovo.com.br/2016/10/9a43ec7da1daae2c8b5f7178aebe75e9-gpLarge.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-size: 2em;
 }
 
 .bannerGC::before {
-    content: "";
-    position: absolute;
-    height: 60vh;
-    inset: 0;
-    z-index: 0;
-    background-color: #dd666688;
+  content: "";
+  position: absolute;
+  height: 60vh;
+  inset: 0;
+  z-index: 0;
+  background-color: #dd666688;
 }
+
 .bannerGC h1 {
-    z-index: 1;
-}
-#vermelho{
-    color: #CB4D50
-}
-#branco{
-    color: #FFFFFF
-}
-.blocoInfo2{
-    color: white;
-    display: flex;
-    flex-direction: row;
-width: 50vw;
-gap: 4em;
-}
-.info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#imgGC{
-    width: 30vw;
-    height: 30vh;
-    border-radius: 2vw;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border: 3px solid black;
-}
-.blocoInfo{
-    color: white;
-    border: 0.5em solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
-    background-color: #BD0A0A;
-    border-radius: 2vw;
-    text-align: justify;
-    padding: 2em;
-    
-}
-.wiki{
-    text-align: justify;
+  z-index: 1;
 }
 
-
-.blocoVideo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40vw;
-    padding: 2em;
-    background-color: #BD0A0A;
-    text-align: justify;
-    gap: 2em;
-    justify-content: flex-start;
-    margin-right: 2em;
-    margin-left: 2em;
-    border-radius: 2em;
-    margin-top: 2em;
-     
+#vermelho {
+  color: #cb4d50;
 }
 
-.video{
-    width: 30vw;
-    height: 40vh;
-    border-radius: 2vw;
- transition: transform 0.3s ease;
- box-shadow: 1px 1px 5px rgba(0.5, 0.5, 0.5, 0.5);
-     
-   
+#branco {
+  color: #ffffff;
+}
+
+.blocoInfo2 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  gap: 4em;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#imgGC {
+  width: 30vw;
+  height: 30vh;
+  border-radius: 2vw;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 3px solid black;
+}
+
+.blocoInfo {
+  color: white;
+  border: 0.5em solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  background-color: #bd0a0a;
+  border-radius: 2vw;
+  text-align: justify;
+  padding: 2em;
+}
+.wiki {
+  text-align: justify;
+}
+
+.blocoVideo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  padding: 2em;
+  background-color: #bd0a0a;
+  text-align: justify;
+  gap: 2em;
+  justify-content: flex-start;
+  margin-right: 2em;
+  margin-left: 2em;
+  border-radius: 2em;
+  margin-top: 2em;
+}
+
+.video {
+  width: 30vw;
+  height: 40vh;
+  border-radius: 2vw;
+  transition: transform 0.3s ease;
+  box-shadow: 1px 1px 5px rgba(0.5, 0.5, 0.5, 0.5);
 }
 
 .video:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;}
- 
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
 
-  .blocoLado {
-    display: flex;
-    flex-direction: row;
-    gap: 2em; /* Mantém o espaçamento entre os itens */
-    justify-content: space-between; /* Alinha os itens com espaço entre eles */
+.blocoLado {
+  display: flex;
+  flex-direction: row;
+  gap: 2em; /* Mantém o espaçamento entre os itens */
+  justify-content: space-between; /* Alinha os itens com espaço entre eles */
 }
 @media (max-width: 1200px) {
-    .blocoLado {
-        flex-direction: column;
-        align-items: center;
-    }
-    .blocoInfo2{
-        flex-direction: column  ;
-        align-items: center;
-    }
-    #imgGC{
-        width: 50vw;
-        height: 40vh;
-    }
-    .video{
-        width: 50vw;
-        height: 30vh;
-      
-    }
+  .blocoLado {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blocoInfo2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #imgGC {
+    width: 50vw;
+    height: 40vh;
+  }
+  .video {
+    width: 50vw;
+    height: 30vh;
+  }
 }
-  @media (max-width: 768px) {
-    .blocoLado {
-        flex-direction: column;
-        align-items: center;
-    }
-    .blocoInfo2{
-        flex-direction: column;
-        align-items: center;
-    }
-    #imgGC{
-        width: 40vw;
-        height: 30vh;
-    }
-    .video{
-        width: 40vw;
-        height: 20vh;
-      
-    }
+@media (max-width: 768px) {
+  .blocoLado {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blocoInfo2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #imgGC {
+    width: 40vw;
+    height: 30vh;
+  }
+  .video {
+    width: 40vw;
+    height: 20vh;
+  }
 }
 @media (max-width: 480px) {
-    .blocoLado {
-        flex-direction: column;
-        align-items: center;
-    }
-    .blocoInfo2{
-        flex-direction: column;
-        align-items: center;
-    }
-    #imgGC{
-        width: 0vw;
-        height: 0vh;
-    }
-    .video{
-        width: 40vw;
-        height: 30vh;
-    }
-}
-.imagemAPI{
-    width: 30vw;
+  .blocoLado {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blocoInfo2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #imgGC {
+    width: 0vw;
+    height: 0vh;
+  }
+  .video {
+    width: 40vw;
     height: 30vh;
-    border-radius: 2vw;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border: 3px solid black;
+  }
+}
+.imagemAPI {
+  width: 30vw;
+  height: 30vh;
+  border-radius: 2vw;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 3px solid black;
 }
