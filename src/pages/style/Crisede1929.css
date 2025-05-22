@@ -604,7 +604,7 @@ body {
     text-align: center;
   }
 
-  .Video {
+  .Videoo {
     width: 25em;
     height: 20em;
   }
@@ -655,4 +655,85 @@ body {
     height: 26;
   }
 
+}
+
+@media (max-width: 320px) {
+  .Titulo-ApiC{
+    width: auto;
+  }
+
+  .Bloco-OqFoi{
+    width: 18em;
+  }
+
+  .img-Oq{
+    width: 12em;
+    height: 9em;
+  }
+
+  .Titulo-OqFoi{
+    width:auto;
+  }
+
+  .Texto-OqFoi{
+width: auto;
+  }
+
+  .Titulo-Antecedentes{
+    width: 11em;
+    font-size: 1.4em;
+  }
+
+  .Img-Ante{
+    width: 16em;
+    height: 9em;
+  }
+
+  .Img-Bolsa{
+    width: 16em;
+    height: 9em;
+  }
+
+  .Bloco-New{
+    width: 17em;
+  }
+
+  .Titulo-New{
+    width: auto;
+  }
+
+  .Texto-New{
+    width: auto;
+  }
+
+  .Bloco-Conse{
+    width: 18em;
+  }
+
+  .Titulo-Conse{
+    width: auto;
+    font-size: 1.4em;
+  }
+  
+  .Img-Conse{
+    width: 16em;
+    height: 9em;
+  }
+
+  .Titulo-VideoC{
+    width: auto;
+  }
+
+  .Videoo{
+    width: 11em;
+    height: 9em;
+  }
+
+  .Texto-VideoC{
+    width: 10em;
+  }
+
+  .Api-WikipediaC{
+    width: 18em;
+  }
 }

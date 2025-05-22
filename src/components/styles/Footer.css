@@ -90,7 +90,7 @@
     transform: rotate(45deg); /* seta apontando para baixo */
     transition: transform 0.5s ease; /* animação suave da rotação */
 }
-
+ 
 /* Vai rotacionar a seta, virando ela para cima*/
 .seta.aberto{
     transform: rotate(-135deg);

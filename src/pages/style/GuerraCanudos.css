@@ -426,3 +426,87 @@ iframe {
     height: 27vw;
   }
 }
+
+@media (max-width: 350px){
+
+  .img-In{
+    width: 12em;
+  height: 12em;
+  }
+
+.Titulo-Intro{
+  width: auto;
+}
+
+.Bloco-Intro{
+  width: auto;
+  height: auto;
+}
+
+
+.Texto-Intro{
+  width: auto;
+  height: auto;
+}
+
+.Bloco-OqInflu{
+  flex-direction: column-reverse;
+}
+
+.Img-OqInflu{
+  width: 18rem;
+  height: 11em;
+}
+.Texto-OqInflu{
+  width: auto;
+  padding-left: 2em;
+}
+
+.Titulo-Anto{
+  width: auto;
+  height: auto;
+}
+
+.Titulo-Fim{
+  width: auto;
+}
+
+
+.ImgFim{
+   width: 14rem;
+  height: 10em;
+}
+
+.Texto-Fim{
+  width: 12em;
+}
+
+.VideoCa{
+  width: 10em;
+}
+
+.VideoCa{
+  width: 15em;
+}
+
+.Wiki-Api{
+  flex-direction: column;
+  padding-top: -20em;
+}
+
+.ImgApi{
+  width: 14em;
+  height: auto;
+ padding-left: 1.5em;
+}
+
+.Texto-Api{
+  width: auto;
+  height: auto;
+  overflow: auto;
+}
+
+.Api-Wikipedia{
+  height: auto;
+}
+}
