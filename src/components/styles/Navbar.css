@@ -3,9 +3,9 @@
     justify-content: space-around;
     align-items: center;
     font-size: 1.2em;
-    background: linear-gradient(90deg, rgb(216, 126, 254), rgb(235, 226, 239)); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, rgb(216, 126, 254), rgb(235, 226, 239)); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
@@ -15,51 +15,51 @@
 }   
 
 #navbarPrimeiraGuerra {
-    background: linear-gradient(90deg, rgba(104, 108, 94, 0.5), #686C5E, rgba(104, 108, 94, 0.5)); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, rgba(104, 108, 94, 0.5), #686C5E, rgba(104, 108, 94, 0.5)); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 #navbarRevolucaoRussa {
-    background: linear-gradient(90deg, #8896FF, rgba(136, 150, 255, 0.6), #8896FF); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, #8896FF, rgba(136, 150, 255, 0.6), #8896FF); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 #navbarGuerraDoContestado {
-    background: linear-gradient(90deg, rgba(203, 77, 80, 0.7), #CB4D50, rgba(203, 77, 80, 0.7)); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, rgba(203, 77, 80, 0.7), #CB4D50, rgba(203, 77, 80, 0.7)); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 #navbarRevolucaoDe1930 {
-    background: linear-gradient(90deg, #906A41, rgba(144, 106, 65, 0.8), #906A41); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, #906A41, rgba(144, 106, 65, 0.8), #906A41); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 #navbarCriseDe1929 {
-    background: linear-gradient(90deg, #822626, rgba(130, 38, 38, 0.8), #822626); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, #822626, rgba(130, 38, 38, 0.8), #822626); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 #navbarGuerraDeCanudos {
-    background: linear-gradient(90deg, #FBB623, rgba(251, 182, 35, 0.8), #FBB623); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, #FBB623, rgba(251, 182, 35, 0.8), #FBB623); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 #navbarFascismoItaliano {
-    background: linear-gradient(90deg, #86895D, rgba(134, 137, 93, 0.8), #86895D); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, #86895D, rgba(134, 137, 93, 0.8), #86895D); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate;
 }
 
 #navbarRanking {
-    background: linear-gradient(90deg, #FFD7D7, rgba(254, 198, 198, 0.8), #FFD7D7); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, #FFD7D7, rgba(254, 198, 198, 0.8), #FFD7D7); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 .blocoPrincipalNavbar img {
