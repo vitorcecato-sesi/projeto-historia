@@ -1,16 +1,24 @@
+/* Estilo para o primeiro parallax */
 .parallax1 {
+    /* Definindo a imagem de fundo */
     background-image: url(https://aventurasnahistoria.com.br/media/_versions/primeira_guerra/trincehe_1_widelg.jpg);
     height: 80vh;
+    /* Manter a imagem fixa ao rolar a página */
     background-attachment: fixed;
+    /* Centralizar a imagem de fundo */
     background-position: center;
+    /* Não repetir a imagem de fundo */
     background-repeat: no-repeat;
+    /* Cobrir toda a section com a imagem */
     background-size: cover;
     padding: 0.1em;
+    /* Flexbox para alinhar os itens dentro desta seção */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; /* Alinhamento à esquerda */
 }
 
+/* Estilo para o segundo parallax */
 .parallax2 {
     background-image: url(https://assets.brasildefato.com.br/2024/09/image_processing20200201-29235-1nfnxod.jpg);
     height: 80vh;
@@ -21,135 +29,144 @@
     padding: 0.1em;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-end; /* Alinhamento à direita */
 }
 
+/* Estilo para o título do parallax */
 .tituloParallax {
-    color: white;
-    font-size: 2em;
-    width: 80vw;
+    color: white; /* Cor do texto */
+    font-size: 2.5em; /* Tamanho da fonte */
+    width: 80vw; /* Largura em porcentagem da janela de visualização */
     padding-top: 0.6em;
     padding-left: 0.6em;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif; /* Fonte utilizada */
 }
 
+/* Estilo para o texto do parallax */
 .textoParallax {
     color: white;
-    padding: 1em;
-    font-size: 1em;
-    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.5em;
+    text-align: justify; /* Justificar texto */
     font-family: "Montserrat", sans-serif;
-    width: auto;
+    width: auto; /* Largura automática */
 }
 
+/* Estilo para o título do segundo parallax */
 .tituloParallax2 {
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
     padding-top: 0.6em;
     padding-right: 0.6em;
     font-family: "Montserrat", sans-serif;
 }
 
+/* Estilo para o texto do segundo parallax */
 .textoParallax2 {
     color: white;
-    padding: 1em;
-    font-size: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.5em;
     text-align: justify;
     width: auto;
     font-family: "Montserrat", sans-serif;
-
 }
 
+/* Estilo para textos coloridos específicos */
 .corTexto {
+    color: #db88ff; /* Cor roxa */
+}
+
+/* Estilo para os títulos na home*/
+.titulosHome {
     color: #db88ff;
+    font-size: 2em;
+    padding-top: 0.6em;
+    padding-left: 0.6em;
+    font-family: "Montserrat", sans-serif;
 }
 
-.titulosHome{
-color: #db88ff;
-font-size: 2em;
-padding-top: 0.6em;
-padding-left: 0.6em;
-font-family: "Montserrat", sans-serif;
-}
-
+/* Estilo para a barra de navegação na página inicial */
 .navHome {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Permitir quebra de linha */
+    justify-content: space-around; /* Espaçamento entre os itens */
     padding: 2em;
-    gap: 3em;
+    gap: 3em; /* Espaço entre os itens da navegação */
     width: auto;
 }
 
+/* Estilo para as informações de navegação */
 .navInfos {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2em;
+    flex-direction: column; /* Organiza itens em coluna */
+    align-items: center; /* Alinhamento centrado */
+    margin: 2em; /* Espaçamento em torno dos itens */
     text-align: center;
-    transition: 0.5s;
+    transition: 0.5s; /* Transição suave */
     font-family: "Montserrat", sans-serif;
-    
 }
 
+/* Estilo para os parágrafos dentro das informações de navegação */
 .navInfos p {
-    color: #db88ff;
-    font-size: 1.2em;
-    font-weight: bold;
+    color: #db88ff; 
+    font-size: 1.2em; 
+    font-weight: bold; /* Texto em negrito */
 }
 
+/* Efeito de zoom ao passar o mouse sobre navInfos */
 .navInfos:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
+    transform: scale(1.1); /* Aumenta o tamanho do elemento */
+    transition: 0.5s; /* Transição suave */
 }
 
+/* Estilo para as imagens na navegação */
 .navImg {
     border-radius: 50%;
-    width: 8em;
-    height: 8em;
+    width: 8em; 
+    height: 8em; 
     display: flex;
-    box-shadow: #7a5e9b 0px 0px 30px 0px;
+    box-shadow: #7a5e9b 0px 0px 30px 0px; /* Sombra na imagem */
 }
 
+/* Estilo para o botão de tema */
 .botTema {
-    position: relative;
-    left: 5em;
-    
+    position: relative; /* Posição relativa para ajustes */
+    left: 5em; /* Desloca o botão para a direita */
 }
 
+/* Forma de exibir o botão de tema */
 .botTemaPosi {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    
+    flex-direction: row-reverse; /* Organização dos itens de forma reversa */
+    align-items: center; /* Alinhamento central */
 }
 
+/* Media query para responsividade em telas menores */
 @media (max-width: 768px) {
     .parallax1,
     .parallax2 {
-        height: 100vh;
+        height: 100vh; /* Aumenta a altura para 100% da janela de visualização */
     }
 
     .tituloParallax,
     .tituloParallax2,
     .titulosHome {
-        font-size: 1.5em;
-        padding-top: 0.4em;
+        font-size: 1.5em; /* Reduz o tamanho da fonte */
+        padding-top: 0.4em; /* Ajusta o espaçamento */
         padding-left: 0.4em;
         padding-right: 0.4em;
     }
 
     .textoParallax,
     .textoParallax2 {
-        font-size: 0.8em; 
-        padding: 0.5em; 
+        font-size: 0.8em; /* Reduz o tamanho do texto */
+        padding: 0.5em; /* Ajuste de padding */
     }
 
     .botTema {
-    position: relative;
-    left: 0.5em;
-    
-}
-
-
+        position: relative; /* Ajuste na posição do botão */
+        left: 0.5em; /* Movendo o botão mais para a esquerda */
+    }
 }
