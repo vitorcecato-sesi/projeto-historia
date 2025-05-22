@@ -614,6 +614,12 @@
         gap: 1em;
     }
 
+    .imgWIKIRR {
+        width: 50vw;
+        height: auto;
+        border-radius: 2em;
+    }
+
     .APIWikiRR {
         width: 60vw;
         padding: 2em 5em;
