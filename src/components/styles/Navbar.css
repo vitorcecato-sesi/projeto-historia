@@ -11,6 +11,7 @@
     letter-spacing: 1px;
     transition: all 1s ease;
     height: 12vh;
+    font-style: none;
 }   
 
 #navbarPrimeiraGuerra {
@@ -19,11 +20,47 @@
     animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
 }
 
+#navbarRevolucaoRussa {
+    background: linear-gradient(90deg, #8896FF, rgba(136, 150, 255, 0.6), #8896FF); /* Adicione mais cores para suavizar */
+    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
+    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+}
+
+#navbarGuerraDoContestado {
+    background: linear-gradient(90deg, rgba(203, 77, 80, 0.7), #CB4D50, rgba(203, 77, 80, 0.7)); /* Adicione mais cores para suavizar */
+    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
+    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+}
+
+#navbarRevolucaoDe1930 {
+    background: linear-gradient(90deg, #906A41, rgba(144, 106, 65, 0.8), #906A41); /* Adicione mais cores para suavizar */
+    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
+    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+}
+
+#navbarCriseDe1929 {
+    background: linear-gradient(90deg, #822626, rgba(130, 38, 38, 0.8), #822626); /* Adicione mais cores para suavizar */
+    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
+    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+}
+
+#navbarGuerraDeCanudos {
+    background: linear-gradient(90deg, #FBB623, rgba(251, 182, 35, 0.8), #FBB623); /* Adicione mais cores para suavizar */
+    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
+    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+}
+
+#navbarFascismoItaliano {
+    background: linear-gradient(90deg, #86895D, rgba(134, 137, 93, 0.8), #86895D); /* Adicione mais cores para suavizar */
+    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
+    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+}
+
 .blocoPrincipalNavbar img {
     width: 8vw;
     height: auto;
     transition: all 0.7s ease;
-    filter: drop-shadow(0 0 15px white);
+    filter: drop-shadow(0 0 25px white);
 }
 
 .blocoPrincipalNavbar img:hover {
@@ -31,16 +68,17 @@
     filter: drop-shadow(0 0 30px #56007B);
 }
 
-.blocoPrincipalNavbar span {
+.blocoPrincipalNavbar a {
     position: relative;
     color: #fff;
     cursor: pointer;
     background: black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-style: none;
 }
 
-.blocoPrincipalNavbar span:hover::after {
+.blocoPrincipalNavbar a:hover::after {
     content: '';
     position: absolute;
     bottom: -4px;
