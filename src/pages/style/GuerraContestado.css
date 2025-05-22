@@ -133,6 +133,25 @@ gap: 4em;
     gap: 2em; /* Mantém o espaçamento entre os itens */
     justify-content: space-between; /* Alinha os itens com espaço entre eles */
 }
+@media (max-width: 1200px) {
+    .blocoLado {
+        flex-direction: column;
+        align-items: center;
+    }
+    .blocoInfo2{
+        flex-direction: column  ;
+        align-items: center;
+    }
+    #imgGC{
+        width: 50vw;
+        height: 40vh;
+    }
+    .video{
+        width: 50vw;
+        height: 30vh;
+      
+    }
+}
   @media (max-width: 768px) {
     .blocoLado {
         flex-direction: column;
