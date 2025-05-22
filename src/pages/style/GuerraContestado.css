@@ -181,6 +181,10 @@
     width: 40vw;
     height: 30vh;
   }
+  #imgContestado{
+    width: 0vw;
+    height: 0vh;
+  }
 }
 .imagemAPI {
   width: 30vw;
@@ -189,8 +193,4 @@
   margin-top: 2em;
   margin-bottom: 2em;
   border: 3px solid black;
-}
-#imgContestado{
-  width: 0vw;
-  height: 0vh;
 }
