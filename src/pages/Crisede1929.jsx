@@ -302,7 +302,7 @@ function Crisede29() {
             </h2>
           </section>
           <iframe
-            className="Video"
+            className="Videoo"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/V5VXxyn6G24?si=aYsRpof7ZnuOTXNk"
@@ -334,7 +334,7 @@ function Crisede29() {
               Filme explicativo sobre a Crise de 1929
             </h2>
           </section>
-          <iframe className="Video"
+          <iframe className="Videoo"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/msxfuH56wXE?si=7BpkHWdbGqqHv_bm"
