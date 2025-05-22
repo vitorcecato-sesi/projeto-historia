@@ -212,6 +212,11 @@ input:nth-of-type(5):checked~main#carousel {
     border-radius: 10px;
 }
 
+#imgPrimeiraGuerraMundial {
+    width: 30vw;
+    height: auto;
+}
+
 hr {
     width: 70vw;
     height: 3.5px;

@@ -7,6 +7,9 @@ import LogoSiteCinza from "../assets/Logos/LogoSiteCinza.png";
 
 // Importando Componentes
 import Navbar from "../components/Navbar";
+import APIWikipedia from "../components/APIWikipedia";
+import BotaoCurtirTema from "../components/BotaoCurtirTema"
+import BotaoTema from "../components/BotaoTema"
 
 // Definindo a função que será executada quando o componente for renderizado
 function PrimeiraGuerraMundial() {
@@ -33,6 +36,7 @@ function PrimeiraGuerraMundial() {
             <span id="textoConhecimento"> PRIMEIRA GUERRA MUNDIAL</span>...
           </h1>
         </center>
+
 
         <section className="carousel" style={{ "--position": posicaoCard }}>
           <section className="card" style={{ "--offset": 1 }}>
@@ -81,9 +85,19 @@ function PrimeiraGuerraMundial() {
           <h1 id="infoWiki"> Informações Wikipédia </h1>
         </center>
 
+        <BotaoTema />
+
         <center>
           <section className="informacoesWikipedia">
-            <h1> INFORMAÇÕES DA API AQUI </h1>
+           <APIWikipedia 
+            titulo="Primeira Guerra Mundial"
+            campoWiki="wiki"
+            imagemID="imgPrimeiraGuerraMundial"
+            imagemAlt="Primeira Guerra Mundial"
+            imagemClass="imagemAPI"
+           />
+           <section className="wiki" id="wiki"></section>
+           <img src="" alt="" id="imgPrimeiraGuerraMundial" />
           </section>
         </center>
       </section>
@@ -116,6 +130,8 @@ function PrimeiraGuerraMundial() {
             movimentos nacionalistas que colocaram diversas nações em rota de
             colisão.
           </p>
+
+          <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
         </section>
 
         <img
@@ -180,6 +196,8 @@ function PrimeiraGuerraMundial() {
             acontecer uma invasão e criar um combate generalizado, acarretando
             uma Guerra Mundial.
           </p>
+                    <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+
         </section>
       </section>
 
@@ -221,6 +239,8 @@ function PrimeiraGuerraMundial() {
             Daí por diante foi por água a baixo, as duas alianças preparava suas
             tropas para um conflito grande.
           </p>
+                    <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+
         </section>
 
         <section className="blocoImagensEstopim">
@@ -250,6 +270,8 @@ function PrimeiraGuerraMundial() {
               Otomano e a Bulgária posteriormente se uniram a essa aliança
               também.
             </p>
+                      <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+
           </section>
 
           <br />
@@ -291,6 +313,8 @@ function PrimeiraGuerraMundial() {
               incluindo Japão, Itália (a partir de 1915), Portugal, Romênia,
               Estados Unidos, etc.
             </p>
+                      <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+
           </section>
           <br />
 
@@ -342,6 +366,8 @@ function PrimeiraGuerraMundial() {
             Lagos Masurianos. A invasão austríaca da Sérvia também marcou esta
             fase.
           </p>
+                    <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+
         </section>
 
         <section className="blocoImagemFase">
@@ -380,6 +406,8 @@ function PrimeiraGuerraMundial() {
             nas trincheiras era miserável, marcada por doenças, lama, ratos e o
             constante bombardeio da artilharia.
           </p>
+                    <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+
         </section>
       </section>
 
@@ -412,6 +440,8 @@ function PrimeiraGuerraMundial() {
             da república e à assinatura do Armistício de Compiègne em 11 de
             novembro de 1918, pondo fim aos combates.
           </p>
+                    <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+
         </section>
 
         <section className="blocoImagemFase">
@@ -435,6 +465,8 @@ function PrimeiraGuerraMundial() {
             tóxicos, tanques e aviões foram introduzidas, levando a táticas de
             guerra de trincheiras e inúmeras baixas (mortes).
           </p>
+                    <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+
         </section>
         <section className="blocoImagensTec">
           <img
@@ -466,6 +498,8 @@ function PrimeiraGuerraMundial() {
             modesta, focada no patrulhamento do Atlântico Sul e no envio de uma
             missão médica à Europa.
           </p>
+                    <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+
         </section>
         <section className="blocoImagensBrasil">
           <img
@@ -498,6 +532,8 @@ function PrimeiraGuerraMundial() {
             reparações de guerra. Outros tratados foram assinados com os demais
             países derrotados.
           </p>
+                    <BotaoCurtirTema idSection="bloco1" tema="Primeira Guerra Mundial" />
+
         </section>
 
         <section className="blocoImagemPaz">
