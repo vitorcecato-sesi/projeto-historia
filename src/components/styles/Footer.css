@@ -145,10 +145,11 @@
 @media (max-width: 1000px) {
     .logoG3{
         height: 30vh;
+        width: auto;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .footerInfo.aberto{
         flex-direction: column;
         align-items: center;
@@ -156,6 +157,12 @@
 
     .logoG3{
         width: 28vw;
+        height: auto;
+    }
+
+    .logoSite {
+        width: 20vw;
+        height: auto;
     }
 
     .sobreProjeto{
