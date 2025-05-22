@@ -688,8 +688,13 @@ hr {
         align-items: center; 
     }
 
-    .blocoImagensEstopim img, .blocoImagensPaises img, .blocoImagensTec img, .blocoImagensBrasil img, .blocoImagemFase img, .blocoImagemPaz img, #imagemResumo {
-        display: none;
+    .blocoImagensEstopim img, .blocoImagensPaises img, .blocoImagensTec img, .blocoImagensBrasil img {
+       display: none;
+    }
+
+    #imagemResumo, .blocoImagemFase img, .blocoImagemPaz img {
+        height: 30vw;
+        width: auto;
     }
 
     .nomePaises, .nomePaises2, #nomesEstopim {
@@ -697,12 +702,12 @@ hr {
     }
 
     .textoResumo, .textoCausas, .textoEstopim, .textoAlianca, .textoEntente, .textoFase, .textoTec, .textoBrasil, .textoPaz {
-        width: 90vw;
+        width: 70vw;
     }
 
-    #tituloVideos, #tituloFasesPrincipal, #tituloFases, #tituloPaz, #tituloBrasil, #tituloTec, #tituloEstopim, #tituloCausas, #tituloResumo, #tituloPaises {
+    #tituloVideos, #tituloFasesPrincipal, #tituloFases, #tituloPaz, #tituloBrasil, #tituloTec, #tituloEstopim, #tituloCausas, #tituloResumo, #tituloPaises, #tituloEntente, #tituloAlianca {
         font-size: 1.5em;
-        width: 45vw;
+        width: 70vw;
     }
 
     .blocoTotalVideo, .blocoTotalFilme {
@@ -716,6 +721,23 @@ hr {
     }
 
     .textoVideo, .textoFilme {
-        width: 90vw;
+        width: 70vw;
     }
+
+    .blocoVideoIFrame iframe {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        padding: 0.8em;
+        border: solid 1px black;
+        width: 50vw;
+        height: auto;
+    }
+
+    .blocoFilmeIFrame iframe {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        padding: 0.8em;
+        border: solid 1px black;
+        width: 50vw;
+        height: auto;
+    }
+
 }
