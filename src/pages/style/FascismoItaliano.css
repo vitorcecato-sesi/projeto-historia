@@ -470,3 +470,75 @@
     font-size: 0.9em; /* Reduz tamanho da lista */
   }
 }
+
+@media (max-width: 340px) {
+  .titulowiki {
+    font-size: 1.1em; /* Reduz ainda mais o tamanho da fonte */
+    color: #54582f; /* Cor do texto */
+  }
+
+  .tituloF {
+    font-size: 1.3em; /* Reduz o tamanho da fonte */
+    width: 95vw; /* Aumenta a largura */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .box-infow,
+  .box-info {
+    width: 90vw; /* Ajusta a largura das caixas */
+    flex-direction: column; /* Direção em coluna */
+    align-items: center; /* Centraliza itens */
+    margin: 0 auto; /* Centraliza a caixa */
+    margin-top: 5em; /* Espaço acima */
+  }
+
+  .box-info img {
+    width: 80vw; /* Largura das imagens */
+    height: auto; /* Mantém proporção */
+    margin-top: 1em; /* Espaço acima */
+  }
+
+  .imgout {
+    width: 50vw; /* Ajusta a largura da caixa de imagem */
+  }
+
+  .imgout img {
+    width: 50vw; /* Largura das imagens */
+    height: auto; /* Mantém proporção */
+  }
+
+  .box-videos {
+    flex-direction: column; /* Direção em coluna */
+    align-items: center; /* Centraliza itens */
+    padding: 1em; /* Ajusta padding */
+  }
+
+  .box-videos iframe {
+    width: 100%; /* Largura total para iFrames */
+    height: auto; /* Mantém proporção */
+  }
+
+  .box-videos p {
+    width: 90vw; /* Largura do texto */
+    padding: 1em; /* Ajusta padding */
+    text-align: justify; /* Justifica o texto */
+  }
+
+  .imgout p {
+    font-size: 0.7em; /* Reduz tamanho da fonte da legenda */
+  }
+
+  .box-info h2 {
+    font-size: 1.3em; /* Reduz tamanho do título */
+  }
+
+  .box-info p {
+    font-size: 0.7em; /* Reduz tamanho do texto */
+  }
+
+  .box-info li {
+    font-size: 0.7em; /* Reduz tamanho da lista */
+    padding: 0.01em;
+    padding-right: 3em;
+  }
+}
