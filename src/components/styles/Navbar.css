@@ -113,3 +113,24 @@
         width: 100%;
     }
 }
+
+/* Media Query para telas menores que 850px */
+@media (max-width: 850px) {
+    
+    .blocoPrincipalNavbar {
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens */
+        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
+        font-size: 1.2em; /* Reduz o tamanho da fonte */
+        width: auto;
+    }
+    .blocoPrincipalNavbar img {
+        width: 20vw; /* Ajusta a largura da imagem para 50% da largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .blocoPrincipalNavbar a {
+        font-size: 0.9em; /* Reduz o tamanho da fonte dos links */
+        padding: 1em;
+    }
+}
