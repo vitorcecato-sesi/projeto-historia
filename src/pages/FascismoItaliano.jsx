@@ -1,15 +1,17 @@
+//Importações de css, hook e componentes:
+
 import "./style/FascismoItaliano.css"
 import { useState } from "react";
 import Navbar from "../components/Navbar"
 import APIWikipedia from "../components/APIWikipedia";
 import BotaoCurtirTema from "../components/BotaoCurtirTema";
 import BotaoTema from "../components/BotaoTema"
-
-
 import LogoSiteVerde from "../assets/Logos/LogoSiteVerde.png"
+import Footer from "../components/Footer";
 
 function FascismoItaliano() {
 
+    //Array carregado com informações usadas no carousel (titulo, desc, img e id): 
     const slides = [
         {
             titulo: 'O que foi?',
@@ -49,41 +51,57 @@ function FascismoItaliano() {
         },
     ];
 
-    // State for the current index
+    // UseState armazenando o index atual.
     const [indexAtual, setIndexAtual] = useState(0);
 
-    // Function to navigate to the next slide
+    // Função responsável por passar o slide:
     const proxSlide = () => {
         setIndexAtual((indexAnterior) => (indexAnterior + 1) % slides.length);
+        //Pega o "antigo index atual" soma 1 e calcula o módulo pelo tamanho do array, isso permite um loop infinito.
+        //O módulo é o resto de uma divisão, nesse caso a soma do index com 1/tamanho dos slides.
+        //Lembrando que um número dividido por outro maior terá como sobra o próprio número, ex: 2 % 5 = 2
+
     };
 
-    // Function to navigate to the previous slide
+    // Função responsável por voltar um slide
     const anteSlide = () => {
         setIndexAtual((indexAnterior) => (indexAnterior - 1 + slides.length) % slides.length);
+        //Pega o "antigo index atual" subtrai 1, soma com o tamanho do array e calcula o módulo pelo tamanho do array, isso permite um loop infinito.
+        //É necessário esse processo, pois quando o index anterior for "0", 0-1 = -1, -1 + 6 = 5 % 6 = 5, ou seja, foi do primeiro ao último, fazendo um looping.
     };
 
-    // Get current, previous, and next slides
+    // Consegue o index anterior e o proximo, usaremos para mostrar as imagens no lado da principal
     const anteIndex = (indexAtual - 1 + slides.length) % slides.length;
     const proxIndex = (indexAtual + 1) % slides.length;
 
 
     return (
         <>
-      <Navbar backgroundId="navbarFascismoItaliano" logo={LogoSiteVerde} />
+            {/* Chamando o componente NavBar */}
+            <Navbar backgroundId="navbarFascismoItaliano" logo={LogoSiteVerde} />
             <br></br>
 
-            <BotaoTema />
+            {/* Chamando e posicionando o componente BotaoTema */}
+            <section className="botTemaPosicao">
+                <BotaoTema />
+            </section>
 
-            <section className="carousel">
+            {/* Estiliza o carousel */}
+            <section className="carouselFascismo">
 
+            {/* Botão chamando a função de voltar um slide */}
                 <button onClick={anteSlide} className="carousel-button">‹</button>
 
                 <section className="carousel-slide">
 
+            {/* Estilizando os cards presentes no carousel: */}
                     <section className="slideAP">
+                        {/* Pegando a imagem pelo array usando o index. */}
                         <img src={slides[anteIndex].img} alt={slides[anteIndex].titulo} />
+                        {/* Pegando o titulo pelo array usando o index. */}
                         <h2>{slides[anteIndex].titulo}</h2>
-                        <a id="aAP" href={slides[anteIndex].id}>{slides[anteIndex].descricao}</a>
+                        {/* Pegando o id e descrição pelo array usando o index. */}
+                        <a href={slides[anteIndex].id}>{slides[anteIndex].descricao}</a>
                     </section>
 
                     <section className="slide">
@@ -95,23 +113,26 @@ function FascismoItaliano() {
                     <section className="slideAP">
                         <img src={slides[proxIndex].img} alt={slides[proxIndex].titulo} />
                         <h2>{slides[proxIndex].titulo}</h2>
-                        <a id="aAP" href={slides[proxIndex].id}>{slides[proxIndex].descricao}</a>
+                        <a href={slides[proxIndex].id}>{slides[proxIndex].descricao}</a>
                     </section>
 
                 </section>
 
+            {/* Botão chamando a função de avançar um slide */}
                 <button onClick={proxSlide} className="carousel-button">›</button>
 
             </section>
 
+            {/* Estilizando blocos para exibir informações: */}
             <section className="box-geral">
 
                 <h1 className="tituloF">CONHEÇA MAIS SOBRE O <span className="verdeTexto">FASCISMO</span> <span className="vermelhoTexto">ITALIANO...</span></h1>
-
+            
                 <h2 className="titulowiki">INFORMAÇÕES DA WIKIPÉDIA</h2>
-
+            {/* Chamando o componente que carrega a api da WikiPédia, pegando as informações via props. */}
                 <APIWikipedia titulo="Itália Fascista" campoWiki="wikiFa" imagemID="imgWiki" imagemClass="imgWiki" />
 
+             {/* Section que vai receber as informações */}
                 <section className="box-infow" id="wikiFa">
                 </section>
 
@@ -122,12 +143,17 @@ function FascismoItaliano() {
                     <p>Imagem Wikipédia</p>
                 </section>
 
+             {/* Bloco de informações */}
+             {/* Obs: O bloco possui um id para a comunicação com o carousel, permitindo clicar e ir para o bloco. */}
                 <section id="0" className="box-info">
                     <section className="box-coluna">
-                        <h2>O QUE É?</h2>
+                        {/* Titulo */}
+                        <h2>O QUE É?</h2> 
+                        {/* Paragrafo */}
                         <p> O fascismo foi um regimento político totalitário liderado por Benito Mussolini, o movimento surgiu na itália em 1910 e foi oficializado como partido político em 1922, governando a itália
                             até 1943. O fascismo dominou o país inteiro (educação, economia, religião e política).
                         </p>
+                        {/* Componente botao curtida */}
                         <BotaoCurtirTema idSection="0" tema="Fascismo Italiano" />
                     </section>
                     <img src="https://cartasabertas.com.br/wp-content/uploads/2022/09/capa-nazismo-bandeira.jpg" />
@@ -233,6 +259,8 @@ function FascismoItaliano() {
 
                     <h1>HORA DO FILME...</h1>
 
+{/* Vídeos do youtube com Iframe:  */}
+
                     <section className="box-videos">
                         <iframe width="580" height="350" src="https://www.youtube.com/embed/1crIvDB7Ios" title="Marcha sobre Roma e o fascismo italiano | Nerdologia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <section className="box-coluna">
@@ -248,9 +276,11 @@ function FascismoItaliano() {
                             <p>Rainer é um professor a quem foi designada a tarefa de instruir seus estudantes de Ensino Médio sobre o Estado Autocrático durante uma sessão às lições longas. Um professor favorito entre as crianças, Rainer decide deixar seus alunos desenvolver o assunto e pede a eles que construam sua própria autocracia. No entanto, quando as crianças formam um Estado-nação similar com o da Alemanha nazista/Fascismo italiano, os professores não sabem o que fazer.</p>
                         </section>
                     </section>
+                    {/* Componente footer:  */}
+                    <Footer corHeaderFooter="verdeClaro" corInfoFooter="verdeClaro" logo={LogoSiteVerde} />
                 </section>
-
             </section>
+
         </>
     )
 }
