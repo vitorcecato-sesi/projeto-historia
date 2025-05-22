@@ -6,6 +6,7 @@ import LogoSiteRosa from "../assets/Logos/LogoSiteRosa.png"
 
 function Rankings() {
     const [curtidas, setCurtidas] = useState(JSON.parse(localStorage.getItem("curtidas")) || [])
+    // Cria um use state para cada tema que armazena o numero de curtidas
     const [guerraCanudos, setGuerraCanudos] = useState(0)
     const [guerraContestado, setGuerraContestado] = useState(0)
     const [primeiraGuerra, setPrimeiraGuerra] = useState(0)
@@ -14,7 +15,7 @@ function Rankings() {
     const [criseDe1929, setCriseDe1929] = useState(0)
     const [revolucao1930, setRevolucao1930] = useState(0)
 
-    useEffect(() => {
+    useEffect(() => {   // Fica pegando as informações do local storage para se manter atualizada
         const timer = setInterval(() => {
             setCurtidas(JSON.parse(localStorage.getItem("curtidas")) || [])
         }, 100)
@@ -25,6 +26,7 @@ function Rankings() {
     }, [])
 
     useEffect(() => {
+        // Filtra da array de curtidas do local storage os temas das paginas
         const guerraCanudosCurtidas = curtidas.filter(item => item.tema === "Guerra de Canudos")
         const guerraContestadoCurtidas = curtidas.filter(item => item.tema === "Guerra do Contestado")
         const primeiraGuerraCurtidas = curtidas.filter(item => item.tema === "Primeira Guerra Mundial")
@@ -33,6 +35,7 @@ function Rankings() {
         const criseDe1929Curtidas = curtidas.filter(item => item.tema === "Crise de 1929")
         const revolucao1930Curtidas = curtidas.filter(item => item.tema === "Revolução de 1930")
 
+        // Mede o tamanho das arrays das curtidas de cada pagina para verificar o numero de curtidas
         setGuerraCanudos(guerraCanudosCurtidas.length)
         setGuerraContestado(guerraContestadoCurtidas.length)
         setPrimeiraGuerra(primeiraGuerraCurtidas.length)
