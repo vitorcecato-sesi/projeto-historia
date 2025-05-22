@@ -158,7 +158,7 @@ function RevolucaoRussa() {
                                 <button className='botaoPNRR' type='button' onClick={() => setPrincipal("Vladimir Lenin")}>
                                     <img src="https://static.escolakids.uol.com.br/2020/03/1-vladimir-lenin-ek.jpg" alt="Vladimir Lemin" />
                                 </button>
-                                <h3>Lemin</h3>
+                                <h3>Lenin</h3>
                             </section>
                             <section className='pessoaRR'>
                                 <button className='botaoPNRR' type='button' onClick={() => setPrincipal("Leon Trotsky")}>
