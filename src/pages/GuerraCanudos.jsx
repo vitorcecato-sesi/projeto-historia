@@ -10,7 +10,7 @@ import img4 from "../assets/Imgs-GuerraCanudos/Canu4.png";
 // Importa o CSS específico dessa página
 import "./style/GuerraCanudos.css";
 
-// Importa outras imagens utilizadas em seções informativas
+// Importa outras imagens utilizadas no site
 import IMGIntro from "../assets/Imgs-GuerraCanudos/Intro.png";
 import IMGOqInflu from "../assets/Imgs-GuerraCanudos/IMGOqInflu.png";
 import ImgConflito from "../assets/Imgs-GuerraCanudos/Conflito.png";

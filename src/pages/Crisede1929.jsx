@@ -1,10 +1,16 @@
-import { useState } from "react";
+// Importa o hook useState do React
+import { useState } from "react"
+
+// Importa imagens para o carrossel
 import Img1C from "../assets/Imgs-Crisede1929/Canu1.png";
 import Img2C from "../assets/Imgs-Crisede1929/Canu2.png";
 import Img3C from "../assets/Imgs-Crisede1929/Canu3.png";
 import Img4C from "../assets/Imgs-Crisede1929/Canu4.png";
 
+// Importa o CSS específico dessa página
 import "./style/Crisede1929.css";
+
+// Importa outras imagens utilizadas no site 
 import ImgOq from "../assets/Imgs-Crisede1929/Crise1.png";
 import ImgAnte from "../assets/Imgs-Crisede1929/Crise2.png";
 import ImgAnte2 from "../assets/Imgs-Crisede1929/Crise3.png";
@@ -12,55 +18,66 @@ import ImgBolsa from "../assets/Imgs-Crisede1929/ImgBolsa.png";
 import ImgNew from "../assets/Imgs-Crisede1929/Img-New.png";
 import ImgFConse from "../assets/Imgs-Crisede1929/Img-Conse.png";
 
-import Navbarr from "../components/Navbar";
+//Importa a logo do navBar
 import LogoSiteVermelhoEscuro from "../assets/Logos/LogoSiteVermelhoEscuro.png"
 
+// Importa componentes reutilizáveis
 import APIWikipedia from "../components/APIWikipedia";
 import BotaoCurtir from "../components/BotaoCurtirTema"
 import BotaoTema from "../components/BotaoTema"
 import Footer from "../components/Footer"
+import Navbarr from "../components/Navbar";
 
+// Array com imagens do carrossel
 const imagens = [Img1C, Img2C, Img3C, Img4C];
 
 function Crisede29() {
+  // Estado para controlar o índice da imagem atual no carrossel
   const [index, setIndex] = useState(0);
 
   return (
     <>
+     {/* Barra de navegação */}
       <Navbarr backgroundId="navbarCriseDe1929" logo={LogoSiteVermelhoEscuro} />
+
+       {/* Carrossel de imagens com botões para navegar */}
       <section className="Bloco-CarrosselC">
         <section className="Carrossel-ContainerC">
+           {/* Botão para imagem anterior */}
           <button
             className="Botao-Carrossel EsquerdaC"
             onClick={() =>
-              setIndex((prev) => (prev === 0 ? imagens.length - 1 : prev - 1))
+              setIndex((prev) => (prev === 0 ? imagens.length - 1 : prev - 1)) // Ao clicar, verifica se o índice atual é 0 , se for, volta para a última imagem (efeito de loop) caso contrário, vai para a imagem anterior.
             }
           >
             ‹
           </button>
 
+          {/* Imagem atual do carrossel */}
           <img
-            src={imagens[index]}
-            alt={`Slide ${index + 1}`}
+            src={imagens[index]} //URl da imagem atual
+            alt={`Slide ${index + 1}`} // Texto alternativo com número do slide
             className="Imagem-Carrossel"
           />
 
+          {/* Botão para próxima imagem */}
           <button
             className="Botao-Carrossel DireitaC"
             onClick={() =>
-              setIndex((prev) => (prev === imagens.length - 1 ? 0 : prev + 1))
+              setIndex((prev) => (prev === imagens.length - 1 ? 0 : prev + 1))  // Ao clicar, verifica se está na última imagem, se estiver, volta para a primeira imagem.Caso contrário, avança uma imagem.
             }
           >
             ›
           </button>
         </section>
 
+        {/* Seção das bolinhas que indicam qual imagem está ativa */}
         <section className="BolinhasC" style={{ textAlign: "center" }}>
           {imagens.map((_, i) => (
             <span
-              key={i}
-              className={`BolaC ${i === index ? "activeC" : ""}`}
-              onClick={() => setIndex(i)}
+              key={i} // Chave única para cada bolinha
+              className={`BolaC ${i === index ? "activeC" : ""}`}// Aplica a classe "active" se a bolinha for da imagem atual
+              onClick={() => setIndex(i)}  // Ao clicar na bolinha, troca diretamente para o slide correspondente
             />
           ))}
         </section>
@@ -68,6 +85,7 @@ function Crisede29() {
 
       <br />
       <br />
+      {/* Botão de troca ou indicação de tema */}
       <BotaoTema/>
       <br></br>
 
