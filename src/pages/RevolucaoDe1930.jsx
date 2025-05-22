@@ -11,6 +11,7 @@ import LogoSiteMarrom from "../assets/Logos/LogoSiteMarrom.png"
 import APIWikipedia from '../components/APIWikipedia'
 import Footer from "../components/Footer";
 import BotaoCurtirTema from "../components/BotaoCurtirTema";
+import BotaoTema from "../components/BotaoTema"
 
 //CSS
 import "./style/RevolucaoDe1930.css";
@@ -30,6 +31,8 @@ function RevolucaoDe1930() {
           <span className="corTexto2Revolução1930"> REVOLUÇÃO DE 1930 </span>
         </h2>
       </section>
+
+      <BotaoTema />
 
       <center>
         <section className="blocos">
