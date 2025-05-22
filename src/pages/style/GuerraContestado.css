@@ -174,16 +174,16 @@
     align-items: center;
   }
   #imgGC {
-    width: 0vw;
-    height: 0vh;
+    width: 30vw;
+    height: 10vh;
   }
   .video1 {
     width: 40vw;
     height: 30vh;
   }
   #imgContestado{
-    width: 0vw;
-    height: 0vh;
+    width: 30vw;
+    height: 10vh;
   }
 }
 .imagemAPI {
