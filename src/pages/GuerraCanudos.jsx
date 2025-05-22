@@ -1,67 +1,82 @@
+// Importa o hook useState do React
 import { useState } from "react";
+
+// Importa imagens para o carrossel
 import Img1 from "../assets/Imgs-GuerraCanudos/Canu1.png";
 import img2 from "../assets/Imgs-GuerraCanudos/Carrossel3.png";
 import img3 from "../assets/Imgs-GuerraCanudos/Carrosel.png";
 import img4 from "../assets/Imgs-GuerraCanudos/Canu4.png";
+
+// Importa o CSS específico dessa página
 import "./style/GuerraCanudos.css";
 
+// Importa outras imagens utilizadas em seções informativas
 import IMGIntro from "../assets/Imgs-GuerraCanudos/Intro.png";
 import IMGOqInflu from "../assets/Imgs-GuerraCanudos/IMGOqInflu.png";
 import ImgConflito from "../assets/Imgs-GuerraCanudos/Conflito.png";
 import ImgANtonio from "../assets/Imgs-GuerraCanudos/Antonio.png";
 import ImgFim from "../assets/Imgs-GuerraCanudos/Fim.png";
 
+//Importa a logo do navBar
+import LogoSiteLaranja from "../assets/Logos/LogoSiteLaranja.png";
 
-import LogoSiteLaranja from "../assets/Logos/LogoSiteLaranja.png"
-
+// Importa componentes reutilizáveis
 import APIWikipedia from "../components/APIWikipedia";
 import Navbarr from "../components/Navbar";
-import BotaoCurti from "../components/BotaoCurtirTema"
-import BotaoTema from "../components/BotaoTema"
-import Footer from "../components/Footer"
+import BotaoCurti from "../components/BotaoCurtirTema";
+import BotaoTema from "../components/BotaoTema";
+import Footer from "../components/Footer";
 
+// Array com imagens do carrossel
 const imagens = [Img1, img2, img3, img4];
- 
+
 function GuerraCanudos() {
+  // Estado para controlar o índice da imagem atual no carrossel
   const [index, setIndex] = useState(0);
 
   return (
     <>
+      {/* Barra de navegação */}
       <Navbarr backgroundId="navbarGuerraDeCanudos" logo={LogoSiteLaranja} />
 
+      {/* Carrossel de imagens com botões para navegar */}
       <section className="Bloco-Carrossel">
         <section className="Carrossel-Container">
+          {/* Botão para imagem anterior */}
           <button
             className="Botao-Carrossel Esquerda"
             onClick={() =>
-              setIndex((prev) => (prev === 0 ? imagens.length - 1 : prev - 1))
+              setIndex((prev) => (prev === 0 ? imagens.length - 1 : prev - 1)) // Ao clicar, verifica se o índice atual é 0 , se for, volta para a última imagem (efeito de loop) caso contrário, vai para a imagem anterior.
             }
           >
             ‹
           </button>
 
+          {/* Imagem atual do carrossel */}
           <img
-            src={imagens[index]}
-            alt={`Slide ${index + 1}`}
+            src={imagens[index]} //URl da imagem atual
+            alt={`Slide ${index + 1}`} // Texto alternativo com número do slide
             className="Imagem-Carrossel"
           />
 
+          {/* Botão para próxima imagem */}
           <button
             className="Botao-Carrossel Direita"
             onClick={() =>
-              setIndex((prev) => (prev === imagens.length - 1 ? 0 : prev + 1))
+              setIndex((prev) => (prev === imagens.length - 1 ? 0 : prev + 1))  // Ao clicar, verifica se está na última imagem, se estiver, volta para a primeira imagem.Caso contrário, avança uma imagem.
             }
           >
             ›
           </button>
         </section>
         <center>
+          {/* Seção das bolinhas que indicam qual imagem está ativa */}
           <section className="Bolinhas">
             {imagens.map((_, i) => (
               <span
-                key={i}
-                className={`Bola ${i === index ? "active" : ""}`}
-                onClick={() => setIndex(i)}
+                key={i} // Chave única para cada bolinha
+                className={`Bola ${i === index ? "active" : ""}`}  // Aplica a classe "active" se a bolinha for da imagem atual
+                onClick={() => setIndex(i)}  // Ao clicar na bolinha, troca diretamente para o slide correspondente
               />
             ))}
           </section>
@@ -71,8 +86,9 @@ function GuerraCanudos() {
       <br></br>
       <br></br>
 
-      <BotaoTema/>
-      <br/>
+       {/* Botão de troca ou indicação de tema */}
+      <BotaoTema />
+      <br />
 
       <section className="Blocao-WikieApi">
         <section className="Api-Wikipedia">
@@ -84,13 +100,13 @@ function GuerraCanudos() {
 
           <br />
           <article className="Wiki-Api">
+            <section className="Img-Api">
+              <img src="" alt="" id="ImgApi" />
+            </section>
 
-               <section className="Img-Api">
-            <img src="" alt="" id="ImgApi" />
-          </section>
-        
-          <section className="Texto-Api">
-            <section className="textwiki" id="wikiGCa"> </section>
+            <section className="Texto-Api">
+              <section className="textwiki" id="wikiGCa">
+              </section>
               <APIWikipedia
                 titulo="Guerra de Canudos"
                 campoWiki="wikiGCa"
@@ -98,8 +114,7 @@ function GuerraCanudos() {
                 imagemAlt="Nome"
                 imagemClass="ImgApi"
               />
-          </section>
-
+            </section>
           </article>
         </section>
         <section className="Bloco-Intro">
@@ -124,7 +139,7 @@ function GuerraCanudos() {
             </section>
           </center>
           <br></br>
-           <BotaoCurti idSection="Bloco1Canudos" tema="Guerra de Canudos"/>
+          <BotaoCurti idSection="Bloco1Canudos" tema="Guerra de Canudos" />
         </section>
       </section>
       <br></br>
@@ -148,7 +163,7 @@ function GuerraCanudos() {
               </p>
             </section>
           </section>
-          <BotaoCurti idSection="Bloco2Canudos" tema="Guerra de Canudos"/>
+          <BotaoCurti idSection="Bloco2Canudos" tema="Guerra de Canudos" />
         </section>
       </center>
       <br></br>
@@ -173,7 +188,7 @@ function GuerraCanudos() {
               </p>
             </section>
           </section>
-          <BotaoCurti idSection="Bloco3Canudos" tema="Guerra de Canudos"/>
+          <BotaoCurti idSection="Bloco3Canudos" tema="Guerra de Canudos" />
         </section>
       </center>
 
@@ -200,7 +215,7 @@ function GuerraCanudos() {
               </p>
             </section>
           </center>
-          <BotaoCurti idSection="Bloco4Canudos" tema="Guerra de Canudos"/>
+          <BotaoCurti idSection="Bloco4Canudos" tema="Guerra de Canudos" />
         </section>
 
         <section className="Bloco-Fim">
@@ -219,7 +234,7 @@ function GuerraCanudos() {
                 pessoas mortas após a expedição do exército e a vitória do
                 exército com a desculpa de que canudos apoiavam a monarquia.
               </p>
-               <BotaoCurti idSection="Bloco5Canudos" tema="Guerra de Canudos"/>
+              <BotaoCurti idSection="Bloco5Canudos" tema="Guerra de Canudos" />
             </section>
           </center>
         </section>
@@ -265,7 +280,7 @@ function GuerraCanudos() {
               </h2>
             </center>
             <center>
-              <iframe 
+              <iframe
                 width="450"
                 height="295"
                 src="https://www.youtube.com/embed/P4OYhj7Io0E?si=ews4oBQZWYqR7BRp"
@@ -294,7 +309,11 @@ function GuerraCanudos() {
         </section>
       </section>
 
-      <Footer corHeaderFooter="amarelo" corInfoFooter="amareloClaro" logo={LogoSiteLaranja}/>
+      <Footer
+        corHeaderFooter="amarelo"
+        corInfoFooter="amareloClaro"
+        logo={LogoSiteLaranja}
+      />
     </>
   );
 }
