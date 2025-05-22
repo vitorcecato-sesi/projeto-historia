@@ -1,36 +1,100 @@
-.blocoWiki {
-    margin-top: 4em;
-    margin-bottom: 4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
-    background-color: #CB4D50;
-    padding: 2em;
-   
+.Centro {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  
 }
-.centro{
-display: flex;
-flex-direction: row;
-justify-content: center;
+#branco1 {
+  color:  black;
+}
+#roxo{
+  color: #DB88FF;
+}
+
+.blocoCartaz{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 30vh;
+  background-color: #DEDAFF;
+   border-radius: 2em;
+  
+}
+
+
+.blocoLado{
 align-items: center;
-gap: 5em;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;}
+
+.SobreCartaz{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 30vh;
+  background-color: #DEDAFF;
+  padding: 2em;
+  border: black solid 1px;
+
+  border-radius: 2em;
+
 }
-
-.blocoVideo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
-    background-color: #BD0A0A;
-    
+#img{
+  width: 10vw;
+  height: 10vw;
 }
- 
-
-  .blocoLado{
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-
+@media (max-width: 768px) {
+  .blocoCartaz {
+    width: 70vw;
+    height: 30vh;
   }
+
+  .SobreCartaz {
+    width: 80vw;
+    height: 30vh;
+  }
+  #img{
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .blocoLado {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .blocoCartaz {
+    width: 80vw;
+    height: 20vh;
+    border-radius: 1em;
+  }
+  #img{
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .SobreCartaz {
+    width: 90vw;
+    height: auto;
+    padding: 1em;
+    border-radius: 1em;
+  }
+
+  .blocoLado {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  #branco1, #roxo {
+    font-size: 0.9em; /* Ajusta o tamanho da fonte */
+  }
+}
