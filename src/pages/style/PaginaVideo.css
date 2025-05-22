@@ -1,0 +1,56 @@
+.Centro1 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    
+  }
+  #branco2 {
+    color:  black;
+  }
+  #roxo1{
+    color: #DB88FF;
+  }
+  
+  .BlocoVideo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    width: 40em;
+    height: 20em;
+    background-color: #DEDAFF;
+    padding: 3em;
+  }
+  #video2{
+    width: 30em;
+    height: 20em;
+  }
+  @media (max-width: 768px) {
+    .BlocoVideo {
+        width: 30em;
+        height: 40em;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .BlocoVideo {
+        width: 20em; /* Ajusta a largura para telas menores */
+        height: 30em; /* Ajusta a altura para telas menores */
+        border-radius: 1em; /* Reduz o arredondamento */
+    }
+
+    .Centro1 {
+        gap: 2em; /* Reduz o espaçamento entre os elementos */
+    }
+
+    #branco2 {
+        font-size: 0.8em; /* Ajusta o tamanho da fonte */
+    }
+
+    #roxo1 {
+        font-size: 0.8em; /* Ajusta o tamanho da fonte */
+    }
+}
