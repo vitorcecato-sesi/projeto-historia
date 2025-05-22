@@ -8,7 +8,9 @@
 
 // Páginas
 import RevolucaoRussa from './pages/RevolucaoRussa'
-import Rankings from './pages/Rankings'
+import Cartaz from './pages/Cartaz.jsx'
+
+import GuerraCanudos from './pages/GuerraCanudos'
 import Home from './pages/Home'
 import PrimeiraGuerraMundial from './pages/Primeira-Guerra-Mundial'
 import GuerraDeCanudos from "./pages/GuerraCanudos"
@@ -34,6 +36,7 @@ function App() {
           <Route path='/CriseDe1929' element={<CriseDe1929 />} />
           <Route path='/Ranking' element={<Rankings />} />
           <Route path='/SobreNos' element={<SobreNos/>} />
+          <Route path='Cartaz' />
         </Routes>
       </BrowserRouter>
     </>
