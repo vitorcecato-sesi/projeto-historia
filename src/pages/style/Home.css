@@ -170,3 +170,21 @@
         left: 0.5em; /* Movendo o botão mais para a esquerda */
     }
 }
+
+@media (max-width: 350px) {
+
+    .botTema {
+        position: relative; /* Ajuste na posição do botão */
+         /* Movendo o botão mais para a esquerda */
+    }
+
+        .tituloParallax,
+    .tituloParallax2,
+    .titulosHome {
+        font-size: 1.3em; /* Reduz o tamanho da fonte */
+        width: 70vw;
+        padding-top: 0.4em; /* Ajusta o espaçamento */
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+    }
+}
