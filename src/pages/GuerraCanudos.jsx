@@ -251,7 +251,7 @@ function GuerraCanudos() {
               </h2>
             </center>
             <center>
-              <iframe
+              <iframe className="VideoCa"
                 width="450"
                 height="295"
                 src="https://www.youtube.com/embed/yWWOgDjYuwc?si=QWxDuS0fniiiKhjb"
@@ -280,7 +280,7 @@ function GuerraCanudos() {
               </h2>
             </center>
             <center>
-              <iframe
+              <iframe className="VideoCa"
                 width="450"
                 height="295"
                 src="https://www.youtube.com/embed/P4OYhj7Io0E?si=ews4oBQZWYqR7BRp"
