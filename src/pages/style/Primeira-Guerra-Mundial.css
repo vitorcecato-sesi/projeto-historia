@@ -39,8 +39,7 @@
     height: 35vh;
     display: flex; 
     justify-content: center;
-    overflow: hidden; /* Esconde cards que saem do limite */
-    transform-style: preserve-3d; /* Mantém efeito 3D nos filhos */
+    transform-style: preserve-3d; /* Mantém efeito 3D nos cards que não está destacado */
     perspective: 70em; /* Define a perspectiva 3D */
     width: 90vw;
 }
