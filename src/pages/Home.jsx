@@ -98,14 +98,14 @@ function Home() {
 
             <nav className="navHome">
             
-                        <Link to="/8">
+                        <Link to="/Cartaz">
                         <section className="navInfos">
                         <img className="navImg" src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/getulio-vargas-no-centro-imagem-com-uniforme-militar-em-1930-5821dee50a0c0.jpg" />
                         <p>Cartaz</p>
                         </section>
                         </Link>
 
-                        <Link to="/9">
+                        <Link to="/Video">
                         <section className="navInfos">
                         <img className="navImg" src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/getulio-vargas-no-centro-imagem-com-uniforme-militar-em-1930-5821dee50a0c0.jpg" />
                         <p>Vídeo</p>
