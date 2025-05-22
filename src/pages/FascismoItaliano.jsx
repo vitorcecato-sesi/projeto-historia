@@ -277,7 +277,7 @@ function FascismoItaliano() {
                         </section>
                     </section>
                     {/* Componente footer:  */}
-                    <Footer corHeaderFooter="verdeClaro" corInfoFooter="verdeClaro" logo={LogoSiteVerde} />
+                    <Footer corHeaderFooter="verde" corInfoFooter="verdeClaro" logo={LogoSiteVerde} />
                 </section>
             </section>
 
