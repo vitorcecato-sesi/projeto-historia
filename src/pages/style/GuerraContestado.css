@@ -74,19 +74,19 @@
   margin-bottom: 2em;
   border: 3px solid black;
 }
-
-.blocoInfo {
-  color: white;
-  border: 0.5em solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50vw;
-  background-color: #bd0a0a;
-  border-radius: 2vw;
-  text-align: justify;
-  padding: 2em;
+.blocoInfo{
+    color: white;
+    border: 0.5em solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: #bd5e5e;
+    border-radius: 2vw;
+    text-align: justify;
+    padding: 2em;
+    
 }
 .wiki {
   text-align: justify;
