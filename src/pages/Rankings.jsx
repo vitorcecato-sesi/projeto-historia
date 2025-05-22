@@ -27,7 +27,7 @@ function Rankings() {
     }, [])
 
     useEffect(() => {
-        // Filtra da array de curtidas do local storage os temas das paginas
+        // Filtra a array de curtidas do local storage os temas das paginas e cria uma nova array so com os itens dos respectivos temas
         const guerraCanudosCurtidas = curtidas.filter(item => item.tema === "Guerra de Canudos")
         const guerraContestadoCurtidas = curtidas.filter(item => item.tema === "Guerra do Contestado")
         const primeiraGuerraCurtidas = curtidas.filter(item => item.tema === "Primeira Guerra Mundial")
