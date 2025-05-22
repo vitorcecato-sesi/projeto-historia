@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5em;
+    gap: 3em;
 }
 
 .bodyRank h1 {
     text-align: center;
 }
 
-#rosa {
+#rosaRank {
     color: #FFD7D7;
 }
 
@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
 
-    background-color: #FFD7D7;
+    background-color: #ffd7d7c1;
     width: 40vw;
     height: 40vh;
     border-radius: 2em;

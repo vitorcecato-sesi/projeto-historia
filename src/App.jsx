@@ -33,7 +33,6 @@ function App() {
           <Route path='/FascismoItaliano' element={<FascismoItalino />} />
           <Route path='/CriseDe1929' element={<CriseDe1929 />} />
           <Route path='/Ranking' element={<Rankings />} />
-          <Route path='/CriseDe1929' element={<CriseDe1929 />} /> 
           <Route path='/SobreNos' element={<SobreNos/>} />
         </Routes>
       </BrowserRouter>
