@@ -85,6 +85,7 @@
     transition: transform 0.5s ease; /* animação suave da rotação */
 }
 
+/* Vai rotacionar a seta, virando ela para cima*/
 .seta.aberto{
     transform: rotate(-135deg);
 }
@@ -101,7 +102,7 @@
 
 .footerInfo{
     height: 0;
-    overflow: hidden;
+    overflow: hidden; /* oculta o conteúdo */
     transition: max-height 0.5s ease, padding-top 0.3s ease; /* transição suave abrir/fechar */ 
     padding-top: 0;
 }

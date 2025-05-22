@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 import "../components/styles/Footer.css";
 import iconeGithub from "../assets/ImgsFooter/iconeGithub.png";
@@ -7,8 +6,8 @@ import iconeGrupo from "../assets/ImgsFooter/iconeGrupo.png";
 import iconeYT from "../assets/ImgsFooter/iconeYT.png";
 import logoG3 from "../assets/Logos/logoG3.png";
 
-function Footer(props) {
-    const [aberto, setAberto] = useState(false);
+function Footer(props) {  
+    const [aberto, setAberto] = useState(false); //Começa falso, ou seja, estará fechado
 
     // Função para alternar o estado aberto/fechado
     function verInfo() {
