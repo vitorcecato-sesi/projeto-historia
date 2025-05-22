@@ -15,7 +15,7 @@ function Cartaz() {
 
         <h1 id="branco1">
           VENHA ENTENDER MAIS SOBRE O <br />
-          <span id="roxo"> CARTAZ FEITO </span>
+          <span id="roxo1"> CARTAZ FEITO </span>
         </h1>
 
         <BotaoTema/>
