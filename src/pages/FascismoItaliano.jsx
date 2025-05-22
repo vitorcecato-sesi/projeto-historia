@@ -17,37 +17,37 @@ function FascismoItaliano() {
             titulo: 'O que foi?',
             descricao: 'Saiba o que foi o fascismo italiano.',
             img: 'https://tribunadonorte.com.br/wp-content/uploads/2023/07/88353.jpg',
-            id: '#0',
+            id: '#0OqueE',
         },
         {
             titulo: 'Contexto histórico',
             descricao: 'Saiba o contexto histórico do fascismo italiano.',
             img: 'https://static.historiadomundo.com.br/2024/09/benito-mussolini-lider-do-fascismo-italiano-entre-membros-dos-camisas-negras-especie-de-milicia-fascista.jpg',
-            id: '#1',
+            id: '#1ContextoHistorico',
         },
         {
             titulo: 'Governo Fascista',
             descricao: 'Saiba sobre como foi o governo fascista.',
             img: 'https://www.politize.com.br/wp-content/uploads/2024/07/fascismo-entenda-o-conceito.jpg',
-            id: '#2',
+            id: '#2GovernoFascista',
         },
         {
             titulo: 'Fim do governo',
             descricao: 'Saiba como foi o fim do governo fascista.',
             img: 'https://medias.revistaoeste.com/wp-content/uploads/2022/08/fascismo-e-de-esquerda-2.jpg',
-            id: '#3',
+            id: '#3FimDoGoverno',
         },
         {
             titulo: 'Características',
             descricao: 'Saiba as características do governo fascista.',
             img: 'https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/02/benito-mussolini-me.jpg',
-            id: '#4',
+            id: '#4Caracteristicas',
         },
         {
             titulo: 'Benito Mussolini',
             descricao: 'Saiba quem foi Benito Mussolini.',
             img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Benito_Mussolini_colored.jpg/500px-Benito_Mussolini_colored.jpg',
-            id: '#5',
+            id: '#5BenitoMussolini',
         },
     ];
 
@@ -145,7 +145,7 @@ function FascismoItaliano() {
 
              {/* Bloco de informações */}
              {/* Obs: O bloco possui um id para a comunicação com o carousel, permitindo clicar e ir para o bloco. */}
-                <section id="0" className="box-info">
+                <section id="0OqueE" className="box-info">
                     <section className="box-coluna">
                         {/* Titulo */}
                         <h2>O QUE É?</h2> 
@@ -154,13 +154,13 @@ function FascismoItaliano() {
                             até 1943. O fascismo dominou o país inteiro (educação, economia, religião e política).
                         </p>
                         {/* Componente botao curtida */}
-                        <BotaoCurtirTema idSection="0" tema="Fascismo Italiano" />
+                        <BotaoCurtirTema idSection="0OqueE" tema="Fascismo Italiano" />
                     </section>
                     <img src="https://cartasabertas.com.br/wp-content/uploads/2022/09/capa-nazismo-bandeira.jpg" />
                 </section>
 
 
-                <section id="1" className="box-info">
+                <section id="1ContextoHistorico" className="box-info">
                     <section className="box-coluna">
                         <h2>CONTEXTO HISTÓRICO</h2>
                         <p>Após a primeira guerra mundial, a Europa estava em caos, com uma grande crise econômica. A população se encontrava bastante desanimada.
@@ -169,7 +169,7 @@ function FascismoItaliano() {
                             Em meio a tudo isso, os partidos de esquerda ganharam força, fato esse que incomodou os latifundiários e burgueses.
                             Todos esses fatores "justificam" a força e popularidade do fascismo italiano na época.
                         </p>
-                        <BotaoCurtirTema idSection="1" tema="Fascismo Italiano" />
+                        <BotaoCurtirTema idSection="1ContextoHistorico" tema="Fascismo Italiano" />
                     </section>
                 </section>
 
@@ -181,7 +181,7 @@ function FascismoItaliano() {
                 </section>
 
                 <section className="box-info">
-                    <section id="2" className="box-coluna">
+                    <section id="2GovernoFascista" className="box-coluna">
                         <h2>GOVERNO FASCISTA</h2>
                         <p> Depois da vitória nas eleições de maneira fraudulenta, o Partido Fascista se consolida no poder. Mussolini promulgou as "Leis Fascistíssimas" que deixaram claro quem mandava no país.
                             Estas leis determinaram que o Partido Nacional Fascista era o único partido existente e o Grande Conselho Fascista, presidido por Mussolini, era o órgão supremo do Estado. Ainda determinava que as organizações civis deveriam ser controladas pela polícia e os sindicatos fascistas eram os únicos realmente reconhecidos.
@@ -192,7 +192,7 @@ function FascismoItaliano() {
                             Em 1930, o fascismo incorpora o discurso de expansão territorial, ao declarar guerra à Etiópia. O conflito tinha como objetivo exaltar a "raça italiana", seus princípios e virtudes. Igualmente é época quando Mussolini se aproxima de Adolf Hitler, tendo como resultado
                             a promulgação das leis antissemitas onde os judeus italianos perderam seus direitos civis.
                         </p>
-                        <BotaoCurtirTema idSection="2" tema="Fascismo Italiano" />
+                        <BotaoCurtirTema idSection="2GovernoFascista" tema="Fascismo Italiano" />
                     </section>
                 </section>
 
@@ -203,17 +203,17 @@ function FascismoItaliano() {
                     <p>Governo Fascista</p>
                 </section>
 
-                <section id="3" className="box-info">
+                <section id="3FimDoGoverno" className="box-info">
                     <img src="https://medias.revistaoeste.com/wp-content/uploads/2022/08/fascismo-e-de-esquerda-2.jpg" />
                     <section className="box-coluna">
                         <h2>FIM DO GOVERNO</h2>
                         <p>O governo de Mussolini chega ao seu final em 1943, em um momento de sérias derrotas da Itália durante a Segunda Guerra Mundial. Assustado, Mussolini é levado pelos alemães para o norte e quando tenta escapar para a Alemanha é capturado e morto pelos partisans.
                         </p>
-                        <BotaoCurtirTema idSection="3" tema="Fascismo Italiano" />
+                        <BotaoCurtirTema idSection="3FimDoGoverno" tema="Fascismo Italiano" />
                     </section>
                 </section>
 
-                <section id="4" className="box-info">
+                <section id="4Caracteristicas" className="box-info">
                     <section className="box-coluna">
                         <h2>CARACTERÍSTICAS</h2>
                         <section className="box-row">
@@ -232,7 +232,7 @@ function FascismoItaliano() {
                                 <li>10. Controle total do Estado fascista sobre assuntos relacionados à economia, política e cultura.</li>
                             </ul>
                         </section>
-                        <BotaoCurtirTema idSection="4" tema="Fascismo Italiano" />
+                        <BotaoCurtirTema idSection="4Caracteristicas" tema="Fascismo Italiano" />
                     </section>
                 </section>
 
@@ -243,7 +243,7 @@ function FascismoItaliano() {
                     <p>Característiscas</p>
                 </section>
 
-                <section id="5" className="box-info">
+                <section id="5BenitoMussolini" className="box-info">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Benito_Mussolini_colored.jpg/500px-Benito_Mussolini_colored.jpg" />
                     <section className="box-coluna">
                         <h2>BENITO MUSSOLINI</h2>
@@ -251,7 +251,7 @@ function FascismoItaliano() {
                             Nascido em 29 de julho de 1883, em uma cidade pequena localizada no sul da Itália, filho de pai ferreiro e mãe professora, cresceu com as histórias de nacionalismo e heroísmo político de seu pai socialista. Ainda jovem mudou-se para a Suíça e tornou-se um socialista
                             declarado, quando voltou para Itália, se estabeleceu como um jornalista socialista, porém futuramente Mussolini mudou sua ideologia política e criou um partido de extrema direita, em 1919.
                         </p>
-                        <BotaoCurtirTema idSection="5" tema="Fascismo Italiano" />
+                        <BotaoCurtirTema idSection="5BenitoMussolini" tema="Fascismo Italiano" />
                     </section>
                 </section>
 
