@@ -3,13 +3,20 @@ import "./style/Home.css"
 import Navbar from "../components/Navbar"
 import LogoSiteRoxo from "../assets/Logos/LogoSiteRoxo.png"
 import { Link } from "react-router-dom"
+import Footer from "../components/Footer"
+import BotaoTema from "../components/BotaoTema"
 
 function Home() {
     return (
         <>
             <Navbar logo={LogoSiteRoxo} />
             <section className="parallax1">
+                <section className="botTemaPosi">
+                <section className="botTema">
+             <BotaoTema/>
+             </section>
                 <h1 className="tituloParallax">CONHEÇA MAIS SOBRE OS <span className="corTexto">PRINCIPAIS EVENTOS HISTÓRICOS</span> ENTRE 1896-1930</h1>
+                </section>
                 <p className="textoParallax">
                     Entre 1896 e 1930, o Brasil e o mundo passaram por grandes transformações.
                     No país, conflitos como a Guerra de Canudos e a Guerra do Contestado mostraram a luta de comunidades contra a força do Estado.
@@ -20,92 +27,94 @@ function Home() {
                     Este projeto busca apresentar esses eventos e refletir sobre sua importância na construção do mundo moderno.
                 </p>
             </section>
+            
             <section className="parallax2">
                 <h1 className="tituloParallax2">QUAL O <span className="corTexto">OBJETIVO</span> DA PÁGINA?</h1>
-                <p className="textoParallax2">O objetivo deste projeto é informar, de forma clara e dinâmica, sobre alguns dos principais eventos históricos ocorridos entre 1896 e 1930, tanto no Brasil quanto no mundo. 
-                    Por meio de atividades interativas, recursos visuais e linguagem acessível, buscamos despertar o interesse pelos acontecimentos que marcaram essa época — 
-                    como a Guerra de Canudos, a Guerra do Contestado, a Primeira Guerra Mundial, a Revolução Russa, o Fascismo Italiano, 
+                <p className="textoParallax2">
+                    O objetivo deste projeto é informar, de forma clara e dinâmica, sobre alguns dos principais eventos históricos ocorridos entre 1896 e 1930, tanto no Brasil quanto no mundo.
+                    Por meio de atividades interativas, recursos visuais e linguagem acessível, buscamos despertar o interesse pelos acontecimentos que marcaram essa época —
+                    como a Guerra de Canudos, a Guerra do Contestado, a Primeira Guerra Mundial, a Revolução Russa, o Fascismo Italiano,
                     a Crise de 1929 e a Revolução de 1930.
-                    Mais do que apresentar datas e fatos, queremos ajudar a compreender o impacto desses eventos na sociedade da época e seus reflexos no mundo atual.</p>
+                    Mais do que apresentar datas e fatos, queremos ajudar a compreender o impacto desses eventos na sociedade da época e seus reflexos no mundo atual.
+                    </p>
             </section>
-            <h1 className="titulo" id="conteudos" >CONTEÚDOS:</h1>
-            <section className="boxLinks">
-                <section className="boxLinks2">
-                    <section className="links">
-                        <Link to="/GuerraDeCanudos">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Pris%C3%A3o_de_jagun%C3%A7os_pela_cavalaria.jpg" />
-                        <label>1</label>
-                        <p className="textLinks">Guerra de Canudos</p>
-                        </Link>
-                    </section>
-                    <section className="links">
-                        <Link to="/GuerraDoContestado">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyBVlWEP-XnVV_NfwNHLt7OaI4TtjSBH7ZmA&s" />
-                        <label>2</label>
-                        <p className="textLinks">Guerra do Contestado</p>
-                        </Link>
-                    </section>
-                    <section className="links">
+
+            <h1 id="conteudos" className="titulosHome">CONTEÚDOS:</h1>
+
+                    <nav className="navHome">
                         <Link to="/PrimeiraGuerraMundial">
-                        <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/wwi-trench-archaeology-01.webp?w=1600&h=900" />
-                        <label>3</label>
-                        <p className="textLinks">Primeira Guerra Mundial</p>
+                        <section className="navInfos">
+                        <img className="navImg" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Pris%C3%A3o_de_jagun%C3%A7os_pela_cavalaria.jpg" />
+                        <p>Guerra de Canudos</p>
+                        </section>
                         </Link>
-                    </section>
-                    <section className="links">
+
+                        <Link to="/GuerraDoContestado">
+                        <section className="navInfos">
+                        <img className="navImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyBVlWEP-XnVV_NfwNHLt7OaI4TtjSBH7ZmA&s" />
+                        <p>Guerra do Contestado</p>
+                        </section>
+                        </Link>
+
+                        <Link to="/PrimeiraGuerraMundial">
+                        <section className="navInfos"> 
+                        <img className="navImg" src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/wwi-trench-archaeology-01.webp?w=1600&h=900" />
+                        <p>Primeira Guerra Mundial</p>
+                        </section>
+                        </Link>
+                        
                         <Link to="/RevolucaoRussa">
-                        <img src="https://assets.brasildefato.com.br/2024/09/image_processing20200201-29235-1nfnxod.jpg" />
-                        <label>4</label>
-                        <p className="textLinks">Revolução Russa</p>
+                        <section className="navInfos">
+                        <img className="navImg" src="https://assets.brasildefato.com.br/2024/09/image_processing20200201-29235-1nfnxod.jpg" />
+                        <p>Revolução Russa</p>
+                        </section>
                         </Link>
-                    </section>
-                </section>
-                <section className="boxLinks3">
-                    <section className="links">
+
+      
                         <Link to="/FascismoItaliano">
-                        <img src="https://www.politize.com.br/wp-content/uploads/2024/07/fascismo-entenda-o-conceito.jpg" />
-                        <label>5</label>
-                        <p className="textLinks">Fascismo Italiano</p>
+                        <section className="navInfos">
+                        <img className="navImg" src="https://www.politize.com.br/wp-content/uploads/2024/07/fascismo-entenda-o-conceito.jpg" />
+                        <p>Fascismo Italiano</p>
+                        </section>
                         </Link>
-                    </section>
-                    <section className="links">
+
                         <Link to="/CriseDe1929">
-                        <img src="https://economianostra.wordpress.com/wp-content/uploads/2013/11/crise-anos-20.jpg" />
-                        <label>6</label>
-                        <p className="textLinks">Crise de 1929</p>
+                        <section className="navInfos">
+                        <img className="navImg" src="https://economianostra.wordpress.com/wp-content/uploads/2013/11/crise-anos-20.jpg" />
+                        <p>Crise de 1929</p>
+                        </section>
                         </Link>
-                    </section>
-                    <section className="links">
+    
                         <Link to="/RevolucaoDe1930">
-                        <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/getulio-vargas-no-centro-imagem-com-uniforme-militar-em-1930-5821dee50a0c0.jpg" />
-                        <label>7</label>
-                        <p className="textLinks">Revolução de 1930</p>
+                        <section className="navInfos">
+                        <img className="navImg" src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/getulio-vargas-no-centro-imagem-com-uniforme-militar-em-1930-5821dee50a0c0.jpg" />
+                        <p>Revolução de 1930</p>
+                        </section>
                         </Link>
-                    </section>
-                </section>
-            </section>
-            <br />
-            <br />
-            <br />
-            <h1 className="titulo">PRODUÇÕES:</h1>
-            <section className="boxLinks2" id="producoes">
-                <section className="links">
-                    {/* <Link to="/"> */}
-                    <img></img>
-                    <label>1</label>
-                    <p className="textLinks">Vídeo</p>
-                    {/* </Link> */}
-                </section>
-                <section className="links">
-                    {/* <Link to="/"> */}
-                    <img></img>
-                    <label>2</label>
-                    <p className="textLinks">Cartaz</p>
-                    {/* </Link> */}
-                </section>
-            </section>
+            
+                </nav>
+
+            <h1 id="producoes" className="titulosHome">PRODUÇÕES:</h1>
+
+            <nav className="navHome">
+            
+                        <Link to="/8">
+                        <section className="navInfos">
+                        <img className="navImg" src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/getulio-vargas-no-centro-imagem-com-uniforme-militar-em-1930-5821dee50a0c0.jpg" />
+                        <p>Cartaz</p>
+                        </section>
+                        </Link>
+
+                        <Link to="/9">
+                        <section className="navInfos">
+                        <img className="navImg" src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/getulio-vargas-no-centro-imagem-com-uniforme-militar-em-1930-5821dee50a0c0.jpg" />
+                        <p>Vídeo</p>
+                        </section>
+                        </Link>
+            </nav>
+            <Footer corHeaderFooter="roxoClaro" corInfoFooter="roxoClaro" logo={LogoSiteRoxo}/>
         </>
     )
 }
 
-export default Home
+export default Home   
