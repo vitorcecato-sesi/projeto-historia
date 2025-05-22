@@ -12,10 +12,13 @@ import ImgBolsa from "../assets/Imgs-Crisede1929/ImgBolsa.png";
 import ImgNew from "../assets/Imgs-Crisede1929/Img-New.png";
 import ImgFConse from "../assets/Imgs-Crisede1929/Img-Conse.png";
 
-import Navbar from "../components/Navbar";
+import Navbarr from "../components/Navbar";
 import LogoSiteVermelhoEscuro from "../assets/Logos/LogoSiteVermelhoEscuro.png"
 
 import APIWikipedia from "../components/APIWikipedia";
+import BotaoCurtir from "../components/BotaoCurtirTema"
+import BotaoTema from "../components/BotaoTema"
+import Footer from "../components/Footer"
 
 const imagens = [Img1C, Img2C, Img3C, Img4C];
 
@@ -24,7 +27,7 @@ function Crisede29() {
 
   return (
     <>
-      <Navbar backgroundId="navbarCriseDe1929" logo={LogoSiteVermelhoEscuro} />
+      <Navbarr backgroundId="navbarCriseDe1929" logo={LogoSiteVermelhoEscuro} />
       <section className="Bloco-CarrosselC">
         <section className="Carrossel-ContainerC">
           <button
@@ -65,6 +68,8 @@ function Crisede29() {
 
       <br />
       <br />
+      <BotaoTema/>
+      <br></br>
 
       <section className="Blocao-WikieApiC">
         <section className="Api-WikipediaC ">
@@ -122,6 +127,8 @@ function Crisede29() {
               </p>
             </section>
           </center>
+          <br></br>
+          <BotaoCurtir idSection="Bloco1Crise" tema="Crise de 1929"/>
         </section>
       </section>
 
@@ -155,6 +162,7 @@ function Crisede29() {
               tarde levaria à crise de 1929.
             </p>
           </section>
+          <BotaoCurtir idSection="Bloco2Crise" tema="Crise de 1929"/>
         </section>
 
         <section className="Imgs-Juntas">
@@ -190,8 +198,12 @@ function Crisede29() {
               mercado financeiro.
             </p>
           </section>
+          
         </section>
+       <BotaoCurtir idSection="Bloco3Crise" tema="Crise de 1929"/>
+
       </section>
+  
 
       <br />
       <br />
@@ -225,6 +237,7 @@ function Crisede29() {
               </center>
             </section>
           </section>
+            <BotaoCurtir idSection="Bloco4Crise" tema="Crise de 1929"/>
         </section>
 
         <section className="Bloco-Conse ">
@@ -258,10 +271,10 @@ function Crisede29() {
               </p>
             </section>
           </center>
+          <BotaoCurtir idSection="Bloco1Crise" tema="Crise de 1929"/>
         </section>
       </section>
 
-      <hr />
 
       <section className="JuntosC">
         <section className="Bloco-VideoC" style={{ textAlign: "center" }}>
@@ -303,7 +316,7 @@ function Crisede29() {
               Filme explicativo sobre a Crise de 1929
             </h2>
           </section>
-          <iframe
+          <iframe className="Video"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/msxfuH56wXE?si=7BpkHWdbGqqHv_bm"
@@ -334,6 +347,8 @@ function Crisede29() {
           </div>
         </section>
       </section>
+
+       <Footer corHeaderFooter="bordo" corInfoFooter="bordoClaro" logo={LogoSiteVermelhoEscuro}/>
     </>
   );
 }

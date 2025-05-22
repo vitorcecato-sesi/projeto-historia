@@ -11,11 +11,14 @@ import ImgConflito from "../assets/Imgs-GuerraCanudos/Conflito.png";
 import ImgANtonio from "../assets/Imgs-GuerraCanudos/Antonio.png";
 import ImgFim from "../assets/Imgs-GuerraCanudos/Fim.png";
 
-import Navbar from "../components/Navbar";
+
 import LogoSiteLaranja from "../assets/Logos/LogoSiteLaranja.png"
 
 import APIWikipedia from "../components/APIWikipedia";
 import Navbarr from "../components/Navbar";
+import BotaoCurti from "../components/BotaoCurtirTema"
+import BotaoTema from "../components/BotaoTema"
+import Footer from "../components/Footer"
 
 const imagens = [Img1, img2, img3, img4];
  
@@ -68,6 +71,9 @@ function GuerraCanudos() {
       <br></br>
       <br></br>
 
+      <BotaoTema/>
+      <br/>
+
       <section className="Blocao-WikieApi">
         <section className="Api-Wikipedia">
           <center>
@@ -96,7 +102,6 @@ function GuerraCanudos() {
 
           </article>
         </section>
-
         <section className="Bloco-Intro">
           <center>
             <section className="Titulo-Intro">
@@ -118,6 +123,8 @@ function GuerraCanudos() {
               </p>
             </section>
           </center>
+          <br></br>
+           <BotaoCurti idSection="Bloco1Canudos" tema="Guerra de Canudos"/>
         </section>
       </section>
       <br></br>
@@ -141,6 +148,7 @@ function GuerraCanudos() {
               </p>
             </section>
           </section>
+          <BotaoCurti idSection="Bloco2Canudos" tema="Guerra de Canudos"/>
         </section>
       </center>
       <br></br>
@@ -165,6 +173,7 @@ function GuerraCanudos() {
               </p>
             </section>
           </section>
+          <BotaoCurti idSection="Bloco3Canudos" tema="Guerra de Canudos"/>
         </section>
       </center>
 
@@ -191,6 +200,7 @@ function GuerraCanudos() {
               </p>
             </section>
           </center>
+          <BotaoCurti idSection="Bloco4Canudos" tema="Guerra de Canudos"/>
         </section>
 
         <section className="Bloco-Fim">
@@ -209,13 +219,13 @@ function GuerraCanudos() {
                 pessoas mortas após a expedição do exército e a vitória do
                 exército com a desculpa de que canudos apoiavam a monarquia.
               </p>
+               <BotaoCurti idSection="Bloco5Canudos" tema="Guerra de Canudos"/>
             </section>
           </center>
         </section>
       </section>
       <br></br>
 
-      <hr></hr>
       <br></br>
       <section className="cor">
         <section className="Juntos">
@@ -283,6 +293,8 @@ function GuerraCanudos() {
           </section>
         </section>
       </section>
+
+      <Footer corHeaderFooter="amarelo" corInfoFooter="amareloClaro" logo={LogoSiteLaranja}/>
     </>
   );
 }

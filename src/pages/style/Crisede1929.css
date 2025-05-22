@@ -163,7 +163,6 @@ body {
   align-items: center;
   gap: 10%;
   padding: 1.2em;
-  background-color: #FCFAF1;
   border: #AF7E04 solid 0.1em;
   width: 93%;
   border-radius: 0.5em;
@@ -172,7 +171,6 @@ body {
 }
 
 .Para-Antece {
-  background-color: #fcf2c0;
   padding: 2rem;
   border-radius: 0.4em;
   text-align: justify;
@@ -204,7 +202,6 @@ body {
   align-items: center;
   gap: 10%;
   padding: 1.2em;
-  background-color: #FCFAF1;
   border: #AF7E04 solid 0.1em;
   width: 93%;
   border-radius: 0.5em;
@@ -221,7 +218,6 @@ body {
 }
 
 .Para-Bolsa {
-  background-color: #fcf2c0;
   padding: 2rem;
   border-radius: 0.4em;
   text-align: justify;
@@ -343,6 +339,17 @@ body {
   box-shadow: 0px 0px 2px 0px #000000;
 }
 
+.Bloco-WikieApiC:hover,
+.Bloco-OqFoi:hover,
+.Bloco-Antecedentes:hover,
+.Bloco-Bolsa:hover,
+.Bloco-New:hover,
+.Bloco-Conse:hover,
+.Bloco-VideoC:hover,
+.Bloco-FilmeC:hover {
+  box-shadow: 0px 0px 10px 2px #000000;
+  transition: box-shadow 0.3s ease-in-out;
+}
 
 /* /////////////////////////////////////////// */
 
@@ -616,6 +623,36 @@ body {
   .Img-New {
     width: 55vw;
     height: 20vh;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .Imgs-Juntas{
+    flex-direction: column;
+  }
+
+  .Img-Ante{
+    width: 25em;
+    height: 15em;
+  }
+
+  .Img-Bolsa{
+    height: 15em;
+    width: 20em;
+  }
+
+  .Bloco-New{
+    width: 28em;
+  }
+
+  .Titulo-New{
+    width: 20em;
+  }
+
+  .Img-Conse{
+    width: 25em;
+    height: 26;
   }
 
 }
