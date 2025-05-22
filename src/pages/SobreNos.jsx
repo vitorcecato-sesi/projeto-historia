@@ -1,10 +1,12 @@
 //Imagens
 import FotoGrupo3 from "../assets/ImgsFooter/FotoGrupo3.png";
 import LogoG3 from "../assets/Logos/logoG3.png";
+import LogoSiteVerde from "../assets/Logos/LogoSiteVerde.png"
 
 //Componentes
-import Navbar from "../components/Navbar"
+import Navbarr from "../components/Navbar"
 import Footer from "../components/Footer"
+import BotaoTema from "../components/BotaoTema";
 
 //CSS
 import "../pages/style/SobreNos.css";
@@ -12,16 +14,15 @@ import "../pages/style/SobreNos.css";
 function SobreNos() {
   return (
     <>
-
-    <Navbar/>
+    <Navbarr backgroundId="navbarFascismoItaliano" logo={LogoSiteVerde} />
 
     <br/> 
     <br/>
     
     <center>
       <section className="blocoPrincipal">
-        <section className="blocoFoto">
-          <h2 className="tituloGrupo"> GRUPO 3</h2>
+        <section className="blocoFoto"> 
+          <h2 className="tituloGrupo"> GRUPO 3 </h2>  
           <img className="fotoDoGrupo" src={FotoGrupo3} alt="Foto Do Grupo" />
         </section>
 
@@ -52,12 +53,14 @@ function SobreNos() {
             temas e a exibição dos conteúdos de forma organizada e visualmente
             atrativa.
           </p>
+
+          <BotaoTema/>
         </section>
 
       </section>
       </center>
 
-      <Footer corHeaderFooter="verde" corInfoFooter="verdeClaro"/>
+      <Footer corHeaderFooter="verde" corInfoFooter="verdeClaro" logo={LogoSiteVerde}/> 
     </>
   );
 }
