@@ -37,7 +37,7 @@ function PaginaVideo() {
 
       </section>
 
-      <Footer corHeaderFooter="roxoClaro" corInfoFooter="roxoClaro" logo={LogoSiteRoxo}/>
+      <Footer corHeaderFooter="roxo" corInfoFooter="roxoClaro" logo={LogoSiteRoxo}/>
     </>
   );
 }
