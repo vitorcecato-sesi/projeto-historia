@@ -38,7 +38,7 @@ function PrimeiraGuerraMundial() {
         </center>
 
 
-        <section className="carousel" style={{ "--position": posicaoCard }}>
+        <section className="carouselFMW" style={{ "--position": posicaoCard }}>
           <section className="card" style={{ "--offset": 1 }}>
             <section className="textoNoCard">
               <h3>Brasil</h3>
@@ -97,7 +97,7 @@ function PrimeiraGuerraMundial() {
             imagemClass="imagemAPI"
            />
            <section className="wiki" id="wiki"></section>
-           <img src="" alt="" id="imgPrimeiraGuerraMundial" />
+           <img id="imgPrimeiraGuerraMundial" />
           </section>
         </center>
       </section>
@@ -150,21 +150,23 @@ function PrimeiraGuerraMundial() {
           <center>
             <h1 id="tituloCausas"> Causas </h1>
           </center>
-          <p>
+            
             <center>
-              {" "}
-              <strong> Disputas Imperialistas </strong>{" "}
+              <h4> <strong> Disputas Imperialistas </strong> </h4>
             </center>
+
+            <p>
             O imperialismo e o colonialismo foram cruciais para essas tensões
             entre os países acontecerem. As potências europeias competiam
             fortemente por colônias na África e na Ásia, buscando mercado,
             matérias-primas e se beneficiar com o local.
-            <br />
-            <br />
+            </p>
+
+           
             <center>
-              {" "}
-              <strong> Política de Alianças </strong>{" "}
+              <h4> <strong> Política de Alianças </strong> </h4>
             </center>
+            <p>
             A formação de alianças transformou a Europa em uma bomba relógio,
             que a qualquer momento poderia explodir. De um lado, formou-se a
             Tríplice Aliança, composta inicialmente pela Alemanha,
@@ -172,24 +174,28 @@ function PrimeiraGuerraMundial() {
             França, Rússia e o Reino Unido. Entre os acordos, muita vezes com
             cláusulas secretas militares, significavam que um conflito
             localizado poderia rapidamente escalar para uma guerra generalizada.
-            <br />
-            <br />
+            </p>
+
+       
+            
             <center>
-              {" "}
-              <strong> Corrida Armamentista </strong>{" "}
-            </center>
+              <h4> <strong> Corrida Armamentista </strong> </h4>
+              </center>
+              <p>
             No tempo, uma intensa corrida armamentista tomou conta do
             continente. As nações europeias investiram na modernização e
             expansão de seus exércitos e marinhas, desenvolvendo novas
             tecnologias bélicas e aumentando seus efetivos militares. Esse clima
             de "paz armada" gerava desconfiança e aumentava a probabilidade de
             um confronto.
-            <br />
-            <br />
-            <center>
-              {" "}
-              <strong> Crises Internacionais </strong>{" "}
-            </center>
+            </p>
+
+          
+              
+              <center>
+             <h4> <strong> Crises Internacionais </strong> </h4> 
+              </center>
+              <p>
             Uma série de crises internacionais nos anos que antecederam a Grande
             Guerra, serviram para agravar ainda mais o cenário. Algumas crises
             deixaram incerteza em fronteira entre países rivais, o que poderia
@@ -556,70 +562,71 @@ function PrimeiraGuerraMundial() {
         </h1>
       </center>
 
-      <section className="blocoTotalVideo">
-        <section className="blocoVideoIFrame">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/HNw027hhbbw?si=iuFHXpIxPz43mMDX"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <section className="textoVideo">
-            <p>
-              Este vídeo apresenta uma explicação didática e acessível sobre a
-              Primeira Guerra Mundial, destacando suas causas, os principais
-              acontecimentos, os países envolvidos e as consequências desse
-              conflito que marcou o século XX. Ideal para estudantes e
-              interessados em história, o conteúdo ajuda a entender como esse
-              evento transformou a geopolítica mundial e influenciou os rumos
-              das décadas seguintes.
-            </p>
-          </section>
-        </section>
-      </section>
+     <section className="blocoTotalVideo">
+  <section className="blocoVideoIFrame">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/HNw027hhbbw?si=iuFHXpIxPz43mMDX"
+      title="YouTube video player"
+      frameBorder="0"  // Corrigido para camelCase
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerPolicy="strict-origin-when-cross-origin"  // Corrigido para camelCase
+      allowFullScreen  // Corrigido para camelCase
+    ></iframe>
+    <section className="textoVideo">
+      <p>
+        Este vídeo apresenta uma explicação didática e acessível sobre a
+        Primeira Guerra Mundial, destacando suas causas, os principais
+        acontecimentos, os países envolvidos e as consequências desse
+        conflito que marcou o século XX. Ideal para estudantes e
+        interessados em história, o conteúdo ajuda a entender como esse
+        evento transformou a geopolítica mundial e influenciou os rumos
+        das décadas seguintes.
+      </p>
+    </section>
+  </section>
+</section>
 
-      <br />
-      <br />
+<br />
+<br />
 
-      <hr />
+<hr />
 
-      <center>
-        <h1 id="tituloVideos">
-          <span className="amarelo">FILME</span> SOBRE A <br />
-          <span className="cinza">PRIMEIRA GUERRA MUNDIAL</span>
-        </h1>
-      </center>
+<center>
+  <h1 id="tituloVideos">
+    <span className="amarelo">FILME</span> SOBRE A <br />
+    <span className="cinza">PRIMEIRA GUERRA MUNDIAL</span>
+  </h1>
+</center>
 
-      <section className="blocoTotalFilme">
-        <section className="textoFilme">
-          <p>
-            O filme 1914: A Primeira Guerra, lançado em 2014, é um drama
-            histórico acompanha Arthur Knaap, um jovem holandês que vive em
-            Paris e decide alistar-se na Legião Estrangeira para defender sua
-            pátria no conflito que abalou a Europa. A narrativa combina ação e
-            emoção, retratando os horrores das trincheiras e os dilemas
-            enfrentados pelos soldados. Com uma abordagem realista e envolvente,
-            o filme oferece uma perspectiva única sobre os desafios e
-            sacrifícios da guerra.
-          </p>
-        </section>
-        <section className="blocoFilmeIFrame">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/GHreZQDXXvI?si=gK8GHEufOm7Haxdl"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </section>
-      </section>
+<section className="blocoTotalFilme">
+  <section className="textoFilme">
+    <p>
+      O filme 1914: A Primeira Guerra, lançado em 2014, é um drama
+      histórico que acompanha Arthur Knaap, um jovem holandês que vive em
+      Paris e decide alistar-se na Legião Estrangeira para defender sua
+      pátria no conflito que abalou a Europa. A narrativa combina ação e
+      emoção, retratando os horrores das trincheiras e os dilemas
+      enfrentados pelos soldados. Com uma abordagem realista e envolvente,
+      o filme oferece uma perspectiva única sobre os desafios e
+      sacrifícios da guerra.
+    </p>
+  </section>
+  <section className="blocoFilmeIFrame">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/GHreZQDXXvI?si=gK8GHEufOm7Haxdl"
+      title="YouTube video player"
+      frameBorder="0"  // Corrigido para camelCase
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerPolicy="strict-origin-when-cross-origin"  // Corrigido para camelCase
+      allowFullScreen  // Corrigido para camelCase
+    ></iframe>
+  </section>
+</section>
+
     </>
   );
 }

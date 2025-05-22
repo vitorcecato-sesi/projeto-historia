@@ -47,22 +47,23 @@
 
 
 /* 🔴 Container principal dos cards, o que vai dar o efeito de 3D e a centralização. */
-.carousel {
-    height: 40vh;                          
+.carouselFMW {
+    height: 35vh;                          
     display: flex;                         
     justify-content: center;               
     overflow: hidden; /* Esconde o que passar do limite do carousel */
     transform-style: preserve-3d; /* Mantém o efeito 3D dos elementos filhos (Cards) */
-    perspective: 60em; /* Define a perspectiva 3D para o efeito de rotação */
+    perspective: 70em; /* Define a perspectiva 3D para o efeito de rotação */
+    width: 70vw;
 }
 
-section.card {
+.card {
     text-align: center;                    /* Centraliza o texto dentro do card */
-    padding: 20px;                         /* Espaçamento interno do card */
-    border-radius: 20px;                   /* Bordas arredondadas */
+    padding: 1em;                         /* Espaçamento interno do card */
+    border-radius: 2em;                   /* Bordas arredondadas */
     position: absolute;                    /* Posicionamento absoluto para sobrepor os cards */
-    width: 300px;                          /* Largura fixa do card */
-    height: 250px;                         /* Altura fixa do card */
+    width: 18vw;                          /* Largura fixa do card */
+    height: 28vh;                         /* Altura fixa do card */
     background-color: white;               /* Cor de fundo padrão (caso a imagem não carregue) */
     background-size: cover;                /* Faz a imagem cobrir todo o card */
     /* Faz a imagem cobrir todo o card */
@@ -105,7 +106,7 @@ input:nth-of-type(1) {
     grid-row: 2 / 3;
 }
 
-input:nth-of-type(1):checked~main#carousel {
+input:nth-of-type(1):checked~main#carouselFMW {
     --position: 1;
 }
 
@@ -114,7 +115,7 @@ input:nth-of-type(2) {
     grid-row: 2 / 3;
 }
 
-input:nth-of-type(2):checked~main#carousel {
+input:nth-of-type(2):checked~main#carouselFMW {
     --position: 2;
 }
 
@@ -123,7 +124,7 @@ input:nth-of-type(3) {
     grid-row: 2 / 3;
 }
 
-input:nth-of-type(3):checked~main#carousel {
+input:nth-of-type(3):checked~main#carouselFMW {
     --position: 3;
 }
 
@@ -132,7 +133,7 @@ input:nth-of-type(4) {
     grid-row: 2 / 3;
 }
 
-input:nth-of-type(4):checked~main#carousel {
+input:nth-of-type(4):checked~main#carouselFMW {
     --position: 4;
 }
 
@@ -141,7 +142,7 @@ input:nth-of-type(5) {
     grid-row: 2 / 3;
 }
 
-input:nth-of-type(5):checked~main#carousel {
+input:nth-of-type(5):checked~main#carouselFMW {
     --position: 5;
 }
 
@@ -150,7 +151,6 @@ input:nth-of-type(5):checked~main#carousel {
     justify-content: center;
     align-items: center;
     gap: 1em; /* Espaçamento entre os botões */
-    padding-top: 0.5em;
 }
 
 .botoes button {
@@ -183,12 +183,12 @@ input:nth-of-type(5):checked~main#carousel {
     font-weight: 800;
     letter-spacing: 2px;
     background-color: rgba(47, 51, 43, 0.7);
-    /* Cor com 80% de opacidade */
     text-align: center;
     color: white;
     width: 27vw;
     padding: 0.2em;
     border-radius: 50px;
+
 }
 
 #infoPesq {
