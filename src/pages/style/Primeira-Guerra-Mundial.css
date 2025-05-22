@@ -1,149 +1,84 @@
 /* 🔴 Estilo do primeiro título da página  */
 .blocoPrincipal h1 {
-    font-size: 2em;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    letter-spacing: 2px;
+    font-size: 2em; /* Tamanho grande para o título principal */
+    font-family: "Montserrat", sans-serif; /* Fonte moderna e sem serifa */
+    font-weight: 800; /* Título bem destacado */
+    letter-spacing: 2px; /* Espaçamento entre letras para dar destaque */
 }
 
 /* 🔴 Colocando a cor amarela em apenas uma frase (ID) */
 #textoConhecimento {
-    color: yellow;
+    color: yellow; /* Destaca o texto com cor amarela */
 }
 /* --------------------------------------- */
 
-
+/* Estilização do texto dentro dos cards do carrossel */
 .textoNoCard {
-    position: absolute;
-    color: white;
-    /* Cor do texto */
-    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.7);
-    /* Sombra para melhorar a legibilidade */
-    top: 50%;
-    /* Posiciona o texto no meio verticalmente */
-    left: 50%;
-    /* Posiciona o texto no meio horizontalmente */
-    transform: translate(-50%, -50%);
-    /* Ajusta a posição para centralizar */
-    text-align: center;
-    /* Centraliza o texto */
-    width: 90%;
-    /* Ajuste a largura do texto para caber no card */
+    position: absolute; /* Permite centralizar o texto sobre o card */
+    color: white; /* Texto branco para contraste */
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.7); /* Sombra para melhor leitura */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato */
+    text-align: center; /* Centraliza o texto */
+    width: 90%; /* Largura do texto dentro do card */
 }
 
 .textoNoCard h3 {
-    font-size: 1.5em;
-    /* Tamanho do título */
-    margin: 0;
-    /* Remove margens */
+    font-size: 1.5em; /* Tamanho do título do card */
+    margin: 0; /* Remove margens padrão */
 }
 
 .textoNoCard p {
-    font-size: 1em;
-    /* Tamanho do texto */
-    margin: 0;
-    /* Remove margens */
+    font-size: 1em; /* Tamanho do texto do card */
+    margin: 0; /* Remove margens padrão */
 }
 
-
-/* 🔴 Container principal dos cards, o que vai dar o efeito de 3D e a centralização. */
+/* 🔴 Container principal dos cards, responsável pelo efeito 3D e centralização */
 .carouselFMW {
-    height: 35vh;                          
-    display: flex;                         
-    justify-content: center;               
-    overflow: hidden; /* Esconde o que passar do limite do carousel */
-    transform-style: preserve-3d; /* Mantém o efeito 3D dos elementos filhos (Cards) */
-    perspective: 70em; /* Define a perspectiva 3D para o efeito de rotação */
+    height: 35vh;
+    display: flex; 
+    justify-content: center;
+    overflow: hidden; /* Esconde cards que saem do limite */
+    transform-style: preserve-3d; /* Mantém efeito 3D nos filhos */
+    perspective: 70em; /* Define a perspectiva 3D */
     width: 70vw;
 }
 
+/* Estilo dos cards individuais do carrossel */
 .card {
-    text-align: center;                    /* Centraliza o texto dentro do card */
-    padding: 1em;                         /* Espaçamento interno do card */
-    border-radius: 2em;                   /* Bordas arredondadas */
-    position: absolute;                    /* Posicionamento absoluto para sobrepor os cards */
-    width: 18vw;                          /* Largura fixa do card */
-    height: 28vh;                         /* Altura fixa do card */
-    background-color: white;               /* Cor de fundo padrão (caso a imagem não carregue) */
-    background-size: cover;                /* Faz a imagem cobrir todo o card */
-    /* Faz a imagem cobrir todo o card */
-    background-position: center;           /* Centraliza a imagem de fundo */
-    /* Centraliza a imagem */
-    --r: calc(var(--position) - var(--offset)); /* Calcula a diferença entre a posição atual e o offset do card */
-    --abs: max(calc(var(--r) * -1), var(--r));  /* Valor absoluto de --r, usado para z-index */
-    transition: all 0.25s linear;          /* Animação suave para todas as propriedades ao mudar */
-    transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
-    /* Rotaciona e desloca o card em 3D conforme sua posição */
-    z-index: calc((var(--position) - var(--abs)));
-    /* Garante que o card central fique acima dos outros */
+    text-align: center; 
+    padding: 1em; 
+    border-radius: 2em;
+    position: absolute; /* Sobrepõe os cards */
+    width: 18vw; 
+    height: 28vh; 
+    background-size: cover; /* Imagem cobre todo o card */
+    background-position: center; /* Centraliza a imagem */
+    --r: calc(var(--position) - var(--offset)); /* Diferença entre card destacado e outros cards */
+    --abs: max(calc(var(--r) * -1), var(--r));  
+    /* Garante que a variável --abs sempre tenha o valor absoluto da diferença entre o card e o card central, resumindo, serve para ajudar no efeito 3D */
+    transition: all 1s ease; 
+    transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r))); /* Efeito 3D e deslocamento */
+    z-index: calc((var(--position) - var(--abs))); /* Faz que o Card central fica acima dos outros */
 }
 
-/* Adicione as imagens de fundo para cada card */
+/* Imagem de fundo para cada card do carrossel */
 section.card:nth-of-type(1) {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/CobrasFumantes.svg/375px-CobrasFumantes.svg.png');
-    background-position: center 6%;        /* Ajusta a imagem um pouco para baixo */
+    background-position: center 6%; /* Ajustando a posição da imagem */
 }
-
 section.card:nth-of-type(2) {
     background-image: url('https://static.historiadomundo.com.br/2024/05/rei-jorge-v-inspecionando-industria-armamentista-inglesa-durante-a-paz-armada-a-europa-se-preparava-para-a-guerra.jpg');
 }
-
 section.card:nth-of-type(3) {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ferdinand_Schmutzer_-_Franz_Ferdinand_von_%C3%96sterreich-Este%2C_um_1914.jpg/500px-Ferdinand_Schmutzer_-_Franz_Ferdinand_von_%C3%96sterreich-Este%2C_um_1914.jpg');
 }
-
 section.card:nth-of-type(4) {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg');
 }
-
 section.card:nth-of-type(5) {
     background-image: url('https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/wwi-trench-archaeology-01.webp?w=1600&h=900');
-}
-
-
-input:nth-of-type(1) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-input:nth-of-type(1):checked~main#carouselFMW {
-    --position: 1;
-}
-
-input:nth-of-type(2) {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-}
-
-input:nth-of-type(2):checked~main#carouselFMW {
-    --position: 2;
-}
-
-input:nth-of-type(3) {
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
-}
-
-input:nth-of-type(3):checked~main#carouselFMW {
-    --position: 3;
-}
-
-input:nth-of-type(4) {
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
-}
-
-input:nth-of-type(4):checked~main#carouselFMW {
-    --position: 4;
-}
-
-input:nth-of-type(5) {
-    grid-column: 6 / 7;
-    grid-row: 2 / 3;
-}
-
-input:nth-of-type(5):checked~main#carouselFMW {
-    --position: 5;
 }
 
 .botoes {
@@ -154,28 +89,26 @@ input:nth-of-type(5):checked~main#carouselFMW {
 }
 
 .botoes button {
-    background: linear-gradient(180deg, rgba(104, 108, 94, 0.5), #686C5E); /* Gradiente de fundo */
+    background: linear-gradient(180deg, rgba(104, 108, 94, 0.5), #686C5E); /* Gradiente de fundo (junção de 2 cores) */
     color: white;
     border: none;
-    padding: 0.5em 1em; /* Aumente o padding para um botão mais largo */
-    border-radius: 1em; /* Bordas arredondadas */
+    padding: 0.5em 1em; 
+    border-radius: 1em; 
     cursor: pointer;
-    transition: all 0.5s ease; /* Adicione transições para transformações */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    transition: all 0.5s ease; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .botoes button:hover {
     background: linear-gradient(90deg, #686C5E, rgba(104, 108, 94, 0.5)); /* Inverte o gradiente no hover */
     transform: translateY(-3px); /* Levanta o botão ao passar o mouse */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra no hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .botoes button:active {
     transform: translateY(1px); /* Efeito de pressionar o botão */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Retorna a sombra ao pressionar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
-
 
 #infoWiki {
     font-size: 1.7em;
@@ -735,7 +668,6 @@ hr {
     align-self: center;
 }
 
-/* Media Query para telas menores que 768px (dispositivos móveis) */
 @media (max-width: 850px) {
     
     .carouselFMW {
@@ -747,13 +679,13 @@ hr {
     }
 
     #infoWiki, #infoPesq {
-        font-size: 1.2em; /* Reduz o tamanho da fonte das informações */
-        width: 50vw; /* Ajusta a largura das seções de informações */
+        font-size: 1.2em; 
+        width: 50vw; 
     }
 
     .blocoResumo, .blocoCausas, .blocoEstopim, .blocoTotalPaises, .blocoFases, .blocoTec, .blocoBrasil, .blocoPaz {
-        flex-direction: column; /* Altera a direção do flex para coluna */
-        align-items: center; /* Centraliza os itens */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .blocoImagensEstopim img, .blocoImagensPaises img, .blocoImagensTec img, .blocoImagensBrasil img, .blocoImagemFase img, .blocoImagemPaz img, #imagemResumo {
@@ -765,25 +697,25 @@ hr {
     }
 
     .textoResumo, .textoCausas, .textoEstopim, .textoAlianca, .textoEntente, .textoFase, .textoTec, .textoBrasil, .textoPaz {
-        width: 90vw; /* Ajusta a largura dos textos */
+        width: 90vw;
     }
 
     #tituloVideos, #tituloFasesPrincipal, #tituloFases, #tituloPaz, #tituloBrasil, #tituloTec, #tituloEstopim, #tituloCausas, #tituloResumo, #tituloPaises {
-        font-size: 1.5em; /* Reduz o tamanho da fonte dos títulos */
+        font-size: 1.5em;
         width: 45vw;
     }
 
     .blocoTotalVideo, .blocoTotalFilme {
-        flex-direction: column; /* Altera a direção do flex para coluna */
-        align-items: center; /* Centraliza os itens */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .blocoVideoIFrame, .blocoFilmeIFrame {
-        flex-direction: column; /* Altera a direção do flex para coluna */
-        align-items: center; /* Centraliza os itens */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .textoVideo, .textoFilme {
-        width: 90vw; /* Ajusta a largura dos textos dos vídeos */
+        width: 90vw;
     }
 }
