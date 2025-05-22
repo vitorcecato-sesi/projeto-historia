@@ -7,6 +7,7 @@ import LogoSiteCinza from "../assets/Logos/LogoSiteCinza.png";
 
 // Importando Componentes
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import APIWikipedia from "../components/APIWikipedia";
 import BotaoCurtirTema from "../components/BotaoCurtirTema"
 import BotaoTema from "../components/BotaoTema"
@@ -626,7 +627,7 @@ function PrimeiraGuerraMundial() {
     ></iframe>
   </section>
 </section>
-
+<Footer corHeaderFooter="cinza" corInfoFooter="cinzaClaro" logo={LogoSiteCinza}/>
     </>
   );
 }
