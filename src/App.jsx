@@ -36,7 +36,7 @@ function App() {
           <Route path='/CriseDe1929' element={<CriseDe1929 />} />
           <Route path='/Ranking' element={<Rankings />} />
           <Route path='/SobreNos' element={<SobreNos/>} />
-          <Route path='Cartaz' />
+          <Route path='Cartaz' element={<Cartaz />} />
         </Routes>
       </BrowserRouter>
     </>
