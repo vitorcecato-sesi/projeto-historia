@@ -324,8 +324,6 @@ function RevolucaoRussa() {
                     <br />
                     <button className='botaoVideoRR'>VIDEO DO GRUPO</button>
                 </section>
-                <br />
-                <br />
                 <Footer corHeaderFooter="azul" corInfoFooter="azulClaro" logo={LogoSiteAzul} />
             </section>
         </>
