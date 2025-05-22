@@ -1,48 +1,48 @@
 .tituloF {
-    font-size: 2.5em;
-    text-align: left;
-    width: 70vw;
-    padding-bottom: 2em;
-    padding-top: 2em;
-    font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  text-align: left;
+  width: 70vw;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  font-family: "Montserrat", sans-serif;
 }
 
 .verdeTexto {
-    color: green;
+  color: green;
 }
 
 .vermelhoTexto {
-    color: red;
+  color: red;
 }
 
-.box-geral{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
+.box-geral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .box-infow {
-    display: flex;
-    flex-direction: column;
-    background-color: #bec092;
-    width: 70vw;
-    align-items: center;
-     box-shadow: #86895d 1px 1px 5px 1px;
-    transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  background-color: #bec092;
+  width: 70vw;
+  align-items: center;
+  box-shadow: #86895d 1px 1px 5px 1px;
+  transition: 0.5s;
 }
 
 .box-infow:hover {
-      transform: scale(1.02);
-    transition: 0.5s;
-    box-shadow: #272b00 1px 1px 10px 1px;
-    cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.5s;
+  box-shadow: #272b00 1px 1px 10px 1px;
+  cursor: pointer;
 }
 
 .titulowiki {
-    font-size: 1.7em;
-    color: #54582f;
-    padding: 0.5em;
+  font-size: 1.7em;
+  color: #54582f;
+  padding: 0.5em;
 }
 
 .imgWiki {
@@ -52,124 +52,124 @@
 }
 
 .box-infow p {
-    font-size: 1.1em;
-    padding: 2em;
-    color: #f8fbca;
+  font-size: 1.1em;
+  padding: 2em;
+  color: #f8fbca;
 }
 
 .box-info {
-    display: flex;
-    flex-direction: row;
-    background-color: #bec092;
-    width: 70vw;
-    justify-content: space-between;
-    margin-top: 5em;
-    box-shadow: #86895d 1px 1px 5px 1px;
-    transition: 0.5s;
+  display: flex;
+  flex-direction: row;
+  background-color: #bec092;
+  width: 70vw;
+  justify-content: space-between;
+  margin-top: 5em;
+  box-shadow: #86895d 1px 1px 5px 1px;
+  transition: 0.5s;
 }
 
 .box-info:hover {
-    transform: scale(1.02);
-    transition: 0.5s;
-    box-shadow: #272b00 1px 1px 10px 1px;
-    cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.5s;
+  box-shadow: #272b00 1px 1px 10px 1px;
+  cursor: pointer;
 }
 
-.box-coluna{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.box-row{
-    display: flex;
-    flex-direction: row;
+.box-coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.box-row ul{
-    text-decoration: none;
-    list-style: none;
+.box-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.box-row ul {
+  text-decoration: none;
+  list-style: none;
 }
 
 .box-info h2 {
-font-size: 1.7em;
-    color: #54582f;
-    padding: 0.5em;
+  font-size: 1.7em;
+  color: #54582f;
+  padding: 0.5em;
 }
 
 .box-info p {
-    font-size: 1.1em;
-    color: #f8fbca;
-    padding: 1.5em;
-    text-align: justify;
+  font-size: 1.1em;
+  color: #f8fbca;
+  padding: 1.5em;
+  text-align: justify;
 }
 
 .box-info li {
-    font-size: 1.1em;
-    color: #f8fbca;
-    padding: 1.5em;
+  font-size: 1.1em;
+  color: #f8fbca;
+  padding: 1.5em;
 }
 
 .box-info img {
-    width: 30vw;
-    height: auto;
+  width: 30vw;
+  height: auto;
 }
 
 .box-filmes {
-    display: flex;
-    flex-direction: column;
-    background-color: #272b00;
-    color: #86895d;
-    margin-top: 5em;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #272b00;
+  color: #86895d;
+  margin-top: 5em;
+  width: 100%;
 }
 
-.box-filmes h1{
-    font-size: 2em;
-    padding: 2em;
+.box-filmes h1 {
+  font-size: 2em;
+  padding: 2em;
 }
 
 .imgout {
-    border: #86895d solid 2px;
-    border-radius: 1em;
-    padding: 1.5em;
-    width: 40vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: #86895d 1px 1px 5px 1px;
-    transition: 0.5s;
+  border: #86895d solid 2px;
+  border-radius: 1em;
+  padding: 1.5em;
+  width: 40vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: #86895d 1px 1px 5px 1px;
+  transition: 0.5s;
 }
 
 .imgout:hover {
-    transform: scale(1.02);
-    transition: 0.5s;
-    cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .imgout img {
-    width: 40vw;
-    height: auto;
+  width: 40vw;
+  height: auto;
 }
 
 .imgout p {
-    font-style: italic;
-    color: red;
-    padding: 1em;
+  font-style: italic;
+  color: red;
+  padding: 1em;
 }
 
-.box-videos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 2em;
-
+.box-videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2em;
 }
 
-.box-videos p{
- width: 50vw;
- padding: 2em;
- text-align: justify;
+.box-videos p {
+  width: 50vw;
+  padding: 2em;
+  text-align: justify;
 }
 
 .carousel {
@@ -185,11 +185,15 @@ font-size: 1.7em;
   background: #54582f;
   border: none;
   border-radius: 50%;
-  font-size: 1em;
+  font-size: 2em;
   color: white;
   cursor: pointer;
-  width: 3vw;
+  width: 1em;
+  height: 1em;
   padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-button:hover {
@@ -234,7 +238,7 @@ font-size: 1.7em;
   bottom: 10.5em;
   left: 1em;
   color: red;
-  width: 21vw;
+  width: 20vw;
   font-weight: 500;
   display: flex;
 }
@@ -275,19 +279,195 @@ font-size: 1.7em;
   bottom: 10.5em;
   left: 1em;
   color: white;
-  width: 21vw;
+  width: 20vw;
   font-weight: 500;
   display: flex;
   transition: 0.2s;
 }
 
 .slideAP a:hover {
-color: red;
-transition: 0.2s;
+  color: red;
+  transition: 0.2s;
 }
 
 .slide a:hover {
-color: white;
-transition: 0.2s;
+  color: white;
+  transition: 0.2s;
 }
 
+@media (max-width: 768px) {
+
+  .titulowiki {
+    margin-bottom: -4em;
+    font-size: 1.5em;
+    color: #54582f;
+  }
+
+  .carousel {
+    display: none;
+  }
+
+  .tituloF {
+    font-size: 2em;
+    /* Reduz o tamanho da fonte */
+    width: 90vw;
+    /* Aumenta a largura para ocupar mais espaço */
+    text-align: center;
+    /* Centraliza o texto */
+  }
+
+
+  .box-infow,
+  .box-info {
+    width: 90vw;
+    /* Ajusta a largura das caixas de informação */
+    flex-direction: column;
+    /* Muda a direção para coluna */
+    align-items: center;
+    margin-top: 10em;
+  }
+
+  .box-info img {
+    width: 40vw;
+    /* Ajusta a largura das imagens */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    margin-top: 1em;
+    /* Adiciona espaço acima da imagem */
+  }
+
+  .imgout {
+    width: 40vw;
+    /* Ajusta a largura da caixa de imagem */
+  }
+
+  .imgout img {
+    width: 30vw;
+    /* Faz as imagens ocuparem 100% da largura da caixa */
+    height: auto;
+    /* Mantém a proporção da imagem */
+  }
+
+  .box-videos {
+    flex-direction: column;
+    /* Muda a direção dos vídeos */
+    align-items: center;
+    /* Centraliza os vídeos */
+    padding: 1em;
+    /* Adiciona padding */
+  }
+
+  .box-videos iframe {
+    width: 100%;
+    /* Ajusta a largura do iframe */
+    height: auto;
+    /* Mantém a proporção do vídeo */
+  }
+
+  .box-videos p {
+    width: auto;
+    /* Ajusta a largura do texto */
+    padding: 1em;
+    /* Ajusta o padding */
+    text-align: justify;
+    /* Justifica o texto */
+  }
+}
+
+@media (max-width: 480px) {
+  .titulowiki {
+    font-size: 1.3em;
+    color: #54582f;
+  }
+
+  .tituloF {
+    font-size: 1.5em;
+    /* Reduz ainda mais o tamanho da fonte */
+    width: 95vw;
+    /* Aumenta a largura para ocupar mais espaço */
+    text-align: center;
+    /* Centraliza o texto */
+  }
+
+
+
+  .box-infow,
+  .box-info {
+    width: 90vw;
+    /* Ajusta a largura das caixas de informação */
+    flex-direction: column;
+    /* Muda a direção para coluna */
+    align-items: center;
+    /* Centraliza os itens */
+    margin: 0 auto;
+    /* Centraliza a caixa */
+    margin-top: 5em;
+    /* Ajusta o espaço acima */
+  }
+
+  .box-info img {
+    width: 80vw;
+    /* Ajusta a largura das imagens */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    margin-top: 1em;
+    /* Adiciona espaço acima da imagem */
+  }
+
+  .imgout {
+    width: 50vw;
+    /* Ajusta a largura da caixa de imagem */
+  }
+
+  .imgout img {
+    width: 50vw;
+    /* Faz as imagens ocuparem 100% da largura da caixa */
+    height: auto;
+    /* Mantém a proporção da imagem */
+  }
+
+  .box-videos {
+    flex-direction: column;
+    /* Muda a direção dos vídeos */
+    align-items: center;
+    /* Centraliza os vídeos */
+    padding: 1em;
+    /* Adiciona padding */
+  }
+
+  .box-videos iframe {
+    width: 100%;
+    /* Ajusta a largura do iframe */
+    height: auto;
+    /* Mantém a proporção do vídeo */
+  }
+
+  .box-videos p {
+    width: 90vw;
+    /* Ajusta a largura do texto */
+    padding: 1em;
+    /* Ajusta o padding */
+    text-align: justify;
+    /* Justifica o texto */
+  }
+
+  .imgout p {
+    font-size: 0.9em;
+    /* Reduz o tamanho da fonte da legenda */
+  }
+
+  .box-info h2 {
+    font-size: 1.5em;
+    /* Reduz o tamanho do título */
+  }
+
+  .box-info p {
+    font-size: 0.9em;
+    /* Reduz o tamanho do texto */
+  }
+
+  .box-info li {
+    font-size: 0.9em;
+    /* Reduz o tamanho da lista */
+  }
+}
