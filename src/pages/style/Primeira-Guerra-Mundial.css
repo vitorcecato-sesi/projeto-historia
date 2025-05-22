@@ -688,8 +688,13 @@ hr {
         align-items: center; 
     }
 
-    .blocoImagensEstopim img, .blocoImagensPaises img, .blocoImagensTec img, .blocoImagensBrasil img, .blocoImagemFase img, .blocoImagemPaz img, #imagemResumo {
-        display: none;
+    .blocoImagensEstopim img, .blocoImagensPaises img, .blocoImagensTec img, .blocoImagensBrasil img {
+       display: none;
+    }
+
+    #imagemResumo, .blocoImagemFase img, .blocoImagemPaz img {
+        height: 30vw;
+        width: auto;
     }
 
     .nomePaises, .nomePaises2, #nomesEstopim {
