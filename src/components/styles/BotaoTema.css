@@ -1,0 +1,40 @@
+/* BotaoTema.css */
+.botao-tema {
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    border: none; /* Sem borda */
+    border-radius: 50%; /* Formato redondo */
+    border: 0.1em solid rgba(0, 0, 0, 0.190);
+    background-color: #ffffff; /* Cor de fundo padrão */
+    display: flex; /* Flexbox para centralizar o ícone */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.botao-tema:hover {
+    background-color: #ccc; /* Cor ao passar o mouse */
+}
+
+.icon {
+    font-size: 24px; /* Tamanho do ícone */
+    color: #f39c12; /* Cor do sol padrão */
+}
+
+.botao-tema.escuro .icon.fa-moon {
+    color: #fff; /* Cor da lua no tema escuro */    
+}
+
+.botao-tema .icon.fa-sun {
+    color: #f39c12; /* Cor do sol no tema claro */
+}
+
+.escuro {
+    background-color: black;
+    color: white;
+}
+
+.escuro footer {
+    color: black
+}

@@ -1,0 +1,418 @@
+.foto1{
+    width: 100vw;
+    height: auto;
+}
+
+.slideRev1930{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 3em;
+}
+
+.textoSlide{
+    color: #f2f2f2;
+    font-size: 4vw;
+    position: absolute;
+    padding-right: 14em;
+    padding-top: 7em;
+
+    animation: slideIn 2s forwards; /* Animação de entrada - forwards mantém o estado final da animação*/
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0; /* Começa invisível */
+        transform: translateX(-5em); /* Move para a esquerda */
+    }
+    100% {
+        opacity: 1; /* Torna visível */
+        transform: translateX(0); /* Retorna à posição original */
+    }
+}
+
+.corTextoRevolução1930{
+    color: black;
+    background-color: #B66E3F;
+}
+
+.corTexto2Revolução1930{
+    color: #B66E3F;
+    background-color: black;
+}
+
+.blocos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+/* Animação que faz com que os blocos vão aparecendo aos poucos */
+.blocos section{
+    animation: fadeIn;
+    animation-timeline: view(auto auto); /* (quando termina, quando começa) */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.2; /* Começa quase invisível */
+    }
+    100% {
+        opacity: 1; /* Torna visível */
+    }
+}
+
+.bloco-OQueFoi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 85vw;
+    border-style: dashed;
+    border-color: #B66E3F;
+    border-radius: 3em;
+    padding: 2.5em;
+}
+
+.foto2{
+    width: 35vw;
+    border-radius: 1em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 30px rgb(168, 168, 168);
+}
+
+.foto2:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.texto-OQueFoi{
+    width: 35vw;
+    background-color: #B66E3F;
+    padding: 2em;
+    border-radius: 3em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.texto-OQueFoi:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.titulo-OQueFoi{
+    background-color: #DBAB8C;
+    width: 10vw;
+    border-radius: 2em;
+    padding: 0.2em;
+    box-shadow: 0px 0px 10px #DBAB8C;
+
+}
+
+.texto-ContextoECausas{
+    width: 70vw;
+    background-color: #DBAB8C;
+    padding: 1.5em;
+    border-radius: 3em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.texto-ContextoECausas:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.titulo-ContextoECausas{
+    background-color: #B66E3F;
+    width: 28vw;
+    border-radius: 2em;
+    padding: 0.2em;
+    box-shadow: 0px 0px 10px #B66E3F;
+}
+
+.foto3{
+    padding-top: 2em;
+    width: 75vw;
+    border-radius: 1em;
+}
+
+.bloco-Conflito{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 85vw;
+    border-style: dashed;
+    border-color: #B66E3F;
+    border-radius: 3em;
+    padding: 2em;
+}
+
+.foto4{
+    width: 36vw;
+    border-radius: 1em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 30px rgb(168, 168, 168);
+}
+
+.foto4:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.texto-Conflito{
+    width: 37vw;
+    background-color: #B66E3F;
+    padding: 2em;
+    border-radius: 3em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.texto-Conflito:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.titulo-Conflito{
+    background-color: #DBAB8C;
+    width: 10vw;
+    border-radius: 2em;
+    padding: 0.2em;
+    box-shadow: 0px 0px 10px #DBAB8C;
+}
+
+.bloco-Final{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 85vw;
+    border-style: dashed;
+    border-color: #B66E3F;
+    border-radius: 3em;
+    padding: 2em;
+}
+
+.foto5{
+    width: 26vw;
+    border-radius: 1em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 30px rgb(168, 168, 168);
+}
+
+.foto5:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.texto-Final{
+    width: 40vw;
+    background-color: #DBAB8C;
+    padding: 2.4em;
+    border-radius: 3em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.texto-Final:hover {
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.titulo-Final{
+    background-color: #B66E3F;
+    width: 16vw;
+    border-radius: 2em;
+    padding: 0.2em; 
+    box-shadow: 0px 0px 10px #B66E3F;
+}
+
+.infoAPI{
+    align-items: center;
+    width: 70vw;
+    background-color: #B66E3F;
+    border-radius: 3em;
+    padding: 2em;
+    justify-content: space-around;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.infoAPI:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.imgWIKI{
+    width: 35vw;
+    border-radius: 2em;
+}
+
+/* HR - linha */
+#hrREV1930 {
+    width: 90vw;
+    height: 0.1vw;
+    background-color: gray;
+}
+
+.titulo-API{
+    background-color: #DBAB8C;
+    width: 20vw;
+    padding: 0.4em;
+    border-radius: 3em;
+    box-shadow: 0px 0px 20px #DBAB8C;
+}
+
+.bloco-Video{
+    width: 50vw;
+    padding-top: -2em;
+    justify-items: center;
+}
+
+.titulo-Video{
+    background-color: #DBAB8C;
+    padding: 1em;
+    border-radius: 3em;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.video{
+    border-radius: 1em;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.video:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.bloco-Filme{
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    background-color: #DBAB8C;
+    border-radius: 3em;
+    padding: 2em;
+    justify-content: space-around;
+    transition: all 1s ease;
+    box-shadow: 0px 0px 20px rgb(168, 168, 168);
+}
+
+.bloco-Filme:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.sinopseFilme{
+    width: 27vw;
+}
+
+.titulo-Filme{
+    background-color: #B66E3F;
+    padding: 0.2em;
+    border-radius: 3em;
+    box-shadow: 0px 0px 10px #B66E3F;
+}
+
+.filme{
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px #cd7f4c;
+}
+
+
+@media (max-width: 700px) {
+
+    .bloco-OQueFoi{
+        flex-direction: column;
+    }
+
+    .texto-OQueFoi{
+        width: 67vw;
+    }
+
+    .titulo-OQueFoi{
+        width: 30vw;
+    }
+
+    .foto2{
+        width: 60vw;
+    }
+
+    .bloco-Conflito{
+        flex-direction: column;
+    }
+
+    .titulo-Conflito{
+        width: 30vw;
+    }
+
+    .texto-Conflito{
+        width: 70vw;
+    }
+
+    .foto4{
+        width: 60vw;
+    }
+
+    .bloco-Final{
+        flex-direction: column;
+    }
+
+    .foto5{
+        width: 50vw;
+    }
+
+    .titulo-Final{
+        width: 30vw;
+    }
+
+    .texto-Final{
+        width: 60vw;
+    }
+
+    .titulo-API{
+        width: 30vh;
+    }
+
+    .titulo-Video{
+        width: 80vw;
+    }
+
+    .video{
+        width: 80vw;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 1000px) {
+    .bloco-Filme{
+        flex-direction: column;
+    }
+
+    .titulo-Filme{
+        width: 50vh;
+    }
+
+    .sinopseFilme{
+        width: 70vw;
+    }
+
+    .filme{
+        width: 70vw;
+    }
+}

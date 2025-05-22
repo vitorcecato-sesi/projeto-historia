@@ -1,0 +1,293 @@
+.tituloF {
+    font-size: 2.5em;
+    text-align: left;
+    width: 70vw;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.verdeTexto {
+    color: green;
+}
+
+.vermelhoTexto {
+    color: red;
+}
+
+.box-geral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.box-infow {
+    display: flex;
+    flex-direction: column;
+    background-color: #bec092;
+    width: 70vw;
+    align-items: center;
+     box-shadow: #86895d 1px 1px 5px 1px;
+    transition: 0.5s;
+}
+
+.box-infow:hover {
+      transform: scale(1.02);
+    transition: 0.5s;
+    box-shadow: #272b00 1px 1px 10px 1px;
+    cursor: pointer;
+}
+
+.titulowiki {
+    font-size: 1.7em;
+    color: #54582f;
+    padding: 0.5em;
+}
+
+.imgWiki {
+  width: 20vw;
+  height: auto;
+  border-radius: 1em;
+}
+
+.box-infow p {
+    font-size: 1.1em;
+    padding: 2em;
+    color: #f8fbca;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: row;
+    background-color: #bec092;
+    width: 70vw;
+    justify-content: space-between;
+    margin-top: 5em;
+    box-shadow: #86895d 1px 1px 5px 1px;
+    transition: 0.5s;
+}
+
+.box-info:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    box-shadow: #272b00 1px 1px 10px 1px;
+    cursor: pointer;
+}
+
+.box-coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-row ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.box-info h2 {
+font-size: 1.7em;
+    color: #54582f;
+    padding: 0.5em;
+}
+
+.box-info p {
+    font-size: 1.1em;
+    color: #f8fbca;
+    padding: 1.5em;
+    text-align: justify;
+}
+
+.box-info li {
+    font-size: 1.1em;
+    color: #f8fbca;
+    padding: 1.5em;
+}
+
+.box-info img {
+    width: 30vw;
+    height: auto;
+}
+
+.box-filmes {
+    display: flex;
+    flex-direction: column;
+    background-color: #272b00;
+    color: #86895d;
+    margin-top: 5em;
+    width: 100%;
+}
+
+.box-filmes h1{
+    font-size: 2em;
+    padding: 2em;
+}
+
+.imgout {
+    border: #86895d solid 2px;
+    border-radius: 1em;
+    padding: 1.5em;
+    width: 40vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: #86895d 1px 1px 5px 1px;
+    transition: 0.5s;
+}
+
+.imgout:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.imgout img {
+    width: 40vw;
+    height: auto;
+}
+
+.imgout p {
+    font-style: italic;
+    color: red;
+    padding: 1em;
+}
+
+.box-videos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em;
+
+}
+
+.box-videos p{
+ width: 50vw;
+ padding: 2em;
+ text-align: justify;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-button {
+  background: #54582f;
+  border: none;
+  border-radius: 50%;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  width: 3vw;
+  padding: 1em;
+}
+
+.carousel-button:hover {
+  color: #555;
+}
+
+.carousel-slide {
+  display: flex;
+}
+
+.slide {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  width: 22vw;
+  height: 70vh;
+}
+
+.slide img {
+  object-fit: cover;
+  position: relative;
+  width: 22vw;
+  height: 70vh;
+  z-index: 0;
+}
+
+.slide h2 {
+  font-size: 1.7em;
+  padding-top: 0.5em;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  bottom: 6.5em;
+  left: 0.5em;
+  color: red;
+}
+
+.slide a {
+  font-size: 1em;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  bottom: 10.5em;
+  left: 1em;
+  color: red;
+  width: 21vw;
+  font-weight: 500;
+  display: flex;
+}
+
+.slideAP {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  width: 22vw;
+  height: 70vh;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.slideAP img {
+  object-fit: cover;
+  position: relative;
+  width: 22vw;
+  height: 70vh;
+  z-index: 0;
+}
+
+.slideAP h2 {
+  font-size: 1.7em;
+  padding-top: 0.5em;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  bottom: 6.5em;
+  left: 0.5em;
+  color: white;
+}
+
+.slideAP a {
+  font-size: 1em;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  bottom: 10.5em;
+  left: 1em;
+  color: white;
+  width: 21vw;
+  font-weight: 500;
+  display: flex;
+  transition: 0.2s;
+}
+
+.slideAP a:hover {
+color: red;
+transition: 0.2s;
+}
+
+.slide a:hover {
+color: white;
+transition: 0.2s;
+}
+
