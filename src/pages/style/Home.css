@@ -27,7 +27,7 @@
 .tituloParallax {
     color: white;
     font-size: 2em;
-    width: 90vw;
+    width: 80vw;
     padding-top: 0.6em;
     padding-left: 0.6em;
     font-family: "Montserrat", sans-serif;
@@ -108,7 +108,20 @@ font-family: "Montserrat", sans-serif;
     width: 8em;
     height: 8em;
     display: flex;
-    box-shadow: #7a5e9b 0px 0px 20px 0px;
+    box-shadow: #7a5e9b 0px 0px 30px 0px;
+}
+
+.botTema {
+    position: relative;
+    left: 5em;
+    
+}
+
+.botTemaPosi {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
 }
 
 @media (max-width: 768px) {
@@ -131,6 +144,12 @@ font-family: "Montserrat", sans-serif;
         font-size: 0.8em; 
         padding: 0.5em; 
     }
+
+    .botTema {
+    position: relative;
+    left: 0.5em;
+    
+}
 
 
 }
