@@ -69,7 +69,15 @@
     border: 0.1em solid rgba(0, 0, 0, 0.190);
     padding: 2em 10em;
 
+    gap: 2em;
+
     width: 50vw;
+}
+
+.imgWIKIRR {
+    width: 30vw;
+    height: auto;
+    border-radius: 2em;
 }
 
 .infoRR {
