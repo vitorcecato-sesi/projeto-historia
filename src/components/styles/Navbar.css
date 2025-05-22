@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     font-size: 1.2em;
-    background: linear-gradient(90deg, rgba(86, 0, 123, 0.2), rgba(100, 0, 150, 0.2)); /* Adicione mais cores para suavizar */
+    background: linear-gradient(90deg, rgb(191, 86, 235), rgb(235, 226, 239)); /* Adicione mais cores para suavizar */
     background-size: 400% 400%; /* Aumente o tamanho do gradiente */
     animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
     font-family: "Montserrat", sans-serif;
