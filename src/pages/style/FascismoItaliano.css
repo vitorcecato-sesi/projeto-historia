@@ -2,8 +2,8 @@
   font-size: 2.5em;
   text-align: left;
   width: 70vw;
-  padding-bottom: 2em;
-  padding-top: 2em;
+  padding-bottom: 1em;
+  padding-top: 1em;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -164,7 +164,6 @@
   flex-direction: row;
   justify-content: center;
   padding: 2em;
-
 }
 
 .box-videos p {
@@ -186,11 +185,15 @@
   background: #54582f;
   border: none;
   border-radius: 50%;
-  font-size: 1em;
+  font-size: 2em;
   color: white;
   cursor: pointer;
-  width: 3vw;
+  width: 1em;
+  height: 1em;
   padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-button:hover {
@@ -235,7 +238,7 @@
   bottom: 10.5em;
   left: 1em;
   color: red;
-  width: 21vw;
+  width: 20vw;
   font-weight: 500;
   display: flex;
 }
@@ -276,7 +279,7 @@
   bottom: 10.5em;
   left: 1em;
   color: white;
-  width: 21vw;
+  width: 20vw;
   font-weight: 500;
   display: flex;
   transition: 0.2s;
@@ -313,12 +316,6 @@
     /* Centraliza o texto */
   }
 
-  .box-geral {
-    width: 90vw;
-    /* Ajusta a largura da caixa geral */
-    padding: 0 5%;
-    /* Adiciona padding lateral */
-  }
 
   .box-infow,
   .box-info {
@@ -368,7 +365,7 @@
   }
 
   .box-videos p {
-    width: 90vw;
+    width: auto;
     /* Ajusta a largura do texto */
     padding: 1em;
     /* Ajusta o padding */
@@ -392,12 +389,7 @@
     /* Centraliza o texto */
   }
 
-  .box-geral {
-    width: 95vw;
-    /* Ajusta a largura da caixa geral */
-    padding: 0 2%;
-    /* Adiciona padding lateral */
-  }
+
 
   .box-infow,
   .box-info {
