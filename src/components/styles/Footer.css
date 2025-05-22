@@ -59,7 +59,7 @@
     background-color: #B66E3F;
 }
 #marromClaro{
-    background-color: #DBAB8C;
+    background-color: #dc9c72;
 }
 
 #rosa{
@@ -72,6 +72,7 @@
 
 .logoSite{
     width: 10vw;
+    padding: 1em;
 }
 
 /* Estilo da seta - criada com bordas formando uma "seta para direita" rotacionada */
@@ -84,6 +85,7 @@
     transition: transform 0.5s ease; /* animação suave da rotação */
 }
 
+/* Vai rotacionar a seta, virando ela para cima*/
 .seta.aberto{
     transform: rotate(-135deg);
 }
@@ -100,7 +102,7 @@
 
 .footerInfo{
     height: 0;
-    overflow: hidden;
+    overflow: hidden; /* oculta o conteúdo */
     transition: max-height 0.5s ease, padding-top 0.3s ease; /* transição suave abrir/fechar */ 
     padding-top: 0;
 }

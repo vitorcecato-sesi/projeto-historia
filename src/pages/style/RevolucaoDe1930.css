@@ -1,11 +1,9 @@
-
-
 .foto1{
     width: 100vw;
     height: auto;
 }
 
-.slide{
+.slideRev1930{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,12 +32,12 @@
     }
 }
 
-.corTexto{
+.corTextoRevolução1930{
     color: black;
     background-color: #B66E3F;
 }
 
-.corTexto2{
+.corTexto2Revolução1930{
     color: #B66E3F;
     background-color: black;
 }
@@ -257,9 +255,16 @@
     cursor: pointer;
 }
 
+.imgWIKI{
+    width: 35vw;
+    border-radius: 2em;
+}
+
 /* HR - linha */
 #hrREV1930 {
     width: 90vw;
+    height: 0.1vw;
+    background-color: gray;
 }
 
 .titulo-API{

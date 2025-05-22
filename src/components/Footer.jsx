@@ -1,14 +1,13 @@
 import { useState } from "react";
 
 import "../components/styles/Footer.css";
-import LogoSiteRoxo from "../assets/Logos/LogoSiteRoxo.png";
 import iconeGithub from "../assets/ImgsFooter/iconeGithub.png";
-import iconeEmail from "../assets/ImgsFooter/iconeEmail.png";
+import iconeGrupo from "../assets/ImgsFooter/iconeGrupo.png";
 import iconeYT from "../assets/ImgsFooter/iconeYT.png";
 import logoG3 from "../assets/Logos/logoG3.png";
 
-function Footer(props) {
-    const [aberto, setAberto] = useState(false);
+function Footer(props) {  
+    const [aberto, setAberto] = useState(false); //Começa falso, ou seja, estará fechado
 
     // Função para alternar o estado aberto/fechado
     function verInfo() {
@@ -23,13 +22,13 @@ function Footer(props) {
 
         <footer>
             <section className="footerHeader" id={props.corHeaderFooter} onClick={verInfo}>
-                <img src={LogoSiteRoxo} className="logoSite" alt="Logo do site" />
+                <img src={props.logo} className="logoSite" alt="Logo do site" />
                 <span className={`seta ${aberto ? "aberto" : ""}`}> </span>
 
                 <section className="icones">
                     <a href="https://github.com/vitorcecato-sesi/projeto-historia"> <img src={iconeGithub} alt="Github" /> </a>
-                    <a href="linkEmail"> <img src={iconeEmail} alt="Email" /> </a>
-                    <a href="linkVideoYt"><img src={iconeYT} alt="Vídeo Youtube" /> </a>
+                    <a href="https://www.youtube.com/embed/eERVu09GCWE?si=X1SRhNr9cMOyKIqT&quot"><img src={iconeYT} alt="Vídeo Youtube" /> </a>
+                    <a href="http://localhost:5173/SobreNos"> <img src={iconeGrupo} alt="Grupo" /> </a>
                 </section>
             </section>
 
@@ -49,13 +48,13 @@ function Footer(props) {
                     <section className="conteudos">
                         <p>
                             <h3> Conteúdos </h3>
-                            <a href=""> Guerra de Canudos </a> <br />
-                            <a href=""> Guerra do Contestado </a> <br />
-                            <a href=""> Primeira Guerra Mundial </a> <br />
-                            <a href=""> Revolução Russa </a> <br />
-                            <a href=""> Fascismo Italiano </a> <br />
-                            <a href=""> Crise de 1929 </a> <br />
-                            <a href=""> Revolução de 1930 </a> <br />
+                            <a href="http://localhost:5173/GuerraDeCanudos"> Guerra de Canudos </a> <br />
+                            <a href="http://localhost:5173/GuerraDoContestado"> Guerra do Contestado </a> <br />
+                            <a href="http://localhost:5173/PrimeiraGuerraMundial"> Primeira Guerra Mundial </a> <br />
+                            <a href="http://localhost:5173/RevolucaoRussa"> Revolução Russa </a> <br />
+                            <a href="http://localhost:5173/FascismoItaliano"> Fascismo Italiano </a> <br />
+                            <a href="http://localhost:5173/CriseDe1929"> Crise de 1929 </a> <br />
+                            <a href="http://localhost:5173/RevolucaoDe1930"> Revolução de 1930 </a> <br />
                         </p>
                     </section>
 
@@ -71,8 +70,8 @@ function Footer(props) {
                         </p>
                     </section>
                 </section>
-        </section>
-      </footer>
+            </section>
+        </footer>
     </>
   );
 }
