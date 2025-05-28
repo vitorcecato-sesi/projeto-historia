@@ -8,7 +8,7 @@ function BotaoCurtirTema(props) {
     useEffect(() => {   // Verifica os itens que foram curtidos para atualizar o botão de coração
         
             console.log("Verificando se o botão foi acionado")  // Verifica se o botão foi acionado
-            console.log(JSON.stringify(arrayCurtidas))
+            console.log(JSON.stringify(arrayCurtidas)) // Verifica a arrayCurtidas
 
             const existe = arrayCurtidas.find(item => item.id === props.idSection)  // Verifica se o item curtido já existe na array (retorna true ou false)
             if (existe) {   // Caso exista
@@ -25,26 +25,26 @@ function BotaoCurtirTema(props) {
         console.log("Botão acionado")   // Aviso no console log
 
         setArrayCurtidas(() => {
-            const arrayStorage = JSON.parse(localStorage.getItem("curtidas"))
+            const arrayStorage = JSON.parse(localStorage.getItem("curtidas"))    // Obtêm os dados do local storage
 
-            console.log("Teste arraystorage:" + JSON.stringify(arrayStorage))
-            console.log("Tamanho:" + arrayStorage.length)
+            console.log("Teste arraystorage:" + JSON.stringify(arrayStorage))    // Verifica os dados do local storage
+            console.log("Tamanho:" + arrayStorage.length)    // Verifica o tamanho da array do local storage
 
-            if (arrayStorage.length > 0) {
-                console.log("to aqui")
-                return arrayStorage
+            if (arrayStorage.length > 0) {    // Verifia se o tamanho é maior que 0
+                console.log("to aqui")    // Console log para acompanhar o processo
+                return arrayStorage    // Retorna a array do local storage
             }
-            else {
-                return []
+            else {    // Caso não seja maior que 0
+                return []    // Retorna array vazia
             }
         }) // Atualiza com o local storage
         
-        console.log("Array curtidas 0:" + JSON.stringify(arrayCurtidas))
+        console.log("Array curtidas 0:" + JSON.stringify(arrayCurtidas))    // Verificação dos dados da arrayCurtidas - checar retorno
         
         if (!curtido) { // Se não estiver curtido
             console.log("Curtido")  // Aviso no console log
 
-            console.log("Array Curtidas1: " + JSON.stringify(arrayCurtidas))
+            console.log("Array Curtidas1: " + JSON.stringify(arrayCurtidas))    // Verificação dos dados da arrayCurtidas - checar retorno
             
             setCurtido(!curtido)    // Mudar estado do botão para o oposto do atual
 
@@ -56,12 +56,12 @@ function BotaoCurtirTema(props) {
             console.log("Array curtidas:" + JSON.stringify(arrayCurtidas))
                 
             const novaArray = [...arrayCurtidas, novoItem]  // Cria uma nova array com a array antiga e com os objetos novos
-            console.log("Nova array:" + JSON.stringify(novaArray))
-            console.log("Teste:" + JSON.stringify([...arrayCurtidas, novoItem]))
+            console.log("Nova array:" + JSON.stringify(novaArray))    // Checa os dados da nova array
+            console.log("Teste:" + JSON.stringify([...arrayCurtidas, novoItem]))    // Verifica se o metodo para criar a nova array está funcionando
             // ... - spread operator
 
-            setArrayCurtidas(novaArray)
-            localStorage.setItem("curtidas", JSON.stringify(novaArray)) // Adiciona no localstorage
+            setArrayCurtidas(novaArray) // Atualiza a variavel
+            localStorage.setItem("curtidas", JSON.stringify(novaArray)) // Atualiza o localstorage com a nova array
 
         } else {    // Se estiver curtido
             console.log("Descurtido")   // Aviso no console log
@@ -70,8 +70,8 @@ function BotaoCurtirTema(props) {
             // Cria uma nova array removendo o elemento que foi descurtido
             const novoArray = arrayCurtidas.filter(item => item.id !== props.idSection)
             
-            setArrayCurtidas(novoArray)
-            localStorage.setItem("curtidas", JSON.stringify(novoArray))
+            setArrayCurtidas(novoArray)    // Atualiza a variavel
+            localStorage.setItem("curtidas", JSON.stringify(novoArray)) // Atualiza o localstorage com a nova array
         }
         
     }
