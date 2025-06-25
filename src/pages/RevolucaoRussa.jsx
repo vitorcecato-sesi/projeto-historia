@@ -227,7 +227,7 @@ function RevolucaoRussa() {
                             <h2>Revolução de Outubro 1917</h2>
                             <p>
                                 A Revolução de Outubro de 1917 foi a segunda fase da Revolução Russa e marcou a chegada dos bolcheviques ao poder, liderados por Vladimir Lenin. O movimento surgiu em meio à insatisfação popular com a continuidade da Rússia na Primeira Guerra Mundial, a crise econômica, a fome e a desigualdade. Com a promessa de “Paz, Pão e Terra”, os bolcheviques conquistaram apoio popular.
-                                Em 25 de outubro (7 de novembro no calendário atual), os revolucionários tomaram o poder em Petrogrado, derrubando o Governo Provisório de Aleksandr Kerenski quase sem resistência. Lenin assumiu a liderança do novo governo e iniciou mudanças radicais, como a saída da guerra, a estatização da economia e a redistribuição de terras. Após vencerem a Guerra Civil contra forças contra revolucionárias, os bolcheviques fundaram a União Soviética em 1922, inaugurando uma nova era política que influenciaria o mundo inteiro.
+                                Em 25 de outubro (7 de novembro no calendário atual), os revolucionários tomaram o poder em Petrogrado, derrubando o Governo Provisório de Aleksandr Kerenski quase sem resistência. Lenin assumiu a liderança do novo governo e iniciou mudanças radicais, como a saída da guerra, a estatização da economia e a redistribuição de terras. Após vencerem a Guerra Civil contra forças revolucionárias, os bolcheviques fundaram a União Soviética em 1922, inaugurando uma nova era política que influenciaria o mundo inteiro.
                             </p>
                         </article>
                         {/* Componente BotãoCurtirTema */}

@@ -3,9 +3,9 @@
     justify-content: space-around;
     align-items: center;
     font-size: 1.2em;
-    background: linear-gradient(90deg, rgb(216, 126, 254), rgb(235, 226, 239)); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, rgb(216, 126, 254), rgb(235, 226, 239)); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
@@ -15,51 +15,51 @@
 }   
 
 #navbarPrimeiraGuerra {
-    background: linear-gradient(90deg, rgba(104, 108, 94, 0.5), #686C5E, rgba(104, 108, 94, 0.5)); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, rgba(104, 108, 94, 0.5), #686C5E, rgba(104, 108, 94, 0.5)); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 #navbarRevolucaoRussa {
-    background: linear-gradient(90deg, #8896FF, rgba(136, 150, 255, 0.6), #8896FF); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, #8896FF, rgba(136, 150, 255, 0.6), #8896FF); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 #navbarGuerraDoContestado {
-    background: linear-gradient(90deg, rgba(203, 77, 80, 0.7), #CB4D50, rgba(203, 77, 80, 0.7)); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, rgba(203, 77, 80, 0.7), #CB4D50, rgba(203, 77, 80, 0.7)); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 #navbarRevolucaoDe1930 {
-    background: linear-gradient(90deg, #906A41, rgba(144, 106, 65, 0.8), #906A41); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, #906A41, rgba(144, 106, 65, 0.8), #906A41); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 #navbarCriseDe1929 {
-    background: linear-gradient(90deg, #822626, rgba(130, 38, 38, 0.8), #822626); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, #822626, rgba(130, 38, 38, 0.8), #822626); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 #navbarGuerraDeCanudos {
-    background: linear-gradient(90deg, #FBB623, rgba(251, 182, 35, 0.8), #FBB623); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, #FBB623, rgba(251, 182, 35, 0.8), #FBB623); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 #navbarFascismoItaliano {
-    background: linear-gradient(90deg, #86895D, rgba(134, 137, 93, 0.8), #86895D); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, #86895D, rgba(134, 137, 93, 0.8), #86895D); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate;
 }
 
 #navbarRanking {
-    background: linear-gradient(90deg, #FFD7D7, rgba(254, 198, 198, 0.8), #FFD7D7); /* Adicione mais cores para suavizar */
-    background-size: 400% 400%; /* Aumente o tamanho do gradiente */
-    animation: backgroundMove 15s infinite alternate; /* Aumente a duração da animação */
+    background: linear-gradient(90deg, #FFD7D7, rgba(254, 198, 198, 0.8), #FFD7D7); 
+    background-size: 400% 400%; 
+    animation: backgroundMove 15s infinite alternate; 
 }
 
 .blocoPrincipalNavbar img {
@@ -75,62 +75,59 @@
 }
 
 .blocoPrincipalNavbar a {
-    position: relative;
-    color: #fff;
-    cursor: pointer;
-    background: black;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-style: none;
+    position: relative; /* Permitindo o posicionamento absoluto dos elementos */
+    cursor: pointer; 
+    color: black;
+    text-decoration: none; 
 }
 
 .blocoPrincipalNavbar a:hover::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: #db88ff;
-    animation: underlineMove 1.5s; /* Animação da linha ao passar o mouse */
+    content: ''; /* Cria um elemento vazio após o link, o que faz aparecer a linha em baixo */
+    position: absolute; /* Deixa a linha como posição absoluta */
+    bottom: -4px; /* Coloca a linha abaixo do link */
+    left: 0; /* Alinha a linha à esquerda do link (palavra) */
+    width: 100%; /* Largura total da linha (vai ficar o tamanho inteiro da palavra) */
+    height: 3px; /* É a altura da linha */
+    background: #c94bff; /* Cor da linha */
+    animation: underlineMove 1.5s; /* Aplica a animação 'underlineMove' ao passar o mouse sobre o link */
     transition: all 1s ease;
 }
 
 @keyframes backgroundMove {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 50%; /* Define a posição inicial do fundo */
     }
     100% {
-        background-position: 100% 50%;
+        background-position: 100% 50%; /* Define a posição final do fundo */
     }
 }
 
 @keyframes underlineMove {
     0% {
-        width: 0%;
+        width: 0%; /* A largura da linha começa em 0% */
     }
     100% {
-        width: 100%;
+        width: 100%; /* A largura da linha se expande para 100% ao longo da animação */
     }
 }
 
-/* Media Query para telas menores que 850px */
+
 @media (max-width: 850px) {
     
     .blocoPrincipalNavbar {
-        flex-direction: column; /* Altera a direção do flex para coluna */
-        align-items: center; /* Centraliza os itens */
-        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
-        font-size: 1.2em; /* Reduz o tamanho da fonte */
+        flex-direction: column; 
+        align-items: center; 
+        height: auto; 
+        font-size: 1.2em; 
         width: auto;
     }
     .blocoPrincipalNavbar img {
-        width: 20vw; /* Ajusta a largura da imagem para 50% da largura do contêiner */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 20vw; 
+        height: auto;
     }
 
     .blocoPrincipalNavbar a {
-        font-size: 0.9em; /* Reduz o tamanho da fonte dos links */
+        font-size: 0.9em; 
         padding: 1em;
     }
 }

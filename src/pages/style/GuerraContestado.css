@@ -142,6 +142,7 @@
   .blocoInfo2 {
     flex-direction: column;
     align-items: center;
+    width: 60vw;
   }
   #imgGC {
     width: 50vw;
@@ -150,6 +151,10 @@
   .video1 {
     width: 30vw;
     height: 20vh;
+  }
+  .blocoInfo{
+    width: 60vw;
+
   }
 }
 @media (max-width: 768px) {
@@ -168,6 +173,10 @@
   .video1 {
     width: 40vw;
     height: 20vh;
+  }
+  .blocoInfo{
+    width: 60vw;
+
   }
 }
 @media (max-width: 480px) {
@@ -190,6 +199,16 @@
   #imgContestado{
     width: 40vw;
     height: 20vh;
+  }
+  .blocoInfo{
+    width: 65vw;
+
+  }
+  .blocoWiki{
+    width: 65vw;
+  }
+  .blocoVideo{
+    width: 65vw;
   }
 }
 .imagemAPI {

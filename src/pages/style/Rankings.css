@@ -28,3 +28,18 @@
 .blocoRanks span {
     font-weight: bold;
 }
+
+@media only screen and (max-width: 800px) {
+    .blocoRanks {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .blocoRanks {
+        width: 80vw;
+    }
+    .bodyRank h1 {
+        width: 80vw;
+    }
+}

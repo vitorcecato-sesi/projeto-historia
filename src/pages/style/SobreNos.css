@@ -67,3 +67,13 @@
     width: 15vw;
     border-radius: 3em;
 }
+
+@media (max-width: 600px) {
+    .tituloGrupo{
+        width: 24vw;
+    }
+
+    .tituloProjeto{
+        width: 30vw;
+    }
+}

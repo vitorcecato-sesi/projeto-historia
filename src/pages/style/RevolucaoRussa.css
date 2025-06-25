@@ -726,7 +726,7 @@
         
     }
 
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 400px) {
         
         .bannerTextRR {
             padding: 0;
