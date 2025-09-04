@@ -1,7 +1,7 @@
 /* Estilo para o primeiro parallax */
 .parallax1 {
     /* Definindo a imagem de fundo */
-    background-image: url(https://aventurasnahistoria.com.br/media/_versions/primeira_guerra/trincehe_1_widelg.jpg);
+    background-image: url(https://aventurasnahistoria.com.br/wp-content/uploads/primeira_guerra/trincehe_1.jpg);
     height: 80vh;
     /* Manter a imagem fixa ao rolar a página */
     background-attachment: fixed;
